@@ -3,8 +3,11 @@
 <div align="center">
 
 ![Chain-Luxe Logo](https://img.shields.io/badge/Chain--Luxe-Hotel%20Management%20System-blue)
-![Version](https://img.shields.io/badge/version-1.1.0-green)
-![Status](https://img.shields.io/badge/status-Design%20Phase-orange)
+![Version](https://img.shields.io/badge/version-2.0.0-green)
+![Status](https://img.shields.io/badge/status-Tech%20Stack%20Selected-success)
+![Svelte](https://img.shields.io/badge/Frontend-Svelte-orange)
+![.NET](https://img.shields.io/badge/Backend-.NET%20Core-purple)
+![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue)
 
 **نظام إدارة فنادق متعدد المستأجرين (Multi-Tenant)**
 
@@ -34,10 +37,11 @@
 
 | الملف | الوصف |
 |-------|-------|
-| `Data Analysis/V8.dbml` | ملف تصميم قاعدة البيانات بتنسيق DBML (يحتوي على 112 جدول) |
+| `Data Analysis/V8.dbml` | ملف تصميم قاعدة البيانات بتنسيق DBML (127 جدول - معدل لـ Multi-Tenant) |
 | `Data Analysis/V8.dbdiagram` | ملف DBDiagram لتصور قاعدة البيانات |
 | `Data Analysis/Chain-Luxe_System_Analysis.md` | تحليل شامل للنظام والمعمارية المقترحة |
-| `Data Analysis/Chain-Luxe_Implementation_Plan.md` | خطة تنفيذ تفصيلية للمشروع |
+| `Data Analysis/Chain-Luxe_Implementation_Plan.md` | خطة تنفيذ تفصيلية عامة للمشروع |
+| `Data Analysis/Chain-Luxe_Tech_Stack_Plan.md` | خطة تنفيذ مفصلة للتقنيات المختارة (Svelte + .NET + PostgreSQL) |
 | `Data Analysis/469 جدول من قاعدة البيانات.txt` | قائمة بأسماء الجداول من النظام القديم |
 
 ---
@@ -222,7 +226,7 @@
 ### خطة التنفيذ
 
 ملف `Chain-Luxe_Implementation_Plan.md` يحتوي على:
-- خطة تنفيذ تفصيلية (8 مراحل)
+- خطة تنفيذ تفصيلية عامة (8 مراحل)
 - المهام والمسؤوليات لكل مرحلة
 - الفريق المطلوب (9-11 شخص)
 - الميزانية التقديرية ($190,000)
@@ -230,17 +234,55 @@
 - معايير النجاح
 - خطة الصيانة بعد الإطلاق
 
+### خطة التقنيات المختارة
+
+ملف `Chain-Luxe_Tech_Stack_Plan.md` يحتوي على:
+- خطة تنفيذ تفصيلية للتقنيات المختارة (10 مراحل)
+- SvelteKit + Tailwind CSS للواجهة الأمامية
+- ASP.NET Core 8 للواجهة الخلفية
+- PostgreSQL 15 لقاعدة البيانات
+- Entity Framework Core 8 للـ ORM
+- Redis للتخزين المؤقت
+- JWT + ASP.NET Identity للمصادقة
+- WebSocket للتحديثات الحية
+- الفريق المطلوب (10 شخص)
+- الميزانية التقديرية ($137,400)
+- أمثلة على الكود لكل طبقة
+
 ---
 
-## 🎯 التوصيات التقنية
+## 🎯 التقنيات المختارة
 
-### البنية التقنية المقترحة
+### البنية التقنية النهائية
 
-- **قاعدة البيانات**: PostgreSQL أو SQL Server
-- **الواجهة الخلفية**: .NET Core / Node.js / Python (Django/FastAPI)
-- **الواجهة الأمامية**: React / Vue.js / Angular
-- **المصادقة**: JWT مع Role-Based Access Control (RBAC)
-- **API**: RESTful API
+- **Frontend**: SvelteKit + Tailwind CSS
+- **Backend**: ASP.NET Core 8
+- **Database**: PostgreSQL 15
+- **ORM**: Entity Framework Core 8
+- **Caching**: Redis
+- **Authentication**: JWT + ASP.NET Identity
+- **API**: RESTful API + WebSocket (SignalR)
+
+### سبب اختيار هذه التقنيات
+
+#### 🎨 SvelteKit + Tailwind CSS
+- **أداء عالي جداً**: Svelte تترجم الكود إلى JavaScript خالص عند البناء
+- **حجم صغير**: Bundles أصغر بكثير من React/Vue
+- **تصميم سريع**: Tailwind CSS بدون كتابة CSS مخصص
+- **مناسب للفنادق**: سريعة الاستجابة لشاشات الاستقبال ونقاط البيع
+
+#### ⚙️ ASP.NET Core 8
+- **أداء ممتاز**: أسرع من Node.js للعمليات المعقدة
+- **Strong Typing**: C# مع TypeScript يجعل النظام أكثر استقراراً
+- **Entity Framework Core**: ORM قوي جداً لقواعد البيانات
+- **Enterprise-ready**: مثبت في الشركات الكبرى
+- **مناسب للفنادق**: معالجة المعاملات المهمة للحجوزات والفواتير
+
+#### 🗄️ PostgreSQL 15
+- **مجاني ومفتوح المصدر**: لا توجد تكاليف ترخيص
+- **Row-Level Security (RLS)**: ميزة مدمجة لعزل البيانات (مهمة جداً لـ Multi-Tenant)
+- **JSON Support**: دعم ممتاز للبيانات المرنة
+- **مناسب للفنادق**: RLS مثالي لعزل بيانات الفنادق
 
 ### الأمان
 
@@ -299,10 +341,11 @@
 
 ## 🚀 الخطوات التالية
 
-1. **الموافقة على التصميم**: مراجعة التحليل مع الإدارة
-2. **اختيار البنية التقنية**: تحديد التقنيات المستخدمة
-3. **تجهيز البيئة**: إعداد بيئة التطوير
-4. **بدء التنفيذ**: البدء بتنفيذ خطة التنفيذ
+1. ✅ **تصميم قاعدة البيانات**: مكتمل
+2. ✅ **اختيار التقنيات**: مكتمل (Svelte + .NET + PostgreSQL)
+3. ⏳ **إنشاء المشاريع**: يجب البدء
+4. ⏳ **إعداد البيئة المحلية**: يجب البدء
+5. ⏳ **بدء تطوير Backend**: يجب البدء
 
 ---
 
@@ -316,8 +359,9 @@
 
 - **تاريخ البدء**: 14 سبتمبر 2026
 - **تاريخ آخر تحديث**: 14 سبتمبر 2026
-- **الحالة الحالية**: مرحلة تصميم قاعدة البيانات (منجزة)
-- **الإصدار**: 1.1.0
+- **الحالة الحالية**: اختيار التقنيات وإنشاء خطة التنفيذ المفصلة
+- **الإصدار**: 2.0.0
+- **التقنيات المختارة**: SvelteKit + .NET Core + PostgreSQL
 - **المطور**: فريق تطوير Chain-Luxe
 
 ---
