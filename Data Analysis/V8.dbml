@@ -1,6 +1,7 @@
 // جدول حسابات الذمم والقبض (كان يسمى AACC)
 Table Accounts {
   Id bigint [pk, note: 'المُعرف الفريد الرئيسي للحساب (AACC_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   Type_Id bigint [note: 'رابط نوع الحساب (Account Type Link)']
   Profile_Id bigint [note: 'مُعرف الملف الشخصي أو العميل (AACC_XCMS_ID)']
   Number varchar(20) [note: 'رقم الحساب التجاري أو الظاهري للعميل (AR Number)']
@@ -29,6 +30,7 @@ Table AccountTypes {
 // جدول عناوين العملاء (كان يسمى XADR)
 Table CustomerAddresses {
   Id bigint [pk, note: 'المُعرف الداخلي الفريد للعنوان (XADR_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   AddressType_Id bigint [note: 'رابط إلى أنواع العناوين']
   IsPrimary int [note: 'العنوان الرئيسي (1) أم لا (0)']
   ZipCode varchar(15) [note: 'الرمز البريدي']
@@ -48,6 +50,7 @@ Table CustomerAddresses {
 // جدول العملاء الأساسي والملفات الشخصية (كان يسمى XCMS)
 Table Customers {
   Id bigint [pk, note: 'مُعرف العميل الفريد (XCMS_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   Name1 varchar(35) [note: 'اسم العاهل أو الاسم الرئيسي الأول']
   Name2 varchar(35) [note: 'الاسم الثاني للعميل']
   Name3 varchar(35) [note: 'الاسم الثالث للعميل']
@@ -84,6 +87,7 @@ Table Customers {
 // جدول الحسابات المالية الفرعية / الحسابات التابعة (كان يسمى ZFAC)
 Table FinancialAccounts {
   Id bigint [pk, note: 'المُعرف الفريد لسجل الحساب المالي (ZFAC_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   Customer_Id bigint [note: 'مرجع مرتبط بجدول العملاء']
   LongDescription varchar(30) [note: 'الوصف الطويل أو اسم الحساب المالي']
   ExpValidFrom date [note: 'تاريخ بداية الصلاحية التعبيرية']
@@ -95,6 +99,7 @@ Table FinancialAccounts {
 // جدول رأس المستندات أو الفواتير المالية (كان يسمى AHDR)
 Table InvoiceHeaders {
   Id bigint [pk, note: 'المُعرف الفريد لرأس المستند أو الفاتورة (AHDR_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   InvoiceDate date [note: 'تاريخ إصدار الفاتورة أو المستند المالي']
   OriginalInvoiceNo varchar(60) [note: 'رقم الفاتورة الأصلي']
   VoucherNo varchar(60) [note: 'رقم السند أو القسيمة المرتبطة بالحركة']
@@ -121,6 +126,7 @@ Table InvoiceHeaders {
 // جدول سجلات فواتير وحركات حسابات القبض (كان يسمى AINV)
 Table InvoiceRecords {
   Id bigint [pk, note: 'المُعرف الفريد لسجلات حسابات القبض (AINV_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   Account_Id bigint [note: 'رابط إلى حساب القبض الأساسي']
   PaymentPos_Id varchar(12) [note: 'رابط لسجل الدفع في نقاط البيع']
   Amount decimal(30,4) [note: 'مبلغ أو قيمة حركة حساب القبض']
@@ -190,6 +196,7 @@ Table Currencies {
 // جدول تفاصيل الفواتير (كان يسمى ADET)
 Table InvoiceDetails {
   Id bigint [pk, note: 'المُعرف الفريد لبند التفاصيل']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   Header_Id bigint [note: 'رابط رأس المستند المالي']
   Article_Id bigint [note: 'رابط جدول الأصناف']
   Description varchar(120) [note: 'وصف البند']
@@ -218,6 +225,7 @@ Table MealPeriodLinks {
 // جدول أصناف قائمة الطعام الرئيسية
 Table MenuArticles {
   Id varchar(12) [pk, note: 'المُعرف الفريد للصنف بالقائمة']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   Article_Id bigint [note: 'معرف الصنف الأساسي']
   ScreenDisplay varchar(20) [note: 'العرض على الشاشة']
   Price decimal(8,2) [note: 'السعر']
@@ -257,6 +265,7 @@ Table MenuArticles {
 // إصلاح حقل المنفذ في جدول ارتباط القوائم لتوافق البنية الصحيحة
 Table MenuLinks {
   Id varchar(12) [pk, note: 'المُعرف الفريد لسجل رابط القائمة']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   OutletId varchar(12) [note: 'معرف منفذ البيع'] // ملاحظة: تأكد من اسم العمود الفعلي في قاعدة البيانات (مثل Outlet_Id أو OutletId)
   MenuId varchar(12) [note: 'معرف قائمة الطعام']
   DefaultMenu char(1) [note: 'قائمة افتراضية']
@@ -272,6 +281,7 @@ Table MenuLinks {
 // جدول منافذ البيع الرئيسية والفروع
 Table Outlets {
   Id varchar(12) [pk, note: 'المُعرف الفريد لمنفذ البيع']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   ExternalId char(4) [note: 'المعرف الخارجي']
   ShortName varchar(20) [note: 'الاسم المختصر']
   Name varchar(40) [note: 'اسم منفذ البيع']
@@ -309,6 +319,7 @@ Table Outlets {
 // جدول معاملات وإعدادات النظام الرئيسية
 Table SystemParameters {
   Id varchar(12) [pk, note: 'المُعرف الفريد لسجل المعاملات']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   DatabaseVersion varchar(10) [note: 'إصدار قاعدة البيانات']
   DatabaseBuilt char(3) [note: 'بناء قاعدة البيانات']
   SetupLang char(2) [note: 'لغة الإعداد']
@@ -386,6 +397,7 @@ Table PaymentTypes {
 // جدول أجهزة نقاط البيع والكاشيرات الرئيسية
 Table PosTerminals {
   Id varchar(12) [pk, note: 'المُعرف الفريد لجهاز نقطة البيع']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   PosNum char(3) [note: 'الرقم الداخلي']
   OutletId varchar(12) [note: 'معرف منفذ البيع']
   MacAddress char(12) [note: 'عنوان MAC']
@@ -423,6 +435,7 @@ Table PosTerminals {
 // جدول طاولات المطعم والقاعات الرئيسية
 Table Tables {
   Id varchar(12) [pk, note: 'المُعرف الفريد للطاولة']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   TableNo char(4) [note: 'رقم الطاولة']
   MaxSeats decimal(3,0) [note: 'الحد الأقصى للمقاعد']
   OutletId varchar(12) [note: 'معرف منفذ البيع']
@@ -492,6 +505,7 @@ Table TravelAgentCommissionCodes {
 // جدول أنشطة أو مهام مستخدمي النظام (كان يسمى ULAT)
 Table UserActivities {
   Id bigint [pk, note: 'المُعرف الفريد للسجل (ULAT_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   User_Id bigint [note: 'مُعرف المستخدم (ULAT_XCMS_ID)']
   ActivityType_Id bigint [note: 'مُعرف نوع النشاط أو المهمة (ULAT_WATY_ID)']
 }
@@ -500,6 +514,7 @@ Table UserActivities {
 // جدول أقسام أو إدارات الفندق والأقسام التشغيلية (كان يسمى WHDE)
 Table HotelDepartments {
   Id bigint [pk, note: 'المُعرف الفريد للسجل (WHDE_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   ShortDescription varchar(3) [note: 'الوصف المختصر أو كود القسم (WHDE_SHORTDESC)']
   LongDescription varchar(30) [note: 'الوصف الطويل أو اسم القسم (WHDE_LONGDESC)']
   DisplayOrder int [note: 'ترتيب العرض (WHDE_DISPLORDER)']
@@ -511,6 +526,7 @@ Table HotelDepartments {
 // جدول المفقودات والمعثورات في الفندق (كان يسمى WLAF)
 Table LostAndFound {
   Id bigint [pk, note: 'المُعرف الفريد للسجل (WLAF_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   LostAndFoundGroup_Id bigint [note: 'رابط إلى مجموعة المفقودات (WLAF_WLFG_ID)']
   Customer_Id bigint [note: 'رابط إلى الشخص فاقد أو عاثر الغرض حسب نوع البلاغ (WLAF_XCMS_ID)']
   UserCustomer_Id bigint [note: 'المستخدم الذي أدخل المعلومات (WLAF_USER_XCMS_ID)']
@@ -622,6 +638,7 @@ Ref: NotesCategoryLinks.Department_Id > HotelDepartments.Id
 // جدول ملاحظات العملاء والكيانات الفعلية (كان يسمى XCNO)
 Table CustomerNotes {
   Id bigint [pk, note: 'المُعرف الداخلي الفريد (XCNO_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   NotesCategory_Id bigint [note: 'الربط بفئة الملاحظات (XCNO_XCNC_ID)']
   Table_Id bigint [note: 'معرف الجدول الذي تنتمي إليه الملاحظة (XCNO_TABLE_ID)']
   Notes text [note: 'نص الملاحظة الفعلية (XCNO_NOTES)']
@@ -635,6 +652,7 @@ Table CustomerNotes {
 // جدول بيانات اتصالات العملاء الفعلية (كان يسمى XCOM)
 Table CustomerCommunications {
   Id bigint [pk, note: 'المُعرف الداخلي الفريد (XCOM_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   CommunicationType_Id bigint [note: 'الربط بنوع الاتصال (XCOM_XCMT_ID)']
   Address_Id bigint [note: 'الربط بالعنوان (XCOM_XADR_ID)']
   Customer_Id bigint [note: 'الربط بملف العميل (XCOM_XCMS_ID)']
@@ -765,6 +783,7 @@ Table Barcodes {
 // جدول بيانات الوجبات اليومية للحجوزات (كان يسمى YBFO)
 Table ReservationBoardOptions {
   Id bigint [pk, note: 'المُعرف الداخلي الفريد (YBFO_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   Reservation_Id bigint [not null, note: 'رابط إلى الحجز (YBFO_YRES_ID)']
   MealDate timestamp [not null, note: 'تاريخ الوجبات (YBFO_DATE)']
   BreakfastCount int [not null, note: 'عدد وجبات الإفطار (YBFO_B)']
@@ -786,6 +805,7 @@ Table BillingInstructionDetails {
 // جدول رأس تعليمات الفوترة (كان يسمى YBIS)
 Table BillingInstructionHeaders {
   Id bigint [pk, note: 'المُعرف الداخلي الفريد (YBIS_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   FromDate timestamp [not null, note: 'تاريخ بدء صلاحية الفوترة (YBIS_FROMDATE)']
   ToDate timestamp [note: 'تاريخ انتهاء صلاحية الفوترة (YBIS_TODATE)']
   FromReservation_Id bigint [note: 'الفوترة من الحجز (YBIS_FROM_YRES_ID)']
@@ -952,6 +972,7 @@ Table RateCodes {
 // جدول تفاصيل الحجز اليومية (كان يسمى YDET)
 Table ReservationDetails {
   Id bigint [pk, note: 'المُعرف الفريد لسجل تفاصيل الحجز اليومي (YDET_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   Reservation_Id bigint [not null, note: 'رابط إلى رأس الحجز الأساسي (YDET_YRES_ID)']
   DetailDate timestamp [not null, note: 'تاريخ اليوم المعني بالتفاصيل (YDET_DATE)']
   RateCode_Id bigint [note: 'رابط إلى جدول كود السعر (YDET_YRCH_ID)']
@@ -990,6 +1011,7 @@ Table ReservationDetails {
 // جدول عروض أو تخفيضات الحجوزات (يسمى YLPR)
 Table ReservationPromotions {
   Id bigint [pk, note: 'المُعرف الفريد لسجل العرض بالحجز (YLPR_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   ReservationDetail_Id bigint [not null, note: 'رابط إلى تفاصيل الحجز (YLPR_YDET_ID)']
   Promotion_Id bigint [not null, note: 'رابط إلى جدول العروض الترويجية (YLPR_YPRM_ID)']
   PromotionRuleLink_Id bigint [not null, note: 'رابط إلى جدول ربط قواعد العروض (YLPR_YPRR_ID)']
@@ -1000,6 +1022,7 @@ Table ReservationPromotions {
 // جدول عمليات أو قيود نقاط البيع للحجوزات (يسمى YPOS)
 Table ReservationPosPostings {
   Id bigint [pk, note: 'المُعرف الفريد لسجل حركة نقاط البيع (YPOS_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   ExternalConfig_Id bigint [not null, note: 'رابط إلى إعدادات النظام الخارجية أو المشتركة (YPOS_XCMS_ID)']
   Reservation_Id bigint [not null, note: 'رابط إلى جدول الحجوزات (YPOS_YRES_ID)']
   PostingDate date [not null, note: 'تاريخ حركة نقاط البيع (YPOS_DATE)']
@@ -1024,6 +1047,7 @@ Table ReservationPosPostings {
 // جدول إدارة العروض أو الحزم الترويجية (يسمى YPRM)
 Table Promotions {
   Id bigint [pk, note: 'المُعرف الفريد لسجل العرض أو الحزمة الرئيسية (YPRM_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   PromotionCategory_Id bigint [note: 'رابط إلى فئة أو تصنيف الحزم (YPRM_YPRC_ID)']
   ShortDesc varchar(3) [not null, note: 'الوصف المختصر للعرض أو الحزمة (YPRM_SHORTDESC)']
   LongDesc varchar(30) [not null, note: 'الوصف الطويل أو اسم العرض (YPRM_LONGDESC)']
@@ -1084,6 +1108,7 @@ Table ReservationCodes {
 // جدول تفاصيل الأسعار أو أكواد الأسعار (يسمى YRCD)
 Table RateCodeDetails {
   Id bigint [pk, note: 'المُعرف الفريد لسجل تفاصيل السعر (YRCD_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   RateCodeHeader_Id bigint [not null, note: 'رابط إلى جدول رأس كود السعر (YRCD_YRCH_ID)']
   RateSeason_Id bigint [note: 'رابط لمواسم الأسعار (YRCD_YRSE_ID)']
   StartDate date [not null, note: 'تاريخ البداية لصلاحية تفاصيل السعر (YRCD_STARTDATE)']
@@ -1107,6 +1132,7 @@ Table RateCodeDetails {
 // جدول رأس أكواد الأسعار (يسمى YRCH)
 Table RateCodeHeaders {
   Id bigint [pk, note: 'المُعرف الفريد لرأس كود السعر (YRCH_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   RateCategory_Id bigint [not null, note: 'رابط إلى فئة كود السعر (YRCH_YRCC_ID)']
   ShortDesc varchar(10) [not null, note: 'الوصف المختصر أو كود السعر نفسه (YRCH_SHORTDESC)']
   LongDesc varchar(30) [not null, note: 'الوصف الطويل لكود السعر (YRCH_LONGDESC)']
@@ -1223,6 +1249,7 @@ Table ReservationDetailLinks {
 // جدول الحجوزات الأساسي (يسمى YRES)
 Table ReservationsMaster {
   Id bigint [pk, note: 'المُعرف الفريد لسجل الحجز (YRES_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   MasterBooking_Id bigint [note: 'رابط إلى جدول الحجز الرئيسي في قاعدة بيانات حجز الماستر (YRES_YBOM_ID)']
   GuestProfile_Id bigint [note: 'الرابط الرئيسي لقاعدة بيانات الملف الشخصي للنزيل (YRES_XCMS_ID)']
   ExpectedArrival timestamp [not null, note: 'تاريخ ووقت الوصول المتوقع (YRES_EXPARRTIME)']
@@ -1277,6 +1304,7 @@ Table RoomAttributeLinks {
 // جدول الغرف الرئيسي (يسمى YRMS)
 Table Rooms {
   Id bigint [pk, note: 'المُعرف الفريد لسجل الغرفة (YRMS_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   RoomCategory_Id bigint [not null, note: 'رابط إلى جدول أنواع الغرف YCAT (YRMS_YCAT_ID)']
   RoomNumber varchar(10) [not null, note: 'رقم أو الوصف المختصر للغرفة نفسه (YRMS_SHORTDESC)']
   LongDesc varchar(30) [not null, note: 'الوصف الطويل للغرفة (YRMS_LONGDESC)']
@@ -1351,6 +1379,7 @@ Table SuiteRoomLinks {
 // جدول سجل أو تاريخ حالات الغرف (يسمى YRST)
 Table RoomStatusHistories {
   Id bigint [pk, note: 'المُعرف الفريد لسجل الجدول (YRST_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   Room_Id bigint [not null, note: 'رابط إلى جدول الغرف الرئيسي YRMS (YRST_YRMS_ID)']
   FromTime timestamp [not null, note: 'تاريخ ووقت بداية الحالة (YRST_FROMTIME)']
   UntilTime timestamp [not null, note: 'تاريخ ووقت نهاية الحالة (YRST_UNTILTIME)']
@@ -1376,6 +1405,7 @@ Table GeneralReservationInformation {
 // جدول تعليمات الفوترة (يسمى ZBIC)
 Table BillingInstructions {
   Id bigint [pk, note: 'المُعرف الداخلي الفريد (ZBIC_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   ShortDesc varchar(3) [not null, note: 'الكود أو الوصف المختصر لتعليمات الفوترة (ZBIC_SHORTDESC)']
   LongDesc varchar(30) [not null, note: 'الوصف الطويل لتعليمات الفوترة (ZBIC_LONGDESC)']
   LangId bigint [note: 'عمود قديم أو ملغي (ZBIC_LANGID)']
@@ -1388,6 +1418,7 @@ Table BillingInstructions {
 // جدول الصيارفة أو أرقام الخزن (يسمى ZCAS)
 Table Cashiers {
   Id bigint [pk, note: 'المُعرف الفريد لسجل الجدول (ZCAS_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   CashierNumber bigint [not null, note: 'رقم الخزنة أو الصراف (ZCAS_NUMBER)']
   LongDescription varchar(30) [not null, note: 'اسم الخزنة أو الصراف أو الوردية (ZCAS_LONGDESCRIPTION)']
   MaxOpenPerDay int [not null, note: 'الحد الأقصى لعدد مرات فتح الخزنة يومياً (ZCAS_MAXOPENPERDAY)']
@@ -1404,6 +1435,7 @@ Table Cashiers {
 // جدول أكواد الأقسام أو مراكز التكلفة والخدمات (يسمى ZDCO)
 Table DepartmentCodes {
   Id bigint [pk, note: 'المُعرف الفريد لسجل الجدول (ZDCO_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   ShortDesc varchar(3) [note: 'الوصف أو الكود المختصر للقسم (ZDCO_SHORTDESC)']
   LongDesc varchar(30) [not null, note: 'الوصف الطويل أو اسم القسم (ZDCO_LONGDESC)']
   NumericDesc bigint [not null, note: 'كود القسم الرقمي (ZDCO_NUMERICDESC)']
@@ -1460,6 +1492,7 @@ Table DepartmentTaxesLink {
 // جدول سجلات الطابعة المالية أو ربط الفوترة الإلكترونية (يسمى ZFCF)
 Table FiscalPrinterTransactions {
   Id bigint [pk, note: 'المُعرف الفريد لسجل الجدول (ZFCF_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   Invoice_Id bigint [not null, note: 'رابط مع جدول الفواتير ZINV (ZFCF_ZINV_ID)']
   GenerationDate timestamp [note: 'تاريخ وتوقيت إنشاء السجل أو المعاملة المالية (ZFCF_GENERATION_DATE)']
   ResponseXml xml [note: 'ملف الاستجابة بصيغة XML (ZFCF_RESPONSE_XML)']
@@ -1479,6 +1512,7 @@ Table FiscalPrinterTransactions {
 // جدول الفواتير الرئيسي (يسمى ZINV)
 Table Invoices {
   Id bigint [pk, note: 'المُعرف الفريد للفاتورة (ZINV_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   InvoiceDate timestamp [not null, note: 'تاريخ إنشاء وإصدار الفاتورة (ZINV_DATE)']
   InvoiceNumber varchar(60) [not null, note: 'رقم الفاتورة الرسمي (ZINV_NUMBER)']
   InvoiceCounter_Id bigint [not null, note: 'مرجع مرتبط بجدول ZINN (ZINV_ZINN_ID)']
@@ -1511,6 +1545,7 @@ Table DepartmentCurrencyConfig {
 // جدول تعريفات أو أرصدة البداية للصرافين (يسمى ZMUC)
 Table CashierStartingAmounts {
   Id bigint [pk, note: 'المُعرف الفريد لسجل تعريف الصراف (ZMUC_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   Cashier_Id bigint [not null, note: 'رابط مع جدول تعريف الصرافين ZCAS (ZMUC_ZCAS_ID)']
   DepartmentCode_Id bigint [not null, note: 'رابط مع كود القسم، نقدي أو عملة أجنبية ZDCO (ZMUC_ZDCO_ID)']
   StartingAmount decimal(30,4) [not null, note: 'مبلغ البداية ويجب أن يكون أكبر من أو يساوي صفر (ZMUC_STARTINGAMOUNT)']
@@ -1540,6 +1575,7 @@ Table PostingInvoiceLink {
 // جدول الحركات المالية والقيود الرئيسي (يسمى ZPOS)
 Table FinancialPostings {
   Id bigint [pk, note: 'المُعرف الفريد لسجل الحركة (ZPOS_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   Customer_Id bigint [not null, note: 'رابط مع حساب العميل أو الضيف (ZPOS_XCMS_ID)']
   Reservation_Id bigint [note: 'رابط مع الحجز (ZPOS_YRES_ID)']
   Account_Id bigint [note: 'مرجع مرتبط بجدول الفواتير أو الحسابات ZFAC (ZPOS_ZFAC_ID)']
@@ -1651,6 +1687,7 @@ Table TaxDescriptions {
 // جدول نوافذ الفوترة الخاصة بالحجوزات (يسمى ZWIN)
 Table BillingWindows {
   Id bigint [pk, note: 'المُعرف الفريد لسجل نافذة الفوترة (ZWIN_ID)']
+  Hotel_Id bigint [note: 'معرف الفندق (لدعم Multi-Tenant)']
   WindowNumber int [not null, note: 'رقم نافذة الفوترة (ZWIN_WINDOW)']
   Reservation_Id bigint [note: 'معرف الحجز المرتبط YRES (ZWIN_YRES_ID)']
   Account_Id bigint [note: 'معرف الحساب المالي ZFAC (ZWIN_ZFAC_ID)']
@@ -1988,3 +2025,310 @@ Ref: CustomerCommunications.Customer_Id > Customers.Id
 // ربط روابط عقود الشركات بالعقود والعملاء
 Ref: CorporateContractCustomerLinks.CorporateContract_Id > CorporateContracts.Id
 Ref: CorporateContractCustomerLinks.Customer_Id > Customers.Id
+
+// ==========================================
+// 🔗 الجداول الجديدة لنظام Multi-Tenant
+// ==========================================
+
+// جدول الفنادق (الجدول الأساسي للنظام Multi-Tenant)
+Table Hotels {
+  Id bigint [pk, note: 'المُعرف الفريد للفندق']
+  Code varchar(10) [unique, note: 'كود الفندق (مثل: AMON, PALM, SIWA)']
+  Name varchar(100) [note: 'اسم الفندق بالكامل']
+  NameArabic varchar(100) [note: 'الاسم بالعربية']
+  NameEnglish varchar(100) [note: 'الاسم بالإنجليزية']
+  City varchar(50) [note: 'المدينة']
+  Country_Id bigint [note: 'الدولة']
+  Address varchar(200) [note: 'العنوان']
+  Phone varchar(20) [note: 'الهاتف']
+  Email varchar(100) [note: 'البريد الإلكتروني']
+  Website varchar(100) [note: 'الموقع الإلكتروني']
+  Logo varchar(500) [note: 'رابط الشعار']
+  TaxNumber varchar(50) [note: 'الرقم الضريبي']
+  CommercialRegistration varchar(50) [note: 'السجل التجاري']
+  StarRating int [note: 'عدد النجوم']
+  RoomCount int [note: 'عدد الغرف']
+  CheckInTime time [note: 'وقت التسجيل الوصول']
+  CheckOutTime time [note: 'وقت التسجيل المغادرة']
+  DefaultCurrency_Id bigint [note: 'العملة الافتراضية']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+  CreatedBy bigint [note: 'منشئ السجل']
+  UpdatedBy bigint [note: 'محدث السجل']
+}
+
+// جدول المستخدمين
+Table Users {
+  Id bigint [pk, note: 'المُعرف الفريد للمستخدم']
+  Username varchar(50) [unique, note: 'اسم المستخدم']
+  Email varchar(100) [unique, note: 'البريد الإلكتروني']
+  PasswordHash varchar(255) [note: 'كلمة المرور المشفرة']
+  FullName varchar(100) [note: 'الاسم الكامل']
+  PhoneNumber varchar(20) [note: 'رقم الهاتف']
+  Hotel_Id bigint [note: 'الفندق الرئيسي للمستخدم']
+  Role_Id bigint [note: 'الدور']
+  Department_Id bigint [note: 'القسم']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  LastLogin timestamp [note: 'آخر تسجيل دخول']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول الأدوار
+Table Roles {
+  Id bigint [pk, note: 'المُعرف الفريد للدور']
+  Name varchar(50) [note: 'اسم الدور']
+  NameArabic varchar(50) [note: 'الاسم بالعربية']
+  Description varchar(200) [note: 'الوصف']
+  IsSystem int [default: 0, note: 'دور نظامي لا يمكن حذفه']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول الصلاحيات
+Table Permissions {
+  Id bigint [pk, note: 'المُعرف الفريد للصلاحية']
+  Module varchar(50) [note: 'اسم الوحدة (مثل: Reservations, FrontDesk)']
+  Action varchar(50) [note: 'الإجراء (مثل: Create, Read, Update, Delete)']
+  Description varchar(200) [note: 'الوصف']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+}
+
+// جدول صلاحيات الأدوار
+Table RolePermissions {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Role_Id bigint [note: 'الدور']
+  Permission_Id bigint [note: 'الصلاحية']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+}
+
+// جدول روابط المستخدمين بالفنادق
+Table UserHotelAccess {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  User_Id bigint [note: 'المستخدم']
+  Hotel_Id bigint [note: 'الفندق']
+  AccessLevel int [note: 'مستوى الوصول (1=Read, 2=Write, 3=Full)']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول إعدادات الفنادق
+Table HotelSettings {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Hotel_Id bigint [note: 'الفندق']
+  SettingKey varchar(100) [note: 'مفتاح الإعداد']
+  SettingValue text [note: 'قيمة الإعداد']
+  Description varchar(200) [note: 'الوصف']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+  UpdatedBy bigint [note: 'محدث السجل']
+}
+
+// جدول أنواع الغرف لكل فندق
+Table HotelRoomTypes {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Hotel_Id bigint [note: 'الفندق']
+  RoomCategory_Id bigint [note: 'فئة الغرفة']
+  TotalRooms int [note: 'العدد الإجمالي']
+  AvailableRooms int [note: 'المتاح حالياً']
+  BasePrice decimal(30,4) [note: 'السعر الأساسي']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول الوحدات الفرعية
+Table HotelSections {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Hotel_Id bigint [note: 'الفندق']
+  Name varchar(100) [note: 'الاسم']
+  NameArabic varchar(100) [note: 'الاسم بالعربية']
+  SectionType varchar(50) [note: 'نوع الوحدة (Building, Floor, Wing)']
+  ParentSection_Id bigint [note: 'الوحدة الأم للهيكل الشجري']
+  Description varchar(200) [note: 'الوصف']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+}
+
+// جدول سجلات التدقيق
+Table AuditLogs {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Hotel_Id bigint [note: 'الفندق']
+  User_Id bigint [note: 'المستخدم']
+  TableName varchar(100) [note: 'اسم الجدول']
+  RecordId bigint [note: 'معرف السجل']
+  ActionType varchar(20) [note: 'نوع الإجراء (INSERT, UPDATE, DELETE)']
+  OldValues json [note: 'القيم القديمة']
+  NewValues json [note: 'القيم الجديدة']
+  ChangedAt timestamp [note: 'تاريخ التغيير']
+  IpAddress varchar(50) [note: 'عنوان IP']
+  UserAgent varchar(500) [note: 'معلومات المتصفح']
+}
+
+// جدول الإشعارات
+Table Notifications {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Hotel_Id bigint [note: 'الفندق']
+  User_Id bigint [note: 'المستخدم']
+  Title varchar(200) [note: 'العنوان']
+  Message text [note: 'الرسالة']
+  Type varchar(50) [note: 'النوع (Info, Warning, Error, Success)']
+  IsRead int [default: 0, note: 'تم القراءة']
+  RelatedRecordId bigint [note: 'معرف السجل المرتبط']
+  RelatedTable varchar(100) [note: 'الجدول المرتبط']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+}
+
+// جدول التقارير المجدولة
+Table ScheduledReports {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Hotel_Id bigint [note: 'الفندق']
+  ReportName varchar(100) [note: 'اسم التقرير']
+  ReportType varchar(50) [note: 'نوع التقرير']
+  ScheduleType varchar(20) [note: 'نوع الجدولة (Daily, Weekly, Monthly)']
+  Recipients varchar(500) [note: 'المستلمين']
+  Parameters json [note: 'المعاملات']
+  LastRun timestamp [note: 'آخر تشغيل']
+  NextRun timestamp [note: 'التشغيل القادم']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  CreatedBy bigint [note: 'المنشئ']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+}
+
+// جدول تكامل الأنظمة
+Table SystemIntegrations {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Hotel_Id bigint [note: 'الفندق']
+  IntegrationType varchar(50) [note: 'نوع التكامل (POS, PMS, Accounting, CRM)']
+  Provider varchar(100) [note: 'المزود']
+  ApiEndpoint varchar(500) [note: 'رابط API']
+  ApiKey varchar(255) [note: 'مفتاح API']
+  Configuration json [note: 'الإعدادات']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  LastSync timestamp [note: 'آخر مزامنة']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول الاشتراكات والتراخيص
+Table Subscriptions {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Hotel_Id bigint [note: 'الفندق']
+  PlanType varchar(50) [note: 'نوع الخطة (Basic, Standard, Premium)']
+  StartDate date [note: 'تاريخ البدء']
+  EndDate date [note: 'تاريخ الانتهاء']
+  MaxUsers int [note: 'الحد الأقصى للمستخدمين']
+  MaxRooms int [note: 'الحد الأقصى للغرف']
+  Features json [note: 'الميزات المفعلة']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  RenewalDate date [note: 'تاريخ التجديد']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+}
+
+// جدول النسخ الاحتياطي
+Table BackupLogs {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Hotel_Id bigint [note: 'الفندق']
+  BackupType varchar(20) [note: 'نوع النسخ (Full, Incremental)']
+  FilePath varchar(500) [note: 'مسار الملف']
+  FileSize bigint [note: 'حجم الملف']
+  Status varchar(20) [note: 'الحالة (Success, Failed, InProgress)']
+  StartedAt timestamp [note: 'وقت البدء']
+  CompletedAt timestamp [note: 'وقت الإنجاز']
+  CreatedBy bigint [note: 'المنشئ']
+}
+
+// ==========================================
+// 🔗 روابط الجداول الجديدة
+// ==========================================
+
+// ربط الفنادق بالعملات
+Ref: Hotels.DefaultCurrency_Id > Currencies.Id
+Ref: Hotels.Country_Id > Countries.Id
+
+// ربط المستخدمين بالفنادق والأدوار
+Ref: Users.Hotel_Id > Hotels.Id
+Ref: Users.Role_Id > Roles.Id
+
+// ربط صلاحيات الأدوار
+Ref: RolePermissions.Role_Id > Roles.Id
+Ref: RolePermissions.Permission_Id > Permissions.Id
+
+// ربط وصول المستخدمين للفنادق
+Ref: UserHotelAccess.User_Id > Users.Id
+Ref: UserHotelAccess.Hotel_Id > Hotels.Id
+
+// ربط إعدادات الفنادق
+Ref: HotelSettings.Hotel_Id > Hotels.Id
+
+// ربط أنواع الغرف للفنادق
+Ref: HotelRoomTypes.Hotel_Id > Hotels.Id
+Ref: HotelRoomTypes.RoomCategory_Id > RoomCategories.Id
+
+// ربط الوحدات الفرعية
+Ref: HotelSections.Hotel_Id > Hotels.Id
+Ref: HotelSections.ParentSection_Id > HotelSections.Id
+
+// ربط سجلات التدقيق
+Ref: AuditLogs.Hotel_Id > Hotels.Id
+Ref: AuditLogs.User_Id > Users.Id
+
+// ربط الإشعارات
+Ref: Notifications.Hotel_Id > Hotels.Id
+Ref: Notifications.User_Id > Users.Id
+
+// ربط التقارير المجدولة
+Ref: ScheduledReports.Hotel_Id > Hotels.Id
+
+// ربط تكامل الأنظمة
+Ref: SystemIntegrations.Hotel_Id > Hotels.Id
+
+// ربط الاشتراكات
+Ref: Subscriptions.Hotel_Id > Hotels.Id
+
+// ربط النسخ الاحتياطي
+Ref: BackupLogs.Hotel_Id > Hotels.Id
+
+// ==========================================
+// 🔗 روابط Hotel_Id للجداول المعدلة
+// ==========================================
+
+// ربط الجداول المعدلة بجدول الفنادق
+Ref: Accounts.Hotel_Id > Hotels.Id
+Ref: CustomerAddresses.Hotel_Id > Hotels.Id
+Ref: Customers.Hotel_Id > Hotels.Id
+Ref: FinancialAccounts.Hotel_Id > Hotels.Id
+Ref: InvoiceHeaders.Hotel_Id > Hotels.Id
+Ref: InvoiceRecords.Hotel_Id > Hotels.Id
+Ref: InvoiceDetails.Hotel_Id > Hotels.Id
+Ref: Invoices.Hotel_Id > Hotels.Id
+Ref: BillingInstructions.Hotel_Id > Hotels.Id
+Ref: BillingInstructionHeaders.Hotel_Id > Hotels.Id
+Ref: BillingWindows.Hotel_Id > Hotels.Id
+Ref: ReservationsMaster.Hotel_Id > Hotels.Id
+Ref: ReservationDetails.Hotel_Id > Hotels.Id
+Ref: ReservationPromotions.Hotel_Id > Hotels.Id
+Ref: ReservationPosPostings.Hotel_Id > Hotels.Id
+Ref: ReservationBoardOptions.Hotel_Id > Hotels.Id
+Ref: Rooms.Hotel_Id > Hotels.Id
+Ref: RoomStatusHistories.Hotel_Id > Hotels.Id
+Ref: RateCodeHeaders.Hotel_Id > Hotels.Id
+Ref: RateCodeDetails.Hotel_Id > Hotels.Id
+Ref: Promotions.Hotel_Id > Hotels.Id
+Ref: Outlets.Hotel_Id > Hotels.Id
+Ref: PosTerminals.Hotel_Id > Hotels.Id
+Ref: Tables.Hotel_Id > Hotels.Id
+Ref: MenuArticles.Hotel_Id > Hotels.Id
+Ref: MenuLinks.Hotel_Id > Hotels.Id
+Ref: FinancialPostings.Hotel_Id > Hotels.Id
+Ref: Cashiers.Hotel_Id > Hotels.Id
+Ref: CashierStartingAmounts.Hotel_Id > Hotels.Id
+Ref: DepartmentCodes.Hotel_Id > Hotels.Id
+Ref: HotelDepartments.Hotel_Id > Hotels.Id
+Ref: LostAndFound.Hotel_Id > Hotels.Id
+Ref: UserActivities.Hotel_Id > Hotels.Id
+Ref: FiscalPrinterTransactions.Hotel_Id > Hotels.Id
+Ref: CustomerCommunications.Hotel_Id > Hotels.Id
+Ref: CustomerNotes.Hotel_Id > Hotels.Id
+Ref: SystemParameters.Hotel_Id > Hotels.Id
