@@ -2240,6 +2240,191 @@ Table BackupLogs {
 }
 
 // ==========================================
+// 👥 إدارة الموظفين (Employee Management)
+// ==========================================
+
+// جدول الموظفين
+Table Employees {
+  Id bigint [pk, note: 'المُعرف الفريد للموظف']
+  Hotel_Id bigint [note: 'الفندق التابع له الموظف']
+  User_Id bigint [unique, note: 'رابط بجدول Users (إذا كان له حساب)']
+  Department_Id bigint [note: 'القسم التابع له الموظف']
+  JobTitle_Id bigint [note: 'المسمى الوظيفي']
+  EmployeeNumber varchar(20) [unique, note: 'رقم الموظف']
+  FirstName varchar(50) [note: 'الاسم الأول']
+  LastName varchar(50) [note: 'اسم العائلة']
+  FullName varchar(100) [note: 'الاسم الكامل']
+  PhoneNumber varchar(20) [note: 'رقم الهاتف']
+  Email varchar(100) [note: 'البريد الإلكتروني']
+  NationalId varchar(20) [note: 'رقم البطاقة/الجواز']
+  Address varchar(200) [note: 'العنوان']
+  HireDate timestamp [note: 'تاريخ التعيين']
+  TerminationDate timestamp [note: 'تاريخ إنهاء الخدمة']
+  EmploymentStatus int [default: 1, note: 'حالة التوظيف: 1=Active, 2=OnLeave, 3=Terminated, 4=Resigned']
+  Salary decimal(18,2) [note: 'الراتب الأساسي']
+  Nationality varchar(50) [note: 'الجنسية']
+  Gender varchar(10) [note: 'الجنس']
+  BirthDate timestamp [note: 'تاريخ الميلاد']
+  Manager_Id bigint [note: 'المدير المباشر (رابط بجدول Employees)']
+  ProfilePicture text [note: 'صورة الموظف']
+  EmergencyContactName varchar(100) [note: 'اسم جهة الاتصال الطارئة']
+  EmergencyContactPhone varchar(20) [note: 'رقم جهة الاتصال الطارئة']
+  BankName varchar(100) [note: 'اسم البنك']
+  BankAccountNumber varchar(30) [note: 'رقم الحساب البنكي']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+  CreatedBy bigint [note: 'المنشئ']
+  UpdatedBy bigint [note: 'المحدث']
+}
+
+// جدول المسميات الوظيفية
+Table JobTitles {
+  Id bigint [pk, note: 'المُعرف الفريد للمسمى الوظيفي']
+  Hotel_Id bigint [note: 'الفندق']
+  Title varchar(100) [note: 'المسمى الوظيفي']
+  TitleArabic varchar(100) [note: 'المسمى الوظيفي بالعربية']
+  Description varchar(200) [note: 'الوصف']
+  BaseSalary decimal(18,2) [note: 'الراتب الأساسي']
+  Department_Id bigint [note: 'القسم الافتراضي لهذا المسمى']
+  IsManagerial int [default: 0, note: 'هل المسمى إداري: 0=لا، 1=نعم']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول تعيين الموظفين للأقسام
+Table EmployeeDepartments {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Employee_Id bigint [note: 'الموظف']
+  Department_Id bigint [note: 'القسم']
+  Hotel_Id bigint [note: 'الفندق']
+  IsPrimary int [default: 1, note: 'هل هذا هو القسم الأساسي: 0=لا، 1=نعم']
+  AssignedDate timestamp [note: 'تاريخ التعيين']
+  AssignmentType int [note: 'نوع التعيين: 1=FullTime, 2=PartTime, 3=Contract, 4=Temporary']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول الورديات
+Table EmployeeShifts {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Employee_Id bigint [note: 'الموظف']
+  Hotel_Id bigint [note: 'الفندق']
+  ShiftName varchar(50) [note: 'اسم الوردية']
+  ShiftType varchar(50) [note: 'نوع الوردية: Morning, Evening, Night']
+  StartTime time [note: 'وقت البدء']
+  EndTime time [note: 'وقت الانتهاء']
+  StartDate timestamp [note: 'تاريخ البدء']
+  EndDate timestamp [note: 'تاريخ الانتهاء']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول الحضور والانصراف
+Table EmployeeAttendance {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Employee_Id bigint [note: 'الموظف']
+  Hotel_Id bigint [note: 'الفندق']
+  Date timestamp [note: 'التاريخ']
+  CheckIn timestamp [note: 'وقت الحضور']
+  CheckOut timestamp [note: 'وقت الانصراف']
+  HoursWorked decimal(5,2) [note: 'ساعات العمل']
+  Status int [note: 'الحالة: 1=Present, 2=Absent, 3=Late, 4=HalfDay, 5=Leave']
+  Notes varchar(200) [note: 'ملاحظات']
+  Shift_Id bigint [note: 'الوردية']
+  IsActive int [default: 1, note: 'حالة التفعيل']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول الإجازات
+Table EmployeeLeaves {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Employee_Id bigint [note: 'الموظف']
+  Hotel_Id bigint [note: 'الفندق']
+  LeaveType int [note: 'نوع الإجازة: 1=Annual, 2=Sick, 3=Emergency, 4=Unpaid, 5=Maternity, 6=Paternity']
+  StartDate timestamp [note: 'تاريخ البدء']
+  EndDate timestamp [note: 'تاريخ الانتهاء']
+  Days int [note: 'عدد الأيام']
+  Reason varchar(200) [note: 'السبب']
+  Status int [note: 'الحالة: 1=Pending, 2=Approved, 3=Rejected, 4=Cancelled']
+  ApprovedBy bigint [note: 'الذي وافق على الإجازة (رابط بجدول Users)']
+  ApprovedDate timestamp [note: 'تاريخ الموافقة']
+  RejectionReason varchar(200) [note: 'سبب الرفض']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول رصيد الإجازات
+Table EmployeeLeaveBalance {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Employee_Id bigint [note: 'الموظف']
+  Hotel_Id bigint [note: 'الفندق']
+  LeaveType int [note: 'نوع الإجازة']
+  Year int [note: 'السنة']
+  TotalDays int [note: 'إجمالي الأيام الممنوحة']
+  UsedDays int [default: 0, note: 'الأيام المستخدمة']
+  RemainingDays int [note: 'الأيام المتبقية']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول الأداء
+Table EmployeePerformance {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Employee_Id bigint [note: 'الموظف']
+  Hotel_Id bigint [note: 'الفندق']
+  ReviewDate timestamp [note: 'تاريخ المراجعة']
+  ReviewPeriod varchar(50) [note: 'فترة المراجعة: Monthly, Quarterly, Yearly']
+  Rating int [note: 'التقييم: 1-5']
+  Comments varchar(500) [note: 'تعليقات المراجعة']
+  Strengths varchar(300) [note: 'نقاط القوة']
+  Weaknesses varchar(300) [note: 'نقاط الضعف']
+  Goals varchar(300) [note: 'الأهداف المستقبلية']
+  ReviewedBy bigint [note: 'الذي قام بالمراجعة (رابط بجدول Users)']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول الترقيات
+Table EmployeePromotions {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Employee_Id bigint [note: 'الموظف']
+  Hotel_Id bigint [note: 'الفندق']
+  PreviousJobTitle_Id bigint [note: 'المسمى الوظيفي السابق']
+  NewJobTitle_Id bigint [note: 'المسمى الوظيفي الجديد']
+  PreviousSalary decimal(18,2) [note: 'الراتب السابق']
+  NewSalary decimal(18,2) [note: 'الراتب الجديد']
+  PromotionDate timestamp [note: 'تاريخ الترقية']
+  Reason varchar(200) [note: 'سبب الترقية']
+  ApprovedBy bigint [note: 'الذي وافق على الترقية (رابط بجدول Users)']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// جدول التدريب
+Table EmployeeTraining {
+  Id bigint [pk, note: 'المُعرف الفريد']
+  Employee_Id bigint [note: 'الموظف']
+  Hotel_Id bigint [note: 'الفندق']
+  TrainingName varchar(100) [note: 'اسم التدريب']
+  TrainingType varchar(50) [note: 'نوع التدريب: Internal, External, Online']
+  StartDate timestamp [note: 'تاريخ البدء']
+  EndDate timestamp [note: 'تاريخ الانتهاء']
+  Hours int [note: 'عدد الساعات']
+  Cost decimal(18,2) [note: 'التكلفة']
+  Location varchar(100) [note: 'مكان التدريب']
+  Description varchar(300) [note: 'الوصف']
+  CertificateUrl text [note: 'رابط الشهادة']
+  Status int [note: 'الحالة: 1=Planned, 2=Completed, 3=Cancelled']
+  CreatedAt timestamp [note: 'تاريخ الإنشاء']
+  UpdatedAt timestamp [note: 'تاريخ التحديث']
+}
+
+// ==========================================
 // 🔗 روابط الجداول الجديدة
 // ==========================================
 
@@ -2289,6 +2474,70 @@ Ref: Subscriptions.Hotel_Id > Hotels.Id
 
 // ربط النسخ الاحتياطي
 Ref: BackupLogs.Hotel_Id > Hotels.Id
+
+// ==========================================
+// 🔗 روابط جداول الموظفين
+// ==========================================
+
+// ربط الموظفين بالفنادق
+Ref: Employees.Hotel_Id > Hotels.Id
+
+// ربط الموظفين بالمستخدمين (لمن له حساب)
+Ref: Employees.User_Id > Users.Id
+
+// ربط الموظفين بالأقسام
+Ref: Employees.Department_Id > HotelDepartments.Id
+
+// ربط الموظفين بالمسميات الوظيفية
+Ref: Employees.JobTitle_Id > JobTitles.Id
+
+// ربط الموظفين بالمدير المباشر (Self-reference)
+Ref: Employees.Manager_Id > Employees.Id
+
+// ربط المسميات الوظيفية بالفنادق
+Ref: JobTitles.Hotel_Id > Hotels.Id
+
+// ربط المسميات الوظيفية بالأقسام
+Ref: JobTitles.Department_Id > HotelDepartments.Id
+
+// ربط تعيين الموظفين للأقسام
+Ref: EmployeeDepartments.Employee_Id > Employees.Id
+Ref: EmployeeDepartments.Department_Id > HotelDepartments.Id
+Ref: EmployeeDepartments.Hotel_Id > Hotels.Id
+
+// ربط الورديات
+Ref: EmployeeShifts.Employee_Id > Employees.Id
+Ref: EmployeeShifts.Hotel_Id > Hotels.Id
+
+// ربط الحضور والانصراف
+Ref: EmployeeAttendance.Employee_Id > Employees.Id
+Ref: EmployeeAttendance.Hotel_Id > Hotels.Id
+Ref: EmployeeAttendance.Shift_Id > EmployeeShifts.Id
+
+// ربط الإجازات
+Ref: EmployeeLeaves.Employee_Id > Employees.Id
+Ref: EmployeeLeaves.Hotel_Id > Hotels.Id
+Ref: EmployeeLeaves.ApprovedBy > Users.Id
+
+// ربط رصيد الإجازات
+Ref: EmployeeLeaveBalance.Employee_Id > Employees.Id
+Ref: EmployeeLeaveBalance.Hotel_Id > Hotels.Id
+
+// ربط الأداء
+Ref: EmployeePerformance.Employee_Id > Employees.Id
+Ref: EmployeePerformance.Hotel_Id > Hotels.Id
+Ref: EmployeePerformance.ReviewedBy > Users.Id
+
+// ربط الترقيات
+Ref: EmployeePromotions.Employee_Id > Employees.Id
+Ref: EmployeePromotions.Hotel_Id > Hotels.Id
+Ref: EmployeePromotions.PreviousJobTitle_Id > JobTitles.Id
+Ref: EmployeePromotions.NewJobTitle_Id > JobTitles.Id
+Ref: EmployeePromotions.ApprovedBy > Users.Id
+
+// ربط التدريب
+Ref: EmployeeTraining.Employee_Id > Employees.Id
+Ref: EmployeeTraining.Hotel_Id > Hotels.Id
 
 // ==========================================
 // 🔗 روابط Hotel_Id للجداول المعدلة

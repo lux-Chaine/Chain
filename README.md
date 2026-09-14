@@ -2,6 +2,8 @@
 
 <div align="center">
 
+<img src="Data Analysis/logo.png" alt="Chain-Luxe Logo" width="150" height="150">
+
 ![Chain-Luxe Logo](https://img.shields.io/badge/Chain--Luxe-Hotel%20Management%20System-blue)
 ![Version](https://img.shields.io/badge/version-2.0.0-green)
 ![Status](https://img.shields.io/badge/status-Tech%20Stack%20Selected-success)
@@ -37,7 +39,7 @@
 
 | الملف | الوصف |
 |-------|-------|
-| `Data Analysis/V8.dbml` | ملف تصميم قاعدة البيانات بتنسيق DBML (127 جدول - معدل لـ Multi-Tenant) |
+| `Data Analysis/V8.dbml` | ملف تصميم قاعدة البيانات بتنسيق DBML (142 جدول - معدل لـ Multi-Tenant + جداول الموظفين) |
 | `Data Analysis/V8.dbdiagram` | ملف DBDiagram لتصور قاعدة البيانات |
 | `Data Analysis/Chain-Luxe_System_Analysis.md` | تحليل شامل للنظام والمعمارية المقترحة |
 | `Data Analysis/Chain-Luxe_Implementation_Plan.md` | خطة تنفيذ تفصيلية عامة للمشروع |
@@ -70,8 +72,8 @@
 ### الإحصائيات
 
 - **عدد الجداول الأصلية**: 112 جدول
-- **عدد الجداول الجديدة المضافة**: 15 جدول
-- **إجمالي عدد الجداول**: 127 جدول
+- **عدد الجداول الجديدة المضافة**: 30 جدول (15 Multi-Tenant + 15 إدارة موظفين)
+- **إجمالي عدد الجداول**: 142 جدول
 - **نوع قاعدة البيانات الأصلية**: Oracle
 - **التصميم الحالي**: Multi-Tenant (تم التعديل)
 
@@ -96,8 +98,9 @@
 
 ## 🔧 الجداول الجديدة
 
-تم إضافة **15 جدول جديد** لتحويل النظام إلى Multi-Tenant:
+تم إضافة **30 جدول جديد** لتحويل النظام إلى Multi-Tenant وإدارة الموظفين:
 
+### جداول Multi-Tenant الأساسية (15 جدول):
 1. **Hotels** - جدول الفنادق
 2. **Users** - جدول المستخدمين
 3. **Roles** - جدول الأدوار
@@ -114,6 +117,18 @@
 14. **Subscriptions** - جدول الاشتراكات والتراخيص
 15. **BackupLogs** - جدول النسخ الاحتياطي
 
+### جداول إدارة الموظفين (15 جدول):
+16. **Employees** - جدول الموظفين
+17. **JobTitles** - جدول المسميات الوظيفية
+18. **EmployeeDepartments** - جدول تعيين الموظفين للأقسام
+19. **EmployeeShifts** - جدول الورديات
+20. **EmployeeAttendance** - جدول الحضور والانصراف
+21. **EmployeeLeaves** - جدول الإجازات
+22. **EmployeeLeaveBalance** - جدول رصيد الإجازات
+23. **EmployeePerformance** - جدول الأداء
+24. **EmployeePromotions** - جدول الترقيات
+25. **EmployeeTraining** - جدول التدريب
+
 ---
 
 ## ✅ حالة التنفيذ
@@ -125,13 +140,14 @@
 #### ✅ المهام المنجزة:
 1. **إضافة عمود Hotel_Id** لـ 27 جدول من الجداول الحرجة
 2. **إنشاء 15 جدول جديد** لإدارة Multi-Tenant
-3. **إنشاء العلاقات (Foreign Keys)** بين الجداول الجديدة
-4. **إنشاء العلاقات** بين الجداول المعدلة وجدول Hotels
+3. **إنشاء 15 جدول جديد** لإدارة الموظفين (Employees, JobTitles, Shifts, Leaves, etc.)
+4. **إنشاء العلاقات (Foreign Keys)** بين الجداول الجديدة
+5. **إنشاء العلاقات** بين الجداول المعدلة وجدول Hotels
 
 #### 📊 الإحصائيات:
 - **الجداول المعدلة**: 27 جدول
-- **الجداول الجديدة**: 15 جدول
-- **العلاقات المضافة**: 42+ علاقة
+- **الجداول الجديدة**: 30 جدول (15 Multi-Tenant + 15 Employees)
+- **العلاقات المضافة**: 60+ علاقة
 - **حالة الملف V8.dbml**: ✅ جاهز للتنفيذ
 
 #### 🎯 الخطوات التالية:
