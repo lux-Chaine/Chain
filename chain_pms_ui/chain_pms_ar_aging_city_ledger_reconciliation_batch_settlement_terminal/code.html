@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#574500","on-error-container":"#ffdad6","surface-variant":"#2d344c","on-tertiary-fixed-variant":"#005236","secondary-fixed-dim":"#b5c5fd","primary":"#f2ca50","on-tertiary-fixed":"#002113","primary-container":"#d4af37","secondary-fixed":"#dbe1ff","outline-variant":"#4d4635","surface-container-highest":"#2d344c","primary-fixed-dim":"#e9c349","surface-tint":"#e9c349","secondary-container":"#384777","primary-fixed":"#ffe088","surface-dim":"#0b1229","error-container":"#93000a","on-tertiary-container":"#005035","tertiary-container":"#33ca90","on-surface":"#dce1ff","inverse-primary":"#735c00","on-background":"#dce1ff","background":"#0b1229","error":"#ffb4ab","on-tertiary":"#003824","surface-container-low":"#141a32","on-error":"#690005","surface-bright":"#323851","surface-container-high":"#222941","on-secondary":"#1e2e5d","inverse-on-surface":"#292f48","tertiary-fixed":"#6ffbbe","on-secondary-container":"#a7b6ee","surface-container":"#181e36","on-primary":"#3c2f00","secondary":"#b5c5fd","on-surface-variant":"#d0c5af","surface-container-lowest":"#060d24","on-secondary-fixed":"#051847","surface":"#0b1229","inverse-surface":"#dce1ff","on-secondary-fixed-variant":"#354575","tertiary":"#58e7aa","on-primary-container":"#554300","tertiary-fixed-dim":"#4edea3","on-primary-fixed":"#241a00","outline":"#99907c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-sm":"0.5rem","space-lg":"1.5rem","margin":"1rem","margin-desktop":"2rem","space-xl":"2.5rem","gutter":"1.25rem","space-md":"1rem","space-xs":"0.25rem","gutter-desktop":"1.5rem"},"fontFamily":{"body-md":["Hanken Grotesk"],"label-sm":["Hanken Grotesk"],"data-tabular":["Hanken Grotesk"],"headline-lg":["Hanken Grotesk"],"body-sm":["Hanken Grotesk"],"headline-md":["Hanken Grotesk"],"display":["Hanken Grotesk"],"title-md":["Hanken Grotesk"],"headline-sm":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"headline-lg-mobile":["Hanken Grotesk"]},"fontSize":{"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.06em","fontWeight":"500"}],"data-tabular":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"display":["3rem",{"lineHeight":"3.5rem","letterSpacing":"-0.025em","fontWeight":"600"}],"title-md":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"500"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.05em","fontWeight":"600"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_4px_24px_rgba(0,0,0,0.6)]"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-low/70 backdrop-blur-xl shrink-0"><img alt="A prestigious luxury royal crown logo emblem for Chain PMS hotel software, rendered in elegant metallic gold with sharp geometric facets and five peaks topped with subtle diamond jewels, vector luxury branding, dark royal navy contrasting background.. Brand logo. - Primary color: #d4af37
+- Font: hankenGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8AzqK1WanRKfcGTql5wJMnaa_JN9abEKLiTDJFs024ViSokA4ZkD3CS6cArdvOOQpDoSOZ0Hc9OtLQEARttTGUEsNF4NoYF4JaWGXPfj52ad1ETNh9KpBsaRAdXeuILCEnXxrYbB9qHoN4F_ltOf4Zlo9BheRQWhnkWj44yaxWzEZXtHm7NrvvIU6EDpLaEeM-zKNIOb2o0mQAEKSFDbAT9-1HR_igT1C2JMExhZq4HIQB0vCPH8PgDU"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight">CHAIN PMS</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Sovereign Hospitality</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-md space-y-space-md"><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline">Front Office</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reservations-and-bookings" href="#"><span class="material-symbols-outlined text-[18px]">calendar_month</span><span>Reservations &amp; Bookings</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-rack-tape-chart" href="#"><span class="material-symbols-outlined text-[18px]">table_chart</span><span>Room Rack Tape Chart</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="in-house-guests" href="#"><span class="material-symbols-outlined text-[18px]">hotel</span><span>In-House Guests</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="arrivals-and-departures" href="#"><span class="material-symbols-outlined text-[18px]">sync_alt</span><span>Arrivals &amp; Departures</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline">CRM &amp; Guest Relations</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="guest-and-corporate-profiles" href="#"><span class="material-symbols-outlined text-[18px]">badge</span><span>Guest &amp; Corporate Profiles</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="vip-loyalty-dossiers" href="#"><span class="material-symbols-outlined text-[18px]">diamond</span><span>VIP Loyalty Dossiers</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="corporate-contracts-and-master-ledger" href="#"><span class="material-symbols-outlined text-[18px]">description</span><span>Corporate Contracts &amp; Ledger</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="guest-feedback-and-sentiment" href="#"><span class="material-symbols-outlined text-[18px]">reviews</span><span>Guest Feedback &amp; Sentiment</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline">Operations &amp; Estate</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="rooms-and-inventory" href="#"><span class="material-symbols-outlined text-[18px]">meeting_room</span><span>Rooms &amp; Inventory</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="housekeeping-operations" href="#"><span class="material-symbols-outlined text-[18px]">cleaning_services</span><span>Housekeeping Operations</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="system-notifications-and-alerts" href="#"><span class="material-symbols-outlined text-[18px]">notifications_active</span><span>Operational Alerts</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline">Commercial Ledger &amp; F&amp;B</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="commercial-and-city-ledger" href="#"><span class="material-symbols-outlined text-[18px]">account_balance</span><span>Commercial &amp; City Ledger</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="accounts-receivable-and-billing" href="#"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span>Accounts &amp; Billing</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="outlets-and-pos" href="#"><span class="material-symbols-outlined text-[18px]">point_of_sale</span><span>Outlets &amp; POS</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline">System Configuration</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="hotels-portfolio" href="#"><span class="material-symbols-outlined text-[18px]">corporate_fare</span><span>Hotels Portfolio</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="users-and-permissions" href="#"><span class="material-symbols-outlined text-[18px]">shield_person</span><span>Users &amp; Permissions</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="master-settings" href="#"><span class="material-symbols-outlined text-[18px]">tune</span><span>Master Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-low/90 m-space-sm rounded-xl"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline">Live Occupancy</span><span class="font-data-tabular text-data-tabular text-tertiary font-semibold">94.2%</span></div><div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mb-space-sm"><div class="bg-primary h-full rounded-full" style="width: 94.2%"></div></div><div class="flex justify-between items-center font-label-sm text-label-sm"><span class="text-on-surface-variant">398 Sold</span><span class="text-tertiary-fixed">24 Rev-Ready</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 px-gutter-desktop flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container rounded-lg"><span class="material-symbols-outlined text-primary text-[18px]">location_city</span><select class="bg-transparent font-body-sm text-body-sm text-on-surface focus:outline-none cursor-pointer pr-space-xs"><option class="bg-surface-container-high text-on-surface" value="amon">Amon Luxury Palace &amp; Spa</option><option class="bg-surface-container-high text-on-surface" value="palm">Palm Oasis Grand Resort</option><option class="bg-surface-container-high text-on-surface" value="siwa">Siwa Haven Sanctuary</option></select></div><div class="hidden xl:flex items-center gap-space-sm bg-surface-container-high px-space-sm py-space-xs rounded-full"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">AUDIT: OPERATIONAL</span><span class="text-outline font-label-sm text-label-sm">•</span><span class="font-label-sm text-label-sm text-on-surface-variant">Shift #04 Night Concierge</span></div></div><div class="flex items-center gap-space-md"><div class="relative hidden lg:flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-outline text-[18px]">search</span><input class="bg-surface-container pl-9 pr-14 py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary w-64 xl:w-80 transition-all" placeholder="Omni-Search estates, guests, folios..." type="text"/><kbd class="absolute right-2 px-1.5 py-0.5 font-label-sm text-label-sm text-outline bg-surface-container-highest rounded">Ctrl+K</kbd></div><div class="hidden 2xl:flex items-center gap-space-xs"><button class="px-space-sm py-1.5 bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md rounded-lg flex items-center gap-1 transition-all"><span class="material-symbols-outlined text-[16px]">add</span><span>Reservation</span></button><button class="px-space-sm py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-1 transition-all"><span class="material-symbols-outlined text-[16px]">person_add</span><span>Guest Profile</span></button><button class="px-space-sm py-1.5 bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-1 transition-all"><span class="material-symbols-outlined text-[16px]">key</span><span>Quick Check-in</span></button></div><button class="relative p-space-xs rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error flex items-center justify-center font-label-sm text-[9px] font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col text-left leading-none"><span class="font-body-sm text-body-sm font-semibold text-on-surface">M. Al-Khatib</span><span class="font-label-sm text-label-sm text-primary">Corporate Director</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop py-space-lg min-h-screen bg-background"><div class="flex flex-col w-full text-on-surface space-y-space-md">
+<!-- Header & Telemetry Breadcrumbs -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl shadow-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-outline tracking-widest uppercase">
+<span>Sovereign Core</span>
+<span class="text-primary-container">/</span>
+<span>Commercial Ledger</span>
+<span class="text-primary-container">/</span>
+<span class="text-primary font-semibold">AR &amp; City Ledger Aging Terminal</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-0.5">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span>Night Audit Postings: Reconciled 03:00 EET</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">sync_saved_locally</span>
+<span>ERP SAP/Oracle Integration: Active (0.015s)</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-primary">account_balance</span>
+<span>Multi-Currency Multi-Tenant Ledger</span>
+</div>
+</div>
+</div>
+<!-- Executive Action Group -->
+<div class="flex items-center flex-wrap gap-space-xs">
+<button class="px-space-md py-2 bg-gradient-to-r from-primary-container to-primary text-on-primary-container font-label-md text-label-md rounded shadow-sm hover:brightness-110 flex items-center gap-1.5 transition-all" onclick="triggerBatchDrawer()">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+<span>Batch Settlement [F3]</span>
+</button>
+<button class="px-space-md py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded flex items-center gap-1.5 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">picture_as_pdf</span>
+<span>Aging Analysis PDF [F8]</span>
+</button>
+<button class="px-space-md py-2 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md rounded flex items-center gap-1.5 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">outgoing_mail</span>
+<span>Automated Dunning</span>
+</button>
+</div>
+</div>
+<!-- KPI Telemetry Bar (4 Asymmetric Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Total Balance -->
+<div class="relative overflow-hidden bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Total Outstanding City Ledger</span>
+<span class="material-symbols-outlined text-primary text-[20px]">monetization_on</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-lg text-headline-lg text-primary tracking-tight font-data-tabular leading-none">
+          $6,120,400<span class="text-title-md font-body-md text-on-surface-variant font-normal">.00</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Multi-Property Sovereign Exposure</p>
+</div>
+<div class="pt-2 bg-surface-container/60 -mx-space-md -mb-space-md px-space-md py-1.5 flex items-center justify-between text-[11px] font-data-tabular text-on-surface-variant">
+<span>Amon: <b class="text-on-surface">$3.8M</b></span>
+<span>Palm: <b class="text-on-surface">$1.6M</b></span>
+<span>Siwa: <b class="text-on-surface">$720K</b></span>
+</div>
+</div>
+<!-- 0-30 Days -->
+<div class="relative overflow-hidden bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Current Window (0 - 30 Days)</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-[10px] font-semibold tracking-wider">89.1% HEALTHY</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-lg text-headline-lg text-tertiary tracking-tight font-data-tabular leading-none">
+          $5,450,200<span class="text-title-md font-body-md text-on-surface-variant font-normal">.00</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Standard 30-day billing terms cycle</p>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 89.1%"></div>
+</div>
+</div>
+<!-- 31-60 Days -->
+<div class="relative overflow-hidden bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Follow-Up Window (31 - 60 Days)</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-container text-secondary font-label-sm text-[10px] font-semibold tracking-wider">10.9% PROMPT</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-lg text-headline-lg text-secondary tracking-tight font-data-tabular leading-none">
+          $670,200<span class="text-title-md font-body-md text-on-surface-variant font-normal">.00</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Scheduled for central automated debit</p>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 10.9%"></div>
+</div>
+</div>
+<!-- >60 & 90+ Days -->
+<div class="relative overflow-hidden bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Critical Exposure (&gt; 60 &amp; 90+ Days)</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-label-sm text-[10px] font-semibold tracking-wider">PRISTINE</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-data-tabular leading-none">
+          $0<span class="text-title-md font-body-md text-on-surface-variant font-normal">.00</span>
+</div>
+<p class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Zero default bad-debt across portfolio</span>
+</p>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 0%"></div>
+</div>
+</div>
+</div>
+<!-- Terminal Main Matrix Layout (68% Left, 32% Right) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md items-start">
+<!-- LEFT: City Ledger & Aging Schedule Table (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col space-y-space-md">
+<div class="bg-surface-container-low rounded-xl shadow-md overflow-hidden">
+<!-- Tab Navigation & Ledger Filters -->
+<div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<!-- Tabs -->
+<div class="inline-flex p-1 bg-surface-container rounded-lg font-label-sm text-label-sm">
+<button class="px-3 py-1.5 rounded font-semibold bg-primary text-on-primary shadow-sm transition-all">All Active (86)</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-all">0 - 30 Days (74)</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-all">31 - 60 Days (12)</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-all">Disputed (2)</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-all">Reconciled (142)</button>
+</div>
+<!-- Currency Toggle / Multi-Estate Stamp -->
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Currency:</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-data-tabular text-data-tabular font-semibold">USD ($)</span>
+</div>
+</div>
+<!-- Quick Search Filter Bar -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full pl-10 pr-24 py-2 bg-surface-container rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="Filter by corporate entity, account code, folio ID, voucher or Swift reference..." type="text"/>
+<div class="absolute right-2.5 top-2 flex items-center gap-1 text-[11px] text-outline">
+<kbd class="px-1.5 py-0.5 bg-surface-container-high rounded text-on-surface-variant">ALT+F</kbd>
+</div>
+</div>
+</div>
+<!-- High-Density Data Grid -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-3 w-10 text-center">
+<input checked="" class="accent-primary w-4 h-4 cursor-pointer rounded" id="master-select" type="checkbox"/>
+</th>
+<th class="py-3 px-3">Corporate Client / Account</th>
+<th class="py-3 px-3">Estate Node</th>
+<th class="py-3 px-3 text-right">Total Balance</th>
+<th class="py-3 px-3 text-right">0 - 30d</th>
+<th class="py-3 px-3 text-right">31 - 60d</th>
+<th class="py-3 px-3 text-right">&gt; 60d</th>
+<th class="py-3 px-3">Last Settlement</th>
+<th class="py-3 px-3 text-center">Protocol</th>
+</tr>
+</thead>
+<tbody class="font-data-tabular text-data-tabular">
+<!-- Row 1: Selected -->
+<tr class="bg-surface-container/60 hover:bg-surface-container-high/80 transition-colors">
+<td class="py-3.5 px-3 text-center">
+<input checked="" class="row-checkbox accent-primary w-4 h-4 cursor-pointer" data-amount="142800" data-code="CL-99214" data-name="TotalEnergies Exploration" onchange="updateSelectedCalculation()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-headline-sm text-[0.875rem] font-semibold text-primary">TotalEnergies Exploration</div>
+<div class="font-label-sm text-[11px] text-outline tracking-wider uppercase">CL-99214 • Petroleum Corp Folio</div>
+</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                    Amon Palace
+                  </span>
+</td>
+<td class="py-3.5 px-3 text-right font-semibold text-on-surface">$142,800.00</td>
+<td class="py-3.5 px-3 text-right text-tertiary font-medium">$142,800.00</td>
+<td class="py-3.5 px-3 text-right text-outline font-normal">$0.00</td>
+<td class="py-3.5 px-3 text-right text-outline font-normal">$0.00</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm">
+<div class="text-on-surface text-[12px]">12 Sep 2026</div>
+<div class="text-outline text-[11px]">$85,000.00 (Wire)</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all" title="View Itemized Folio">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</button>
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-tertiary transition-all" title="Direct Reconcile">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Selected -->
+<tr class="bg-surface-container/60 hover:bg-surface-container-high/80 transition-colors">
+<td class="py-3.5 px-3 text-center">
+<input checked="" class="row-checkbox accent-primary w-4 h-4 cursor-pointer" data-amount="248500" data-code="CL-KWT-009" data-name="Kuwait Embassy Protocol Office" onchange="updateSelectedCalculation()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-headline-sm text-[0.875rem] font-semibold text-primary">Kuwait Embassy Protocol Office</div>
+<div class="font-label-sm text-[11px] text-outline tracking-wider uppercase">CL-KWT-009 • Diplomatic Corps</div>
+</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                    Amon Palace
+                  </span>
+</td>
+<td class="py-3.5 px-3 text-right font-semibold text-on-surface">$248,500.00</td>
+<td class="py-3.5 px-3 text-right text-tertiary font-medium">$248,500.00</td>
+<td class="py-3.5 px-3 text-right text-outline font-normal">$0.00</td>
+<td class="py-3.5 px-3 text-right text-outline font-normal">$0.00</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm">
+<div class="text-on-surface text-[12px]">28 Aug 2026</div>
+<div class="text-outline text-[11px]">$180,000.00 (Wire)</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all" title="View Itemized Folio">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</button>
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-tertiary transition-all" title="Direct Reconcile">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3.5 px-3 text-center">
+<input class="row-checkbox accent-primary w-4 h-4 cursor-pointer" data-amount="94600" data-code="CL-SIE-102" data-name="Siemens Energy Global" onchange="updateSelectedCalculation()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-headline-sm text-[0.875rem] font-semibold text-on-surface">Siemens Energy Global</div>
+<div class="font-label-sm text-[11px] text-outline tracking-wider uppercase">CL-SIE-102 • Corporate Key Account</div>
+</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Palm Oasis
+                  </span>
+</td>
+<td class="py-3.5 px-3 text-right font-semibold text-on-surface">$94,600.00</td>
+<td class="py-3.5 px-3 text-right text-tertiary font-medium">$72,000.00</td>
+<td class="py-3.5 px-3 text-right text-secondary font-medium">$22,600.00</td>
+<td class="py-3.5 px-3 text-right text-outline font-normal">$0.00</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm">
+<div class="text-on-surface text-[12px]">05 Sep 2026</div>
+<div class="text-outline text-[11px]">$50,000.00 (BTA)</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</button>
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-tertiary transition-all">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3.5 px-3 text-center">
+<input class="row-checkbox accent-primary w-4 h-4 cursor-pointer" data-amount="89200" data-code="CL-VIR-882" data-name="Virtuoso Luxury Consortia" onchange="updateSelectedCalculation()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-headline-sm text-[0.875rem] font-semibold text-on-surface">Virtuoso Luxury Consortia</div>
+<div class="font-label-sm text-[11px] text-outline tracking-wider uppercase">CL-VIR-882 • Wholesale Partner</div>
+</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+                    Siwa &amp; Amon
+                  </span>
+</td>
+<td class="py-3.5 px-3 text-right font-semibold text-on-surface">$89,200.00</td>
+<td class="py-3.5 px-3 text-right text-tertiary font-medium">$89,200.00</td>
+<td class="py-3.5 px-3 text-right text-outline font-normal">$0.00</td>
+<td class="py-3.5 px-3 text-right text-outline font-normal">$0.00</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm">
+<div class="text-on-surface text-[12px]">10 Sep 2026</div>
+<div class="text-outline text-[11px]">$60,000.00 (Wire)</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</button>
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-tertiary transition-all">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3.5 px-3 text-center">
+<input class="row-checkbox accent-primary w-4 h-4 cursor-pointer" data-amount="112400" data-code="CL-ENI-404" data-name="Eni Petroleum North Africa" onchange="updateSelectedCalculation()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-headline-sm text-[0.875rem] font-semibold text-on-surface">Eni Petroleum North Africa</div>
+<div class="font-label-sm text-[11px] text-outline tracking-wider uppercase">CL-ENI-404 • Energy Master Agreement</div>
+</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                    Amon Palace
+                  </span>
+</td>
+<td class="py-3.5 px-3 text-right font-semibold text-on-surface">$112,400.00</td>
+<td class="py-3.5 px-3 text-right text-tertiary font-medium">$82,000.00</td>
+<td class="py-3.5 px-3 text-right text-secondary font-medium">$30,400.00</td>
+<td class="py-3.5 px-3 text-right text-outline font-normal">$0.00</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm">
+<div class="text-on-surface text-[12px]">01 Sep 2026</div>
+<div class="text-outline text-[11px]">$75,000.00 (Wire)</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</button>
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-tertiary transition-all">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3.5 px-3 text-center">
+<input class="row-checkbox accent-primary w-4 h-4 cursor-pointer" data-amount="64500" data-code="CL-GBR-221" data-name="British Foreign Office Cairo" onchange="updateSelectedCalculation()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-headline-sm text-[0.875rem] font-semibold text-on-surface">British Foreign Office Cairo</div>
+<div class="font-label-sm text-[11px] text-outline tracking-wider uppercase">CL-GBR-221 • Sovereign Consular</div>
+</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                    Amon Palace
+                  </span>
+</td>
+<td class="py-3.5 px-3 text-right font-semibold text-on-surface">$64,500.00</td>
+<td class="py-3.5 px-3 text-right text-tertiary font-medium">$64,500.00</td>
+<td class="py-3.5 px-3 text-right text-outline font-normal">$0.00</td>
+<td class="py-3.5 px-3 text-right text-outline font-normal">$0.00</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm">
+<div class="text-on-surface text-[12px]">14 Sep 2026</div>
+<div class="text-outline text-[11px]">$40,000.00 (Wire)</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</button>
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-tertiary transition-all">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Ledger Footer Summary -->
+<div class="p-space-sm px-space-md bg-surface-container-lowest flex flex-wrap items-center justify-between text-label-sm font-label-sm text-outline">
+<div class="flex items-center gap-space-md">
+<span>Showing <b class="text-on-surface">6 of 86</b> Active Commercial Accounts</span>
+<span class="text-surface-variant">•</span>
+<span class="text-primary cursor-pointer hover:underline">Select All Across Estates</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-data-tabular">Page 1 of 15</span>
+<div class="inline-flex gap-1">
+<button class="px-2 py-1 bg-surface-container rounded hover:bg-surface-container-high text-on-surface">‹</button>
+<button class="px-2 py-1 bg-surface-container rounded hover:bg-surface-container-high text-on-surface">›</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Estate Multi-Property Real-Time Reconciliation Mini-Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Amon Luxury Palace</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<div class="text-label-sm font-label-sm text-outline">Cairo Financial District Core</div>
+<div class="flex items-baseline justify-between pt-2">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Unsettled:</span>
+<span class="font-data-tabular text-title-md text-primary font-bold">$3,800,000.00</span>
+</div>
+<div class="text-label-sm font-label-sm text-tertiary flex items-center justify-between">
+<span>Reconciled Daily: 98.4%</span>
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Palm Oasis Grand</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<div class="text-label-sm font-label-sm text-outline">Red Sea Executive Estate</div>
+<div class="flex items-baseline justify-between pt-2">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Unsettled:</span>
+<span class="font-data-tabular text-title-md text-primary font-bold">$1,600,400.00</span>
+</div>
+<div class="text-label-sm font-label-sm text-tertiary flex items-center justify-between">
+<span>Reconciled Daily: 99.1%</span>
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Siwa Haven Sanctuary</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<div class="text-label-sm font-label-sm text-outline">Private Oasis &amp; Spa Suites</div>
+<div class="flex items-baseline justify-between pt-2">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Unsettled:</span>
+<span class="font-data-tabular text-title-md text-primary font-bold">$720,000.00</span>
+</div>
+<div class="text-label-sm font-label-sm text-tertiary flex items-center justify-between">
+<span>Reconciled Daily: 100.0%</span>
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT: Settlement & Direct Payment Drawer Engine (4 Cols) -->
+<div class="xl:col-span-4 bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col space-y-space-md">
+<!-- Card Title & Live Selection Summary -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Batch Settlement Engine</h2>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold tracking-wider">LIVE POST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Automated City Ledger direct reconciliation, bank Swift mapping, and folio clearing terminal.</p>
+</div>
+<!-- Selected Folio / Balance Aggregator -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-inner space-y-space-xs">
+<div class="flex justify-between items-center text-label-sm font-label-sm uppercase tracking-wider text-outline">
+<span id="selected-count-label">2 Accounts Selected</span>
+<span class="text-tertiary flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Ready for Batch
+          </span>
+</div>
+<div class="flex items-baseline justify-between pt-1">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Total To Settle:</span>
+<div class="text-right">
+<span class="font-display text-[1.75rem] font-bold text-primary font-data-tabular tracking-tight leading-none" id="batch-total-display">$391,300.00</span>
+<div class="font-label-sm text-[11px] text-outline font-data-tabular uppercase tracking-widest">USD Equivalency</div>
+</div>
+</div>
+</div>
+<!-- Remittance Parameters Form -->
+<div class="space-y-space-sm text-body-sm font-body-sm">
+<!-- Remittance Instrument -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Remittance Instrument</label>
+<div class="relative">
+<select class="w-full bg-surface-container px-3 py-2 rounded font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer">
+<option>Bank Wire Transfer (Swift MT103 / Fedwire)</option>
+<option>Sovereign Letter of Credit (Irrevocable LC)</option>
+<option>Corporate Amex Centralized BTA Folio</option>
+<option>Direct Electronic Fund Clearing (ACH Direct)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Swift / Transaction Ref -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Swift / Transaction Identifier</label>
+<div class="relative">
+<input class="w-full bg-surface-container px-3 py-2 rounded font-data-tabular text-data-tabular text-primary font-semibold focus:outline-none focus:ring-1 focus:ring-primary" type="text" value="WT-2026-CAI-99418240"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-tertiary text-[18px]">verified</span>
+</div>
+</div>
+<!-- Depository Bank Node -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Depository Bank Clearing Node</label>
+<div class="relative">
+<select class="w-full bg-surface-container px-3 py-2 rounded font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer">
+<option>HSBC Corporate Central Clearing #8892 (USD Primary)</option>
+<option>First Abu Dhabi Sovereign Treasury #1004 (AED/USD)</option>
+<option>Barclays International Luxury Division #4491 (GBP)</option>
+<option>National Bank of Egypt Central Reserves #0021 (EGP)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-outline text-[18px] pointer-events-none">account_balance</span>
+</div>
+</div>
+<!-- Two-column: Execution Date & Surcharge -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Execution Date</label>
+<input class="w-full bg-surface-container px-3 py-2 rounded font-data-tabular text-data-tabular text-on-surface focus:outline-none" readonly="" type="text" value="14 Sep 2026 (Today)"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Surcharge Absorption</label>
+<input class="w-full bg-surface-container px-3 py-2 rounded font-data-tabular text-data-tabular text-on-surface-variant focus:outline-none" readonly="" type="text" value="$0.00 (Standard Absorption)"/>
+</div>
+</div>
+<!-- Allocation Method -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Folio Allocation Hierarchy</label>
+<div class="relative">
+<select class="w-full bg-surface-container px-3 py-2 rounded font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer">
+<option>FIFO (First-In-First-Out) Auto Matching</option>
+<option>Exact Amount Invoice Pair Match</option>
+<option>Dispute Reserve Retention Holdback</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-outline text-[18px] pointer-events-none">swap_vert</span>
+</div>
+</div>
+</div>
+<!-- Itemized Target Folios Breakdown Card -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg space-y-2">
+<div class="text-label-sm font-label-sm uppercase tracking-wider text-outline flex items-center justify-between">
+<span>Folio Allocation Preview</span>
+<span class="text-tertiary">2 Folios Linked</span>
+</div>
+<div class="space-y-1.5 font-body-sm text-body-sm">
+<div class="p-2 rounded bg-surface-container/70 flex justify-between items-center">
+<div>
+<div class="font-semibold text-on-surface text-[12px]">#FOL-88219 • Pharaoh Royal Villa</div>
+<div class="text-[11px] text-outline font-data-tabular">Kuwait Embassy Protocol • Settle: $248,500.00</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-[10px] font-bold">100% PAID</span>
+</div>
+<div class="p-2 rounded bg-surface-container/70 flex justify-between items-center">
+<div>
+<div class="font-semibold text-on-surface text-[12px]">#FOL-88190 • Executive Delegation</div>
+<div class="text-[11px] text-outline font-data-tabular">TotalEnergies Exploration • Settle: $142,800.00</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-[10px] font-bold">100% PAID</span>
+</div>
+</div>
+</div>
+<!-- Settlement Commit Actions -->
+<div class="space-y-space-xs pt-space-xs">
+<button class="w-full py-3 bg-gradient-to-r from-primary-container via-primary to-primary-container text-on-primary-container font-headline-sm text-headline-sm rounded shadow-md hover:brightness-110 flex items-center justify-center gap-2 transition-all cursor-pointer" onclick="commitBatchPosting()">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+<span>Execute Batch Post &amp; Clear [Ctrl+Enter]</span>
+</button>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="py-2 px-3 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px] text-primary">receipt</span>
+<span>Print Receipt [F9]</span>
+</button>
+<button class="py-2 px-3 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px] text-secondary">file_download</span>
+<span>Export MT940</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Command & Status Telemetry Bar -->
+<div class="bg-surface-container-lowest p-space-sm px-space-md rounded-xl shadow-sm flex flex-wrap items-center justify-between gap-space-sm font-label-sm text-label-sm">
+<!-- Hotkeys Cheat Strip -->
+<div class="flex flex-wrap items-center gap-space-md text-outline">
+<span class="flex items-center gap-1">
+<kbd class="px-1.5 py-0.5 bg-surface-container rounded text-on-surface font-semibold">F2</kbd>
+<span>Account Dossier</span>
+</span>
+<span class="flex items-center gap-1">
+<kbd class="px-1.5 py-0.5 bg-surface-container rounded text-on-surface font-semibold">F3</kbd>
+<span>Batch Settlement</span>
+</span>
+<span class="flex items-center gap-1">
+<kbd class="px-1.5 py-0.5 bg-surface-container rounded text-on-surface font-semibold">F4</kbd>
+<span>Statement PDF</span>
+</span>
+<span class="flex items-center gap-1">
+<kbd class="px-1.5 py-0.5 bg-surface-container rounded text-on-surface font-semibold">Ctrl+Enter</kbd>
+<span>Post Payment</span>
+</span>
+<span class="flex items-center gap-1">
+<kbd class="px-1.5 py-0.5 bg-surface-container rounded text-on-surface font-semibold">Esc</kbd>
+<span>Clear Selection</span>
+</span>
+</div>
+<!-- Live Sync Telemetry Flag -->
+<div class="flex items-center gap-2 text-on-surface-variant font-data-tabular">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Central Banking Ledger Synchronized: <b class="text-tertiary font-semibold">0.015s</b></span>
+<span class="text-outline">•</span>
+<span class="text-on-surface">Zero Reconciliation Variance Detected</span>
+</div>
+</div>
+<!-- Inline Script for Terminal Interactivity -->
+<script>
+    function updateSelectedCalculation() {
+      const checkboxes = document.querySelectorAll('.row-checkbox:checked');
+      let total = 0;
+      checkboxes.forEach(cb => {
+        total += parseFloat(cb.getAttribute('data-amount') || 0);
+      });
+      
+      const count = checkboxes.length;
+      document.getElementById('selected-count-label').innerText = `${count} Account${count === 1 ? '' : 's'} Selected`;
+      document.getElementById('batch-total-display').innerText = '$' + total.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    const masterSelect = document.getElementById('master-select');
+    if (masterSelect) {
+      masterSelect.addEventListener('change', function(e) {
+        const checkboxes = document.querySelectorAll('.row-checkbox');
+        checkboxes.forEach(cb => cb.checked = e.target.checked);
+        updateSelectedCalculation();
+      });
+    }
+
+    function triggerBatchDrawer() {
+      const display = document.getElementById('batch-total-display');
+      display.classList.add('scale-105', 'text-tertiary');
+      setTimeout(() => {
+        display.classList.remove('scale-105', 'text-tertiary');
+      }, 400);
+    }
+
+    function commitBatchPosting() {
+      const totalText = document.getElementById('batch-total-display').innerText;
+      alert(`Batch settlement of ${totalText} successfully committed to Oracle/SAP Central Ledger. MT103 Swift acknowledgment generated.`);
+    }
+
+    // Keyboard Hotkey Listener
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'F3') {
+        e.preventDefault();
+        triggerBatchDrawer();
+      } else if (e.ctrlKey && e.key === 'Enter') {
+        e.preventDefault();
+        commitBatchPosting();
+      } else if (e.key === 'Escape') {
+        const checkboxes = document.querySelectorAll('.row-checkbox');
+        checkboxes.forEach(cb => cb.checked = false);
+        if (masterSelect) masterSelect.checked = false;
+        updateSelectedCalculation();
+      }
+    });
+  </script>
+</div></main></div></body></html>

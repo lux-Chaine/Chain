@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-container": "#d4af37",
+          "on-primary-container": "#554300",
+          "tertiary": "#58e7aa",
+          "surface-tint": "#e9c349",
+          "tertiary-container": "#33ca90",
+          "on-error-container": "#ffdad6",
+          "inverse-on-surface": "#292f48",
+          "surface-variant": "#2d344c",
+          "error": "#ffb4ab",
+          "outline": "#99907c",
+          "surface-container-high": "#222941",
+          "on-secondary": "#1e2e5d",
+          "on-surface-variant": "#d0c5af",
+          "on-primary": "#3c2f00",
+          "tertiary-fixed-dim": "#4edea3",
+          "tertiary-fixed": "#6ffbbe",
+          "outline-variant": "#4d4635",
+          "secondary-container": "#384777",
+          "on-tertiary-container": "#005035",
+          "on-secondary-container": "#a7b6ee",
+          "background": "#0b1229",
+          "on-tertiary-fixed": "#002113",
+          "on-secondary-fixed": "#051847",
+          "error-container": "#93000a",
+          "on-background": "#dce1ff",
+          "on-tertiary": "#003824",
+          "inverse-primary": "#735c00",
+          "surface-container-highest": "#2d344c",
+          "inverse-surface": "#dce1ff",
+          "on-primary-fixed": "#241a00",
+          "on-tertiary-fixed-variant": "#005236",
+          "secondary-fixed-dim": "#b5c5fd",
+          "surface-container-lowest": "#060d24",
+          "primary": "#f2ca50",
+          "surface": "#0b1229",
+          "on-error": "#690005",
+          "surface-bright": "#323851",
+          "secondary": "#b5c5fd",
+          "primary-fixed-dim": "#e9c349",
+          "on-surface": "#dce1ff",
+          "on-secondary-fixed-variant": "#354575",
+          "surface-dim": "#0b1229",
+          "secondary-fixed": "#dbe1ff",
+          "surface-container-low": "#141a32",
+          "primary-fixed": "#ffe088",
+          "on-primary-fixed-variant": "#574500",
+          "surface-container": "#181e36"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "gutter": "1.25rem",
+          "margin-desktop": "2rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "gutter-desktop": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "margin": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Hanken Grotesk"
+          ],
+          "display": [
+            "Hanken Grotesk"
+          ],
+          "data-tabular": [
+            "Hanken Grotesk"
+          ],
+          "headline-md": [
+            "Hanken Grotesk"
+          ],
+          "headline-lg": [
+            "Hanken Grotesk"
+          ],
+          "body-md": [
+            "Hanken Grotesk"
+          ],
+          "label-md": [
+            "Hanken Grotesk"
+          ],
+          "body-sm": [
+            "Hanken Grotesk"
+          ],
+          "headline-sm": [
+            "Hanken Grotesk"
+          ],
+          "label-sm": [
+            "Hanken Grotesk"
+          ],
+          "body-lg": [
+            "Hanken Grotesk"
+          ],
+          "title-md": [
+            "Hanken Grotesk"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "display": [
+            "3rem",
+            {
+              "lineHeight": "3.5rem",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "data-tabular": [
+            "0.8125rem",
+            {
+              "lineHeight": "1.125rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.05em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "1.25rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "0.6875rem",
+            {
+              "lineHeight": "0.875rem",
+              "letterSpacing": "0.06em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "1rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "1rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[0_4px_24px_rgba(0,0,0,0.45)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="A prestigious luxury royal crown logo emblem for Chain PMS hotel software, rendered in elegant metallic gold with sharp geometric facets and five peaks topped with subtle diamond jewels, vector luxury branding, dark royal navy contrasting background.. Brand logo. - Primary color: #d4af37
+- Font: hankenGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8AzqK1WanRKfcGTql5wJMnaa_JN9abEKLiTDJFs024ViSokA4ZkD3CS6cArdvOOQpDoSOZ0Hc9OtLQEARttTGUEsNF4NoYF4JaWGXPfj52ad1ETNh9KpBsaRAdXeuILCEnXxrYbB9qHoN4F_ltOf4Zlo9BheRQWhnkWj44yaxWzEZXtHm7NrvvIU6EDpLaEeM-zKNIOb2o0mQAEKSFDbAT9-1HR_igT1C2JMExhZq4HIQB0vCPH8PgDU"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-wide leading-none">CHAIN PMS</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Enterprise Luxe</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-space-md"><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Operations Core</div><nav class="space-y-0.5" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm font-semibold rounded-lg shadow-[0_0_16px_rgba(212,175,55,0.25)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="operations-dashboard" href="#"><span class="material-symbols-outlined text-primary text-[20px]">room_service</span><span>Front Desk &amp; Tape Chart</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="guest-profiles-crm" href="#"><span class="material-symbols-outlined text-primary text-[20px]">badge</span><span>Profiles &amp; CRM</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="cashier-and-billing" href="#"><span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span><span>Cashier &amp; Split Folios</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="outlets-and-pos" href="#"><span class="material-symbols-outlined text-primary text-[20px]">restaurant</span><span>Outlets &amp; POS Sync</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Management &amp; System</div><nav class="space-y-0.5" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm font-semibold rounded-lg shadow-[0_0_16px_rgba(212,175,55,0.25)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="hotels-portfolio" href="#"><span class="material-symbols-outlined text-primary text-[20px]">domain</span><span>Hotels Portfolio</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="staff-and-duty-roster" href="#"><span class="material-symbols-outlined text-primary text-[20px]">engineering</span><span>Staff &amp; Duty Roster</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports-and-analytics" href="#"><span class="material-symbols-outlined text-primary text-[20px]">monitoring</span><span>Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="security-and-access-control" href="#"><span class="material-symbols-outlined text-primary text-[20px]">lock_person</span><span>Security &amp; Roles</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="audit-logs-and-ledger" href="#"><span class="material-symbols-outlined text-primary text-[20px]">rule</span><span>Audit Logs &amp; Ledger</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="system-configuration" href="#"><span class="material-symbols-outlined text-primary text-[20px]">admin_panel_settings</span><span>System Administration</span></a></nav></div></div><div class="p-space-sm bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container"><div class="flex items-center gap-space-sm"><span class="h-2.5 w-2.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-tertiary font-semibold">CORE PMS ONLINE</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v4.9.2-Luxe</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen bg-background"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 px-gutter-desktop flex items-center justify-between shadow-[0_4px_20px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-1.5 rounded-lg"><span class="material-symbols-outlined text-primary text-[20px]">location_city</span><select class="bg-transparent text-on-surface font-title-md text-body-sm focus:outline-none cursor-pointer pr-space-sm"><option class="bg-surface-container text-on-surface" value="amon">Amon Luxury Palace &amp; Spa</option><option class="bg-surface-container text-on-surface" value="palm">The Palm Royal Resort</option><option class="bg-surface-container text-on-surface" value="siwa">Siwa Oasis Sanctuary</option></select></div><div class="hidden xl:flex items-center gap-space-sm px-space-sm py-1 rounded-lg bg-surface-container-low"><span class="material-symbols-outlined text-primary-container text-[18px]">point_of_sale</span><span class="font-label-sm text-label-sm text-on-surface-variant">Main Front Drawer:</span><span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase">Open • Shift #1</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-64 lg:w-80 bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm pl-9 pr-space-md py-1.5 rounded-lg focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="Search folio, guest, keycard UID or room..." type="text"/></div><div class="flex items-center gap-space-xs"><button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">lock</span></button></div><div class="h-6 w-px bg-surface-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right"><div class="font-title-md text-body-sm text-on-surface font-semibold">E. Vance (GM)</div><div class="font-label-sm text-label-sm text-primary">Duty Manager • Amon Palace</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(212,175,55,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-margin-desktop bg-background"><div class="flex flex-col w-full text-on-surface">
+<!-- Top Ambient Banner & Command Key Ribbon -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-md mb-space-lg shadow-xl">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-64 h-64 rounded-full bg-tertiary/5 blur-2xl pointer-events-none"></div>
+<div class="relative flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline tracking-wider uppercase mb-1">
+<span>Sovereign PMS</span>
+<span class="text-primary-container">/</span>
+<span>Housekeeping &amp; Security</span>
+<span class="text-primary-container">/</span>
+<span class="text-primary font-semibold">Lost &amp; Found Asset Vault</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">
+            Lost &amp; Found Custody &amp; High-Value Asset Registry
+          </h1>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-highest text-tertiary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+            VAULT LEVEL IV ACTIVE
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Property: <span class="text-on-surface font-medium">Amon Luxury Palace &amp; Spa</span> • Master Safe Clearance: GM, Chief Security Officer, Head Housekeeper
+        </p>
+</div>
+<!-- Action Cluster with Hotkey Badges -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-title-md text-body-sm font-semibold shadow-[0_0_20px_rgba(212,175,55,0.25)] hover:bg-primary-fixed transition-all active:scale-[0.98]" id="btn-new-intake">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>Log Recovered Item</span>
+<kbd class="px-1.5 py-0.5 rounded bg-on-primary/15 font-label-sm text-label-sm uppercase">F2</kbd>
+</button>
+<button class="inline-flex items-center gap-2 px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors font-body-md text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">barcode_scanner</span>
+<span>Scan RFID / Bag</span>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-variant font-label-sm text-label-sm text-on-surface-variant uppercase">F3</kbd>
+</button>
+<button class="inline-flex items-center gap-2 px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors font-body-md text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">local_shipping</span>
+<span>Courier Manifest</span>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-variant font-label-sm text-label-sm text-on-surface-variant uppercase">F4</kbd>
+</button>
+<button class="inline-flex items-center gap-1.5 p-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Metric Summary KPI Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-md flex flex-col justify-between group hover:bg-surface-container-high transition-colors">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Secured In Vault</span>
+<div class="font-display text-display text-primary mt-1 font-semibold leading-none">47</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">lock</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-highest/30 rounded-lg px-2.5 py-1.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estimated Valuation</span>
+<span class="font-data-tabular text-data-tabular text-tertiary font-semibold">$128,450 USD</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-md flex flex-col justify-between group hover:bg-surface-container-high transition-colors">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Returned (MTD)</span>
+<div class="font-display text-display text-on-surface mt-1 font-semibold leading-none">89</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-tertiary/15 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">assignment_turned_in</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<div class="flex-1 h-1.5 rounded-full bg-surface-variant overflow-hidden">
+<div class="h-full rounded-full bg-tertiary" style="width: 93.6%"></div>
+</div>
+<span class="font-data-tabular text-data-tabular text-tertiary font-semibold">93.6% Solved</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-md flex flex-col justify-between group hover:bg-surface-container-high transition-colors">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Open Guest Claims</span>
+<div class="font-display text-display text-secondary mt-1 font-semibold leading-none">12</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">contact_support</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-highest/30 rounded-lg px-2.5 py-1.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Awaiting Match / ID</span>
+<span class="font-data-tabular text-data-tabular text-secondary font-semibold">4 Expedited VIP</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-md flex flex-col justify-between group hover:bg-surface-container-high transition-colors">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Custody Expiry (&lt;90d)</span>
+<div class="font-display text-display text-error mt-1 font-semibold leading-none">03</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error-container/30 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-highest/30 rounded-lg px-2.5 py-1.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Protocol</span>
+<span class="font-data-tabular text-data-tabular text-error font-semibold">Charity / Transfer</span>
+</div>
+</div>
+</div>
+<!-- Main Search & Dynamic Filter Ribbon -->
+<div class="rounded-xl bg-surface-container-low p-space-md mb-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Search input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">manage_search</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-outline text-body-md pl-11 pr-20 py-2.5 rounded-lg focus:outline-none focus:bg-surface-container-high transition-colors shadow-inner" id="search-input" placeholder="Search item barcode, guest name, villa number, serial # (Patek, Rolex, Birkin, Apple)..." type="text"/>
+<div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-variant font-label-sm text-label-sm text-outline uppercase">F10</kbd>
+</div>
+</div>
+<!-- Safe location selector -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">inventory_2</span>
+<select class="bg-transparent text-on-surface focus:outline-none cursor-pointer pr-4 font-body-sm">
+<option class="bg-surface-container-high text-on-surface">Safe Location: All Vaults</option>
+<option class="bg-surface-container-high text-on-surface" selected="">Main Vault Safe #02 (Sub-level)</option>
+<option class="bg-surface-container-high text-on-surface">Main Vault Safe #01 (Jewelry)</option>
+<option class="bg-surface-container-high text-on-surface">Front Desk Holding Locker</option>
+<option class="bg-surface-container-high text-on-surface">Housekeeping Locker Fl.3</option>
+</select>
+</div>
+<button class="flex items-center gap-1 px-3 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase tracking-wider transition-colors">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>More Filters</span>
+</button>
+</div>
+</div>
+<!-- Category Pills & Status Tabs -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mt-space-md pt-space-sm border-t border-surface-variant/40">
+<div class="flex flex-wrap items-center gap-1.5" id="category-filter-chips">
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold shadow-sm">All Categories</button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors">Luxury Watches &amp; Jewelry</button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors">Electronics &amp; Smart Devices</button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors">Luggage &amp; Designer Apparel</button>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors">Passports &amp; Legal Dossiers</button>
+</div>
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-lg text-label-sm">
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-semibold">All (47)</button>
+<button class="px-2.5 py-1 rounded hover:bg-surface-container-high text-on-surface-variant transition-colors">Secured in Safe (28)</button>
+<button class="px-2.5 py-1 rounded hover:bg-surface-container-high text-on-surface-variant transition-colors">Shipping (11)</button>
+<button class="px-2.5 py-1 rounded hover:bg-surface-container-high text-on-surface-variant transition-colors">Returned (134)</button>
+</div>
+</div>
+</div>
+<!-- Primary Workspace: Split 7-Col Inventory / 5-Col Evidence & Handover Terminal -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PANEL: Asset Inventory Table & Cards (7 cols) -->
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Registered Assets</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-data-tabular text-data-tabular">Showing 4 of 47</span>
+</div>
+<div class="flex items-center gap-2 text-label-sm text-outline">
+<span>Sort by:</span>
+<button class="text-on-surface font-semibold flex items-center gap-0.5 hover:text-primary">
+<span>Recovery Date (Desc)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</button>
+</div>
+</div>
+<!-- Item 1: Patek Philippe (SELECTED STATE) -->
+<div class="item-card cursor-pointer rounded-xl bg-surface-container-high/90 p-space-md shadow-lg transition-all ring-1 ring-primary/40" data-item-id="LF-2026-089">
+<div class="flex items-start gap-space-md">
+<div class="relative w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Close up product photograph of a luxury Patek Philippe Nautilus rose gold watch resting on dark royal navy velvet inside a secure hotel evidence tray with cinematic warm spotlight and golden reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7ApxoFJYADhI0aKsUDu12tHI3lK5-3QN8Z6mtSLL_blaG9xA2kPygEbBgftjzqz_W_T0EbbaXh2Jw0JrHKNRlXIrCJhfxrWMr_fcgOGUmsZi6VtYihGrG_4pawXyEcAY7sbOmCFVejet1sakB5DBdIs6_YcXVNo8QfxwZUMMqV58F0d2WRe6pAYbdjimRmReqVW6JAhKrNQl59n501P0QxfL9uX77iPZ2NwUEWOVN3Ml9rDS4vGeL"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-primary font-label-sm text-label-sm font-semibold">18k RG</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-data-tabular text-label-sm text-primary font-semibold tracking-wider">#LF-2026-089</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">Luxury Timepiece</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate mt-0.5">
+                  Patek Philippe Nautilus 5711 (Rose Gold)
+                </h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-semibold flex-shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span> Safe #02 • A4
+              </span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-3 text-body-sm text-on-surface-variant">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Discovered</span>
+<span class="text-on-surface font-medium">14 Oct • 11:30 AM</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Location</span>
+<span class="text-on-surface font-medium truncate">Suite 102 (Nile Villa)</span>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<span class="font-label-sm text-label-sm text-outline block">Associated Guest</span>
+<span class="text-primary font-medium truncate block">Baroness C. Von Brandt</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-4 pt-3 border-t border-surface-variant/30">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[16px] text-tertiary">person_check</span>
+<span>Found by: Fatima Al-Sayed (Housekeeping)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-primary font-label-sm text-label-sm uppercase font-semibold flex items-center gap-1">
+<span>Selected in Dossier</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2: Cartier Panthère Diamond Ring -->
+<div class="item-card cursor-pointer rounded-xl bg-surface-container p-space-md shadow-md hover:bg-surface-container-high transition-all" data-item-id="LF-2026-084">
+<div class="flex items-start gap-space-md">
+<div class="relative w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Macro studio photography of a Cartier Panthere high jewelry diamond ring with emerald eyes on polished dark granite surface with luxury golden hotel safe ambient illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC97uComJokOgH1ePRxbeO5y_wQWIfLrm2cxZpxQgyjRTVknSUL8mMG-I3NbqUxHtWwfnn9Y3Ip_AZh7L6cgbCFDf8Yl_DKmYH7QVGdrOnKeLOMNZv1jfrJj-XxocFHZ-ndsMl8YKUlMuoBBZX8o3RcROZ-S8NvIx8CosHJopqNiK0dGMpoQSBmBpgfR1irmV7mFKM9n9B_zXWxwAL2IyLuAVUOhi70jqCCBEJKb1of4qgRELiva7_h"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-secondary font-label-sm text-label-sm font-semibold">Emerald</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-data-tabular text-label-sm text-outline font-semibold tracking-wider">#LF-2026-084</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">High Jewelry</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate mt-0.5">
+                  Cartier Panthère Diamond Ring (18k Gold)
+                </h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-tertiary/15 text-tertiary font-label-sm text-label-sm font-semibold flex-shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span> Diplomatic Courier
+              </span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-3 text-body-sm text-on-surface-variant">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Discovered</span>
+<span class="text-on-surface font-medium">13 Oct • 17:40 PM</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Location</span>
+<span class="text-on-surface font-medium truncate">Villa 101 Verandah</span>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<span class="font-label-sm text-label-sm text-outline block">Associated Guest</span>
+<span class="text-secondary font-medium truncate block">H.E. Sheikh Al-Sabah</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-4 pt-3 border-t border-surface-variant/30">
+<span class="font-label-sm text-label-sm text-outline">Tracking: #DHL-EXP-99201</span>
+<button class="font-label-sm text-label-sm text-primary hover:underline">Track Delivery Status</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3: Apple MacBook Pro 16 Space Black -->
+<div class="item-card cursor-pointer rounded-xl bg-surface-container p-space-md shadow-md hover:bg-surface-container-high transition-all" data-item-id="LF-2026-077">
+<div class="flex items-start gap-space-md">
+<div class="relative w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Sleek dark space black modern luxury laptop computer with security custody barcode tag affixed on top lid, photographed inside executive hotel safe holding chamber" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLlb5eSgIFPbZzP7QIrUQiyXPtFHhmXBfYeJ4rjirSunVPFoy5IsA_OywU7vlSLcaUm4NUoDsPW1AY5MhEPEoI9M50PHLeoLe7wWend4i7hwBrkp9FEO9sMCOX07oZb18SKKTmKbRJMPzhm8Ezh6ujANa-dM4R08VIaVRHpmYvQG4xUUqE8g1qwyHHqKJXqOWFrgWGT-m4FpSZz9qVhLajNnGTGv_-eHbJfUcvIpLOTf7RFu-_YE4U"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-on-surface font-label-sm text-label-sm font-semibold">M3 Max</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-data-tabular text-label-sm text-outline font-semibold tracking-wider">#LF-2026-077</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm font-semibold">Electronics</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate mt-0.5">
+                  Apple MacBook Pro 16" Space Black
+                </h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm font-semibold flex-shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Pickup Pending
+              </span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-3 text-body-sm text-on-surface-variant">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Discovered</span>
+<span class="text-on-surface font-medium">12 Oct • 09:15 AM</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Location</span>
+<span class="text-on-surface font-medium truncate">Salon Ramses (Dining)</span>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<span class="font-label-sm text-label-sm text-outline block">Claimed By</span>
+<span class="text-on-surface font-medium truncate block">Aramco Delegation Lead</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-4 pt-3 border-t border-surface-variant/30">
+<span class="font-label-sm text-label-sm text-outline">Holding: Front Desk Drawer 1B</span>
+<button class="font-label-sm text-label-sm text-primary hover:underline">Complete Front Verification</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 4: Hermès Birkin 30 Crocodile Bag -->
+<div class="item-card cursor-pointer rounded-xl bg-surface-container p-space-md shadow-md hover:bg-surface-container-high transition-all" data-item-id="LF-2026-068">
+<div class="flex items-start gap-space-md">
+<div class="relative w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="High fashion luxury Hermes Birkin handbag in dark emerald crocodile leather with gold hardware locked in a temperature controlled museum grade hotel vault glass cabinet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO-t_yKzFfA3kcY6T99_J7Hk7Ut8-wmrSmr0a65nw_MHEw6vB-t2puExV9sW8WudRAw6sxzWpW6uttqDSjhuA6qrAL_iFU_nFMNfoZ0gDzM_S7BnwnuO-0G3usoW5bozf0zNTzkh2vk-q7X9Aq8SvxByll_fLuLZVifZkUQ09Moho5HS3f0UP8V2F2GgA4CWmRCKZWT2lak6jBRlH9UIQKfIH_-zexF-OvdTyFgkCJ1oM7Q0lpCDrK"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-primary font-label-sm text-label-sm font-semibold">Croco</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-data-tabular text-label-sm text-outline font-semibold tracking-wider">#LF-2026-068</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">Designer Handbag</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate mt-0.5">
+                  Hermès Birkin 30 Crocodile Leather Bag
+                </h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-semibold flex-shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> Safe #01 • Vault
+              </span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-3 text-body-sm text-on-surface-variant">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Discovered</span>
+<span class="text-on-surface font-medium">10 Oct • 21:00 PM</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Location</span>
+<span class="text-on-surface font-medium truncate">Nefertiti Pool Cabana #04</span>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<span class="font-label-sm text-label-sm text-outline block">Status</span>
+<span class="text-error font-medium truncate block">Unclaimed (Contact Sent)</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-4 pt-3 border-t border-surface-variant/30">
+<span class="font-label-sm text-label-sm text-error">90-Day Legal Custody: 86 Days Remaining</span>
+<button class="font-label-sm text-label-sm text-primary hover:underline">Re-send In-App Ping</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Dossier & Chain of Custody Terminal (5 cols) -->
+<div class="xl:col-span-5 flex flex-col gap-space-md">
+<!-- Dossier Card -->
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-xl relative overflow-hidden">
+<!-- Golden architectural ambient bar -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary-fixed-dim to-transparent"></div>
+<div class="flex items-start justify-between gap-2 pb-space-sm border-b border-surface-variant/40">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Custody Dossier</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-0.5">Asset #LF-2026-089</h2>
+</div>
+<div class="text-right">
+<span class="font-data-tabular text-label-sm text-tertiary font-semibold block">SEAL #TP-88412</span>
+<span class="font-label-sm text-label-sm text-outline">Dual Officer Signed</span>
+</div>
+</div>
+<!-- High-Res Visual Gallery and RFID Tag Preview -->
+<div class="mt-space-md flex gap-2">
+<div class="w-2/3 h-36 rounded-lg overflow-hidden bg-surface-container relative group">
+<img class="w-full h-full object-cover" data-alt="High resolution detailed macro photograph of rose gold Patek Philippe watch case back engraved with serial number inside white lit velvet forensic safe inspection tray" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApGQzpMivsyRNbtTE9HzqNpKiwiRt6Tq5mrptoUFWB2Fpw3tFV_tiJ5wdU3eQxJfH8qgo1LLnwgOLscbUacZXEp-enNt32t87YxzkKFlIStq8dfstI8hd2SZzYnwFKsijjhO91QW88tcQmxuhmvQol83gYt5qHiP9B4npWCe_aKwZcvxfVJhCM7QIqeuz4FBN2ePog17S97NTTVoMVUesrbLBlHjA-Z_vPdjMXXZKSa8BKUj64fRv8"/>
+<div class="absolute inset-0 bg-surface-container-lowest/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-on-surface text-[24px]">zoom_in</span>
+</div>
+</div>
+<div class="w-1/3 flex flex-col gap-2">
+<div class="h-[68px] rounded-lg overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Forensic evidence packaging plastic tamper-proof bag with red security warning seals and logged signature markers for luxury item asset handover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSH4XiE7n4yctJbNFE8yttLy4MKYHu3ERT7b0mp-ADsrQmMnWZl6VRhOXPUSOPIwCkM8NiLDBlcUXN7Y61JcXTu6ktbjwMn9ugpOdDGPWPaHjm_hEvcO34LbnU2Cpnhralp6rA9ZDvPTGrZeo2XMNPCfvG2vFk50EVZUS0ADXcU1ZiBXR2LVMGKOFH7U_swDzbv3JlPREmkxb3ExQb_iE-TUfz_SunL6LkteMcdIDBNpb61XvzxAGv"/>
+</div>
+<div class="h-[68px] rounded-lg bg-surface-container p-2 flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-primary text-[18px]">qr_code_2</span>
+<span class="font-data-tabular text-label-sm text-on-surface-variant mt-0.5">RFID 0x9B44</span>
+</div>
+</div>
+</div>
+<!-- Verified Guest Profile & Loyalty Association -->
+<div class="mt-space-md rounded-lg bg-surface-container p-space-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Matched Guest Profile</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold">VIP BLACK TIER</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-variant flex items-center justify-center text-primary font-semibold text-title-md">
+              CB
+            </div>
+<div class="min-w-0 flex-1">
+<div class="font-title-md text-title-md text-on-surface font-semibold truncate">Baroness Catherine Von Brandt</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Folio #AM-90821 • Checked Out 14 Oct (08:45 AM)</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3 pt-3 border-t border-surface-variant/40 font-body-sm">
+<div class="flex items-center gap-2 text-on-surface-variant truncate">
+<span class="material-symbols-outlined text-[16px] text-primary">mail</span>
+<span class="truncate">catherine@vonbrandt.de</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant truncate">
+<span class="material-symbols-outlined text-[16px] text-tertiary">chat</span>
+<span class="truncate">+49 171 9842100 (WA Verified)</span>
+</div>
+</div>
+<div class="mt-2 text-label-sm text-outline flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">flight_land</span>
+<span>Next Booked Stay: 18 Nov 2026 • Royal Suite 01</span>
+</div>
+</div>
+<!-- Chain of Custody Timeline -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Chain of Custody Audit Log</span>
+<span class="font-data-tabular text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 4 Chain Nodes
+            </span>
+</div>
+<div class="relative pl-6 space-y-3 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-variant">
+<!-- Node 1 -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-surface-container-low"></div>
+<div class="flex items-baseline justify-between">
+<span class="font-title-md text-body-sm text-on-surface font-semibold">Physical Discovery</span>
+<span class="font-data-tabular text-label-sm text-outline">14 Oct • 11:30</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Housekeeper Fatima Al-Sayed located item under primary bed pillows in Suite 102 during post-checkout room inspection.
+              </p>
+</div>
+<!-- Node 2 -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-secondary ring-4 ring-surface-container-low"></div>
+<div class="flex items-baseline justify-between">
+<span class="font-title-md text-body-sm text-on-surface font-semibold">Security Vault Check-In</span>
+<span class="font-data-tabular text-label-sm text-outline">14 Oct • 11:45</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Duty Officer T. Mansour received asset. Dual-signoff logged with Housekeeping Supervisor N. Bakir.
+              </p>
+</div>
+<!-- Node 3 -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-tertiary ring-4 ring-surface-container-low"></div>
+<div class="flex items-baseline justify-between">
+<span class="font-title-md text-body-sm text-on-surface font-semibold">Vault Safe Sealed</span>
+<span class="font-data-tabular text-label-sm text-outline">14 Oct • 12:10</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Sealed in Tamper Bag #TP-88412. Placed in Safe #02, Compartment A4 under biometric safe lock.
+              </p>
+</div>
+<!-- Node 4 -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-surface-container-low"></div>
+<div class="flex items-baseline justify-between">
+<span class="font-title-md text-body-sm text-on-surface font-semibold">Guest Automated Dispatch</span>
+<span class="font-data-tabular text-label-sm text-outline">14 Oct • 14:00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Encrypted notification pushed via Concierge CRM. Guest acknowledged and requested Munich forwarding.
+              </p>
+</div>
+</div>
+</div>
+<!-- Handover Decision Controls -->
+<div class="mt-space-md pt-space-md border-t border-surface-variant/40">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-2">Custody Release Protocol</span>
+<div class="space-y-2">
+<!-- Option A -->
+<label class="flex items-start gap-space-sm p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input checked="" class="mt-1 accent-primary" name="release-protocol" type="radio"/>
+<div class="min-w-0 flex-1">
+<span class="font-title-md text-body-sm text-on-surface font-semibold block">White-Glove Insured Courier (Munich Residence)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Armored diplomatic courier DHL / Ferrari Logistics with declared value $45,000.</span>
+</div>
+</label>
+<!-- Option B -->
+<label class="flex items-start gap-space-sm p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input class="mt-1 accent-primary" name="release-protocol" type="radio"/>
+<div class="min-w-0 flex-1">
+<span class="font-title-md text-body-sm text-on-surface font-semibold block">In-Person Release at Next Check-In (18 Nov 2026)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hold in Vault Safe #02 A4 until guest returns to Amon Royal Suite.</span>
+</div>
+</label>
+<!-- Option C -->
+<label class="flex items-start gap-space-sm p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input class="mt-1 accent-primary" name="release-protocol" type="radio"/>
+<div class="min-w-0 flex-1">
+<span class="font-title-md text-body-sm text-on-surface font-semibold block">Authorized Representative Pickup (With Notarized Power)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Release to embassy or family attorney with physical passport scan.</span>
+</div>
+</label>
+</div>
+<!-- CTAs -->
+<div class="mt-space-md flex flex-col sm:flex-row gap-space-sm">
+<button class="flex-1 inline-flex items-center justify-center gap-2 px-space-md py-3 rounded-lg bg-primary text-on-primary font-title-md text-body-sm font-semibold shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:bg-primary-fixed transition-all active:scale-[0.98]" id="btn-release-action">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+<span>Generate Return Receipt &amp; Release</span>
+</button>
+<button class="inline-flex items-center justify-center gap-1.5 px-space-md py-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-md text-body-sm transition-colors">
+<span class="material-symbols-outlined text-primary text-[18px]">print</span>
+<span>Print Seal Barcode</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Vault Capacity Indicator -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">enhanced_encryption</span>
+</div>
+<div>
+<div class="font-title-md text-body-sm text-on-surface font-semibold">Master Safe #02 Capacity</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">28 / 40 Compartments Occupied (70%)</div>
+</div>
+</div>
+<div class="w-24 h-2 rounded-full bg-surface-variant overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 70%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Intake Modal Overlay (Interactive Micro-Component) -->
+<div class="fixed inset-0 bg-surface-container-lowest/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden" id="modal-intake">
+<div class="w-full max-w-2xl rounded-xl bg-surface-container-low p-space-lg shadow-2xl ring-1 ring-primary/30 relative">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-variant/40">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">inventory_2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Log New Recovered Asset to Vault</h2>
+</div>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface" id="btn-close-modal">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-1">Asset Category</label>
+<select class="w-full bg-surface-container text-on-surface font-body-sm p-2 rounded-lg focus:outline-none">
+<option>Luxury Timepiece</option>
+<option>High Jewelry &amp; Gems</option>
+<option>Electronics &amp; Smart Devices</option>
+<option>Designer Luggage &amp; Apparel</option>
+<option>Diplomatic Dossier / Passport</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-1">Found Location / Suite</label>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-outline font-body-sm p-2 rounded-lg focus:outline-none" placeholder="e.g., Suite 204 or Spa Treatment #3" type="text"/>
+</div>
+<div class="md:col-span-2">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-1">Item Title &amp; Identifiers (Brand, Model, Serial #)</label>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-outline font-body-sm p-2 rounded-lg focus:outline-none" placeholder="e.g., Rolex Cosmograph Daytona Oystersteel - Ser: 8940J1" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-1">Estimated Valuation ($ USD)</label>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-outline font-body-sm p-2 rounded-lg focus:outline-none" placeholder="25000" type="number"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-1">Target Vault Compartment</label>
+<select class="w-full bg-surface-container text-on-surface font-body-sm p-2 rounded-lg focus:outline-none">
+<option>Safe #02 - Compartment A5 (Available)</option>
+<option>Safe #02 - Compartment B1 (Available)</option>
+<option>Safe #01 - Jewelry Box 09 (Available)</option>
+<option>Front Desk Quick Drawer 02</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-1">Discovering Employee &amp; Dual Signoff</label>
+<div class="flex gap-2">
+<input class="flex-1 bg-surface-container text-on-surface placeholder:text-outline font-body-sm p-2 rounded-lg focus:outline-none" placeholder="Staff Name &amp; Employee ID" type="text"/>
+<button class="px-4 py-2 rounded-lg bg-surface-variant text-on-surface text-label-sm font-semibold">Scan Badge</button>
+</div>
+</div>
+</div>
+<div class="flex justify-end gap-space-sm mt-space-lg pt-space-md border-t border-surface-variant/40">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-body-sm hover:bg-surface-container-high transition-colors" id="btn-cancel-modal">
+          Cancel
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-title-md text-body-sm font-semibold hover:bg-primary-fixed transition-colors" id="btn-submit-intake">
+          Deposit Asset &amp; Print Tamper Seal
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="vault-toast">
+<div class="flex items-center gap-3 px-4 py-3 rounded-lg bg-surface-container-highest text-on-surface shadow-2xl ring-1 ring-primary/40">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<div>
+<div class="font-title-md text-body-sm font-semibold" id="toast-title">Custody Updated</div>
+<div class="font-body-sm text-label-sm text-on-surface-variant" id="toast-desc">Transaction recorded to immutable audit ledger.</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple Micro-Interactions: Modal toggling and shortcut keys
+  const modalIntake = document.getElementById('modal-intake');
+  const btnNewIntake = document.getElementById('btn-new-intake');
+  const btnCloseModal = document.getElementById('btn-close-modal');
+  const btnCancelModal = document.getElementById('btn-cancel-modal');
+  const btnSubmitIntake = document.getElementById('btn-submit-intake');
+  const btnReleaseAction = document.getElementById('btn-release-action');
+  const searchInput = document.getElementById('search-input');
+  const toast = document.getElementById('vault-toast');
+  const toastTitle = document.getElementById('toast-title');
+  const toastDesc = document.getElementById('toast-desc');
+
+  function showToast(title, msg) {
+    if (!toast) return;
+    toastTitle.textContent = title;
+    toastDesc.textContent = msg;
+    toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+    }, 3500);
+  }
+
+  function openIntakeModal() {
+    if (modalIntake) modalIntake.classList.remove('hidden');
+  }
+
+  function closeIntakeModal() {
+    if (modalIntake) modalIntake.classList.add('hidden');
+  }
+
+  if (btnNewIntake) btnNewIntake.addEventListener('click', openIntakeModal);
+  if (btnCloseModal) btnCloseModal.addEventListener('click', closeIntakeModal);
+  if (btnCancelModal) btnCancelModal.addEventListener('click', closeIntakeModal);
+
+  if (btnSubmitIntake) {
+    btnSubmitIntake.addEventListener('click', () => {
+      closeIntakeModal();
+      showToast('Asset Deposited in Safe #02', 'Tamper seal #TP-88419 generated & RFID encoded.');
+    });
+  }
+
+  if (btnReleaseAction) {
+    btnReleaseAction.addEventListener('click', () => {
+      showToast('Release Authorization Sealed', 'White-Glove courier dispatch manifest #DHL-EXP-99220 printed.');
+    });
+  }
+
+  // Keyboard Shortcuts (F2, F3, F4, F10)
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'F2') {
+      e.preventDefault();
+      openIntakeModal();
+    } else if (e.key === 'F10') {
+      e.preventDefault();
+      if (searchInput) searchInput.focus();
+    } else if (e.key === 'Escape') {
+      closeIntakeModal();
+    }
+  });
+
+  // Highlight selection on cards
+  const itemCards = document.querySelectorAll('.item-card');
+  itemCards.forEach(card => {
+    card.addEventListener('click', () => {
+      itemCards.forEach(c => {
+        c.classList.remove('ring-1', 'ring-primary/40', 'bg-surface-container-high/90');
+        c.classList.add('bg-surface-container');
+      });
+      card.classList.add('ring-1', 'ring-primary/40', 'bg-surface-container-high/90');
+      card.classList.remove('bg-surface-container');
+    });
+  });
+</script></main></div></body></html>

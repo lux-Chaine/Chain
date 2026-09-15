@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface":"#0b1229","on-surface":"#dce1ff","tertiary-fixed":"#6ffbbe","tertiary-fixed-dim":"#4edea3","surface-container-lowest":"#060d24","on-background":"#dce1ff","background":"#0b1229","on-tertiary-container":"#005035","tertiary":"#58e7aa","on-primary":"#3c2f00","outline":"#99907c","on-primary-fixed":"#241a00","secondary-fixed":"#dbe1ff","surface-container-high":"#222941","on-primary-fixed-variant":"#574500","on-tertiary-fixed-variant":"#005236","tertiary-container":"#33ca90","surface-dim":"#0b1229","secondary-container":"#384777","error":"#ffb4ab","surface-bright":"#323851","surface-variant":"#2d344c","on-secondary-fixed-variant":"#354575","on-secondary":"#1e2e5d","secondary-fixed-dim":"#b5c5fd","primary-fixed-dim":"#e9c349","primary-container":"#d4af37","on-secondary-container":"#a7b6ee","on-tertiary":"#003824","error-container":"#93000a","on-error":"#690005","surface-container":"#181e36","primary-fixed":"#ffe088","outline-variant":"#4d4635","on-primary-container":"#554300","surface-tint":"#e9c349","secondary":"#b5c5fd","on-surface-variant":"#d0c5af","surface-container-low":"#141a32","on-tertiary-fixed":"#002113","inverse-on-surface":"#292f48","primary":"#f2ca50","inverse-surface":"#dce1ff","on-error-container":"#ffdad6","on-secondary-fixed":"#051847","surface-container-highest":"#2d344c","inverse-primary":"#735c00"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xl":"2.5rem","gutter":"1.25rem","margin-desktop":"2rem","gutter-desktop":"1.5rem","margin":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem"},fontFamily:{"headline-md":["Hanken Grotesk"],"display":["Hanken Grotesk"],"body-md":["Hanken Grotesk"],"body-sm":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"headline-lg-mobile":["Hanken Grotesk"],"headline-lg":["Hanken Grotesk"],"label-sm":["Hanken Grotesk"],"title-md":["Hanken Grotesk"],"headline-sm":["Hanken Grotesk"],"data-tabular":["Hanken Grotesk"],"label-md":["Hanken Grotesk"]},fontSize:{"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"display":["3rem",{"lineHeight":"3.5rem","letterSpacing":"-0.025em","fontWeight":"600"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.06em","fontWeight":"500"}],"title-md":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"500"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"data-tabular":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.01em","fontWeight":"500"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.05em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 shadow-[0_1px_12px_rgba(0,0,0,0.45)]"><div class="h-16 w-full px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-3 shrink-0"><div class="flex items-center gap-2 pr-3"><button aria-label="Minimize" class="w-3 h-3 rounded-full bg-surface-variant hover:bg-outline flex items-center justify-center transition-colors" type="button"></button><button aria-label="Maximize" class="w-3 h-3 rounded-full bg-surface-variant hover:bg-outline flex items-center justify-center transition-colors" type="button"></button><button aria-label="Close" class="w-3 h-3 rounded-full bg-error-container hover:bg-error flex items-center justify-center transition-colors" type="button"></button></div><img alt="A prestigious luxury royal crown logo emblem for Chain PMS hotel software, rendered in elegant metallic gold with sharp geometric facets and five peaks topped with subtle diamond jewels, vector luxury branding, dark royal navy contrasting background.. Brand logo. - Primary color: #d4af37
+- Font: hankenGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W45z9CM3c1M8W6RqZjKHT8-ZdRlADABeWaWeGYtJAYyfdhpcYvcMPETbVnLnwKaVdguYNf5wc0OU8lQYwlCuhk6aFOMmo4poKyvJPxe1NHxLANi1SzcW-lSsvqrVmKBZwtUvhNVNd2zkNwextuNN6C9wq4OXWRlIWEnx97zCRW0bWfhFTlv9Um6mCTFli4tmdIiuoinOmSO63RC81dDDt2_Lk7MUupC5iJTisfkQbRrvZjA8TBgyp1zIg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Chain PMS</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Enterprise Luxe</span></div><div class="h-7 w-[1px] bg-surface-container-high mx-1"></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low"><span class="material-symbols-outlined text-[16px] text-primary">domain</span><select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer pr-1"><option class="bg-surface-container text-on-surface" value="amon">Amon Luxury Palace &amp; Spa</option><option class="bg-surface-container text-on-surface" value="palm">Palm Royal Resort &amp; Villas</option><option class="bg-surface-container text-on-surface" value="siwa">Siwa Oasis Haven Retreat</option></select></div></div><div class="hidden xl:flex items-center gap-2 flex-1 max-w-xl mx-2"><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span><input class="w-full bg-surface-container-low pl-9 pr-14 py-1.5 rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search guests, folios, room numbers..." type="text"/><span class="absolute right-2.5 top-1/2 -translate-y-1/2 font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Ctrl K</span></div><div class="flex items-center gap-1.5 shrink-0"><button class="px-2.5 py-1.5 rounded bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-[0_0_12px_rgba(212,175,55,0.25)]" type="button"><span class="material-symbols-outlined text-[16px]">add</span><span>Reservation</span></button><button class="px-2.5 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-primary">person_add</span><span>Profile</span></button><button class="px-2.5 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary">how_to_reg</span><span>Check-in</span></button></div></div><div class="flex items-center gap-3 shrink-0"><div class="hidden lg:flex flex-col items-end px-2.5 py-1 rounded bg-surface-container-low"><div class="flex items-center gap-1.5 font-data-tabular text-data-tabular text-on-surface"><span class="material-symbols-outlined text-[14px] text-primary">calendar_today</span><span>14 May 2025</span><span class="text-on-surface-variant font-body-sm text-body-sm">|</span><span class="material-symbols-outlined text-[14px] text-tertiary">bedtime</span><span>Night Audit 03:30 AM</span></div><div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1 text-tertiary"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>Sync 8ms</span><span>•</span><span>Shift #04 Tariq Mansouri</span></div></div><div class="flex items-center gap-2 pl-1"><button aria-label="System Notifications" class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors relative" type="button"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer shadow-[0_0_10px_rgba(212,175,55,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-7 w-64 bg-surface-container-lowest z-40 flex flex-col overflow-y-auto"><div class="px-3 py-3"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Operations</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-rack-and-grid" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">grid_view</span>Room Rack &amp; Grid</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reservations-and-bookings" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">book_online</span>Reservations &amp; Bookings</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="in-house-guests" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">hotel</span>In-House Guests</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="arrivals-and-departures" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">sync_alt</span>Arrivals &amp; Departures</a></nav></div><div class="px-3 py-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Profiles &amp; CRM</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="guest-profiles" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">badge</span>Guest Profiles</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="corporate-and-travel-agents" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">corporate_fare</span>Corporate &amp; Travel Agents</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="vip-and-elite-management" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">diamond</span>VIP &amp; Elite Management</a></nav></div><div class="px-3 py-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Cashier &amp; Billing</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="billing-windows-folios" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">receipt_long</span>Billing Windows (Folios)</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cashier-shift-and-safe" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">point_of_sale</span>Cashier Shift &amp; Safe</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ar-and-city-ledger" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">account_balance</span>AR &amp; City Ledger</a></nav></div><div class="px-3 py-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Outlets &amp; POS</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="restaurants-and-lounges" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">restaurant</span>Restaurants &amp; Lounges</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="spa-and-wellness" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">spa</span>Spa &amp; Wellness</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-service-pos" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">room_service</span>Room Service POS</a></nav></div><div class="px-3 py-2 pb-6"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Management &amp; System</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="rates-and-yield-management" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">trending_up</span>Rates &amp; Yield</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="night-audit-engine" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">shield_moon</span>Night Audit Engine</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="multi-tenant-hotel-setup" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">hub</span>Multi-Tenant Setup</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audit-logs-and-security" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">security</span>Audit Logs &amp; Security</a></nav></div></aside><div class="pl-64"><main class="pt-16 pb-7 w-full px-6 min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Sub-Header / Operational Control Ribbon -->
+<section class="w-full bg-surface-container-lowest shadow-md mb-6 px-6 py-4 rounded-xl">
+<div class="flex flex-col xl:flex-row items-start xl:items-center justify-between gap-4">
+<div class="flex flex-col gap-1.5 min-w-0">
+<div class="flex items-center gap-2 font-label-sm text-label-sm tracking-widest text-outline uppercase">
+<span>Sovereign PMS</span>
+<span class="text-outline-variant">/</span>
+<span>Food &amp; Beverage Outlets</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary">Menu &amp; Article Engineering</span>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<div class="flex items-center gap-2 bg-surface-container-high px-3 py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">restaurant_menu</span>
+<select class="bg-transparent font-title-md text-title-md text-on-surface focus:outline-none cursor-pointer pr-2" id="outlet-selector">
+<option class="bg-surface-container text-on-surface" selected="" value="karnak">Al-Karnak Royal Dining Room (Dinner / Main Outlet)</option>
+<option class="bg-surface-container text-on-surface" value="pool">Nefertiti Poolside Terrace &amp; Cabana Bar</option>
+<option class="bg-surface-container text-on-surface" value="cigar">The Sphinx Imperial Cigar Lounge &amp; Library</option>
+<option class="bg-surface-container text-on-surface" value="butler">In-Room Palatial 24h Butler Service</option>
+</select>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_rgba(88,231,170,0.6)]"></span>
+<span class="font-label-md text-label-md text-on-surface">Active Menu Version 4.2 • Live Sync to POS Terminals &amp; KDS</span>
+</div>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant">Tenant: Luxor Sovereign Property #01</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 shrink-0 self-end xl:self-auto">
+<button class="px-3 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">upload_file</span>
+<span>Import Catalog</span>
+</button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">analytics</span>
+<span>Yield &amp; Margin</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm" id="sync-kds-btn" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">sync</span>
+<span>Sync to KDS Outlets</span>
+</button>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary-fixed text-on-primary font-title-md text-title-md flex items-center gap-1.5 shadow-[0_0_16px_rgba(212,175,55,0.3)] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ New Article / Recipe</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Top Operational KPI Bento Cards (4 metrics) -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
+<!-- KPI 1 -->
+<div class="bg-surface-container p-5 rounded-xl shadow-md relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Active Menu Articles</span>
+<span class="font-display text-display text-primary leading-none mt-2">148</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[20px]">room_service</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Across 6 Luxury Dining Categories</span>
+<span class="font-label-md text-label-md text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> 98.6% active
+        </span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container p-5 rounded-xl shadow-md relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Average Food Cost %</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-display text-display text-on-surface leading-none">24.6%</span>
+<span class="font-label-sm text-label-sm text-tertiary">Target &lt; 28%</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shadow-inner">
+<span class="material-symbols-outlined text-[20px]">pie_chart</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mr-3 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[24.6%]"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Prime Tier</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container p-5 rounded-xl shadow-md relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Top Contribution Margin</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed-dim leading-tight mt-2 truncate">Wagyu Rossini</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[20px]">monetization_on</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-data-tabular text-data-tabular text-on-surface">+$118.00 net / 74% GM</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/20 text-primary">Star Performer</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container p-5 rounded-xl shadow-md relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">86'd / Unavailable Today</span>
+<span class="font-display text-display text-error leading-none mt-2">02</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error-container/30 flex items-center justify-center text-error shadow-inner">
+<span class="material-symbols-outlined text-[20px]">block</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Beluga Caviar • Alba White Truffle</span>
+<span class="font-label-sm text-label-sm text-error shrink-0">Sea Supply Due 18:00</span>
+</div>
+</div>
+</section>
+<!-- Workspace Grid: Sidebar Filters + Interactive Table + Detailed Drawer Editor -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+<!-- Left Category & Filter Column (3 cols) -->
+<div class="lg:col-span-3 flex flex-col gap-4">
+<div class="bg-surface-container p-4 rounded-xl shadow-md">
+<!-- Search -->
+<div class="relative mb-4">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container-low pl-9 pr-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="Search article, SKU, POS code..." type="text"/>
+</div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Menu Categories</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">6 Sections</span>
+</div>
+<!-- Categories List -->
+<div class="flex flex-col gap-1">
+<button class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md shadow-sm transition-all text-left" type="button">
+<span class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[18px]">stars</span>
+<span class="truncate">Imperial Caviar &amp; Starters</span>
+</span>
+<span class="font-label-sm text-label-sm bg-on-primary/20 px-2 py-0.5 rounded-full">18</span>
+</button>
+<button class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-title-md text-title-md transition-all text-left" type="button">
+<span class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[18px] text-outline">set_meal</span>
+<span class="truncate">Royal Nile Seafood &amp; Crustacean</span>
+</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-full">24</span>
+</button>
+<button class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-title-md text-title-md transition-all text-left" type="button">
+<span class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[18px] text-outline">kebab_dining</span>
+<span class="truncate">Charcoal Prime Steaks &amp; Game</span>
+</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-full">22</span>
+</button>
+<button class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-title-md text-title-md transition-all text-left" type="button">
+<span class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[18px] text-outline">eco</span>
+<span class="truncate">Palatial Vegetarian &amp; Artisanal</span>
+</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-full">16</span>
+</button>
+<button class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-title-md text-title-md transition-all text-left" type="button">
+<span class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[18px] text-outline">bakery_dining</span>
+<span class="truncate">Sovereign Pastry &amp; Desserts</span>
+</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-full">20</span>
+</button>
+<button class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-title-md text-title-md transition-all text-left" type="button">
+<span class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[18px] text-outline">wine_bar</span>
+<span class="truncate">Sommelier Wine &amp; Reserve Cellar</span>
+</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-full">48</span>
+</button>
+</div>
+<!-- Kitchen Station Routing Filters -->
+<div class="mt-6 pt-4">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-2.5">Routing KDS Station</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-primary font-label-md text-label-md cursor-pointer hover:bg-surface-bright">All Stations</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-md text-label-md cursor-pointer hover:bg-surface-container-high">Hot Sauté #01</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-md text-label-md cursor-pointer hover:bg-surface-container-high">Charcoal Grill #02</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-md text-label-md cursor-pointer hover:bg-surface-container-high">Garde Manger #03</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-md text-label-md cursor-pointer hover:bg-surface-container-high">Pastry Studio #04</span>
+</div>
+</div>
+<!-- Allergen Verification Tags -->
+<div class="mt-4 pt-4">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-2.5">Dietary &amp; Compliance</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm">100% Halal Verified</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Gluten-Free</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Dairy-Free</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Nut Alert</span>
+</div>
+</div>
+<!-- Shift & Period Activation -->
+<div class="mt-4 pt-4">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-2">Meal Period Scope</span>
+<div class="grid grid-cols-2 gap-2 text-on-surface font-body-sm text-body-sm">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="accent-primary rounded" type="checkbox"/>
+<span>Dinner Service</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="accent-primary rounded" type="checkbox"/>
+<span>In-Room Butler</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="accent-primary rounded" type="checkbox"/>
+<span>Lunch &amp; Terrace</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="accent-primary rounded" type="checkbox"/>
+<span>Late Night Lounge</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Center Articles Grid & Engineering View (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-3">
+<!-- Search summary bar -->
+<div class="flex items-center justify-between bg-surface-container px-4 py-3 rounded-xl shadow-md">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Imperial Caviar &amp; Prime Culinary Selection</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 bg-surface-container-high rounded text-primary">Showing 4 of 18</span>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="Sort options" class="p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button aria-label="Filter active" class="p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">view_agenda</span>
+</button>
+</div>
+</div>
+<!-- Article Card 1: Wagyu Ribeye (SELECTED ITEM) -->
+<div class="bg-surface-container-high p-4 rounded-xl shadow-lg relative cursor-pointer transition-all hover:bg-surface-bright" id="card-wagyu">
+<div class="flex items-start justify-between gap-3">
+<div class="flex gap-3">
+<img class="w-16 h-16 rounded-lg object-cover shrink-0 shadow-md" data-alt="Exquisite charcoal-grilled A5 Japanese Wagyu ribeye steak cooked to perfection with delicate gold leaf garnish on a matte dark royal navy ceramic plate in a fine dining restaurant Luxor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUJnAlXmMP0Uy38hexDN0mdV5pZv8swmSmQpp9YfZvAlvex8BlNNzpvNnPLM9yGCE4O6zButm2TdThzuoGz0WMMZx5Kplp1NTEZ4FbFZaWZYK_-rFtJ9eIx09i0cMQFqRRZIctk8PK4Axuwq96o00x7z2SmMWEOpwtQFTFzUkAt5sbnsT63ztV2Wc0s2up0ZpGE3i3hrS3XemudYAjMM01H5LLPs2VN_arx5kyRHbPeMtqIBVomfZ7"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-primary truncate">Pan-Seared Wagyu Ribeye A5 (350g)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-primary-fixed-dim">#STK-04</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">ريب آي واغيو ياباني مع صوص الكمأة السوداء</span>
+<div class="flex items-center gap-2 mt-1 font-label-sm text-label-sm text-outline">
+<span>KDS: Grill Station #02</span>
+<span>•</span>
+<span class="text-tertiary">Allergen Free / Halal</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-data-tabular leading-none">$210.00</span>
+<span class="font-label-sm text-label-sm text-outline mt-1 font-data-tabular">Cost: $52.00</span>
+<span class="font-label-sm text-label-sm text-tertiary mt-0.5 font-data-tabular">Margin: 75.2%</span>
+</div>
+</div>
+<div class="mt-3.5 pt-3 flex items-center justify-between bg-surface-container/60 p-2.5 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-tertiary">Live on POS Terminal (3 Outlets)</span>
+</div>
+<div class="flex items-center gap-3 font-data-tabular text-label-sm text-on-surface-variant">
+<span>Incl. 14% VAT + 12% Svc</span>
+<span class="text-primary hover:underline cursor-pointer flex items-center gap-0.5">
+<span>Edit Specs</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Article Card 2: Imperial Caviar -->
+<div class="bg-surface-container p-4 rounded-xl shadow-md relative cursor-pointer transition-all hover:bg-surface-container-high">
+<div class="flex items-start justify-between gap-3">
+<div class="flex gap-3">
+<img class="w-16 h-16 rounded-lg object-cover shrink-0 shadow-md" data-alt="Luxurious golden tin of Osetra Imperial Caviar resting on crushed crystal ice with mother of pearl spoon and blinis in an ultra luxury royal palace dining setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAtmTyek-6iH6ptcm_2Qt9yeyfu7imfApAhod4ypm4N6abVX1CG3t0Nh1-aGfcTYudb_e6VUG3rKb6FEdBVNhSuYDJ26HMF1hWSWvovRybpNlg2IdJH06f7jAHPLdXWsMqkBbzNe-_T1ixJYkWQwFx-N5baW1Fy4vATjZn7aV6oBuZJZm7pj3Xlce-6Bbk4vtAXpK4mt3TSKtxfA0WoJnahLzLl8gayKKq0eRn9PqlEcDoMGGAza_r"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Osetra Imperial Caviar (50g)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">#CAV-01</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">كافيار أوسيترا ملكي فاخر مع بليني طازج</span>
+<div class="flex items-center gap-2 mt-1 font-label-sm text-label-sm text-outline">
+<span>KDS: Cold Pantry / Garde Manger</span>
+<span>•</span>
+<span class="text-secondary">Chilled Luxury</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-data-tabular leading-none">$185.00</span>
+<span class="font-label-sm text-label-sm text-outline mt-1 font-data-tabular">Cost: $42.00</span>
+<span class="font-label-sm text-label-sm text-tertiary mt-0.5 font-data-tabular">Margin: 77.3%</span>
+</div>
+</div>
+<div class="mt-3.5 pt-3 flex items-center justify-between bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-tertiary">Live on POS (All Outlets)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline">Stock: 14 Tins Remaining</span>
+</div>
+</div>
+</div>
+<!-- Article Card 3: Wood-Fired Wild Nile Perch -->
+<div class="bg-surface-container p-4 rounded-xl shadow-md relative cursor-pointer transition-all hover:bg-surface-container-high">
+<div class="flex items-start justify-between gap-3">
+<div class="flex gap-3">
+<img class="w-16 h-16 rounded-lg object-cover shrink-0 shadow-md" data-alt="Plated gourmet grilled Nile fish fillet with fresh saffron herbs, charred lemon, and microgreens on elegant gold rim dark dinnerware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzSZ9uxyDUopDL1AM2q565nO6hqHmF8-NombzDI3J-nU-rVKLCNmFchTL1PkobCYtVVSD7JMFwr7AY_ixTXkC3qslwf7kpOsAvlUa77Q4JRvoWIInXl8agBUkq46AGrC6cAHU0tO6Htc7SKVHUTjagdt2FMFuQNOmRBNDSCJLeYUvz0TWzj1coQiwlqhikSSigVvVTj7atEVEShdnVh6mpN7Eft10xhcGvW0eNjTu12lCuXH4N1nF_"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Wood-Fired Wild Nile Perch</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">#SEA-12</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">قشر بياض نيلي مشوي على الحطب مع الأعشاب الملكية</span>
+<div class="flex items-center gap-2 mt-1 font-label-sm text-label-sm text-outline">
+<span>KDS: Sauté &amp; Wood Grill #01</span>
+<span>•</span>
+<span class="text-tertiary">Fresh Catch Today</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-data-tabular leading-none">$92.00</span>
+<span class="font-label-sm text-label-sm text-outline mt-1 font-data-tabular">Cost: $21.50</span>
+<span class="font-label-sm text-label-sm text-tertiary mt-0.5 font-data-tabular">Margin: 76.6%</span>
+</div>
+</div>
+<div class="mt-3.5 pt-3 flex items-center justify-between bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-tertiary">Available • Fast Expedite (18m)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Local Nile Catch Fishery Verified</span>
+</div>
+</div>
+</div>
+<!-- Article Card 4: Beluga Caviar (86'd Out of Stock) -->
+<div class="bg-surface-container/70 p-4 rounded-xl shadow-md relative opacity-85 hover:opacity-100 transition-opacity">
+<div class="flex items-start justify-between gap-3">
+<div class="flex gap-3">
+<div class="w-16 h-16 rounded-lg bg-surface-container-high flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[28px]">lock_clock</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface line-through decoration-error truncate">Beluga Royal Imperial Selection (50g)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container text-on-error">#CAV-00</span>
+</div>
+<span class="font-body-sm text-body-sm text-error italic">كافيار بيلوجا فاخر - غير متوفر مؤقتاً</span>
+<div class="flex items-center gap-2 mt-1 font-label-sm text-label-sm text-error">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>86'D: POS Buttons Deactivated</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-sm text-headline-sm text-outline font-data-tabular leading-none">$340.00</span>
+<span class="font-label-sm text-label-sm text-outline mt-1 font-data-tabular">Cost: $110.00</span>
+</div>
+</div>
+<div class="mt-3.5 pt-3 flex items-center justify-between bg-error-container/20 p-2.5 rounded-lg">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-error">local_shipping</span>
+<span class="font-label-md text-label-md text-error">Sea Freight Arriving 18:30 Port Safaga</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:underline" type="button">Re-enable Item</button>
+</div>
+</div>
+</div>
+<!-- Right Slide-out / Detailed Article Specification Drawer (4 cols) -->
+<div class="lg:col-span-4 bg-surface-container p-5 rounded-xl shadow-xl flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Engineering Spec &amp; KDS Matrix</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Wagyu Ribeye A5 (350g)</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary">Active</span>
+<button aria-label="Close article specifications" class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Pricing Matrix by Channel -->
+<div class="bg-surface-container-low p-3.5 rounded-lg flex flex-col gap-2.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Omni-Channel Menu Pricing</span>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">restaurant</span>
+<span class="font-body-sm text-body-sm text-on-surface">Base Dine-In (Al-Karnak)</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-body-sm text-body-sm text-outline">$</span>
+<input class="w-20 bg-surface-container-high px-2 py-1 rounded text-right font-data-tabular text-data-tabular text-primary focus:outline-none" type="text" value="210.00"/>
+</div>
+</div>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">concierge</span>
+<span class="font-body-sm text-body-sm text-on-surface">In-Room Butler Delivery</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-body-sm text-body-sm text-outline">$</span>
+<input class="w-20 bg-surface-container-high px-2 py-1 rounded text-right font-data-tabular text-data-tabular text-on-surface focus:outline-none" type="text" value="240.00"/>
+</div>
+</div>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">pool</span>
+<span class="font-body-sm text-body-sm text-on-surface">Nefertiti Poolside Terrace</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-body-sm text-body-sm text-outline">$</span>
+<input class="w-20 bg-surface-container-high px-2 py-1 rounded text-right font-data-tabular text-data-tabular text-on-surface focus:outline-none" type="text" value="225.00"/>
+</div>
+</div>
+<label class="flex items-center gap-2 pt-1 cursor-pointer">
+<input checked="" class="accent-primary rounded" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Royal VIP Suite Complimentary Tier Eligible</span>
+</label>
+</div>
+<!-- Modifiers & Preparation Options -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">POS Modifiers &amp; Cooking Temp</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">Rare</span>
+<span class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-md text-label-md shadow-sm">Medium-Rare (Rec.)</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">Medium</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">Well-Done</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Included Luxury Sauce Selection:</span>
+<div class="grid grid-cols-2 gap-2 text-on-surface font-body-sm text-body-sm">
+<label class="flex items-center gap-1.5">
+<input checked="" class="accent-primary" name="sauce" type="radio"/>
+<span>Truffle Demi-Glace</span>
+</label>
+<label class="flex items-center gap-1.5">
+<input class="accent-primary" name="sauce" type="radio"/>
+<span>Classic Béarnaise</span>
+</label>
+<label class="flex items-center gap-1.5">
+<input class="accent-primary" name="sauce" type="radio"/>
+<span>Green Peppercorn</span>
+</label>
+<label class="flex items-center gap-1.5">
+<input class="accent-primary" name="sauce" type="radio"/>
+<span>Smoked Bone Marrow</span>
+</label>
+</div>
+</div>
+<!-- Recipe Ingredients & Inventory Linkage -->
+<div class="bg-surface-container-low p-3.5 rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Live Storeroom Recipe Depletion</span>
+<span class="font-label-sm text-label-sm text-tertiary">Inventory Synced</span>
+</div>
+<div class="flex flex-col gap-1.5 text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span class="truncate">Miyazaki Wagyu Ribeye A5 BMS 11</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant">350g • $44.20</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="truncate">Normandy Cultured Herb Butter</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant">40g • $2.80</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="truncate">Perigord Winter Black Truffle Essence</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant">15ml • $5.00</span>
+</div>
+</div>
+<div class="mt-2 pt-2 flex items-center justify-between font-label-md text-label-md text-on-surface">
+<span>Theoretical Recipe Cost</span>
+<span class="text-primary font-data-tabular">$52.00 / Portion</span>
+</div>
+</div>
+<!-- Direct Printer & Kitchen Station Routing -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">KDS &amp; Order Routing Target</span>
+<div class="flex items-center gap-2 bg-surface-container-high px-3 py-2 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[18px]">print</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface truncate">Kitchen Display Terminal #02 (Grill &amp; Sauté)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Backup: Thermal Printer Expediter #01</span>
+</div>
+</div>
+</div>
+<!-- Action Bottom Bar -->
+<div class="mt-2 flex flex-col gap-2 pt-2">
+<button class="w-full py-2.5 rounded-lg bg-primary-container hover:bg-primary-fixed text-on-primary font-title-md text-title-md flex items-center justify-center gap-2 shadow-[0_0_18px_rgba(212,175,55,0.35)] transition-all" id="save-deploy-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+<span>Save &amp; Deploy to POS Terminals</span>
+</button>
+<div class="flex items-center justify-between gap-2">
+<button class="w-1/2 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-error font-label-md text-label-md flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">pause_circle</span>
+<span>86 This Item (Sold Out)</span>
+</button>
+<button class="w-1/2 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">history</span>
+<span>Audit History</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Deployment Notification Toast (Hidden initially, triggered via JS) -->
+<div class="fixed bottom-10 right-8 bg-surface-container-high text-on-surface px-5 py-3.5 rounded-xl shadow-2xl flex items-center gap-3 transition-transform translate-y-32 z-50" id="toast-notify">
+<div class="w-8 h-8 rounded-full bg-tertiary-container/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">Menu Catalog Synchronized</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Version 4.2 pushed to 14 POS Terminals &amp; 4 KDS screens.</span>
+</div>
+</div>
+<script>
+    (function() {
+      const toast = document.getElementById('toast-notify');
+      const saveBtn = document.getElementById('save-deploy-btn');
+      const syncBtn = document.getElementById('sync-kds-btn');
+
+      function triggerToast(msg) {
+        if (!toast) return;
+        toast.classList.remove('translate-y-32');
+        toast.classList.add('translate-y-0');
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0');
+          toast.classList.add('translate-y-32');
+        }, 3200);
+      }
+
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          triggerToast();
+        });
+      }
+
+      if (syncBtn) {
+        syncBtn.addEventListener('click', () => {
+          triggerToast();
+        });
+      }
+    })();
+  </script>
+</div></main></div><footer class="fixed bottom-0 left-0 right-0 h-7 bg-surface-container-lowest z-50 shadow-[0_-1px_6px_rgba(0,0,0,0.4)] flex items-center justify-between px-3"><div class="flex items-center gap-3 font-data-tabular text-label-sm text-on-surface-variant"><span class="flex items-center gap-1.5 text-primary font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-primary"></span>Chain PMS v4.8.2-PROD</span><span>|</span><span>Local DB Synchronized (SQLite/Tauri Engine)</span><span>|</span><span>Multi-Tenant Node #SA-01</span></div><div class="hidden md:flex items-center gap-3 font-data-tabular text-label-sm text-on-surface-variant"><span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">F2</kbd> New Res</span><span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">F3</kbd> Room Rack</span><span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">F4</kbd> Billing</span><span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">F10</kbd> Search</span></div></footer></body></html>

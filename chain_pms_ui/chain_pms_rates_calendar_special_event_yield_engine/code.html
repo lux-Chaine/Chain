@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-container": "#d4af37",
+          "on-primary-container": "#554300",
+          "tertiary": "#58e7aa",
+          "surface-tint": "#e9c349",
+          "tertiary-container": "#33ca90",
+          "on-error-container": "#ffdad6",
+          "inverse-on-surface": "#292f48",
+          "surface-variant": "#2d344c",
+          "error": "#ffb4ab",
+          "outline": "#99907c",
+          "surface-container-high": "#222941",
+          "on-secondary": "#1e2e5d",
+          "on-surface-variant": "#d0c5af",
+          "on-primary": "#3c2f00",
+          "tertiary-fixed-dim": "#4edea3",
+          "tertiary-fixed": "#6ffbbe",
+          "outline-variant": "#4d4635",
+          "secondary-container": "#384777",
+          "on-tertiary-container": "#005035",
+          "on-secondary-container": "#a7b6ee",
+          "background": "#0b1229",
+          "on-tertiary-fixed": "#002113",
+          "on-secondary-fixed": "#051847",
+          "error-container": "#93000a",
+          "on-background": "#dce1ff",
+          "on-tertiary": "#003824",
+          "inverse-primary": "#735c00",
+          "surface-container-highest": "#2d344c",
+          "inverse-surface": "#dce1ff",
+          "on-primary-fixed": "#241a00",
+          "on-tertiary-fixed-variant": "#005236",
+          "secondary-fixed-dim": "#b5c5fd",
+          "surface-container-lowest": "#060d24",
+          "primary": "#f2ca50",
+          "surface": "#0b1229",
+          "on-error": "#690005",
+          "surface-bright": "#323851",
+          "secondary": "#b5c5fd",
+          "primary-fixed-dim": "#e9c349",
+          "on-surface": "#dce1ff",
+          "on-secondary-fixed-variant": "#354575",
+          "surface-dim": "#0b1229",
+          "secondary-fixed": "#dbe1ff",
+          "surface-container-low": "#141a32",
+          "primary-fixed": "#ffe088",
+          "on-primary-fixed-variant": "#574500",
+          "surface-container": "#181e36"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "gutter": "1.25rem",
+          "margin-desktop": "2rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "gutter-desktop": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "margin": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Hanken Grotesk"
+          ],
+          "display": [
+            "Hanken Grotesk"
+          ],
+          "data-tabular": [
+            "Hanken Grotesk"
+          ],
+          "headline-md": [
+            "Hanken Grotesk"
+          ],
+          "headline-lg": [
+            "Hanken Grotesk"
+          ],
+          "body-md": [
+            "Hanken Grotesk"
+          ],
+          "label-md": [
+            "Hanken Grotesk"
+          ],
+          "body-sm": [
+            "Hanken Grotesk"
+          ],
+          "headline-sm": [
+            "Hanken Grotesk"
+          ],
+          "label-sm": [
+            "Hanken Grotesk"
+          ],
+          "body-lg": [
+            "Hanken Grotesk"
+          ],
+          "title-md": [
+            "Hanken Grotesk"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "display": [
+            "3rem",
+            {
+              "lineHeight": "3.5rem",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "data-tabular": [
+            "0.8125rem",
+            {
+              "lineHeight": "1.125rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.05em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "1.25rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "0.6875rem",
+            {
+              "lineHeight": "0.875rem",
+              "letterSpacing": "0.06em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "1rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "1rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[0_4px_24px_rgba(0,0,0,0.45)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="A prestigious luxury royal crown logo emblem for Chain PMS hotel software, rendered in elegant metallic gold with sharp geometric facets and five peaks topped with subtle diamond jewels, vector luxury branding, dark royal navy contrasting background.. Brand logo. - Primary color: #d4af37
+- Font: hankenGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8AzqK1WanRKfcGTql5wJMnaa_JN9abEKLiTDJFs024ViSokA4ZkD3CS6cArdvOOQpDoSOZ0Hc9OtLQEARttTGUEsNF4NoYF4JaWGXPfj52ad1ETNh9KpBsaRAdXeuILCEnXxrYbB9qHoN4F_ltOf4Zlo9BheRQWhnkWj44yaxWzEZXtHm7NrvvIU6EDpLaEeM-zKNIOb2o0mQAEKSFDbAT9-1HR_igT1C2JMExhZq4HIQB0vCPH8PgDU"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-wide leading-none">CHAIN PMS</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Enterprise Luxe</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-space-md"><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Operations Core</div><nav class="space-y-0.5" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm font-semibold rounded-lg shadow-[0_0_16px_rgba(212,175,55,0.25)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="operations-dashboard" href="#"><span class="material-symbols-outlined text-primary text-[20px]">room_service</span><span>Front Desk &amp; Tape Chart</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="guest-profiles-crm" href="#"><span class="material-symbols-outlined text-primary text-[20px]">badge</span><span>Profiles &amp; CRM</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="cashier-and-billing" href="#"><span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span><span>Cashier &amp; Split Folios</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="outlets-and-pos" href="#"><span class="material-symbols-outlined text-primary text-[20px]">restaurant</span><span>Outlets &amp; POS Sync</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Management &amp; System</div><nav class="space-y-0.5" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm font-semibold rounded-lg shadow-[0_0_16px_rgba(212,175,55,0.25)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="hotels-portfolio" href="#"><span class="material-symbols-outlined text-primary text-[20px]">domain</span><span>Hotels Portfolio</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="staff-and-duty-roster" href="#"><span class="material-symbols-outlined text-primary text-[20px]">engineering</span><span>Staff &amp; Duty Roster</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports-and-analytics" href="#"><span class="material-symbols-outlined text-primary text-[20px]">monitoring</span><span>Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="security-and-access-control" href="#"><span class="material-symbols-outlined text-primary text-[20px]">lock_person</span><span>Security &amp; Roles</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="audit-logs-and-ledger" href="#"><span class="material-symbols-outlined text-primary text-[20px]">rule</span><span>Audit Logs &amp; Ledger</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="system-configuration" href="#"><span class="material-symbols-outlined text-primary text-[20px]">admin_panel_settings</span><span>System Administration</span></a></nav></div></div><div class="p-space-sm bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container"><div class="flex items-center gap-space-sm"><span class="h-2.5 w-2.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-tertiary font-semibold">CORE PMS ONLINE</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v4.9.2-Luxe</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen bg-background"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 px-gutter-desktop flex items-center justify-between shadow-[0_4px_20px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-1.5 rounded-lg"><span class="material-symbols-outlined text-primary text-[20px]">location_city</span><select class="bg-transparent text-on-surface font-title-md text-body-sm focus:outline-none cursor-pointer pr-space-sm"><option class="bg-surface-container text-on-surface" value="amon">Amon Luxury Palace &amp; Spa</option><option class="bg-surface-container text-on-surface" value="palm">The Palm Royal Resort</option><option class="bg-surface-container text-on-surface" value="siwa">Siwa Oasis Sanctuary</option></select></div><div class="hidden xl:flex items-center gap-space-sm px-space-sm py-1 rounded-lg bg-surface-container-low"><span class="material-symbols-outlined text-primary-container text-[18px]">point_of_sale</span><span class="font-label-sm text-label-sm text-on-surface-variant">Main Front Drawer:</span><span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase">Open • Shift #1</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-64 lg:w-80 bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm pl-9 pr-space-md py-1.5 rounded-lg focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="Search folio, guest, keycard UID or room..." type="text"/></div><div class="flex items-center gap-space-xs"><button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">lock</span></button></div><div class="h-6 w-px bg-surface-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right"><div class="font-title-md text-body-sm text-on-surface font-semibold">E. Vance (GM)</div><div class="font-label-sm text-label-sm text-primary">Duty Manager • Amon Palace</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(212,175,55,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-margin-desktop bg-background"><div class="flex flex-col w-full text-on-surface">
+<!-- Top Context & Hotkey Micro-Bar -->
+<div class="flex flex-wrap items-center justify-between pb-space-sm gap-space-sm text-body-sm">
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-outline">Sovereign PMS</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-outline">Rates &amp; Pricing</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-primary font-semibold">Dynamic Rate Calendar &amp; Seasonal Yield</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="hidden lg:flex items-center gap-space-xs font-data-tabular text-data-tabular text-on-surface-variant">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-semibold shadow-sm">F2</span><span class="mr-2">New Rate</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-semibold shadow-sm">F3</span><span class="mr-2">Season Rule</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-semibold shadow-sm">F4</span><span class="mr-2">Event Spike</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-semibold shadow-sm">F10</span><span>Search</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold tracking-wider uppercase">GDS Sync: 99.98% Synced</span>
+</div>
+</div>
+</div>
+<!-- Page Header & Global Actions -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md pb-space-lg">
+<div class="space-y-1">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg tracking-tight text-on-surface">Palatial Rate Calendar &amp; Yield Optimization Grid</h1>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-widest font-semibold shadow-sm">Live Engine</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Multi-tier dynamic pricing dispatch, algorithmic demand surge buffers, and luxury portfolio yield control.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-title-md text-body-sm transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">percent</span>
+<span>Bulk Rate Multiplier %</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-title-md text-body-sm transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">cloud_sync</span>
+<span>GDS &amp; OTA Instant Push</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-title-md text-body-sm transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Export Matrix</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-lg py-2 rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-headline-sm text-body-md font-semibold transition-all shadow-[0_0_20px_rgba(212,175,55,0.35)]" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>New Seasonal Rate Rule</span>
+</button>
+</div>
+</div>
+<!-- KPI Summary Cards (Bento Metric Ribbon) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md pb-space-lg">
+<!-- KPI 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary/5 blur-xl group-hover:bg-primary/10 transition-colors"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">ADR Forecast (Oct 2026)</span>
+<span class="material-symbols-outlined text-primary text-[22px]">price_change</span>
+</div>
+<div class="py-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-primary tracking-tight">$1,340</span>
+<span class="font-label-md text-label-md text-on-surface-variant">/ nt blended</span>
+</div>
+<div class="flex items-center gap-space-xs font-data-tabular text-data-tabular mt-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span class="font-semibold">+18.4% YoY</span>
+<span class="text-on-surface-variant">• Prime High Season Tier</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[82%]"></div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary/5 blur-xl group-hover:bg-secondary/10 transition-colors"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Active Rate Strategies</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">tune</span>
+</div>
+<div class="py-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-on-surface tracking-tight">14</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Live Rules</span>
+</div>
+<div class="flex items-center gap-space-xs font-data-tabular text-data-tabular mt-1 text-on-surface-variant">
+<span class="text-secondary font-semibold">4 Suite Tiers</span>
+<span>• BAR, Non-Ref, MinStay, Consortia</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[65%]"></div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-tertiary/5 blur-xl group-hover:bg-tertiary/10 transition-colors"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Peak Compression Days</span>
+<span class="material-symbols-outlined text-primary text-[22px]">event_upcoming</span>
+</div>
+<div class="py-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-primary tracking-tight">8</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Dates &gt;90% Occ</span>
+</div>
+<div class="flex items-center gap-space-xs font-data-tabular text-data-tabular mt-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">celebration</span>
+<span class="font-semibold">Diplomatic Summit &amp; Regatta</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[94%]"></div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary/10 blur-xl"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Yield Algorithm State</span>
+<span class="material-symbols-outlined text-tertiary text-[22px]">smart_toy</span>
+</div>
+<div class="py-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-tertiary tracking-tight">AUTONOMOUS</span>
+</div>
+<div class="flex items-center gap-space-xs font-data-tabular text-data-tabular mt-1 text-on-surface-variant">
+<span class="text-primary font-semibold">ML Surge: 1.25x – 2.10x</span>
+<span>• Auto-Hedging</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-highest px-space-sm py-1 rounded text-data-tabular text-on-surface-variant">
+<span>Channel Parity Guard</span>
+<span class="text-tertiary font-semibold">ENFORCED</span>
+</div>
+</div>
+</div>
+<!-- Interactive Controls, Month Navigator & Filter Bar -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md mb-space-md flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<!-- Month navigation and View Toggles -->
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center bg-surface-container rounded-lg p-1 shadow-sm">
+<button class="p-1.5 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<div class="px-space-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">calendar_month</span>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wide">October 2026</span>
+</div>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" type="button">
+        Today
+      </button>
+<div class="h-6 w-px bg-surface-container-highest hidden sm:block"></div>
+<!-- View Selector Segmented Control -->
+<div class="flex items-center bg-surface-container rounded-lg p-1 shadow-sm">
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary-container font-title-md text-body-sm font-semibold shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">calendar_view_month</span>
+<span>Calendar Grid</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-title-md text-body-sm transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">stacked_line_chart</span>
+<span>YoY Timeline</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-title-md text-body-sm transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">list_alt</span>
+<span>Rate Code Matrix</span>
+</button>
+</div>
+</div>
+<!-- Property & Dimension Filter Chips -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative">
+<select class="bg-surface-container text-on-surface font-body-sm text-body-sm rounded-lg px-space-md py-2 focus:outline-none focus:bg-surface-container-high pr-8 appearance-none cursor-pointer shadow-sm">
+<option>All Suites &amp; Villas (4 Tiers)</option>
+<option>Deluxe Heritage King</option>
+<option>Executive Nile Suite</option>
+<option>Nile Royal Waterfront Villa</option>
+<option>Sovereign Penthouse Collection</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant text-[16px] pointer-events-none">arrow_drop_down</span>
+</div>
+<div class="relative">
+<select class="bg-surface-container text-on-surface font-body-sm text-body-sm rounded-lg px-space-md py-2 focus:outline-none focus:bg-surface-container-high pr-8 appearance-none cursor-pointer shadow-sm">
+<option>All Channels (GDS, Direct, Luxury OTA)</option>
+<option>Direct Brand Web (Best Guarantee)</option>
+<option>GDS / Amadeus Consortia (Virtuoso)</option>
+<option>Corporate Negotiated Tier 1</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant text-[16px] pointer-events-none">arrow_drop_down</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-space-sm py-1 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[18px]">filter_list</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Rules:</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">MLOS &amp; CTA Active</span>
+</div>
+</div>
+</div>
+<!-- Main Work Canvas: Split Grid (Calendar 8-Col, Inspector Drawer 4-Col) -->
+<div class="grid grid-cols-1 2xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT: Calendar Month Matrix (2xl:col-span-8) -->
+<div class="2xl:col-span-8 bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col space-y-space-sm">
+<!-- Days of Week Header -->
+<div class="grid grid-cols-7 gap-space-xs text-center font-label-sm text-label-sm uppercase tracking-wider text-outline pb-space-xs">
+<div class="py-1">Mon</div>
+<div class="py-1">Tue</div>
+<div class="py-1 text-primary font-semibold">Wed</div>
+<div class="py-1">Thu</div>
+<div class="py-1">Fri</div>
+<div class="py-1 text-secondary font-semibold bg-surface-container/50 rounded">Sat (Wkd)</div>
+<div class="py-1 text-secondary font-semibold bg-surface-container/50 rounded">Sun (Wkd)</div>
+</div>
+<!-- Calendar 35-Grid (5 Rows x 7 Days) -->
+<div class="grid grid-cols-7 gap-space-xs">
+<!-- Previous month trailing days (Sept 28, 29, 30) -->
+<div class="min-h-[112px] p-2 bg-surface-container-lowest/40 rounded-lg opacity-35 flex flex-col justify-between">
+<div class="flex justify-between items-center text-on-surface-variant font-data-tabular text-data-tabular">
+<span>28</span>
+<span class="text-[10px]">Sep</span>
+</div>
+<div class="font-data-tabular text-data-tabular text-on-surface-variant">$820</div>
+<div class="text-[10px] text-outline">35% Occ</div>
+</div>
+<div class="min-h-[112px] p-2 bg-surface-container-lowest/40 rounded-lg opacity-35 flex flex-col justify-between">
+<div class="flex justify-between items-center text-on-surface-variant font-data-tabular text-data-tabular">
+<span>29</span>
+<span class="text-[10px]">Sep</span>
+</div>
+<div class="font-data-tabular text-data-tabular text-on-surface-variant">$820</div>
+<div class="text-[10px] text-outline">38% Occ</div>
+</div>
+<div class="min-h-[112px] p-2 bg-surface-container-lowest/40 rounded-lg opacity-35 flex flex-col justify-between">
+<div class="flex justify-between items-center text-on-surface-variant font-data-tabular text-data-tabular">
+<span>30</span>
+<span class="text-[10px]">Sep</span>
+</div>
+<div class="font-data-tabular text-data-tabular text-on-surface-variant">$890</div>
+<div class="text-[10px] text-outline">42% Occ</div>
+</div>
+<!-- OCT 01: Thursday -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between group shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">01</span>
+<span class="font-label-sm text-[10px] px-1 rounded bg-surface-container-highest text-on-surface-variant">BAR</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$890</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>54% Occ</span>
+<span class="text-tertiary">38 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[54%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 02: Friday -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between group shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">02</span>
+<span class="font-label-sm text-[10px] px-1 rounded bg-secondary-container text-on-secondary-container font-semibold">WKD</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$1,050</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>68% Occ</span>
+<span class="text-tertiary">26 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[68%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 03: Saturday -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between group shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">03</span>
+<span class="font-label-sm text-[10px] px-1 rounded bg-secondary-container text-on-secondary-container font-semibold">WKD</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$1,120</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>72% Occ</span>
+<span class="text-tertiary">22 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[72%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 04: Sunday -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between group shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">04</span>
+<span class="font-label-sm text-[10px] px-1 rounded bg-surface-container-highest text-on-surface-variant">BAR</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-on-surface">$910</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>48% Occ</span>
+<span class="text-tertiary">42 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[48%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 05 to 11 (Week 2) -->
+<!-- OCT 05 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">05</span>
+<span class="text-[10px] text-outline font-data-tabular">Yield 1.0x</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-on-surface">$850</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>50% Occ</span>
+<span class="text-tertiary">41 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[50%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 06 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">06</span>
+<span class="text-[10px] text-outline font-data-tabular">Yield 1.0x</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-on-surface">$850</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>55% Occ</span>
+<span class="text-tertiary">37 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[55%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 07 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">07</span>
+<span class="text-[10px] text-outline font-data-tabular">Corp 1</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-on-surface">$920</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>61% Occ</span>
+<span class="text-tertiary">32 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[61%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 08 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">08</span>
+<span class="font-label-sm text-[10px] px-1 rounded bg-surface-container-highest text-secondary">MLOS 2</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$980</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>64% Occ</span>
+<span class="text-tertiary">30 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[64%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 09 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">09</span>
+<span class="font-label-sm text-[10px] px-1 rounded bg-secondary-container text-on-secondary-container font-semibold">WKD</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$1,150</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>76% Occ</span>
+<span class="text-tertiary">20 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[76%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 10 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">10</span>
+<span class="font-label-sm text-[10px] px-1 rounded bg-secondary-container text-on-secondary-container font-semibold">WKD</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$1,280</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>84% Occ</span>
+<span class="text-tertiary">13 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[84%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 11 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">11</span>
+<span class="text-[10px] text-outline font-data-tabular">Yield 1.1x</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-on-surface">$960</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>58% Occ</span>
+<span class="text-tertiary">34 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[58%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 12 to 18 (Week 3 - HIGHLIGHT SUMMIT PEAK) -->
+<!-- OCT 12 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">12</span>
+<span class="text-[10px] text-tertiary font-data-tabular">Buildup</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-on-surface">$1,100</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>71% Occ</span>
+<span class="text-tertiary">23 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[71%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 13 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">13</span>
+<span class="font-label-sm text-[10px] px-1 rounded bg-surface-container-highest text-primary">Pre-Summit</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$1,450</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>82% Occ</span>
+<span class="text-tertiary">15 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[82%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 14 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">14</span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-semibold">MLOS 3N</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$1,980</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>91% Occ</span>
+<span class="text-error font-semibold">7 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[91%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 15 (ACTIVE SELECTED INSPECTED DAY) -->
+<div class="min-h-[112px] p-2 bg-surface-container-high rounded-lg shadow-[0_0_24px_rgba(212,175,55,0.4)] flex flex-col justify-between relative transform scale-[1.02] z-10">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-headline-sm text-body-md text-primary font-bold">15</span>
+</div>
+<span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-primary text-on-primary font-bold tracking-wider">SELECTED</span>
+</div>
+<div class="bg-primary-container/20 rounded p-1">
+<div class="font-label-sm text-[10px] text-primary truncate font-semibold">Karnak Sun Gala</div>
+<div class="font-data-tabular text-headline-sm text-primary font-bold leading-tight">$2,850</div>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-error font-semibold">96% Occ</span>
+<span class="text-error font-bold">3 Keys</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full w-[96%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 16 -->
+<div class="min-h-[112px] p-2 bg-surface-container-high/90 rounded-lg hover:bg-surface-bright transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-primary font-semibold">16</span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-surface-container text-primary font-semibold">Summit D2</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$2,850</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span class="text-error font-semibold">98% Occ</span>
+<span class="text-error font-bold">2 Keys</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full w-[98%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 17 -->
+<div class="min-h-[112px] p-2 bg-surface-container-high/90 rounded-lg hover:bg-surface-bright transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-primary font-semibold">17</span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-surface-container text-primary font-semibold">CTA ON</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$2,650</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span class="text-error font-semibold">97% Occ</span>
+<span class="text-error font-bold">2 Keys</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full w-[97%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 18 -->
+<div class="min-h-[112px] p-2 bg-surface-container-high/90 rounded-lg hover:bg-surface-bright transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">18</span>
+<span class="font-label-sm text-[10px] px-1 rounded bg-surface-container-highest text-on-surface-variant">Departures</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$1,850</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>88% Occ</span>
+<span class="text-tertiary">10 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[88%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 19 to 25 (Week 4 - NILE REGATTA PEAK) -->
+<!-- OCT 19 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">19</span>
+<span class="text-[10px] text-outline font-data-tabular">Yield 1.1x</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-on-surface">$950</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>59% Occ</span>
+<span class="text-tertiary">33 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[59%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 20 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">20</span>
+<span class="text-[10px] text-outline font-data-tabular">BAR Tier</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-on-surface">$980</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>63% Occ</span>
+<span class="text-tertiary">30 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[63%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 21 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">21</span>
+<span class="text-[10px] text-tertiary font-semibold">Regatta Prep</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$1,290</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>78% Occ</span>
+<span class="text-tertiary">18 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[78%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 22 -->
+<div class="min-h-[112px] p-2 bg-surface-container-high rounded-lg hover:bg-surface-bright transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-tertiary font-bold">22</span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-on-tertiary font-semibold">Regatta</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-tertiary">$1,750</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span class="text-tertiary font-semibold">92% Occ</span>
+<span class="text-error">6 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[92%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 23 -->
+<div class="min-h-[112px] p-2 bg-surface-container-high rounded-lg hover:bg-surface-bright transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-tertiary font-bold">23</span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-tertiary-container text-on-tertiary font-semibold">Cup Race</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-tertiary">$1,820</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span class="text-tertiary font-semibold">98% Occ</span>
+<span class="text-error font-bold">2 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[98%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 24 -->
+<div class="min-h-[112px] p-2 bg-surface-container-high rounded-lg hover:bg-surface-bright transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-tertiary font-bold">24</span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-semibold">Gala Dinner</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-tertiary">$1,790</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span class="text-tertiary font-semibold">95% Occ</span>
+<span class="text-error font-bold">4 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[95%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 25 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">25</span>
+<span class="text-[10px] text-outline font-data-tabular">Sunday BAR</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-on-surface">$1,020</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>65% Occ</span>
+<span class="text-tertiary">28 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[65%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 26 to 31 (Week 5 - HALLOWEEN BALL) -->
+<!-- OCT 26 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">26</span>
+<span class="text-[10px] text-outline font-data-tabular">Yield 1.0x</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-on-surface">$890</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>52% Occ</span>
+<span class="text-tertiary">39 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[52%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 27 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">27</span>
+<span class="text-[10px] text-outline font-data-tabular">Yield 1.0x</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-on-surface">$890</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>57% Occ</span>
+<span class="text-tertiary">35 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[57%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 28 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">28</span>
+<span class="text-[10px] text-outline font-data-tabular">Corp 2</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-on-surface">$940</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>62% Occ</span>
+<span class="text-tertiary">31 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[62%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 29 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">29</span>
+<span class="font-label-sm text-[10px] px-1 rounded bg-surface-container-highest text-secondary">Min 2N</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$1,150</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>74% Occ</span>
+<span class="text-tertiary">21 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[74%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 30 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-primary font-semibold">30</span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-semibold">Masked Ball</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$1,450</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>89% Occ</span>
+<span class="text-primary font-semibold">9 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[89%]"></div>
+</div>
+</div>
+</div>
+<!-- OCT 31 -->
+<div class="min-h-[112px] p-2 bg-surface-container rounded-lg hover:bg-surface-container-high transition-all cursor-pointer flex flex-col justify-between shadow-sm">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-body-md text-primary font-semibold">31</span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-semibold">Gala Soirée</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-data-tabular text-body-md font-semibold text-primary">$1,600</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span>94% Occ</span>
+<span class="text-error font-semibold">5 Free</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[94%]"></div>
+</div>
+</div>
+</div>
+<!-- Nov 01 trailing day -->
+<div class="min-h-[112px] p-2 bg-surface-container-lowest/40 rounded-lg opacity-35 flex flex-col justify-between">
+<div class="flex justify-between items-center text-on-surface-variant font-data-tabular text-data-tabular">
+<span>01</span>
+<span class="text-[10px]">Nov</span>
+</div>
+<div class="font-data-tabular text-data-tabular text-on-surface-variant">$950</div>
+<div class="text-[10px] text-outline">51% Occ</div>
+</div>
+</div>
+<!-- Calendar Matrix Footnote & Legend -->
+<div class="flex flex-wrap items-center justify-between pt-space-sm gap-space-sm text-data-tabular text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span>Regular Demand (&lt;70%)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>Elevated Weekend (70-85%)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span>Surge Event Spike (&gt;85%)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span>Critical Compression (&gt;95%)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-outline">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>Click any cell to override suite rate codes, MLOS rules, or apply channel hold</span>
+</div>
+</div>
+</div>
+<!-- RIGHT: Active Day Yield Inspector Drawer (2xl:col-span-4) -->
+<div class="2xl:col-span-4 flex flex-col space-y-space-md">
+<!-- Day Dossier Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-md">
+<!-- Drawer Header -->
+<div class="flex items-start justify-between pb-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">analytics</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold">Yield Inspector • Live Focus</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-0.5">Wednesday, 15 Oct 2026</h2>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Lock Day Matrix" type="button">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Refresh Live Bookings" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Event Dossier Banner with Visual Placeholder -->
+<div class="relative rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<div class="bg-cover bg-center w-full h-28 relative" data-alt="The grand hypostyle hall of Karnak Temple at twilight, illuminated by golden uplighting and ambient torches for a high-level VIP diplomatic banquet, deep midnight blue sky above, royal Egyptian stone architecture, cinematic executive ambiance." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDVcvAP08k6m65FJ7qWbSGwspMD3vN3W1d8FKReIojxeOwThK489gfsGugaGTO8rQF0e4ICWDn05VseSPAE98cCYpBq2--ZeAsfkprus1NFHU6KIjj2giqOZc_2yaYuzGNlibQz_9zvAO5PJywRkNSztEdS5WzraCkzZkDdwfBbCxASBbMk2VX9b6v6XFxFq3bl5Mh6W5gQBVA4CFMPKMhg2Bs1ZO2ydxje5FoDRgsl3a3jzd1T7Ell')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/60 to-transparent"></div>
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-bold uppercase tracking-wider shadow-sm">
+              Event Spike Tier A+
+            </div>
+</div>
+<div class="p-space-sm space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-body-md text-on-surface font-semibold">Karnak Sun Alignment Gala &amp; Diplomatic Forum</span>
+<span class="font-data-tabular text-data-tabular text-primary font-bold">Spike +65%</span>
+</div>
+<div class="flex items-center gap-space-md text-data-tabular text-on-surface-variant">
+<span>Event Weight: <strong class="text-on-surface">9.8 / 10</strong></span>
+<span>•</span>
+<span>City Compression: <strong class="text-tertiary">96.2%</strong></span>
+<span>•</span>
+<span>3-Night Surge Block</span>
+</div>
+</div>
+</div>
+<!-- Suite-by-Suite Rate Overrides -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Suite Category Matrix</span>
+<span class="font-data-tabular text-data-tabular text-primary font-semibold">4 Collections Active</span>
+</div>
+<!-- Suite 1: Deluxe Heritage King -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors space-y-1.5">
+<div class="flex items-start justify-between">
+<div>
+<div class="font-title-md text-body-sm font-semibold text-on-surface">Deluxe Heritage King</div>
+<div class="font-data-tabular text-data-tabular text-on-surface-variant">Base Rate: $620 • <span class="text-tertiary font-semibold">4 Keys Left</span></div>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">$890</div>
+<div class="font-data-tabular text-label-sm text-tertiary font-semibold">+43.5% Surge</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 text-data-tabular text-on-surface-variant">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-outline">MLOS: 2 Nights</span>
+<span class="text-tertiary font-semibold">Dynamic Auto-Yield</span>
+</div>
+</div>
+<!-- Suite 2: Executive Nile Suite -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors space-y-1.5">
+<div class="flex items-start justify-between">
+<div>
+<div class="font-title-md text-body-sm font-semibold text-on-surface">Executive Nile Suite</div>
+<div class="font-data-tabular text-data-tabular text-on-surface-variant">Base Rate: $850 • <span class="text-error font-semibold">2 Keys Left</span></div>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">$1,450</div>
+<div class="font-data-tabular text-label-sm text-tertiary font-semibold">+70.5% Surge</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 text-data-tabular text-on-surface-variant">
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-semibold">MLOS: 3 Nights Enforced</span>
+<span class="text-secondary">VIP Concierge Escort</span>
+</div>
+</div>
+<!-- Suite 3: Nile Royal Waterfront Villa -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors space-y-1.5">
+<div class="flex items-start justify-between">
+<div>
+<div class="font-title-md text-body-sm font-semibold text-on-surface">Nile Royal Waterfront Villa</div>
+<div class="font-data-tabular text-data-tabular text-on-surface-variant">Base Rate: $2,400 • <span class="text-error font-bold">1 Key Left (Villa Ramses)</span></div>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">$3,800</div>
+<div class="font-data-tabular text-label-sm text-tertiary font-semibold">+58.3% Surge</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 text-data-tabular text-on-surface-variant">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-semibold">100% Non-Refundable</span>
+<span class="text-outline">Butler Assigned</span>
+</div>
+</div>
+<!-- Suite 4: Sovereign Penthouse -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/70 opacity-90 space-y-1.5">
+<div class="flex items-start justify-between">
+<div>
+<div class="font-title-md text-body-sm font-semibold text-on-surface flex items-center gap-1.5">
+<span>Sovereign Penthouse</span>
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+</div>
+<div class="font-data-tabular text-data-tabular text-outline">Base: $4,800 • Contracted: $7,200/nt</div>
+</div>
+<div class="text-right">
+<span class="px-2 py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm font-bold uppercase tracking-wider">SOLD OUT</span>
+<div class="font-data-tabular text-label-sm text-on-surface-variant mt-0.5">Kuwait Diplomatic Envoy</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 text-data-tabular text-on-surface-variant">
+<span class="text-outline">Folio #KWT-77401-DP</span>
+<span class="text-tertiary">Secured &amp; Paid Full</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Rules & Policy Constraints Controls -->
+<div class="p-space-sm rounded-lg bg-surface-container space-y-space-sm">
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Operational Constraints &amp; Directives</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- CTA Toggle -->
+<label class="flex items-center justify-between p-2 rounded bg-surface-container-low cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface font-semibold">CTA (Closed Arrival)</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Lock check-in</span>
+</div>
+<div class="w-8 h-4 rounded-full bg-surface-container-highest relative flex items-center p-0.5">
+<div class="w-3 h-3 rounded-full bg-outline transition-all"></div>
+</div>
+</label>
+<!-- CTD Toggle -->
+<label class="flex items-center justify-between p-2 rounded bg-surface-container-low cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface font-semibold">CTD (Closed Depart)</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Lock check-out</span>
+</div>
+<div class="w-8 h-4 rounded-full bg-surface-container-highest relative flex items-center p-0.5">
+<div class="w-3 h-3 rounded-full bg-outline transition-all"></div>
+</div>
+</label>
+</div>
+<!-- MLOS Input & Guarantee Policy Selector -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Minimum Length of Stay (MLOS):</span>
+<span class="font-data-tabular font-bold text-primary">3 Nights</span>
+</div>
+<input class="w-full accent-primary h-1.5 bg-surface-container-highest rounded-lg cursor-pointer" max="7" min="1" type="range" value="3"/>
+<div class="flex justify-between text-[10px] font-data-tabular text-outline">
+<span>1 Night</span>
+<span>2N</span>
+<span class="text-primary font-bold">3N (Event Target)</span>
+<span>5N</span>
+<span>7N Max</span>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-[11px] text-outline uppercase tracking-wider block">Mandatory Guarantee Policy</label>
+<div class="flex items-center gap-space-xs bg-surface-container-low p-2 rounded text-data-tabular text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="text-body-sm">Strict 100% Non-refundable Advance Deposit</span>
+</div>
+</div>
+</div>
+<!-- Action Drawer Buttons -->
+<div class="space-y-space-xs pt-space-xs">
+<button class="w-full py-2.5 rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-headline-sm text-body-md font-semibold transition-all shadow-[0_0_20px_rgba(212,175,55,0.3)] flex items-center justify-center gap-space-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">sync</span>
+<span>Apply &amp; Synchronize Channels (OTA/GDS)</span>
+</button>
+<button class="w-full py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-title-md text-body-sm transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">restore</span>
+<span>Reset 15 Oct to Seasonal Base Matrix</span>
+</button>
+</div>
+<!-- Audit Ledger Micro Footnote -->
+<div class="flex items-center justify-between pt-space-xs text-[11px] font-data-tabular text-outline">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history</span>
+<span>Last override: 12m ago</span>
+</div>
+<span>Yield Dir: T. Mansouri (#E-882)</span>
+</div>
+</div>
+<!-- Historical YoY Pace Trend Visualizer Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">timeline</span>
+<span class="font-title-md text-body-sm text-on-surface font-semibold">Pace Benchmark vs Oct 2025</span>
+</div>
+<span class="font-data-tabular text-data-tabular text-tertiary font-semibold">+340 Rms Ahead</span>
+</div>
+<!-- Mini SVG Pace Graph -->
+<div class="h-20 w-full bg-surface-container rounded-lg p-2 flex flex-col justify-between">
+<div class="flex items-center justify-between text-[10px] font-data-tabular text-outline">
+<span>Oct 1</span>
+<span class="text-primary font-semibold">• Oct 15 Spike</span>
+<span>Oct 31</span>
+</div>
+<svg class="w-full h-10 overflow-visible" fill="none" viewbox="0 0 300 40" xmlns="http://www.w3.org/2000/svg">
+<!-- 2025 Historical Line (Muted) -->
+<path class="text-outline/40" d="M0 32 Q 50 30, 100 28 T 150 22 T 200 24 T 250 18 T 300 15" stroke="currentColor" stroke-dasharray="3 3" stroke-width="1.5"></path>
+<!-- 2026 Live Pace Line (Gold Highlight) -->
+<path class="text-primary" d="M0 28 Q 50 25, 100 18 T 150 4 T 200 12 T 250 8 T 300 6" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Peak Indicator dot at Oct 15 (x=150, y=4) -->
+<circle class="text-primary" cx="150" cy="4" fill="currentColor" r="4"></circle>
+<circle class="text-primary animate-ping" cx="150" cy="4" opacity="0.75" r="8" stroke="currentColor" stroke-width="1"></circle>
+</svg>
+<div class="flex items-center justify-between text-[10px] font-data-tabular text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2 h-0.5 bg-outline"></span> Oct 2025: $1,130 ADR</span>
+<span class="flex items-center gap-1"><span class="w-2 h-0.5 bg-primary"></span> Oct 2026: $1,340 ADR (+18.4%)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Seasonal Yield Policies Matrix Strip -->
+<div class="mt-space-lg bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">hub</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Active Seasonal Yield Rules &amp; Multi-Property Cascade</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Global rate plans synchronized across Amon Palace, Palm Royal Resort, and Siwa Oasis Sanctuary.</p>
+</div>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-body-sm transition-colors flex items-center gap-1.5 self-start sm:self-auto shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">rule</span>
+<span>Manage Rate Governance</span>
+</button>
+</div>
+<!-- Rule Cards Mosaic -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Rule 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-semibold uppercase tracking-wider">Dynamic Multiplier</span>
+<span class="font-data-tabular text-data-tabular text-tertiary font-bold">1.45x Auto</span>
+</div>
+<div class="font-title-md text-body-sm font-semibold text-on-surface">Peak Compression Trigger &gt;85%</div>
+<p class="text-body-sm text-on-surface-variant">When property physical occupancy reaches 85%, automated 20% step surcharge is applied to standard BAR across all luxury OTAs.</p>
+<div class="text-[11px] font-data-tabular text-outline pt-1">Active on: All 3 Sovereign Estates</div>
+</div>
+<!-- Rule 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-semibold uppercase tracking-wider">Stay Restriction</span>
+<span class="font-data-tabular text-data-tabular text-secondary font-bold">MLOS 3N</span>
+</div>
+<div class="font-title-md text-body-sm font-semibold text-on-surface">Special Event Gap Protect</div>
+<p class="text-body-sm text-on-surface-variant">Prohibits orphan 1-night bookings between Oct 14-19 to protect 3-night diplomatic delegations attending international summits.</p>
+<div class="text-[11px] font-data-tabular text-outline pt-1">Protected Dates: 8 Peak Nights</div>
+</div>
+<!-- Rule 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded bg-surface-container-highest text-tertiary font-semibold uppercase tracking-wider">Channel Parity</span>
+<span class="font-data-tabular text-data-tabular text-tertiary font-bold">-10% Direct</span>
+</div>
+<div class="font-title-md text-body-sm font-semibold text-on-surface">Direct Web Sovereign Loyalty</div>
+<p class="text-body-sm text-on-surface-variant">Always maintains a 10% rate advantage plus complimentary airport yacht transfer for verified Sovereign Club members on direct portal.</p>
+<div class="text-[11px] font-data-tabular text-outline pt-1">Includes: Amon, Palm &amp; Siwa</div>
+</div>
+<!-- Rule 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold uppercase tracking-wider">Non-Refundable</span>
+<span class="font-data-tabular text-data-tabular text-error font-bold">Strict 100%</span>
+</div>
+<div class="font-title-md text-body-sm font-semibold text-on-surface">High-Demand Pre-Payment Lock</div>
+<p class="text-body-sm text-on-surface-variant">Automatic shift from flexible cancellation to full non-refundable deposit upon reaching 30 days prior to High Season holidays.</p>
+<div class="text-[11px] font-data-tabular text-outline pt-1">Audit Flag: Enforced by AI Engine</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Interaction Script for Dynamic Keyboard Shortcuts & Calendar Micro-Interactions -->
+<script>
+  // Simple listener for desktop shortcut keys specified in the prompt micro-bar
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'F2') {
+      event.preventDefault();
+      alert('Sovereign PMS: Opening [New Rate Rule] configuration modal.');
+    } else if (event.key === 'F3') {
+      event.preventDefault();
+      alert('Sovereign PMS: Opening [Season Rule Builder] drawer.');
+    } else if (event.key === 'F4') {
+      event.preventDefault();
+      alert('Sovereign PMS: Opening [Event Spike Surcharges] editor.');
+    } else if (event.key === 'F10') {
+      event.preventDefault();
+      const searchInput = document.querySelector('header input[type="text"]');
+      if (searchInput) searchInput.focus();
+    }
+  });
+</script></main></div></body></html>

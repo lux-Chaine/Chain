@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#323851","on-secondary-container":"#a7b6ee","primary-container":"#d4af37","inverse-primary":"#735c00","inverse-on-surface":"#292f48","secondary-fixed-dim":"#b5c5fd","surface-dim":"#0b1229","outline":"#99907c","on-tertiary-fixed":"#002113","surface":"#0b1229","error-container":"#93000a","on-secondary":"#1e2e5d","surface-container-highest":"#2d344c","on-primary-fixed":"#241a00","on-background":"#dce1ff","error":"#ffb4ab","primary":"#f2ca50","on-tertiary-fixed-variant":"#005236","on-surface-variant":"#d0c5af","primary-fixed-dim":"#e9c349","secondary":"#b5c5fd","surface-container-lowest":"#060d24","surface-container-low":"#141a32","primary-fixed":"#ffe088","surface-variant":"#2d344c","background":"#0b1229","on-primary":"#3c2f00","on-tertiary":"#003824","tertiary":"#58e7aa","on-error":"#690005","on-error-container":"#ffdad6","on-primary-fixed-variant":"#574500","surface-container":"#181e36","on-secondary-fixed-variant":"#354575","inverse-surface":"#dce1ff","tertiary-fixed-dim":"#4edea3","surface-container-high":"#222941","on-surface":"#dce1ff","on-primary-container":"#554300","tertiary-container":"#33ca90","outline-variant":"#4d4635","on-tertiary-container":"#005035","secondary-fixed":"#dbe1ff","surface-tint":"#e9c349","tertiary-fixed":"#6ffbbe","on-secondary-fixed":"#051847","secondary-container":"#384777"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-desktop":"2rem","space-md":"1rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","margin":"1rem","gutter":"1.25rem","space-xs":"0.25rem","space-xl":"2.5rem","space-sm":"0.5rem"},fontFamily:{"body-md":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"label-sm":["Hanken Grotesk"],"display":["Hanken Grotesk"],"headline-lg":["Hanken Grotesk"],"headline-sm":["Hanken Grotesk"],"headline-md":["Hanken Grotesk"],"headline-lg-mobile":["Hanken Grotesk"],"body-sm":["Hanken Grotesk"],"data-tabular":["Hanken Grotesk"],"title-md":["Hanken Grotesk"]},fontSize:{"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.05em","fontWeight":"600"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.06em","fontWeight":"500"}],"display":["3rem",{"lineHeight":"3.5rem","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"data-tabular":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.01em","fontWeight":"500"}],"title-md":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"500"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[0_4px_24px_rgba(0,0,0,0.4)] overflow-y-auto"><div class="h-16 px-space-lg flex items-center justify-between bg-surface-container-lowest/90"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">hotel_class</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary uppercase tracking-wider">Sovereign</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Chain PMS v4.2</span></div></div><span class="material-symbols-outlined text-outline hover:text-on-surface cursor-pointer text-[18px]">unfold_more</span></div><div class="px-space-md py-space-sm"><div class="bg-surface-container-low p-space-sm rounded flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="font-label-sm text-label-sm text-on-surface uppercase">Hotel Node Active</span></div><span class="font-data-tabular text-data-tabular text-secondary">EST-01</span></div></div><nav class="flex-1 px-space-md py-space-xs space-y-space-md" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded shadow-sm"><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Front Office</div><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="reservations-tape-chart" href="#"><span class="material-symbols-outlined text-[18px]">calendar_month</span><span>Tape Chart &amp; Matrix</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="arrivals-and-departures" href="#"><span class="material-symbols-outlined text-[18px]">luggage</span><span>Arrivals &amp; Departures</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="guest-profiles-and-crm" href="#"><span class="material-symbols-outlined text-[18px]">badge</span><span>Guest Profiles &amp; VIP</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="housekeeping-and-room-status" href="#"><span class="material-symbols-outlined text-[18px]">cleaning_services</span><span>Housekeeping Status</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Cashier &amp; Billing</div><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="front-desk-cashier" href="#"><span class="material-symbols-outlined text-[18px]">point_of_sale</span><span>Desk Cashier &amp; Drawer</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="guest-folios-and-billing" href="#"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span>Split Folios &amp; Invoices</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="city-ledger-accounts" href="#"><span class="material-symbols-outlined text-[18px]">account_balance</span><span>City Ledger Accounts</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Outlets &amp; POS Terminals</div><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs transition-all bg-primary-container text-on-primary-container font-bold rounded shadow-sm" data-path="restaurant-pos-outlet" href="#"><span class="material-symbols-outlined text-[18px]">restaurant</span><span>Le Gabriel Gourmet</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="lounge-pos-outlet" href="#"><span class="material-symbols-outlined text-[18px]">local_bar</span><span>Royal Crest Lounge</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="in-room-dining-pos" href="#"><span class="material-symbols-outlined text-[18px]">room_service</span><span>In-Room Dining POS</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="beach-bar-pos" href="#"><span class="material-symbols-outlined text-[18px]">beach_access</span><span>Azure Beach Pavilion</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Management &amp; System</div><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="night-audit-console" href="#"><span class="material-symbols-outlined text-[18px]">bedtime</span><span>Night Audit Control</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="revenue-and-rate-manager" href="#"><span class="material-symbols-outlined text-[18px]">monitoring</span><span>Yield &amp; Rate Strategy</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="system-configuration" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span>Chain Config &amp; Roles</span></a></div></nav><div class="p-space-md bg-surface-container-low/60 flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-primary"></div><span class="font-label-sm text-label-sm text-on-surface-variant">OperaSync Gateway</span></div><span class="font-data-tabular text-data-tabular text-tertiary">99.98%</span></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded shadow-inner"><span class="material-symbols-outlined text-primary text-[20px]">apartment</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Property Node</span><span class="font-title-md text-title-md text-on-surface font-semibold">Amon Luxury Palace &amp; Spa</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px] ml-space-xs cursor-pointer">arrow_drop_down</span></div><div class="h-6 w-px bg-surface-container-highest hidden md:block"></div><div class="hidden lg:flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">schedule</span><span class="font-label-sm text-label-sm text-on-surface-variant">Shift #04:</span><span class="font-data-tabular text-data-tabular text-on-surface font-semibold">Tariq Mansouri</span></div><div class="flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-surface-container-high"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-tertiary">Audit: Closed (03:00)</span></div></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="flex items-center gap-space-xs bg-primary text-on-primary px-space-md py-space-xs rounded font-label-md text-label-md transition-all shadow-[0_0_12px_rgba(212,175,55,0.25)] hover:shadow-[0_0_16px_rgba(212,175,55,0.35)]"><span class="material-symbols-outlined text-[16px]">add</span><span>New Booking</span></button><button class="flex items-center gap-space-xs bg-surface-container-high text-on-surface hover:bg-surface-container-highest hover:text-on-surface px-space-md py-space-xs rounded font-label-md text-label-md transition-all"><span class="material-symbols-outlined text-[16px]">sensor_door</span><span>Fast Check-In</span></button><button class="flex items-center gap-space-xs bg-surface-container-high text-on-surface hover:bg-surface-container-highest hover:text-on-surface px-space-md py-space-xs rounded font-label-md text-label-md transition-all"><span class="material-symbols-outlined text-[16px]">search</span><span>Find Folio</span></button></div><div class="h-6 w-px bg-surface-container-highest hidden sm:block"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface cursor-pointer"><span class="material-symbols-outlined text-[18px]">notifications</span></div><div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface cursor-pointer"><span class="material-symbols-outlined text-[18px]">help_outline</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface px-space-lg"><div class="flex flex-col w-full pb-12 text-on-surface">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-20 left-10 w-72 h-72 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Executive Title & Context Area -->
+<div class="pt-4 pb-6 flex flex-col gap-space-sm border-b border-surface-container-high/60">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-2 text-label-sm font-label-sm uppercase tracking-widest text-outline">
+<span class="text-secondary font-semibold">Sovereign Core</span>
+<span class="text-outline-variant font-normal">/</span>
+<span>Revenue Strategy &amp; Yield</span>
+<span class="text-outline-variant font-normal">/</span>
+<span class="text-primary font-bold">Rate Codes &amp; Plans Directory</span>
+</div>
+<div class="flex items-center gap-space-xs text-label-sm font-label-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded bg-surface-container-high text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+            Multi-Tenant Channel Sync Active
+          </span>
+<span class="text-outline px-1">•</span>
+<span class="text-on-surface-variant font-data-tabular text-data-tabular">Cluster Nodes: AP-01, PO-04, SH-02</span>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mt-1">
+<div class="space-y-1">
+<h1 class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface flex items-center gap-3">
+            Rate Codes &amp; Price Plan Engineering Studio
+            <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/20 text-primary font-medium tracking-wide">Enterprise Luxe v4.2</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+            Centralized rate structures, meal plans, minimum stay constraints, and algorithmic market segment mapping across Amon Palace, Palm Oasis, and Siwa Haven.
+          </p>
+</div>
+<!-- Quick Header Tooling -->
+<div class="flex items-center gap-space-sm self-start lg:self-auto flex-wrap">
+<div class="relative min-w-[260px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface text-body-sm font-body-sm pl-9 pr-3 py-2 rounded focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" id="global-search" placeholder="Search rate code, market tag, cancellation..." type="text"/>
+</div>
+<button class="flex items-center gap-1.5 bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-label-md font-label-md px-space-md py-2 rounded transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export UBL/JSON</span>
+</button>
+<button class="flex items-center gap-1.5 bg-primary-container text-on-primary-container hover:brightness-110 font-label-md text-label-md px-space-md py-2 rounded font-bold transition-all shadow-[0_0_16px_rgba(212,175,55,0.25)]" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Create New Rate Plan [F3]</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4 High-Precision Luxury KPI Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md my-space-lg">
+<!-- KPI 1 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-md relative overflow-hidden flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-primary/5 pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Active Rate Codes</span>
+<span class="material-symbols-outlined text-primary text-[20px]">layers</span>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">28 Active</span>
+<span class="font-data-tabular text-data-tabular text-tertiary bg-tertiary/10 px-1.5 py-0.5 rounded">6 Categories</span>
+</div>
+<div class="mt-2 text-body-sm font-body-sm text-on-surface-variant flex items-center justify-between">
+<span>BAR, Corp, Consortia, Pkg, Promo, Gov</span>
+<span class="text-outline font-data-tabular">100% Valid</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-md relative overflow-hidden flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Average Base ADR</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">monetization_on</span>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">$840.00 <span class="text-body-sm font-normal text-on-surface-variant">USD</span></span>
+<span class="font-data-tabular text-data-tabular text-tertiary bg-tertiary/10 px-1.5 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>+12.4% vs LY
+          </span>
+</div>
+<div class="mt-2 text-body-sm font-body-sm text-on-surface-variant flex items-center justify-between">
+<span>Target: $820.00 | RevPAR Index: 142.6</span>
+<span class="text-outline font-data-tabular">Weighted avg</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-md relative overflow-hidden flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Yield Multiplier Rules</span>
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">16 Dynamic</span>
+<span class="font-data-tabular text-data-tabular text-primary-fixed-dim bg-primary/10 px-1.5 py-0.5 rounded">Auto-Surge</span>
+</div>
+<div class="mt-2 text-body-sm font-body-sm text-on-surface-variant flex items-center justify-between">
+<span>Surge step: +15% at &gt;85% Occupancy</span>
+<span class="text-tertiary font-data-tabular">Active</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-md relative overflow-hidden flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Channel Parity Latency</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">hub</span>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md font-bold text-tertiary">100% Synced</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded">0.1ms ping</span>
+</div>
+<div class="mt-2 text-body-sm font-body-sm text-on-surface-variant flex items-center justify-between">
+<span>OTAs • Sabré GDS • Direct Engine</span>
+<span class="text-outline font-data-tabular">2,410 Push/hr</span>
+</div>
+</div>
+</div>
+<!-- Main Studio Split: 60% Ledger / 40% Inspector -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Panel: 60% (col-span-7) Master Directory -->
+<section class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Filter Tabs & Controls -->
+<div class="bg-surface-container-low p-space-sm rounded shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0" id="filter-tabs">
+<button class="filter-btn active px-space-sm py-1 rounded text-label-md font-label-md bg-primary-container text-on-primary-container font-bold shadow-sm whitespace-nowrap">
+              All Plans (28)
+            </button>
+<button class="filter-btn px-space-sm py-1 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface whitespace-nowrap">
+              BAR (6)
+            </button>
+<button class="filter-btn px-space-sm py-1 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface whitespace-nowrap">
+              Corporate (8)
+            </button>
+<button class="filter-btn px-space-sm py-1 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface whitespace-nowrap">
+              Packages &amp; Spa (5)
+            </button>
+<button class="filter-btn px-space-sm py-1 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface whitespace-nowrap">
+              Promo/Flash (5)
+            </button>
+<button class="filter-btn px-space-sm py-1 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface whitespace-nowrap">
+              Diplomatic (4)
+            </button>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-auto shrink-0">
+<button class="p-1.5 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" title="Filter attributes">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" title="Sort order">
+<span class="material-symbols-outlined text-[18px]">swap_vert</span>
+</button>
+</div>
+</div>
+<!-- Master Rate Plans Ledger Table -->
+<div class="bg-surface-container-low rounded shadow-md overflow-hidden flex flex-col">
+<!-- Table Header -->
+<div class="grid grid-cols-12 bg-surface-container-lowest/80 px-space-md py-space-sm text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<div class="col-span-3">Code / Plan Name</div>
+<div class="col-span-2">Market &amp; Meal</div>
+<div class="col-span-2">Room Inventory</div>
+<div class="col-span-2 text-right">Base ADR</div>
+<div class="col-span-2 text-center">Policy</div>
+<div class="col-span-1 text-right">Status</div>
+</div>
+<!-- Table Rows (Interactive) -->
+<div class="divide-y divide-surface-container-high/40" id="rate-plans-ledger">
+<!-- Row 1: SELECTED (BAR-FLEX-01) -->
+<div class="rate-row selected grid grid-cols-12 items-center px-space-md py-3.5 bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high relative">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="col-span-3 flex flex-col pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-data-tabular text-data-tabular font-bold text-primary tracking-wide">BAR-FLEX-01</span>
+<span class="material-symbols-outlined text-primary text-[14px]" title="Master Rate Node">verified</span>
+</div>
+<span class="font-title-md text-title-md font-semibold text-on-surface truncate">Royal Flexible BAR</span>
+<span class="font-body-sm text-body-sm text-outline">Public • Transient Leisure</span>
+</div>
+<div class="col-span-2 flex flex-col pr-2">
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-1.5 py-0.5 rounded w-fit">Transient Luxury</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant mt-1">RO (Room Only)</span>
+</div>
+<div class="col-span-2 flex flex-col pr-2">
+<span class="font-body-sm text-body-sm text-on-surface">All Suites &amp; Villas</span>
+<span class="font-label-sm text-label-sm text-outline">142 Key Inventory</span>
+</div>
+<div class="col-span-2 text-right flex flex-col pr-2">
+<span class="font-data-tabular text-title-md font-bold text-primary">$1,450.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">USD / night</span>
+</div>
+<div class="col-span-2 text-center flex flex-col items-center">
+<span class="font-body-sm text-body-sm text-tertiary">Free cancel</span>
+<span class="font-label-sm text-label-sm text-outline">24h prior</span>
+</div>
+<div class="col-span-1 text-right">
+<span class="inline-block px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-tertiary/10 text-tertiary font-semibold">ACT</span>
+</div>
+</div>
+<!-- Row 2: CORP-EMB-02 -->
+<div class="rate-row grid grid-cols-12 items-center px-space-md py-3.5 bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container">
+<div class="col-span-3 flex flex-col pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-data-tabular text-data-tabular font-bold text-secondary tracking-wide">CORP-EMB-02</span>
+</div>
+<span class="font-title-md text-title-md font-semibold text-on-surface truncate">Diplomatic &amp; Embassy</span>
+<span class="font-body-sm text-body-sm text-outline">Consular &amp; Government VIP</span>
+</div>
+<div class="col-span-2 flex flex-col pr-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded w-fit">Diplomatic Key</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant mt-1">BB (Full Breakfast)</span>
+</div>
+<div class="col-span-2 flex flex-col pr-2">
+<span class="font-body-sm text-body-sm text-on-surface">Nile Suite &amp; Pharaoh</span>
+<span class="font-label-sm text-label-sm text-outline">28 Dedicated Keys</span>
+</div>
+<div class="col-span-2 text-right flex flex-col pr-2">
+<span class="font-data-tabular text-title-md font-bold text-on-surface">$1,100.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">USD / night</span>
+</div>
+<div class="col-span-2 text-center flex flex-col items-center">
+<span class="font-body-sm text-body-sm text-on-surface">6:00 PM Arr.</span>
+<span class="font-label-sm text-label-sm text-outline">Company guarantee</span>
+</div>
+<div class="col-span-1 text-right">
+<span class="inline-block px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-tertiary/10 text-tertiary font-semibold">ACT</span>
+</div>
+</div>
+<!-- Row 3: PKG-WELL-04 -->
+<div class="rate-row grid grid-cols-12 items-center px-space-md py-3.5 bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container">
+<div class="col-span-3 flex flex-col pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-data-tabular text-data-tabular font-bold text-primary tracking-wide">PKG-WELL-04</span>
+<span class="material-symbols-outlined text-tertiary text-[14px]" title="Package Bundle">spa</span>
+</div>
+<span class="font-title-md text-title-md font-semibold text-on-surface truncate">Cleopatra Thalasso Detox</span>
+<span class="font-body-sm text-body-sm text-outline">Wellness &amp; Longevity Clinic</span>
+</div>
+<div class="col-span-2 flex flex-col pr-2">
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary/10 px-1.5 py-0.5 rounded w-fit">Wellness Retreat</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant mt-1">FB (Full Board Org.)</span>
+</div>
+<div class="col-span-2 flex flex-col pr-2">
+<span class="font-body-sm text-body-sm text-on-surface">Waterfront Pavilions</span>
+<span class="font-label-sm text-label-sm text-outline">Min 3 Nights</span>
+</div>
+<div class="col-span-2 text-right flex flex-col pr-2">
+<span class="font-data-tabular text-title-md font-bold text-on-surface">$2,400.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">USD / night</span>
+</div>
+<div class="col-span-2 text-center flex flex-col items-center">
+<span class="font-body-sm text-body-sm text-secondary">7d Cancellation</span>
+<span class="font-label-sm text-label-sm text-outline">50% Prepay</span>
+</div>
+<div class="col-span-1 text-right">
+<span class="inline-block px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-tertiary/10 text-tertiary font-semibold">ACT</span>
+</div>
+</div>
+<!-- Row 4: PROMO-EARLY-90 -->
+<div class="rate-row grid grid-cols-12 items-center px-space-md py-3.5 bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container">
+<div class="col-span-3 flex flex-col pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-data-tabular text-data-tabular font-bold text-secondary tracking-wide">PROMO-EARLY-90</span>
+</div>
+<span class="font-title-md text-title-md font-semibold text-on-surface truncate">Imperial Advance (90D)</span>
+<span class="font-body-sm text-body-sm text-outline">Strict Non-Refundable</span>
+</div>
+<div class="col-span-2 flex flex-col pr-2">
+<span class="font-label-sm text-label-sm text-primary bg-primary/10 px-1.5 py-0.5 rounded w-fit">Advance Saver</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant mt-1">RO (Room Only)</span>
+</div>
+<div class="col-span-2 flex flex-col pr-2">
+<span class="font-body-sm text-body-sm text-on-surface">All Estate Categories</span>
+<span class="font-label-sm text-label-sm text-outline">20% Yield Locked</span>
+</div>
+<div class="col-span-2 text-right flex flex-col pr-2">
+<span class="font-data-tabular text-title-md font-bold text-on-surface">$1,160.00</span>
+<span class="font-label-sm text-label-sm text-outline line-through">$1,450.00</span>
+</div>
+<div class="col-span-2 text-center flex flex-col items-center">
+<span class="font-body-sm text-body-sm text-error">Non-Refundable</span>
+<span class="font-label-sm text-label-sm text-outline">100% Dep at book</span>
+</div>
+<div class="col-span-1 text-right">
+<span class="inline-block px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-tertiary/10 text-tertiary font-semibold">ACT</span>
+</div>
+</div>
+<!-- Row 5: CORP-TECH-07 -->
+<div class="rate-row grid grid-cols-12 items-center px-space-md py-3.5 bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container">
+<div class="col-span-3 flex flex-col pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-data-tabular text-data-tabular font-bold text-secondary tracking-wide">CORP-TECH-07</span>
+</div>
+<span class="font-title-md text-title-md font-semibold text-on-surface truncate">Tier-1 Corporate Tech</span>
+<span class="font-body-sm text-body-sm text-outline">Silicon / GCC Strategic</span>
+</div>
+<div class="col-span-2 flex flex-col pr-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded w-fit">Corporate Key</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant mt-1">BB Included</span>
+</div>
+<div class="col-span-2 flex flex-col pr-2">
+<span class="font-body-sm text-body-sm text-on-surface">Deluxe Nile &amp; Club</span>
+<span class="font-label-sm text-label-sm text-outline">Lounge Access</span>
+</div>
+<div class="col-span-2 text-right flex flex-col pr-2">
+<span class="font-data-tabular text-title-md font-bold text-on-surface">$950.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">USD / night</span>
+</div>
+<div class="col-span-2 text-center flex flex-col items-center">
+<span class="font-body-sm text-body-sm text-on-surface">18:00 Arr.</span>
+<span class="font-label-sm text-label-sm text-outline">Direct billing</span>
+</div>
+<div class="col-span-1 text-right">
+<span class="inline-block px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-tertiary/10 text-tertiary font-semibold">ACT</span>
+</div>
+</div>
+</div>
+<!-- Table Bottom Bar -->
+<div class="p-space-sm bg-surface-container-lowest/60 flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span>Showing 5 of 28 Rate Plans</span>
+<span class="text-outline">•</span>
+<span class="text-primary font-medium">Cluster Sync: OK</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="px-2 py-0.5 rounded bg-surface-container text-on-surface">1</button>
+<button class="px-2 py-0.5 rounded hover:bg-surface-container text-on-surface-variant">2</button>
+<button class="px-2 py-0.5 rounded hover:bg-surface-container text-on-surface-variant">3</button>
+<button class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Visual Property Yield Offset Matrix Overview -->
+<div class="bg-surface-container-low p-space-md rounded shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">domain</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface">Property Rate Distribution &amp; Yield Weight</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Multi-Node Realtime</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm mt-1">
+<div class="bg-surface-container p-space-sm rounded flex flex-col gap-1">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface font-semibold">Amon Luxury Palace (Luxor)</span>
+<span class="text-primary font-data-tabular">Index 100%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded overflow-hidden mt-1">
+<div class="bg-primary h-full rounded" style="width: 100%"></div>
+</div>
+<div class="flex justify-between text-body-sm font-body-sm text-outline mt-1">
+<span>Base BAR: $1,450.00</span>
+<span class="text-tertiary">Occ: 89% (Surge ON)</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded flex flex-col gap-1">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface font-semibold">Palm Oasis Grand (Cairo)</span>
+<span class="text-secondary font-data-tabular">Index 88%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded overflow-hidden mt-1">
+<div class="bg-secondary h-full rounded" style="width: 88%"></div>
+</div>
+<div class="flex justify-between text-body-sm font-body-sm text-outline mt-1">
+<span>Base BAR: $1,276.00</span>
+<span class="text-on-surface-variant">Occ: 74% (Normal)</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded flex flex-col gap-1">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface font-semibold">Siwa Haven Sanctuary</span>
+<span class="text-tertiary font-data-tabular">Index 115%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded overflow-hidden mt-1">
+<div class="bg-tertiary h-full rounded" style="width: 95%"></div>
+</div>
+<div class="flex justify-between text-body-sm font-body-sm text-outline mt-1">
+<span>Base BAR: $1,667.50</span>
+<span class="text-tertiary">Occ: 94% (Surge +20%)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Panel: 40% (col-span-5) Rate Code Dossier & Modal/Inspector -->
+<aside class="lg:col-span-5 flex flex-col bg-surface-container-low rounded shadow-xl overflow-hidden sticky top-20">
+<!-- Inspector Top Header Bar -->
+<div class="bg-surface-container p-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">architecture</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rate Code Inspector</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-primary-container/20 text-primary font-bold">
+                Editing: BAR-FLEX-01
+              </span>
+<button class="text-outline hover:text-on-surface p-1 rounded" title="Close inspector">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">check_circle</span>
+              Target Node: Amon Palace &amp; Group Master
+            </span>
+<span class="font-data-tabular text-outline">Last revised: Today, 14:22</span>
+</div>
+<!-- Inspector Internal Navigation Tabs -->
+<div class="flex items-center gap-1 mt-2 overflow-x-auto pb-1" id="inspector-tabs">
+<button class="insp-tab active px-space-sm py-1.5 rounded text-label-sm font-label-sm bg-surface-container-high text-primary font-semibold whitespace-nowrap">
+              General Specs
+            </button>
+<button class="insp-tab px-space-sm py-1.5 rounded text-label-sm font-label-sm text-on-surface-variant hover:bg-surface-container-high whitespace-nowrap">
+              Room Pricing Grid
+            </button>
+<button class="insp-tab px-space-sm py-1.5 rounded text-label-sm font-label-sm text-on-surface-variant hover:bg-surface-container-high whitespace-nowrap">
+              Deposit &amp; Cancellation
+            </button>
+<button class="insp-tab px-space-sm py-1.5 rounded text-label-sm font-label-sm text-on-surface-variant hover:bg-surface-container-high whitespace-nowrap">
+              OTA &amp; Channel Parity
+            </button>
+</div>
+</div>
+<!-- Inspector Scrollable Form Content -->
+<div class="p-space-md space-y-space-md max-h-[calc(100vh-320px)] overflow-y-auto">
+<!-- Section 1: Identification & Base Currencies -->
+<div class="space-y-space-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Identity &amp; Classification</span>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="space-y-1">
+<label class="text-body-sm font-body-sm text-on-surface-variant">Rate Code Identifier</label>
+<div class="bg-surface-container px-3 py-2 rounded text-body-md font-data-tabular font-bold text-primary shadow-inner">
+                  BAR-FLEX-01
+                </div>
+</div>
+<div class="space-y-1">
+<label class="text-body-sm font-body-sm text-on-surface-variant">Billing Base Currency</label>
+<select class="w-full bg-surface-container text-on-surface text-body-md font-body-md px-3 py-2 rounded focus:outline-none focus:ring-1 focus:ring-primary shadow-inner">
+<option selected="">USD ($) / EGP Parity Pegged</option>
+<option>EUR (€) Master Rate</option>
+<option>GBP (£) Sovereign Direct</option>
+</select>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-body-sm font-body-sm text-on-surface-variant">Plan Public Display Name (Multi-lingual)</label>
+<input class="w-full bg-surface-container text-on-surface text-body-md font-body-md px-3 py-2 rounded focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" type="text" value="Royal Flexible Best Available Rate"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="space-y-1">
+<label class="text-body-sm font-body-sm text-on-surface-variant">Primary Category</label>
+<select class="w-full bg-surface-container text-on-surface text-body-md font-body-md px-3 py-2 rounded focus:outline-none focus:ring-1 focus:ring-primary shadow-inner">
+<option selected="">BAR / Transient Luxury</option>
+<option>Corporate Negotiated Tier-1</option>
+<option>Wellness Spa Packages</option>
+<option>Diplomatic &amp; Embassy</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="text-body-sm font-body-sm text-on-surface-variant">Market Segment Allocation</label>
+<select class="w-full bg-surface-container text-on-surface text-body-md font-body-md px-3 py-2 rounded focus:outline-none focus:ring-1 focus:ring-primary shadow-inner">
+<option selected="">VIP High Net Worth (UHNW)</option>
+<option>Direct Brand Affluent</option>
+<option>Virtuoso / AMEX Fine Hotels</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Section 2: Inclusions & Add-On Packages -->
+<div class="space-y-space-sm pt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Plan Inclusions &amp; Amenities</span>
+<span class="font-body-sm text-body-sm text-primary cursor-pointer hover:underline">+ Custom Voucher</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 bg-surface-container-high" type="checkbox"/>
+<div class="flex flex-col">
+<span class="text-body-sm font-body-sm font-medium text-on-surface">Champagne Breakfast</span>
+<span class="text-label-sm font-label-sm text-outline">Included (+$45/pax)</span>
+</div>
+</label>
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 bg-surface-container-high" type="checkbox"/>
+<div class="flex flex-col">
+<span class="text-body-sm font-body-sm font-medium text-on-surface">Airport Limousine</span>
+<span class="text-label-sm font-label-sm text-outline">Rolls Phantom (+$120)</span>
+</div>
+</label>
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 bg-surface-container-high" type="checkbox"/>
+<div class="flex flex-col">
+<span class="text-body-sm font-body-sm font-medium text-on-surface">24/7 Butler Service</span>
+<span class="text-label-sm font-label-sm text-outline">Dedicated Guild (+$150)</span>
+</div>
+</label>
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 bg-surface-container-high" type="checkbox"/>
+<div class="flex flex-col">
+<span class="text-body-sm font-body-sm font-medium text-on-surface">Spa Treatment Credit</span>
+<span class="text-label-sm font-label-sm text-outline">$100 Oasis Folio Voucher</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Section 3: Length of Stay & Arrival Controls -->
+<div class="space-y-space-sm pt-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Stay Restrictions &amp; Pacing Controls</span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<div class="bg-surface-container p-2 rounded flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">Min Stay</span>
+<span class="font-data-tabular text-body-lg font-bold text-on-surface mt-0.5">1 Night</span>
+</div>
+<div class="bg-surface-container p-2 rounded flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">Max Stay</span>
+<span class="font-data-tabular text-body-lg font-bold text-on-surface mt-0.5">30 Nights</span>
+</div>
+<div class="bg-surface-container p-2 rounded flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">CTA (Closed Arr)</span>
+<span class="font-label-sm text-label-sm font-bold text-tertiary mt-1.5 uppercase">Off (Allowed)</span>
+</div>
+<div class="bg-surface-container p-2 rounded flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">CTD (Closed Dep)</span>
+<span class="font-label-sm text-label-sm font-bold text-tertiary mt-1.5 uppercase">Off (Allowed)</span>
+</div>
+</div>
+</div>
+<!-- Section 4: Dynamic Yield & Matrix Hook -->
+<div class="space-y-space-sm pt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Algorithmic Yield Hook</span>
+<span class="font-data-tabular text-label-sm text-tertiary bg-tertiary/10 px-1.5 py-0.5 rounded">Matrix Connected</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface">Base Rate Anchor:</span>
+<span class="font-data-tabular font-bold text-primary">BAR Master Baseline (1.00x)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface">Dynamic Surge Rule:</span>
+<span class="font-data-tabular text-secondary">+15% surge when Property Occ &gt; 85%</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface">Channel Commission Offset:</span>
+<span class="font-data-tabular text-outline">Direct 0% | OTA +18% Markup</span>
+</div>
+</div>
+</div>
+<!-- Section 5: Selected Room Pricing Preview -->
+<div class="space-y-space-sm pt-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Calculated Nightly Rates by Suite Tier</span>
+<div class="divide-y divide-surface-container-high/60 bg-surface-container rounded overflow-hidden">
+<div class="px-3 py-2 flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface font-medium">Nile Grand Suite (Standard)</span>
+<span class="font-data-tabular font-bold text-on-surface">$1,450.00 / night</span>
+</div>
+<div class="px-3 py-2 flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface font-medium">Pharaoh Royal Pavilion</span>
+<span class="font-data-tabular font-bold text-on-surface">$2,850.00 / night</span>
+</div>
+<div class="px-3 py-2 flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface font-medium">Cleopatra Waterfront Villa (Pool)</span>
+<span class="font-data-tabular font-bold text-primary">$4,900.00 / night</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Inspector Action Footer -->
+<div class="p-space-md bg-surface-container border-t border-surface-container-high/60 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 bg-primary-container text-on-primary-container hover:brightness-110 font-label-md text-label-md py-2.5 rounded font-bold transition-all shadow-[0_0_12px_rgba(212,175,55,0.25)] flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+<span>Save &amp; Broadcast to Channels [Ctrl+S]</span>
+</button>
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-space-md py-2.5 rounded text-label-md font-label-md transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+<span>Clone</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<button class="text-error hover:text-on-error-container text-label-sm font-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">archive</span>
+<span>Deactivate Rate Code</span>
+</button>
+<span class="font-data-tabular text-label-sm text-outline">Cluster Hash: #e8a2-998f</span>
+</div>
+</div>
+</aside>
+</div>
+<!-- Hotkeys Sticky Execution Footer Bar -->
+<div class="mt-space-xl p-space-sm bg-surface-container-low rounded shadow-md flex items-center justify-between flex-wrap gap-space-md border border-surface-container-high/40">
+<div class="flex items-center gap-space-md flex-wrap text-label-sm font-label-sm">
+<span class="flex items-center gap-1.5 text-on-surface-variant">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-bold text-data-tabular">F2</kbd>
+<span>Rate Matrix</span>
+</span>
+<span class="flex items-center gap-1.5 text-on-surface-variant">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-bold text-data-tabular">F3</kbd>
+<span>New Rate Plan</span>
+</span>
+<span class="flex items-center gap-1.5 text-on-surface-variant">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-bold text-data-tabular">F4</kbd>
+<span>Promo Campaigns</span>
+</span>
+<span class="flex items-center gap-1.5 text-on-surface-variant">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-bold text-data-tabular">Ctrl+S</kbd>
+<span>Save &amp; Broadcast Sync</span>
+</span>
+<span class="flex items-center gap-1.5 text-on-surface-variant">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-bold text-data-tabular">Esc</kbd>
+<span>Close Inspector</span>
+</span>
+</div>
+<div class="flex items-center gap-space-sm text-label-sm font-label-sm text-outline">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Sovereign Channel Gateway v4.2.1 • All Nodes Connected</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive micro-interactions for Table Rows and Filter Tabs
+  document.addEventListener('DOMContentLoaded', () => {
+    const rows = document.querySelectorAll('.rate-row');
+    rows.forEach(row => {
+      row.addEventListener('click', () => {
+        rows.forEach(r => {
+          r.classList.remove('selected', 'bg-surface-container');
+          r.classList.add('bg-surface-container-low');
+          const bar = r.querySelector('.bg-primary');
+          if (bar && bar.classList.contains('w-1')) bar.remove();
+        });
+        row.classList.add('selected', 'bg-surface-container');
+        row.classList.remove('bg-surface-container-low');
+        
+        // Add left primary gold indicator bar
+        if (!row.querySelector('.w-1')) {
+          const bar = document.createElement('div');
+          bar.className = 'absolute left-0 top-0 bottom-0 w-1 bg-primary';
+          row.prepend(bar);
+        }
+      });
+    });
+
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-bold', 'shadow-sm');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary-container', 'font-bold', 'shadow-sm');
+        btn.classList.remove('text-on-surface-variant');
+      });
+    });
+
+    const inspTabs = document.querySelectorAll('.insp-tab');
+    inspTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        inspTabs.forEach(t => {
+          t.classList.remove('bg-surface-container-high', 'text-primary', 'font-semibold');
+          t.classList.add('text-on-surface-variant');
+        });
+        tab.classList.add('bg-surface-container-high', 'text-primary', 'font-semibold');
+        tab.classList.remove('text-on-surface-variant');
+      });
+    });
+  });
+</script></main></div></body></html>

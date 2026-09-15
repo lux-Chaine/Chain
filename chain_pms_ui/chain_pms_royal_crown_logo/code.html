@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3C4" />
+      <stop offset="35%" stop-color="#E5C158" />
+      <stop offset="70%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#9A7B1C" />
+    </linearGradient>
+    <linearGradient id="goldHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#D4AF37" flood-opacity="0.35" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Shield or Royal Circle Ring -->
+  <circle cx="60" cy="60" r="54" stroke="url(#goldGrad)" stroke-width="2.5" opacity="0.85" stroke-dasharray="2 1"/>
+  <circle cx="60" cy="60" r="48" stroke="url(#goldGrad)" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Crown Graphics with Gold Shadow -->
+  <g filter="url(#goldGlow)">
+    <!-- Base band -->
+    <path d="M34 76 L86 76 L83 82 L37 82 Z" fill="url(#goldGrad)" />
+    <!-- Band gems -->
+    <circle cx="45" cy="79" r="1.5" fill="#0A1128" />
+    <circle cx="60" cy="79" r="2" fill="#0A1128" />
+    <circle cx="75" cy="79" r="1.5" fill="#0A1128" />
+
+    <!-- Crown Body: 5 peaks / spikes -->
+    <path d="M34 74 L30 48 L46 62 L60 38 L74 62 L90 48 L86 74 Z" fill="url(#goldGrad)" />
+    
+    <!-- Facet Accents on the Crown for 3D look -->
+    <path d="M60 38 L46 62 L60 74 L74 62 Z" fill="url(#goldHighlight)" opacity="0.4" />
+    <path d="M30 48 L46 62 L35 74 Z" fill="#9A7B1C" opacity="0.5" />
+    <path d="M90 48 L74 62 L85 74 Z" fill="#9A7B1C" opacity="0.5" />
+    
+    <!-- Jewels on Peaks -->
+    <circle cx="30" cy="46" r="3" fill="#FFF3C4" stroke="url(#goldGrad)" stroke-width="1"/>
+    <circle cx="46" cy="60" r="2.5" fill="#FFF3C4" stroke="url(#goldGrad)" stroke-width="1"/>
+    <circle cx="60" cy="35" r="4" fill="#FFF3C4" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <circle cx="74" cy="60" r="2.5" fill="#FFF3C4" stroke="url(#goldGrad)" stroke-width="1"/>
+    <circle cx="90" cy="46" r="3" fill="#FFF3C4" stroke="url(#goldGrad)" stroke-width="1"/>
+    
+    <!-- Central Diamond in Crown Heart -->
+    <polygon points="60,54 65,62 60,70 55,62" fill="#FFFFFF" opacity="0.9" />
+  </g>
+</svg>

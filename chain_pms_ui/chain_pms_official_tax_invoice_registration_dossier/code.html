@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary": "#3c2f00",
+          "on-secondary": "#1e2e5d",
+          "surface-container": "#181e36",
+          "inverse-primary": "#735c00",
+          "background": "#0b1229",
+          "error": "#ffb4ab",
+          "on-secondary-fixed-variant": "#354575",
+          "inverse-on-surface": "#292f48",
+          "surface-container-low": "#141a32",
+          "tertiary-fixed": "#6ffbbe",
+          "on-primary-fixed": "#241a00",
+          "on-secondary-container": "#a7b6ee",
+          "on-primary-container": "#554300",
+          "primary-fixed": "#ffe088",
+          "on-primary-fixed-variant": "#574500",
+          "on-tertiary-container": "#005035",
+          "on-surface-variant": "#d0c5af",
+          "secondary": "#b5c5fd",
+          "on-surface": "#dce1ff",
+          "surface-container-highest": "#2d344c",
+          "on-tertiary": "#003824",
+          "error-container": "#93000a",
+          "on-tertiary-fixed-variant": "#005236",
+          "secondary-fixed-dim": "#b5c5fd",
+          "inverse-surface": "#dce1ff",
+          "on-background": "#dce1ff",
+          "surface-container-lowest": "#060d24",
+          "primary-container": "#d4af37",
+          "primary": "#f2ca50",
+          "on-error-container": "#ffdad6",
+          "secondary-container": "#384777",
+          "outline": "#99907c",
+          "tertiary-fixed-dim": "#4edea3",
+          "surface": "#0b1229",
+          "surface-tint": "#e9c349",
+          "surface-variant": "#2d344c",
+          "surface-dim": "#0b1229",
+          "surface-bright": "#323851",
+          "primary-fixed-dim": "#e9c349",
+          "outline-variant": "#4d4635",
+          "on-error": "#690005",
+          "secondary-fixed": "#dbe1ff",
+          "tertiary": "#58e7aa",
+          "tertiary-container": "#33ca90",
+          "surface-container-high": "#222941",
+          "on-tertiary-fixed": "#002113",
+          "on-secondary-fixed": "#051847"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-desktop": "2rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "margin": "1rem",
+          "space-lg": "1.5rem",
+          "gutter-desktop": "1.5rem",
+          "gutter": "1.25rem",
+          "space-xl": "2.5rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "body-lg": ["Hanken Grotesk"],
+          "body-md": ["Hanken Grotesk"],
+          "label-sm": ["Hanken Grotesk"],
+          "data-tabular": ["Hanken Grotesk"],
+          "label-md": ["Hanken Grotesk"],
+          "headline-md": ["Hanken Grotesk"],
+          "display": ["Hanken Grotesk"],
+          "body-sm": ["Hanken Grotesk"],
+          "headline-lg": ["Hanken Grotesk"],
+          "title-md": ["Hanken Grotesk"],
+          "headline-sm": ["Hanken Grotesk"],
+          "headline-lg-mobile": ["Hanken Grotesk"]
+        },
+        "fontSize": {
+          "body-lg": ["1rem", {"lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400"}],
+          "body-md": ["0.875rem", {"lineHeight": "1.25rem", "letterSpacing": "0", "fontWeight": "400"}],
+          "label-sm": ["0.6875rem", {"lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "500"}],
+          "data-tabular": ["0.8125rem", {"lineHeight": "1.125rem", "letterSpacing": "0.01em", "fontWeight": "500"}],
+          "label-md": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0.05em", "fontWeight": "600"}],
+          "headline-md": ["1.5rem", {"lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "display": ["3rem", {"lineHeight": "3.5rem", "letterSpacing": "-0.025em", "fontWeight": "600"}],
+          "body-sm": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "headline-lg": ["2rem", {"lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+          "title-md": ["1rem", {"lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "500"}],
+          "headline-sm": ["1.25rem", {"lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "headline-lg-mobile": ["1.5rem", {"lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "600"}]
+        }
+      }
+    }
+  };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[0_4px_24px_rgba(0,0,0,0.45)]"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><img alt="Chain PMS Luxury Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8AzqK1WanRKfcGTql5wJMnaa_JN9abEKLiTDJFs024ViSokA4ZkD3CS6cArdvOOQpDoSOZ0Hc9OtLQEARttTGUEsNF4NoYF4JaWGXPfj52ad1ETNh9KpBsaRAdXeuILCEnXxrYbB9qHoN4F_ltOf4Zlo9BheRQWhnkWj44yaxWzEZXtHm7NrvvIU6EDpLaEeM-zKNIOb2o0mQAEKSFDbAT9-1HR_igT1C2JMExhZq4HIQB0vCPH8PgDU"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-wide leading-none">CHAIN PMS</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Enterprise Luxe</span></div></div><span class="px-1.5 py-0.5 rounded-lg bg-surface-container-high font-label-sm text-label-sm text-primary-container uppercase tracking-wider">HQ</span></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-space-md"><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Operations Core</div><nav class="space-y-0.5" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm font-semibold rounded-lg shadow-[0_0_16px_rgba(212,175,55,0.25)]"><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="operations-dashboard" href="#">Front Desk &amp; Tape Chart</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="guest-profiles-crm" href="#">Profiles &amp; CRM</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="cashier-and-billing" href="#">Cashier &amp; Split Folios</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="tax-invoice-and-registration-dossier" href="#">Official Tax Invoices &amp; Dossiers</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="outlets-and-pos" href="#">Outlets &amp; POS Sync</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="kitchen-display-system" href="#">Kitchen Display System (KDS)</a></nav></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Management &amp; System</div><nav class="space-y-0.5" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm font-semibold rounded-lg shadow-[0_0_16px_rgba(212,175,55,0.25)]"><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="hotels-portfolio" href="#">Hotels Portfolio</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="staff-and-duty-roster" href="#">Staff &amp; Duty Roster</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="employee-leave-and-performance-hub" href="#">Leave &amp; Performance Hub</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports-and-analytics" href="#">Reports &amp; Analytics</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="security-and-access-control" href="#">Security &amp; Roles</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="audit-logs-and-ledger" href="#">Audit Logs &amp; Ledger</a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="system-configuration" href="#">System Administration</a></nav></div></div><div class="p-space-sm bg-surface-container-low space-y-space-xs"><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container"><div class="flex items-center gap-space-sm"><span class="h-2.5 w-2.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-tertiary font-semibold">CORE SYNC ACTIVE</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Offline Resilient</span></div><div class="flex items-center justify-between px-space-sm py-1 font-label-sm text-label-sm text-outline"><span>Quick Search</span><kbd class="px-1.5 py-0.5 rounded-lg bg-surface-container-high text-primary-fixed-dim font-data-tabular text-label-sm">⌘K</kbd></div></div></aside><div class="pl-72 flex flex-col min-h-screen bg-background"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 px-gutter-desktop flex items-center justify-between shadow-[0_4px_20px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-1.5 rounded-lg border-0 shadow-[0_2px_8px_rgba(0,0,0,0.25)]"><span class="material-symbols-outlined text-primary text-[20px]">location_city</span><select class="bg-transparent text-on-surface font-title-md text-body-sm focus:outline-none cursor-pointer pr-space-sm"><option class="bg-surface-container text-on-surface" value="amon">Amon Luxury Palace &amp; Spa (Luxor)</option><option class="bg-surface-container text-on-surface" value="palm">The Palm Royal Resort &amp; Marina</option><option class="bg-surface-container text-on-surface" value="siwa">Siwa Oasis Sanctuary &amp; Villas</option><option class="bg-surface-container text-on-surface" value="cairo">Nile Grand Kempinski Suites</option></select></div><div class="hidden xl:flex items-center gap-space-sm px-space-sm py-1 rounded-lg bg-surface-container-low"><span class="material-symbols-outlined text-primary-container text-[18px]">point_of_sale</span><span class="font-label-sm text-label-sm text-on-surface-variant">Main Front Drawer:</span><span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase">Open • Shift #1</span></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-tertiary">wifi</span><span class="font-label-sm text-label-sm text-on-surface-variant">Local Cache Ready</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-64 lg:w-80 bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm pl-9 pr-12 py-1.5 rounded-lg focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="Search folio, guest, invoice or room (Press ⌘K)..." type="text"/><kbd class="absolute right-2.5 px-1 py-0.5 rounded-lg bg-surface-container-high text-outline text-label-sm font-data-tabular">⌘K</kbd></div><div class="flex items-center gap-space-xs"><button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Lock Terminal (⌘L)" type="button"><span class="material-symbols-outlined text-[20px]">lock</span></button></div><div class="h-6 w-px bg-surface-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right"><div class="font-title-md text-body-sm text-on-surface font-semibold">E. Vance (GM)</div><div class="font-label-sm text-label-sm text-primary">Duty Director • Executive Ops</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(212,175,55,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-margin-desktop bg-background"><div class="flex flex-col w-full">
+<!-- Dynamic Top Control Deck -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="px-2 py-0.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-widest">Fiscal Compliance Engine</span>
+<span class="text-outline font-label-sm text-label-sm">•</span>
+<span class="text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+          ZATCA PHASE-2 CLEARED
+        </span>
+</div>
+<div class="flex items-baseline gap-space-md">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Official Fiscal &amp; Registration Dossier</h1>
+<span class="font-data-tabular text-body-sm text-on-surface-variant">FOL-89241 / #304</span>
+</div>
+</div>
+<!-- Quick Actions Deck -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-label-md text-label-md transition-all shadow-[0_0_16px_rgba(212,175,55,0.3)] flex items-center gap-space-xs cursor-pointer" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print Official Document (⌘P)</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-xs cursor-pointer" id="downloadBtn" onclick="simulatePdfDownload()" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+<span id="downloadBtnLabel">Signed PDF</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-xs cursor-pointer" onclick="showNotification('Exported UBL 2.1 Compliant XML file: INV-2025-0842.xml')" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">code_blocks</span>
+<span>XML / UBL 2.1</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-xs cursor-pointer" onclick="showNotification('Secure encrypted link dispatched via SMS &amp; Email.')" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">send</span>
+<span>Dispatch Dossier</span>
+</button>
+<div class="h-6 w-px bg-surface-variant mx-1"></div>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-xs" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Cashier Desk</span>
+</a>
+</div>
+</div>
+<!-- Document Type Selector Tabs -->
+<div class="flex items-center gap-space-sm p-1.5 bg-surface-container-lowest rounded-xl mb-space-lg overflow-x-auto shadow-md">
+<button class="doc-tab active flex items-center gap-space-sm px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold transition-all cursor-pointer whitespace-nowrap shadow-[0_0_12px_rgba(212,175,55,0.25)]" id="tab-tax-invoice" onclick="switchDocumentTab('tax-invoice')" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Tax Invoice ZATCA Phase-2 (INV-2025-0842)</span>
+<span class="px-1.5 py-0.2 rounded bg-on-primary-container/20 text-on-primary-container text-[10px] font-data-tabular">STANDARD</span>
+</button>
+<button class="doc-tab flex items-center gap-space-sm px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all cursor-pointer whitespace-nowrap" id="tab-reg-card" onclick="switchDocumentTab('reg-card')" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Guest Registration Card (RC-304-2025)</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-primary text-[10px] font-data-tabular">ROYAL SUITE</span>
+</button>
+<button class="doc-tab flex items-center gap-space-sm px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all cursor-pointer whitespace-nowrap" id="tab-folio-receipt" onclick="switchDocumentTab('folio-receipt')" type="button">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+<span>Credit Folio Settlement Receipt</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-tertiary text-[10px] font-data-tabular">PAID (SAR)</span>
+</button>
+</div>
+<!-- Toast Notification Bar (Interactive Feedback) -->
+<div class="hidden transform transition-all duration-300 mb-space-md p-space-sm rounded-lg bg-surface-container-high text-on-surface font-body-sm text-body-sm flex items-center justify-between shadow-xl" id="toastNotification">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span id="toastMessage">Action recorded</span>
+</div>
+<button class="text-outline hover:text-on-surface" onclick="document.getElementById('toastNotification').classList.add('hidden')">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Main Workspace: Asymmetric 12-Column Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT 8 COLS: The A4 High-Fidelity Paper Canvas -->
+<div class="xl:col-span-8 flex flex-col items-center">
+<!-- Realistic A4 Paper Simulation Canvas with Parchment Lux Feel -->
+<div class="w-full max-w-[840px] bg-[#070c1e] p-2 md:p-6 rounded-xl shadow-2xl flex justify-center overflow-x-auto" id="printCanvasWrapper">
+<!-- ==================== VIEW 1: ZATCA TAX INVOICE ==================== -->
+<div class="doc-view w-[794px] min-h-[1123px] bg-[#FAF9F5] text-[#0A1128] p-10 md:p-12 rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative flex flex-col justify-between font-body-md select-text" id="view-tax-invoice">
+<!-- Luxury Holographic Foil Edge Watermark Embellishment -->
+<div class="absolute inset-0 pointer-events-none opacity-[0.03] flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-[480px] text-[#0A1128]">hotel_class</span>
+</div>
+<!-- Document Top Header -->
+<div class="relative z-10">
+<!-- Top Gold Foil Accent Bar -->
+<div class="h-1.5 w-full bg-gradient-to-r from-[#D4AF37] via-[#F2CA50] to-[#99791D] rounded-full mb-6"></div>
+<div class="flex justify-between items-start pb-6 border-b border-[#0A1128]/15">
+<!-- Hotel Logo & Legal Entity -->
+<div class="flex items-start gap-4">
+<div class="w-14 h-14 rounded bg-[#0A1128] flex items-center justify-center text-[#D4AF37] shadow-md">
+<span class="material-symbols-outlined text-[36px]">shield_person</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[18px] font-bold tracking-wide text-[#0A1128] uppercase">Amon Luxury Palace &amp; Spa</span>
+<span class="text-[12px] text-[#4A5568] tracking-widest uppercase">قصر آمون الفاخر والمنتجع الصحي</span>
+<span class="text-[11px] text-[#555E6D] mt-1">Nile Corniche Royal Enclave, Luxor • CR: 1010394821</span>
+<span class="text-[11px] font-semibold text-[#0A1128]">VAT / الرقم الضريبي: 31029481900003</span>
+</div>
+</div>
+<!-- Invoice Title & Status Badging -->
+<div class="text-right flex flex-col items-end">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-[#0A1128] text-[#D4AF37] text-[11px] font-bold tracking-widest uppercase mb-1.5 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-[#58E7AA]"></span>
+                  Standard Tax Invoice
+                </div>
+<span class="text-[13px] font-bold text-[#0A1128] dir-rtl">فاتورة ضريبية رسمية</span>
+<span class="text-[14px] font-bold text-[#0A1128] mt-1 font-data-tabular">INV-2025-0842</span>
+<span class="text-[11px] text-[#555E6D]">UUID: 4f1c99f0-2850-482a-a92c-d9c0e29d714b</span>
+</div>
+</div>
+<!-- Metadata Strip (Dual Language) -->
+<div class="grid grid-cols-4 gap-4 py-4 border-b border-[#0A1128]/15 text-[11px]">
+<div>
+<span class="text-[#555E6D] block uppercase">Issue Date / تاريخ الإصدار</span>
+<span class="font-bold text-[#0A1128] text-[12px] font-data-tabular">18 May 2025, 11:35 AST</span>
+</div>
+<div>
+<span class="text-[#555E6D] block uppercase">Supply Date / تاريخ التوريد</span>
+<span class="font-bold text-[#0A1128] text-[12px] font-data-tabular">14 May – 18 May 2025</span>
+</div>
+<div>
+<span class="text-[#555E6D] block uppercase">Payment Method / طريقة السداد</span>
+<span class="font-bold text-[#0A1128] text-[12px]">Corporate Charge / Amex</span>
+</div>
+<div class="text-right">
+<span class="text-[#555E6D] block uppercase">Folio Reference / مرجع الحساب</span>
+<span class="font-bold text-[#0A1128] text-[12px] font-data-tabular">FOL-2025-00304</span>
+</div>
+</div>
+<!-- Guest & Buyer Identity Panel -->
+<div class="grid grid-cols-2 gap-6 py-5 border-b border-[#0A1128]/15 bg-[#F4F1EA]/60 -mx-10 px-10">
+<!-- Billed To (Buyer) -->
+<div>
+<div class="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-[#99791D] mb-1">
+<span class="material-symbols-outlined text-[14px]">corporate_fare</span>
+                  Billed To / بيانات العميل (المشتري)
+                </div>
+<div class="text-[13px] font-bold text-[#0A1128]">Sovereign Holding Corp (KSA)</div>
+<div class="text-[11px] text-[#4A5568] mt-0.5">Commercial Registration: 1010992019</div>
+<div class="text-[11px] font-semibold text-[#0A1128] mt-0.5">Buyer VAT ID: 300192847200003</div>
+<div class="text-[11px] text-[#4A5568]">Diplomatic Quarter, Tower 4, Floor 32, Riyadh, KSA</div>
+</div>
+<!-- Guest Stay Dossier Details -->
+<div class="border-l border-[#0A1128]/15 pl-6">
+<div class="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-[#99791D] mb-1">
+<span class="material-symbols-outlined text-[14px]">key</span>
+                  Guest Stay Record / تفاصيل النزيل
+                </div>
+<div class="flex justify-between text-[11px] py-0.5">
+<span class="text-[#555E6D]">Authorized Guest:</span>
+<span class="font-bold text-[#0A1128]">HRH Prince Khalid Al-Saud</span>
+</div>
+<div class="flex justify-between text-[11px] py-0.5">
+<span class="text-[#555E6D]">Suite Assigned:</span>
+<span class="font-bold text-[#0A1128]">Royal Horizon Suite #304</span>
+</div>
+<div class="flex justify-between text-[11px] py-0.5">
+<span class="text-[#555E6D]">Stay Duration:</span>
+<span class="font-semibold text-[#0A1128]">4 Nights (2 Adults)</span>
+</div>
+</div>
+</div>
+<!-- Tax Invoice Line Items Breakdown Table -->
+<div class="mt-5">
+<table class="w-full text-left border-collapse text-[11px]">
+<thead>
+<tr class="bg-[#0A1128] text-[#FAF9F5]">
+<th class="py-2.5 px-3 font-semibold uppercase">Description / البيان</th>
+<th class="py-2.5 px-2 text-center font-semibold uppercase">Qty / الكمية</th>
+<th class="py-2.5 px-3 text-right font-semibold uppercase">Unit Price / السعر</th>
+<th class="py-2.5 px-3 text-right font-semibold uppercase">Taxable (SAR)</th>
+<th class="py-2.5 px-2 text-center font-semibold uppercase">VAT Rate</th>
+<th class="py-2.5 px-3 text-right font-semibold uppercase">Total (SAR)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#0A1128]/10">
+<tr>
+<td class="py-2.5 px-3">
+<div class="font-bold text-[#0A1128]">Royal Horizon Suite #304 - Daily Luxury Accommodation</div>
+<div class="text-[10px] text-[#555E6D]">14 May 2025 to 18 May 2025 (4 nights @ SAR 3,800.00 net)</div>
+</td>
+<td class="py-2.5 px-2 text-center font-data-tabular">4</td>
+<td class="py-2.5 px-3 text-right font-data-tabular">3,800.00</td>
+<td class="py-2.5 px-3 text-right font-data-tabular">15,200.00</td>
+<td class="py-2.5 px-2 text-center font-data-tabular text-[#99791D] font-bold">15%</td>
+<td class="py-2.5 px-3 text-right font-bold font-data-tabular">17,480.00</td>
+</tr>
+<tr class="bg-[#F4F1EA]/40">
+<td class="py-2.5 px-3">
+<div class="font-bold text-[#0A1128]">Le Mirage Fine Dining • Private Sovereign Room</div>
+<div class="text-[10px] text-[#555E6D]">POS Ticket #LM-9824 • Imperial Caviar Service • 16 May</div>
+</td>
+<td class="py-2.5 px-2 text-center font-data-tabular">1</td>
+<td class="py-2.5 px-3 text-right font-data-tabular">1,900.00</td>
+<td class="py-2.5 px-3 text-right font-data-tabular">1,900.00</td>
+<td class="py-2.5 px-2 text-center font-data-tabular text-[#99791D] font-bold">15%</td>
+<td class="py-2.5 px-3 text-right font-bold font-data-tabular">2,185.00</td>
+</tr>
+<tr>
+<td class="py-2.5 px-3">
+<div class="font-bold text-[#0A1128]">Royal Spa &amp; Turkish Hammam Treatment</div>
+<div class="text-[10px] text-[#555E6D]">Appointment #SPA-4402 • 2x Ceremonial Hammam Rituals</div>
+</td>
+<td class="py-2.5 px-2 text-center font-data-tabular">1</td>
+<td class="py-2.5 px-3 text-right font-data-tabular">1,100.00</td>
+<td class="py-2.5 px-3 text-right font-data-tabular">1,100.00</td>
+<td class="py-2.5 px-2 text-center font-data-tabular text-[#99791D] font-bold">15%</td>
+<td class="py-2.5 px-3 text-right font-bold font-data-tabular">1,265.00</td>
+</tr>
+<tr class="bg-[#F4F1EA]/40">
+<td class="py-2.5 px-3">
+<div class="font-bold text-[#0A1128]">Smart Minibar &amp; Confectionery Replenishment</div>
+<div class="text-[10px] text-[#555E6D]">Automated Weight Sensor Folio Postings • 15-17 May</div>
+</td>
+<td class="py-2.5 px-2 text-center font-data-tabular">1</td>
+<td class="py-2.5 px-3 text-right font-data-tabular">480.00</td>
+<td class="py-2.5 px-3 text-right font-data-tabular">480.00</td>
+<td class="py-2.5 px-2 text-center font-data-tabular text-[#99791D] font-bold">15%</td>
+<td class="py-2.5 px-3 text-right font-bold font-data-tabular">552.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Subtotals & Mandatory Fiscal Summary Table -->
+<div class="flex justify-end mt-4">
+<div class="w-80 bg-[#F4F1EA] p-3 rounded text-[11px] space-y-1.5 border border-[#0A1128]/10">
+<div class="flex justify-between text-[#555E6D]">
+<span>Total Taxable Amount (Excl. VAT) / الإجمالي الخاضع:</span>
+<span class="font-bold text-[#0A1128] font-data-tabular">SAR 18,680.00</span>
+</div>
+<div class="flex justify-between text-[#555E6D]">
+<span>15% Value Added Tax (VAT) / ضريبة القيمة المضافة:</span>
+<span class="font-bold text-[#0A1128] font-data-tabular">SAR 2,802.00</span>
+</div>
+<div class="flex justify-between text-[#555E6D]">
+<span>5% Municipality Tourism Fee / رسم البلدية للسياحة:</span>
+<span class="font-bold text-[#0A1128] font-data-tabular">SAR 934.00</span>
+</div>
+<div class="border-t border-[#0A1128]/20 pt-1.5 flex justify-between items-baseline text-[13px]">
+<span class="font-bold text-[#0A1128]">Total Payable / الإجمالي المستحق:</span>
+<span class="font-bold text-[#0A1128] text-[16px] font-data-tabular text-[#99791D]">SAR 22,416.00</span>
+</div>
+<div class="text-[10px] text-[#555E6D] text-right italic font-serif">
+                  Twenty-Two Thousand Four Hundred Sixteen Saudi Riyals Only
+                </div>
+</div>
+</div>
+</div>
+<!-- Bottom Cryptographic ZATCA Phase-2 Block & Verification Seals -->
+<div class="relative z-10 pt-4 mt-6 border-t border-[#0A1128]/20">
+<div class="grid grid-cols-12 gap-4 items-center">
+<!-- ZATCA Phase 2 Official TLV QR Code Block -->
+<div class="col-span-3 flex flex-col items-center p-2 bg-white rounded border border-[#0A1128]/20 shadow-sm">
+<!-- Authentic High-Contrast QR Pattern representation -->
+<div class="w-24 h-24 bg-[#0A1128] p-1.5 rounded flex items-center justify-center relative">
+<svg class="w-full h-full text-white fill-current" viewbox="0 0 100 100">
+<!-- Finder Patterns -->
+<rect fill="white" height="28" width="28" x="5" y="5"></rect>
+<rect fill="#0A1128" height="20" width="20" x="9" y="9"></rect>
+<rect fill="white" height="12" width="12" x="13" y="13"></rect>
+<rect fill="white" height="28" width="28" x="67" y="5"></rect>
+<rect fill="#0A1128" height="20" width="20" x="71" y="9"></rect>
+<rect fill="white" height="12" width="12" x="75" y="13"></rect>
+<rect fill="white" height="28" width="28" x="5" y="67"></rect>
+<rect fill="#0A1128" height="20" width="20" x="9" y="71"></rect>
+<rect fill="white" height="12" width="12" x="13" y="75"></rect>
+<!-- Data Matrices -->
+<rect fill="white" height="6" width="6" x="38" y="10"></rect>
+<rect fill="white" height="6" width="6" x="48" y="10"></rect>
+<rect fill="white" height="6" width="12" x="42" y="22"></rect>
+<rect fill="white" height="12" width="6" x="10" y="38"></rect>
+<rect fill="white" height="8" width="8" x="22" y="44"></rect>
+<rect fill="white" height="24" width="24" x="38" y="38"></rect>
+<rect fill="#0A1128" height="12" width="12" x="44" y="44"></rect>
+<rect fill="white" height="6" width="8" x="70" y="38"></rect>
+<rect fill="white" height="10" width="10" x="84" y="44"></rect>
+<rect fill="white" height="14" width="6" x="38" y="70"></rect>
+<rect fill="white" height="6" width="14" x="52" y="68"></rect>
+<rect fill="white" height="10" width="20" x="70" y="68"></rect>
+<rect fill="white" height="10" width="12" x="78" y="84"></rect>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-[#D4AF37] bg-[#0A1128] rounded-full p-0.5">verified</span>
+</div>
+</div>
+<span class="text-[9px] font-bold text-[#0A1128] mt-1 text-center uppercase tracking-tight">ZATCA Compliant TLV</span>
+</div>
+<!-- Cryptographic Hash & Digital Signature Audit -->
+<div class="col-span-6 text-[10px] space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-bold text-[#0A1128] uppercase">Cryptographic Stamp (ECDSA-secp256k1)</span>
+<span class="px-1.5 py-0.2 bg-[#34D399]/20 text-[#003824] rounded font-semibold text-[9px]">ENCRYPTED</span>
+</div>
+<div class="p-1.5 bg-[#FAF9F5] border border-[#0A1128]/15 rounded font-mono text-[9px] break-all leading-tight text-[#2D3748]">
+                  SHA-256: 81f9b204e12da3c448201a0bc5e49f8713d527a92231b1c67df044391eefba72a
+                </div>
+<div class="text-[#555E6D] text-[9px]">
+                  Signer: <span class="font-semibold text-[#0A1128]">HSM-NODE-03.pms.amonpalace.internal</span> • Certificate Serial: <span class="font-mono">49A1-D930-FF12</span>
+</div>
+<div class="text-[#555E6D] text-[9px]">
+                  Generated via Chain PMS Enterprise Luxe • ZATCA API Integration Port #8443
+                </div>
+</div>
+<!-- Digital Seal Embellishment -->
+<div class="col-span-3 flex flex-col items-center justify-center text-center">
+<div class="w-16 h-16 rounded-full border-2 border-dashed border-[#99791D] flex flex-col items-center justify-center text-[#99791D] p-1">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+<span class="text-[7px] uppercase font-bold tracking-widest leading-none mt-0.5">CERTIFIED</span>
+<span class="text-[6px] text-[#555E6D] font-mono leading-none">FISCAL 2025</span>
+</div>
+<span class="text-[9px] text-[#555E6D] mt-1">Official Auditor Seal</span>
+</div>
+</div>
+<!-- Page Footer Microtext -->
+<div class="flex justify-between items-center pt-3 mt-3 border-t border-[#0A1128]/10 text-[9px] text-[#718096]">
+<span>Chain PMS Luxury Hospitality • Egyptian &amp; GCC Fiscal Protocol Compliance Engine v4.8</span>
+<span>Page 1 of 1 • Original Recipient Duplicate</span>
+</div>
+</div>
+</div>
+<!-- ==================== VIEW 2: GUEST REGISTRATION CARD (HIDDEN BY DEFAULT) ==================== -->
+<div class="doc-view hidden w-[794px] min-h-[1123px] bg-[#FAF9F5] text-[#0A1128] p-10 md:p-12 rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative flex flex-col justify-between font-body-md select-text" id="view-reg-card">
+<div class="relative z-10">
+<!-- Top Gold Accent -->
+<div class="h-1.5 w-full bg-gradient-to-r from-[#D4AF37] via-[#F2CA50] to-[#99791D] rounded-full mb-6"></div>
+<!-- Header -->
+<div class="flex justify-between items-start pb-5 border-b border-[#0A1128]/15">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded bg-[#0A1128] flex items-center justify-center text-[#D4AF37] shadow-md">
+<span class="material-symbols-outlined text-[36px]">hotel</span>
+</div>
+<div>
+<h2 class="text-[18px] font-bold tracking-wide uppercase text-[#0A1128]">Amon Luxury Palace &amp; Spa</h2>
+<div class="text-[12px] text-[#4A5568]">بطاقة تسجيل النزيل الرسمية • OFFICIAL GUEST REGISTRATION CARD</div>
+<div class="text-[11px] text-[#555E6D] mt-0.5">Ministry of Tourism License #MT-9041-LUX</div>
+</div>
+</div>
+<div class="text-right">
+<span class="px-2.5 py-1 rounded bg-[#0A1128] text-[#D4AF37] text-[11px] font-bold tracking-wider uppercase font-data-tabular">RC-304-2025</span>
+<div class="text-[11px] text-[#555E6D] mt-1">Arrival Date: 14 May 2025</div>
+</div>
+</div>
+<!-- Guest & Passport Dossier Block -->
+<div class="grid grid-cols-12 gap-5 py-5 border-b border-[#0A1128]/15">
+<!-- Passport / Identification Snapshot Placeholder -->
+<div class="col-span-4 bg-[#F4F1EA] p-3 rounded border border-[#0A1128]/10 flex flex-col items-center justify-center text-center">
+<div class="w-full h-32 rounded bg-[#0A1128]/5 border border-dashed border-[#0A1128]/30 flex flex-col items-center justify-center p-2 relative overflow-hidden group">
+<img class="w-full h-full object-cover rounded opacity-85" data-alt="High quality biometric passport photograph of middle eastern diplomat against neutral background studio lighting official identification photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtrS6zPwbpumGvHVJkzIW8pMhm5gdAUmLDEIwS0HPLe8F95TFzIzpI-_Ia2KRLR4V56khNDKAdSNLB38dQJQ6i-UYL3M6YCTM-TZtzr1JAlRgYk7_CgbjDIlX2aYj7AcsEYP843E4ngNBHRborToX1ELSALeDwATBCGW3dobCHo2voMl34ur1SDY7e6NI8vu02sMNAZ6Sbj-1EPjW4b7N8mcDuzsvH5ZPiwqHM4Tx-vVwgjbFrE_nc"/>
+<div class="absolute bottom-1 right-1 bg-[#0A1128] text-[#58E7AA] text-[9px] px-1.5 py-0.5 rounded font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[10px]">check_circle</span>
+                    MRZ VERIFIED
+                  </div>
+</div>
+<div class="text-[10px] font-bold text-[#0A1128] mt-2">SAUDI ARABIA DIPLOMATIC PASSPORT</div>
+<div class="text-[9px] text-[#555E6D] font-mono">D-998410292 • Exp: 2030</div>
+</div>
+<!-- Guest Profile Fields -->
+<div class="col-span-8 grid grid-cols-2 gap-3 text-[11px]">
+<div>
+<span class="text-[#555E6D] block uppercase text-[10px]">Primary Guest Full Legal Name</span>
+<span class="font-bold text-[#0A1128] text-[13px]">HRH Prince Khalid Al-Saud</span>
+</div>
+<div>
+<span class="text-[#555E6D] block uppercase text-[10px]">Nationality &amp; Residency</span>
+<span class="font-bold text-[#0A1128] text-[13px]">Kingdom of Saudi Arabia</span>
+</div>
+<div>
+<span class="text-[#555E6D] block uppercase text-[10px]">Assigned Suite / Floor</span>
+<span class="font-bold text-[#0A1128]">Suite #304 • Royal Floor 3</span>
+</div>
+<div>
+<span class="text-[#555E6D] block uppercase text-[10px]">Membership Tier</span>
+<span class="font-bold text-[#99791D] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">diamond</span>
+                    Luxe Sovereign Black (#LUX-001)
+                  </span>
+</div>
+<div>
+<span class="text-[#555E6D] block uppercase text-[10px]">Check-In / Check-Out Schedule</span>
+<span class="font-bold text-[#0A1128] font-data-tabular">14 May 2025 – 18 May 2025</span>
+</div>
+<div>
+<span class="text-[#555E6D] block uppercase text-[10px]">Billing Account Routing</span>
+<span class="font-bold text-[#0A1128]">Sovereign Holding Corp (Direct Bill)</span>
+</div>
+<div class="col-span-2">
+<span class="text-[#555E6D] block uppercase text-[10px]">Emergency / Executive Liaison</span>
+<span class="font-bold text-[#0A1128]">Protocol Chief: Fahad Al-Tamimi • +966 50 123 4567</span>
+</div>
+</div>
+</div>
+<!-- Hotel Luxury Regulations & Legal Agreement -->
+<div class="py-4 text-[10px] text-[#4A5568] space-y-2 border-b border-[#0A1128]/15 leading-relaxed">
+<h4 class="font-bold text-[#0A1128] uppercase text-[11px]">Guest Acknowledgement &amp; Terms of Luxury Tenancy</h4>
+<p>
+                1. <strong>Safety Deposit &amp; Valuables:</strong> Management provides in-suite electronic security vaults rated up to SAR 500,000 for diplomatic effects. The hotel declines liability for personal articles not surrendered to the General Manager's Master Safe.
+              </p>
+<p>
+                2. <strong>Settlement Agreement:</strong> The undersigned agrees to personal joint liability for all room rates, luxury dining, spa treatments, and state municipal levies if corporate billing is rejected or delayed beyond thirty (30) days from checkout.
+              </p>
+<p>
+                3. <strong>Data Protection &amp; Confidentiality:</strong> Amon Luxury Palace adheres to strict Sovereign Confidentiality Protocols; guest movements and folio particulars are stored in air-gapped cryptographic databases under Egypt &amp; KSA Data Privacy Directives.
+              </p>
+</div>
+<!-- Physical & Digital Signature Area -->
+<div class="pt-6 grid grid-cols-2 gap-8">
+<!-- Guest Signature Area -->
+<div class="p-3 bg-[#F4F1EA] rounded border border-[#0A1128]/15 flex flex-col justify-between h-36">
+<span class="text-[10px] font-bold text-[#0A1128] uppercase flex items-center justify-between">
+<span>Guest Signature / توقيع النزيل</span>
+<span class="text-[9px] text-[#99791D] font-normal">Digitally Captured on Check-in Rover #02</span>
+</span>
+<!-- Stylized Signature Glyph -->
+<div class="w-full flex items-center justify-center py-2">
+<svg class="w-48 h-12 stroke-[#0A1128] fill-none stroke-[2]" viewbox="0 0 240 50">
+<path d="M10,40 Q40,5 70,30 T130,20 Q160,5 180,35 T220,15" stroke-linecap="round"></path>
+<path d="M75,25 Q110,45 150,25" opacity="0.8" stroke-linecap="round"></path>
+</svg>
+</div>
+<div class="border-t border-[#0A1128]/20 pt-1 text-[9px] text-[#718096] flex justify-between">
+<span>Date: 14 May 2025, 14:12 AST</span>
+<span>Biometric Verified</span>
+</div>
+</div>
+<!-- Front Desk Agent Endorsement -->
+<div class="p-3 bg-[#F4F1EA] rounded border border-[#0A1128]/15 flex flex-col justify-between h-36">
+<span class="text-[10px] font-bold text-[#0A1128] uppercase flex items-center justify-between">
+<span>Duty Manager Approval / مدير الاستقبال</span>
+<span class="text-[9px] text-[#34D399] font-normal">Active Clearance</span>
+</span>
+<div class="w-full flex flex-col items-center justify-center py-1">
+<span class="font-serif italic text-[15px] text-[#0A1128]">Tariq Mansoor, GM Duty</span>
+<span class="text-[9px] text-[#718096] font-mono">STAFF-ID: #E-8891 (Front Desk 1)</span>
+</div>
+<div class="border-t border-[#0A1128]/20 pt-1 text-[9px] text-[#718096] flex justify-between">
+<span>Keys Dispatched: 2x Master RFID</span>
+<span>Room Inspected: OK</span>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10 pt-4 mt-6 border-t border-[#0A1128]/10 text-[9px] text-[#718096] flex justify-between">
+<span>Amon Luxury Palace &amp; Spa • Official Registration Dossier</span>
+<span>Registration Card #RC-304-2025 • Archive Copy</span>
+</div>
+</div>
+<!-- ==================== VIEW 3: CREDIT FOLIO RECEIPT (HIDDEN BY DEFAULT) ==================== -->
+<div class="doc-view hidden w-[794px] min-h-[1123px] bg-[#FAF9F5] text-[#0A1128] p-10 md:p-12 rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative flex flex-col justify-between font-body-md select-text" id="view-folio-receipt">
+<div class="relative z-10">
+<div class="h-1.5 w-full bg-gradient-to-r from-[#58E7AA] via-[#33CA90] to-[#005035] rounded-full mb-6"></div>
+<div class="flex justify-between items-start pb-5 border-b border-[#0A1128]/15">
+<div>
+<h2 class="text-[18px] font-bold tracking-wide uppercase text-[#0A1128]">Credit Folio Settlement Receipt</h2>
+<div class="text-[12px] text-[#4A5568]">إيصال تسوية الحساب الائتماني • ZERO BALANCE CLEARANCE</div>
+<div class="text-[11px] text-[#555E6D] mt-0.5">Amon Luxury Palace • Terminal #CA-01</div>
+</div>
+<div class="text-right">
+<span class="px-2.5 py-1 rounded bg-[#33CA90]/20 text-[#005035] text-[11px] font-bold tracking-wider uppercase font-data-tabular">SETTLED IN FULL</span>
+<div class="text-[11px] text-[#555E6D] mt-1">Receipt ID: REC-99201-2025</div>
+</div>
+</div>
+<div class="my-6 p-4 bg-[#F4F1EA] rounded border border-[#0A1128]/10 grid grid-cols-3 gap-4 text-[11px]">
+<div>
+<span class="text-[#555E6D] block uppercase">Billed Entity</span>
+<span class="font-bold text-[#0A1128] text-[13px]">Sovereign Holding Corp</span>
+</div>
+<div>
+<span class="text-[#555E6D] block uppercase">Settlement Timestamp</span>
+<span class="font-bold text-[#0A1128] font-data-tabular">18 May 2025, 11:34:52 AST</span>
+</div>
+<div class="text-right">
+<span class="text-[#555E6D] block uppercase">Payment Authorization Code</span>
+<span class="font-bold text-[#0A1128] font-mono">AUTH#9821034-AMEX</span>
+</div>
+</div>
+<!-- Ledger Breakdown -->
+<table class="w-full text-left border-collapse text-[11px] mt-4">
+<thead>
+<tr class="bg-[#0A1128] text-[#FAF9F5]">
+<th class="py-2 px-3">Date</th>
+<th class="py-2 px-3">Transaction / Description</th>
+<th class="py-2 px-3">Reference</th>
+<th class="py-2 px-3 text-right">Debit (Charges)</th>
+<th class="py-2 px-3 text-right">Credit (Payments)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#0A1128]/10">
+<tr>
+<td class="py-2 px-3 font-data-tabular">18 May 2025</td>
+<td class="py-2 px-3 font-semibold">Consolidated Folio Charges (Room, POS, Spa, Taxes)</td>
+<td class="py-2 px-3 font-data-tabular">INV-2025-0842</td>
+<td class="py-2 px-3 text-right font-data-tabular">SAR 22,416.00</td>
+<td class="py-2 px-3 text-right font-data-tabular">-</td>
+</tr>
+<tr class="bg-[#F4F1EA]/40">
+<td class="py-2 px-3 font-data-tabular">18 May 2025</td>
+<td class="py-2 px-3 font-semibold text-[#005035]">Corporate Card Charge Amex Centurion (ending *1004)</td>
+<td class="py-2 px-3 font-data-tabular font-mono">TXN-481902</td>
+<td class="py-2 px-3 text-right font-data-tabular">-</td>
+<td class="py-2 px-3 text-right font-data-tabular text-[#005035] font-bold">SAR 22,416.00</td>
+</tr>
+</tbody>
+</table>
+<div class="mt-8 flex justify-end">
+<div class="w-72 bg-[#0A1128] text-[#FAF9F5] p-4 rounded text-right">
+<div class="text-[11px] text-[#A7B6EE] uppercase">Outstanding Ledger Balance</div>
+<div class="text-[24px] font-bold text-[#58E7AA] font-data-tabular">SAR 0.00</div>
+<div class="text-[10px] text-[#A7B6EE]/80 mt-1">Folio Account Closed &amp; Locked</div>
+</div>
+</div>
+</div>
+<div class="relative z-10 pt-4 mt-6 border-t border-[#0A1128]/10 text-[9px] text-[#718096] flex justify-between">
+<span>Amon Luxury Palace &amp; Spa • Settlement Accounting Dept</span>
+<span>Zero Balance Certificate Validated</span>
+</div>
+</div>
+</div>
+<!-- Quick Canvas Utilities -->
+<div class="flex items-center gap-space-md mt-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">zoom_in</span>
+          Fit to A4 Canvas (100% 794x1123px)
+        </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+          256-bit Immutable Audit Sealed
+        </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+          ZATCA Production Certificate
+        </span>
+</div>
+</div>
+<!-- RIGHT 4 COLS: Audit Dossier, ZATCA Inspector & Print Settings Panel -->
+<div class="xl:col-span-4 space-y-space-md">
+<!-- Card 1: ZATCA Phase-2 Real-Time Clearance Dossier -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-lg space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">verified</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">ZATCA Clearance</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-data-tabular text-label-sm font-semibold">HTTP 200 OK</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Document has been reported and cleared through the Saudi Zakat, Tax and Customs Authority production e-invoicing portal.
+        </p>
+<!-- Compliance Attributes Grid -->
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-space-xs text-body-sm">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Clearance Status:</span>
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+              REPORTED &amp; CLEARED
+            </span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Invoice Hash:</span>
+<span class="font-data-tabular text-primary truncate max-w-[170px]" title="81f9b204e12da3c448201a0bc5e49f8713d527a92231b1c67df044391eefba72a">
+              81f9b204e12da3c44...
+            </span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Cryptographic Stamp:</span>
+<span class="font-data-tabular text-on-surface">ECDSA P-256</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Previous Inv Hash (PIH):</span>
+<span class="font-data-tabular text-on-surface-variant truncate max-w-[170px]">NWZjODkxNmE3OT...</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Invoice Counter:</span>
+<span class="font-data-tabular text-on-surface font-semibold">ICV-000842</span>
+</div>
+</div>
+<button class="w-full py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs cursor-pointer" onclick="showNotification('ZATCA Cryptographic Validation Token verified successfully.')" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">fact_check</span>
+<span>Verify Cryptographic Receipt Chain</span>
+</button>
+</div>
+<!-- Card 2: Print & Dossier Engine Specifications -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-lg space-y-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Print &amp; Foil Config</h3>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface">Gold Foil Embellishment</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant">Send luxury vector channel to laser printer</span>
+</div>
+<input checked="" class="w-4 h-4 rounded bg-surface-container accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface">Security Hologram Watermark</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant">Render faint palace crest background</span>
+</div>
+<input checked="" class="w-4 h-4 rounded bg-surface-container accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface">Dual Language (English / Arabic)</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant">Mandatory for official GCC tax filing</span>
+</div>
+<input checked="" class="w-4 h-4 rounded bg-surface-container accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface">Output Paper Size</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant">International Standard A4 (210 × 297 mm)</span>
+</div>
+<span class="font-data-tabular text-body-sm text-primary font-semibold">A4 Sheet</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Live Audit Trail & Digital Custody -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-lg space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">history_edu</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Custody &amp; Audit Trail</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-data-tabular">4 Events</span>
+</div>
+<div class="space-y-space-sm relative before:absolute before:left-3 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-variant">
+<!-- Audit Event 1 -->
+<div class="relative pl-7">
+<div class="absolute left-2 top-1.5 w-2.5 h-2.5 rounded-full bg-tertiary ring-4 ring-surface-container"></div>
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface">Invoice Generated &amp; ZATCA API Signed</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant">Duty Director Tariq Mansoor • 11:35 AST</span>
+</div>
+</div>
+<!-- Audit Event 2 -->
+<div class="relative pl-7">
+<div class="absolute left-2 top-1.5 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-surface-container"></div>
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface">Amex Centurion Folio Closed (SAR 22,416)</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant">POS Cashier Drawer #01 • 11:34 AST</span>
+</div>
+</div>
+<!-- Audit Event 3 -->
+<div class="relative pl-7">
+<div class="absolute left-2 top-1.5 w-2.5 h-2.5 rounded-full bg-secondary ring-4 ring-surface-container"></div>
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface">Registration Card RC-304 Signed</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant">Rover iPad Front-Desk • 14 May, 14:12 AST</span>
+</div>
+</div>
+<!-- Audit Event 4 -->
+<div class="relative pl-7">
+<div class="absolute left-2 top-1.5 w-2.5 h-2.5 rounded-full bg-outline ring-4 ring-surface-container"></div>
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface">Corporate Profile Verified: Sovereign Holding</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant">VIP Concierge Liaison • 14 May, 10:05 AST</span>
+</div>
+</div>
+</div>
+<div class="pt-2">
+<button class="w-full py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-outline hover:text-on-surface font-label-md text-label-md transition-colors text-center cursor-pointer" onclick="showNotification('Complete SHA-256 Ledger log exported to management console.')" type="button">
+            View Complete Hash Chain
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Tab Switcher between Tax Invoice, Registration Card, and Settlement Folio
+  function switchDocumentTab(tabKey) {
+    const tabs = ['tax-invoice', 'reg-card', 'folio-receipt'];
+    
+    tabs.forEach(t => {
+      const btn = document.getElementById('tab-' + t);
+      const view = document.getElementById('view-' + t);
+      
+      if (t === tabKey) {
+        // Active button styles
+        btn.className = 'doc-tab active flex items-center gap-space-sm px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold transition-all cursor-pointer whitespace-nowrap shadow-[0_0_12px_rgba(212,175,55,0.25)]';
+        if (view) view.classList.remove('hidden');
+      } else {
+        // Inactive button styles
+        btn.className = 'doc-tab flex items-center gap-space-sm px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all cursor-pointer whitespace-nowrap';
+        if (view) view.classList.add('hidden');
+      }
+    });
+
+    showNotification('Switched document preview: ' + tabKey.replace('-', ' ').toUpperCase());
+  }
+
+  // Toast notification feedback system
+  function showNotification(message) {
+    const toast = document.getElementById('toastNotification');
+    const msg = document.getElementById('toastMessage');
+    if (toast && msg) {
+      msg.textContent = message;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 4000);
+    }
+  }
+
+  // Mock PDF Generation / Download action
+  function simulatePdfDownload() {
+    const btnLabel = document.getElementById('downloadBtnLabel');
+    if (btnLabel) {
+      const originalText = btnLabel.textContent;
+      btnLabel.textContent = 'Generating...';
+      setTimeout(() => {
+        btnLabel.textContent = originalText;
+        showNotification('Official Signed PDF downloaded: INV-2025-0842-ZATCA-SECURED.pdf');
+      }, 900);
+    }
+  }
+</script></main></div></body></html>

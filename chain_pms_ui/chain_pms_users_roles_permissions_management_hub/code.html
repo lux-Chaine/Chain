@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-container": "#d4af37",
+          "on-primary-container": "#554300",
+          "tertiary": "#58e7aa",
+          "surface-tint": "#e9c349",
+          "tertiary-container": "#33ca90",
+          "on-error-container": "#ffdad6",
+          "inverse-on-surface": "#292f48",
+          "surface-variant": "#2d344c",
+          "error": "#ffb4ab",
+          "outline": "#99907c",
+          "surface-container-high": "#222941",
+          "on-secondary": "#1e2e5d",
+          "on-surface-variant": "#d0c5af",
+          "on-primary": "#3c2f00",
+          "tertiary-fixed-dim": "#4edea3",
+          "tertiary-fixed": "#6ffbbe",
+          "outline-variant": "#4d4635",
+          "secondary-container": "#384777",
+          "on-tertiary-container": "#005035",
+          "on-secondary-container": "#a7b6ee",
+          "background": "#0b1229",
+          "on-tertiary-fixed": "#002113",
+          "on-secondary-fixed": "#051847",
+          "error-container": "#93000a",
+          "on-background": "#dce1ff",
+          "on-tertiary": "#003824",
+          "inverse-primary": "#735c00",
+          "surface-container-highest": "#2d344c",
+          "inverse-surface": "#dce1ff",
+          "on-primary-fixed": "#241a00",
+          "on-tertiary-fixed-variant": "#005236",
+          "secondary-fixed-dim": "#b5c5fd",
+          "surface-container-lowest": "#060d24",
+          "primary": "#f2ca50",
+          "surface": "#0b1229",
+          "on-error": "#690005",
+          "surface-bright": "#323851",
+          "secondary": "#b5c5fd",
+          "primary-fixed-dim": "#e9c349",
+          "on-surface": "#dce1ff",
+          "on-secondary-fixed-variant": "#354575",
+          "surface-dim": "#0b1229",
+          "secondary-fixed": "#dbe1ff",
+          "surface-container-low": "#141a32",
+          "primary-fixed": "#ffe088",
+          "on-primary-fixed-variant": "#574500",
+          "surface-container": "#181e36"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "gutter": "1.25rem",
+          "margin-desktop": "2rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "gutter-desktop": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "margin": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Hanken Grotesk"
+          ],
+          "display": [
+            "Hanken Grotesk"
+          ],
+          "data-tabular": [
+            "Hanken Grotesk"
+          ],
+          "headline-md": [
+            "Hanken Grotesk"
+          ],
+          "headline-lg": [
+            "Hanken Grotesk"
+          ],
+          "body-md": [
+            "Hanken Grotesk"
+          ],
+          "label-md": [
+            "Hanken Grotesk"
+          ],
+          "body-sm": [
+            "Hanken Grotesk"
+          ],
+          "headline-sm": [
+            "Hanken Grotesk"
+          ],
+          "label-sm": [
+            "Hanken Grotesk"
+          ],
+          "body-lg": [
+            "Hanken Grotesk"
+          ],
+          "title-md": [
+            "Hanken Grotesk"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "display": [
+            "3rem",
+            {
+              "lineHeight": "3.5rem",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "data-tabular": [
+            "0.8125rem",
+            {
+              "lineHeight": "1.125rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.05em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "1.25rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "0.6875rem",
+            {
+              "lineHeight": "0.875rem",
+              "letterSpacing": "0.06em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "1rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "1rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[0_4px_24px_rgba(0,0,0,0.45)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="A prestigious luxury royal crown logo emblem for Chain PMS hotel software, rendered in elegant metallic gold with sharp geometric facets and five peaks topped with subtle diamond jewels, vector luxury branding, dark royal navy contrasting background.. Brand logo. - Primary color: #d4af37
+- Font: hankenGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8AzqK1WanRKfcGTql5wJMnaa_JN9abEKLiTDJFs024ViSokA4ZkD3CS6cArdvOOQpDoSOZ0Hc9OtLQEARttTGUEsNF4NoYF4JaWGXPfj52ad1ETNh9KpBsaRAdXeuILCEnXxrYbB9qHoN4F_ltOf4Zlo9BheRQWhnkWj44yaxWzEZXtHm7NrvvIU6EDpLaEeM-zKNIOb2o0mQAEKSFDbAT9-1HR_igT1C2JMExhZq4HIQB0vCPH8PgDU"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-wide leading-none">CHAIN PMS</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Enterprise Luxe</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-space-md"><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Operations Core</div><nav class="space-y-0.5" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm font-semibold rounded-lg shadow-[0_0_16px_rgba(212,175,55,0.25)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="operations-dashboard" href="#"><span class="material-symbols-outlined text-primary text-[20px]">room_service</span><span>Front Desk &amp; Tape Chart</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="guest-profiles-crm" href="#"><span class="material-symbols-outlined text-primary text-[20px]">badge</span><span>Profiles &amp; CRM</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="cashier-and-billing" href="#"><span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span><span>Cashier &amp; Split Folios</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="outlets-and-pos" href="#"><span class="material-symbols-outlined text-primary text-[20px]">restaurant</span><span>Outlets &amp; POS Sync</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Management &amp; System</div><nav class="space-y-0.5" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm font-semibold rounded-lg shadow-[0_0_16px_rgba(212,175,55,0.25)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="hotels-portfolio" href="#"><span class="material-symbols-outlined text-primary text-[20px]">domain</span><span>Hotels Portfolio</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="staff-and-duty-roster" href="#"><span class="material-symbols-outlined text-primary text-[20px]">engineering</span><span>Staff &amp; Duty Roster</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports-and-analytics" href="#"><span class="material-symbols-outlined text-primary text-[20px]">monitoring</span><span>Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="security-and-access-control" href="#"><span class="material-symbols-outlined text-primary text-[20px]">lock_person</span><span>Security &amp; Roles</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="audit-logs-and-ledger" href="#"><span class="material-symbols-outlined text-primary text-[20px]">rule</span><span>Audit Logs &amp; Ledger</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="system-configuration" href="#"><span class="material-symbols-outlined text-primary text-[20px]">admin_panel_settings</span><span>System Administration</span></a></nav></div></div><div class="p-space-sm bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container"><div class="flex items-center gap-space-sm"><span class="h-2.5 w-2.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-tertiary font-semibold">CORE PMS ONLINE</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v4.9.2-Luxe</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen bg-background"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 px-gutter-desktop flex items-center justify-between shadow-[0_4px_20px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-1.5 rounded-lg"><span class="material-symbols-outlined text-primary text-[20px]">location_city</span><select class="bg-transparent text-on-surface font-title-md text-body-sm focus:outline-none cursor-pointer pr-space-sm"><option class="bg-surface-container text-on-surface" value="amon">Amon Luxury Palace &amp; Spa</option><option class="bg-surface-container text-on-surface" value="palm">The Palm Royal Resort</option><option class="bg-surface-container text-on-surface" value="siwa">Siwa Oasis Sanctuary</option></select></div><div class="hidden xl:flex items-center gap-space-sm px-space-sm py-1 rounded-lg bg-surface-container-low"><span class="material-symbols-outlined text-primary-container text-[18px]">point_of_sale</span><span class="font-label-sm text-label-sm text-on-surface-variant">Main Front Drawer:</span><span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase">Open • Shift #1</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-64 lg:w-80 bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm pl-9 pr-space-md py-1.5 rounded-lg focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="Search folio, guest, keycard UID or room..." type="text"/></div><div class="flex items-center gap-space-xs"><button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">lock</span></button></div><div class="h-6 w-px bg-surface-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right"><div class="font-title-md text-body-sm text-on-surface font-semibold">E. Vance (GM)</div><div class="font-label-sm text-label-sm text-primary">Duty Manager • Amon Palace</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(212,175,55,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-margin-desktop bg-background"><div class="flex flex-col w-full">
+<!-- Sub-Header / Breadcrumb & Core Actions Bar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md pb-space-lg">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline tracking-wider uppercase">
+<span>System Management</span>
+<span class="material-symbols-outlined text-outline text-[14px]">chevron_right</span>
+<span>Access Control &amp; Identity</span>
+<span class="material-symbols-outlined text-outline text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Users &amp; Permissions Hub</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Users, Roles &amp; Security Permissions</h1>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">verified_user</span>
+          RBAC v4.2 • Strict RLS
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Multi-Tenant RBAC Security, Hotel Property Scopes (Row-Level Security) &amp; Granular Screen Permissions Matrix
+      </p>
+</div>
+<!-- Key Actions & Quick Shortcuts -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="hidden lg:flex items-center bg-surface-container-low px-space-sm py-1 rounded-lg gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Quick Keys:</span>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm shadow-sm">Ctrl+N</kbd>
+<span class="text-outline text-xs">New</span>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm shadow-sm">Ctrl+S</kbd>
+<span class="text-outline text-xs">Save</span>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm shadow-sm">F3</kbd>
+<span class="text-outline text-xs">Search</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors shadow-sm font-title-md text-body-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Export Audit Log</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors shadow-sm font-title-md text-body-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">security_update_good</span>
+<span>Bulk 2FA Enforce</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container hover:brightness-105 transition-all shadow-[0_0_16px_rgba(212,175,55,0.3)] font-title-md text-body-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>New User (Ctrl+N)</span>
+</button>
+</div>
+</div>
+<!-- Global KPI / Security Health Metrics Ribbon -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter-desktop mb-space-lg">
+<!-- Card 1: Active Accounts -->
+<div class="relative overflow-hidden bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Active System Accounts</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display text-headline-lg font-bold text-on-surface">48</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> 100% Online
+            </span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">manage_accounts</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>3 Properties Synced • 6 Global Admins</span>
+<span class="text-tertiary font-semibold">0 Locked</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-primary/5 blur-xl pointer-events-none"></div>
+</div>
+<!-- Card 2: Role Templates -->
+<div class="relative overflow-hidden bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Security Roles Defined</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display text-headline-lg font-bold text-on-surface">8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Profiles</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">admin_panel_settings</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="truncate">SuperAdmin, GM, Night Auditor, POS</span>
+<span class="text-primary font-semibold">142 Permissions</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-primary/5 blur-xl pointer-events-none"></div>
+</div>
+<!-- Card 3: Multi-Tenant RLS Status -->
+<div class="relative overflow-hidden bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Multi-Tenant Isolation</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display text-headline-lg font-bold text-tertiary">100%</span>
+<span class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-wide font-semibold">RLS Active</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">database</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>PostgreSQL 16 Multi-Tenant Scoping</span>
+<span class="text-on-surface font-semibold">Zero Leaks</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-tertiary/5 blur-xl pointer-events-none"></div>
+</div>
+<!-- Card 4: 2FA & FIDO2 Enforcement -->
+<div class="relative overflow-hidden bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Hardware Key &amp; 2FA</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display text-headline-lg font-bold text-on-surface">94%</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center">
+<span class="material-symbols-outlined text-[14px]">key</span> FIDO2 / Passkey
+            </span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">fingerprint</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>45 / 48 Enforced WebAuthn</span>
+<span class="text-error font-semibold">3 Pending</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-secondary/5 blur-xl pointer-events-none"></div>
+</div>
+</div>
+<!-- Main Navigation Tabs Bar -->
+<div class="flex items-center justify-between bg-surface-container-lowest rounded-xl p-1.5 shadow-sm mb-space-md overflow-x-auto">
+<div class="flex items-center gap-1.5 min-w-max">
+<button class="flex items-center gap-space-sm px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-title-md text-body-sm font-semibold shadow-[0_0_12px_rgba(212,175,55,0.25)]">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>Users Directory</span>
+<span class="ml-1 px-1.5 py-0.2 rounded-full bg-on-primary-container/20 text-on-primary-container font-label-sm text-label-sm">48</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-title-md text-body-sm">
+<span class="material-symbols-outlined text-[18px]">shield_person</span>
+<span>Security Roles</span>
+<span class="ml-1 px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">8</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-title-md text-body-sm">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span>Granular Permissions Matrix</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-title-md text-body-sm">
+<span class="material-symbols-outlined text-[18px]">domain_verification</span>
+<span>Multi-Hotel Property Scope (RLS)</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-title-md text-body-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Session &amp; Terminal Audits</span>
+</button>
+</div>
+<div class="hidden md:flex items-center gap-space-sm pr-2 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Sync: Nominal</span>
+</div>
+</div>
+<!-- Main View Split Architecture (Users Table ~58% / Inspector & Matrix ~42%) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-desktop">
+<!-- Left Column: User Directory & Filters (7 of 12 cols = ~58%) -->
+<div class="xl:col-span-7 flex flex-col space-y-space-md">
+<!-- Filter Bar -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex flex-col md:flex-row gap-space-sm items-center justify-between">
+<!-- Search Input -->
+<div class="relative w-full md:w-80">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-outline text-body-sm pl-9 pr- space-md py-2 rounded-lg focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="Search by name, email, role, or UID..." type="text" value="Tariq"/>
+<span class="absolute right-2.5 top-2.5 px-1.5 py-0.2 rounded bg-surface-container-high text-outline text-xs">F3</span>
+</div>
+<!-- Dropdown Filters -->
+<div class="flex items-center gap-space-xs w-full md:w-auto overflow-x-auto">
+<select class="bg-surface-container text-on-surface font-title-md text-body-sm px-space-sm py-2 rounded-lg focus:outline-none cursor-pointer">
+<option value="all">All Properties (3)</option>
+<option selected="" value="amon">Amon Luxury Palace &amp; Spa</option>
+<option value="palm">The Palm Royal Resort</option>
+<option value="siwa">Siwa Oasis Sanctuary</option>
+</select>
+<select class="bg-surface-container text-on-surface font-title-md text-body-sm px-space-sm py-2 rounded-lg focus:outline-none cursor-pointer">
+<option value="all">All Roles</option>
+<option value="admin">System SuperAdmin</option>
+<option value="gm">General Manager</option>
+<option value="fd">Front Desk Supervisor</option>
+<option value="audit">Night Auditor</option>
+</select>
+<select class="bg-surface-container text-on-surface font-title-md text-body-sm px-space-sm py-2 rounded-lg focus:outline-none cursor-pointer">
+<option value="active">Active (48)</option>
+<option value="suspended">Suspended (0)</option>
+</select>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-outline">
+<div class="flex items-center gap-space-xs">
+<span>Showing <strong class="text-on-surface">5 of 48</strong> users matching criteria</span>
+<span class="text-outline">•</span>
+<span class="text-primary cursor-pointer hover:underline">Reset Filters</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="cursor-pointer hover:text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">filter_list</span> Sort: Last Active
+            </span>
+</div>
+</div>
+</div>
+<!-- User List Table / Cards -->
+<div class="bg-surface-container-low rounded-xl shadow-md overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-lowest text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md">Operator / Identity</th>
+<th class="py-3 px-space-sm">System Role</th>
+<th class="py-3 px-space-sm">Property Scope</th>
+<th class="py-3 px-space-sm">Security &amp; 2FA</th>
+<th class="py-3 px-space-sm">Last Active</th>
+<th class="py-3 px-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent font-body-sm text-body-sm">
+<!-- Row 1: Selected Tariq Mansouri (Active Row Highlight) -->
+<tr class="bg-surface-container-high/70 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center font-bold text-primary shadow-sm">
+                        TM
+                      </div>
+<span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-tertiary border-2 border-surface-container-high"></span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">Tariq Mansouri</span>
+<span class="px-1.5 py-0.2 rounded bg-primary/20 text-primary font-label-sm text-label-sm">Owner/HQ</span>
+</div>
+<span class="text-outline text-xs block truncate">tariq.mansouri@amonluxury.com</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">military_tech</span> SuperAdmin
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface font-semibold text-xs">All 3 Properties</span>
+<span class="text-tertiary text-xs">Full Global Cluster</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> FIDO2 Key
+                  </span>
+</td>
+<td class="py-3 px-space-sm text-on-surface-variant font-data-tabular text-data-tabular">
+<div>Just now</div>
+<span class="text-outline text-xs">Terminal GM-01</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-outline hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Elena Rostova -->
+<tr class="hover:bg-surface-container/60 transition-colors cursor-pointer group">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/30 flex items-center justify-center font-bold text-secondary shadow-sm">
+                        ER
+                      </div>
+<span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-tertiary border-2 border-surface-container-low"></span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">Elena Rostova</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Finance Lead</span>
+</div>
+<span class="text-outline text-xs block truncate">e.rostova@sovereign-hotels.com</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">payments</span> Night Auditor
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface font-semibold text-xs">All Properties</span>
+<span class="text-outline text-xs">Financial Audit Scope</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> TOTP Auth
+                  </span>
+</td>
+<td class="py-3 px-space-sm text-on-surface-variant font-data-tabular text-data-tabular">
+<div>18m ago</div>
+<span class="text-outline text-xs">Audit Ledger Node</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-outline hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Mohamed Al-Harbi -->
+<tr class="hover:bg-surface-container/60 transition-colors cursor-pointer group">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center font-bold text-on-surface shadow-sm">
+                        MA
+                      </div>
+<span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-tertiary border-2 border-surface-container-low"></span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">Mohamed Al-Harbi</span>
+</div>
+<span class="text-outline text-xs block truncate">m.alharbi@amonluxury.com</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold uppercase tracking-wider inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">desk</span> Front Desk Lead
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface font-semibold text-xs">Amon Palace Only</span>
+<span class="text-outline text-xs">Terminal Restricted</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> TOTP Auth
+                  </span>
+</td>
+<td class="py-3 px-space-sm text-on-surface-variant font-data-tabular text-data-tabular">
+<div>1h 12m ago</div>
+<span class="text-outline text-xs">Terminal FD-02</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-outline hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Sara Al-Nuaimi -->
+<tr class="hover:bg-surface-container/60 transition-colors cursor-pointer group">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center font-bold text-on-surface shadow-sm">
+                        SN
+                      </div>
+<span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-outline border-2 border-surface-container-low"></span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">Sara Al-Nuaimi</span>
+</div>
+<span class="text-outline text-xs block truncate">sara.nuaimi@palmroyal.com</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold uppercase tracking-wider inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">cleaning_services</span> Housekeeping Lead
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface font-semibold text-xs">Palm Royal Resort</span>
+<span class="text-outline text-xs">Housekeeping Fleet</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-error/10 text-error font-label-sm text-label-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Setup Required
+                  </span>
+</td>
+<td class="py-3 px-space-sm text-on-surface-variant font-data-tabular text-data-tabular">
+<div>3h ago</div>
+<span class="text-outline text-xs">Mobile Tablet HK-4</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-outline hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Karim Zaki -->
+<tr class="hover:bg-surface-container/60 transition-colors cursor-pointer group">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center font-bold text-on-surface shadow-sm">
+                        KZ
+                      </div>
+<span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-tertiary border-2 border-surface-container-low"></span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">Karim Zaki</span>
+</div>
+<span class="text-outline text-xs block truncate">k.zaki@siwasanctuary.com</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold uppercase tracking-wider inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">restaurant</span> POS &amp; F&amp;B Outlets
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface font-semibold text-xs">Siwa Sanctuary</span>
+<span class="text-outline text-xs">Dining Outlets Only</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> FIDO2 Key
+                  </span>
+</td>
+<td class="py-3 px-space-sm text-on-surface-variant font-data-tabular text-data-tabular">
+<div>6h ago</div>
+<span class="text-outline text-xs">Terminal POS-Dune</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-outline hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Footer Stats -->
+<div class="p-space-sm bg-surface-container-lowest flex items-center justify-between font-label-sm text-label-sm text-outline">
+<div class="flex items-center gap-space-sm">
+<span>Showing 1 to 5 of 48 Operators</span>
+<span class="text-outline">•</span>
+<span>Policy Version: hash_202505_LuxeProd</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container text-on-surface-variant disabled:opacity-40">Previous</button>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary-container font-bold">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high">3</button>
+<button class="px-2 py-1 rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high">Next</button>
+</div>
+</div>
+</div>
+<!-- Quick RLS Scope Status Visual Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">shield</span>
+<span class="font-title-md text-body-md text-on-surface font-semibold">PostgreSQL Row-Level Security Architecture (Multi-Tenant RLS)</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-semibold">Protected • Zero Data Bleed</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Each hotel property operates inside an isolated logical tenant boundary. Operators without cluster clearance are strictly locked out of neighboring hotel reservations, ledger folios, and POS transaction streams at the database kernel level.
+        </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between">
+<div>
+<div class="font-title-md text-body-sm text-on-surface font-semibold">Amon Luxury Palace</div>
+<span class="font-label-sm text-label-sm text-outline">Tenant: amon_luxe_eg</span>
+</div>
+<span class="text-tertiary font-bold font-data-tabular text-data-tabular">24 Users</span>
+</div>
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between">
+<div>
+<div class="font-title-md text-body-sm text-on-surface font-semibold">The Palm Royal Resort</div>
+<span class="font-label-sm text-label-sm text-outline">Tenant: palm_royal_uae</span>
+</div>
+<span class="text-tertiary font-bold font-data-tabular text-data-tabular">16 Users</span>
+</div>
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between">
+<div>
+<div class="font-title-md text-body-sm text-on-surface font-semibold">Siwa Oasis Sanctuary</div>
+<span class="font-label-sm text-label-sm text-outline">Tenant: siwa_oas_res</span>
+</div>
+<span class="text-tertiary font-bold font-data-tabular text-data-tabular">8 Users</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Inspector & Granular Permissions Matrix Drawer (5 of 12 cols = ~42%) -->
+<div class="xl:col-span-5 flex flex-col space-y-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl flex flex-col space-y-space-md">
+<!-- Dossier Header -->
+<div class="flex items-start justify-between pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center font-bold text-headline-sm text-primary shadow-inner">
+              TM
+            </div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Tariq Mansouri</h2>
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">LEVEL 5</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">UID: USR-HQ-00892 • Active Shift Master</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="h-2.5 w-2.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">LIVE EDITS</span>
+</div>
+</div>
+<!-- Role Template Selector & Hotel Tenant Scope -->
+<div class="space-y-space-sm bg-surface-container p-space-sm rounded-lg">
+<div>
+<label class="block font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Assigned Role Template</label>
+<div class="relative">
+<select class="w-full bg-surface-container-high text-on-surface font-title-md text-body-sm px-space-md py-2.5 rounded-lg focus:outline-none cursor-pointer appearance-none">
+<option selected="">System SuperAdmin &amp; Regional Auditor</option>
+<option>General Manager (Multi-Property)</option>
+<option>Duty Manager / Front Desk Supervisor</option>
+<option>Senior Night Auditor &amp; Finance Controller</option>
+<option>Custom Role Overrides</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Multi-Tenant Scope Checkboxes -->
+<div>
+<label class="block font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Hotel Property Clearance (RLS Scope)</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container-high cursor-pointer hover:bg-surface-bright transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 bg-surface-container-lowest" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">Amon Palace</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container-high cursor-pointer hover:bg-surface-bright transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 bg-surface-container-lowest" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">The Palm</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container-high cursor-pointer hover:bg-surface-bright transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 bg-surface-container-lowest" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">Siwa Oasis</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Granular Permissions Matrix Accordion / Sections -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline uppercase tracking-wider">
+<span>Granular Security Rights (142 Active)</span>
+<span class="text-primary hover:underline cursor-pointer">Expand All</span>
+</div>
+<!-- Module 1: Front Desk & Reservations -->
+<div class="bg-surface-container rounded-lg overflow-hidden">
+<div class="p-space-sm bg-surface-container-high flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">room_service</span>
+<span class="font-title-md text-body-sm text-on-surface font-semibold">Front Desk &amp; Tape Chart</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-tertiary">All 4 Enabled</span>
+</div>
+<div class="p-space-sm space-y-2 font-body-sm text-body-sm">
+<label class="flex items-center justify-between cursor-pointer">
+<span class="text-on-surface">Create &amp; Modify Guest Bookings</span>
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-lowest" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between cursor-pointer">
+<span class="text-on-surface">Override Rate Plan (Manual BAR)</span>
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-lowest" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between cursor-pointer">
+<span class="text-on-surface">Room Move &amp; Upgrade Authority</span>
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-lowest" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between cursor-pointer">
+<span class="text-on-surface">Walk-in Fast VIP Registration</span>
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-lowest" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Module 2: Cashiering & Billing -->
+<div class="bg-surface-container rounded-lg overflow-hidden">
+<div class="p-space-sm bg-surface-container-high flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">account_balance_wallet</span>
+<span class="font-title-md text-body-sm text-on-surface font-semibold">Cashiering, Folios &amp; Voids</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-tertiary">All 4 Enabled</span>
+</div>
+<div class="p-space-sm space-y-2 font-body-sm text-body-sm">
+<label class="flex items-center justify-between cursor-pointer">
+<span class="text-on-surface">Split Folios (Up to 8 Windows)</span>
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-lowest" type="checkbox"/>
+</label>
+<div class="flex items-center justify-between">
+<span class="text-on-surface">Rebate / Void Limit Ceiling</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-data-tabular text-data-tabular text-primary font-semibold">$5,000.00 / Shift</span>
+</div>
+<label class="flex items-center justify-between cursor-pointer">
+<span class="text-on-surface">City Ledger Direct Bill Approval</span>
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-lowest" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between cursor-pointer">
+<span class="text-on-surface">ZATCA / Tax Authority Fiscal Sign</span>
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-lowest" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Module 3: Night Audit & Ledger -->
+<div class="bg-surface-container rounded-lg overflow-hidden">
+<div class="p-space-sm bg-surface-container-high flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">rule</span>
+<span class="font-title-md text-body-sm text-on-surface font-semibold">Night Audit &amp; Day Closure</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-tertiary">All 3 Enabled</span>
+</div>
+<div class="p-space-sm space-y-2 font-body-sm text-body-sm">
+<label class="flex items-center justify-between cursor-pointer">
+<span class="text-on-surface">Execute Automated Night Closure</span>
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-lowest" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between cursor-pointer">
+<span class="text-on-surface">Unlock Locked Historical Ledger</span>
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-lowest" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between cursor-pointer">
+<span class="text-on-surface">Sync Trial Balance to Oracle / SAP GL</span>
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-lowest" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Module 4: Peripherals & System Admin -->
+<div class="bg-surface-container rounded-lg overflow-hidden">
+<div class="p-space-sm bg-surface-container-high flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">key</span>
+<span class="font-title-md text-body-sm text-on-surface font-semibold">Hardware Peripherals &amp; RFID Keycards</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-tertiary">Active</span>
+</div>
+<div class="p-space-sm space-y-2 font-body-sm text-body-sm">
+<label class="flex items-center justify-between cursor-pointer">
+<span class="text-on-surface">Issue Master Emergency RFID Passkey</span>
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-lowest" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between cursor-pointer">
+<span class="text-on-surface">Manage Operator Profiles &amp; Passwords</span>
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-lowest" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+<!-- Security Policies & Session Hardware -->
+<div class="bg-surface-container p-space-sm rounded-lg space-y-3">
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Device &amp; Policy Controls</div>
+<div class="flex items-center justify-between">
+<div>
+<div class="font-title-md text-body-sm text-on-surface font-semibold">Force Password Reset on Next Login</div>
+<div class="text-outline text-xs">Operator must enroll new 16+ char credential</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<div class="font-title-md text-body-sm text-on-surface font-semibold">Hardware FIDO2 Security Key Enforced</div>
+<div class="text-outline text-xs">YubiKey / WebAuthn Biometrics active</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">Active Key #981</span>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<div class="font-title-md text-body-sm text-on-surface font-semibold">Terminal Inactivity Auto-Lock</div>
+<div class="text-outline text-xs">Locks session if keyboard is idle</div>
+</div>
+<select class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-1 rounded focus:outline-none cursor-pointer">
+<option>10 Minutes</option>
+<option selected="">15 Minutes</option>
+<option>30 Minutes</option>
+</select>
+</div>
+</div>
+<!-- Save & Deploy Button with Signature Notice -->
+<div class="pt-space-xs space-y-2">
+<button class="w-full flex items-center justify-center gap-space-sm px-space-md py-3 rounded-lg bg-primary-container text-on-primary-container hover:brightness-105 transition-all shadow-[0_0_20px_rgba(212,175,55,0.35)] font-title-md text-body-md font-bold" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Save &amp; Deploy Security Policy (Ctrl+S)</span>
+</button>
+<div class="flex items-center justify-center gap-1 text-center font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[14px] text-tertiary">lock</span>
+<span>Signed with HSM Cluster Key SHA-256 • Instant Node Propagation</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Footer Metrics Ribbon -->
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-outline">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-on-surface font-semibold">PostgreSQL Cluster Node 01:</span>
+<span>Replication Latency: <strong class="text-tertiary">3.8ms</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">dns</span>
+<span>RLS Isolation Test: <strong class="text-on-surface">Passed (0 Cross-Tenant Leaks)</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">token</span>
+<span>JWT Secret Age: <strong class="text-on-surface">14d (Next rotation in 16d)</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span>Active Security Auditor: <strong class="text-on-surface">E. Vance (GM)</strong></span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-mono text-xs">v4.9.2-Luxe RBAC</span>
+</div>
+</div>
+</div>
+<script>
+  // Simple interaction for keyboard shortcuts & matrix demo
+  document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.key.toLowerCase() === 's') {
+      e.preventDefault();
+      alert('Security Policy deployed successfully with cryptographic verification token.');
+    } else if (e.ctrlKey && e.key.toLowerCase() === 'n') {
+      e.preventDefault();
+      alert('Modal: Create New Multi-Tenant Operator Profile.');
+    }
+  });
+</script></main></div></body></html>

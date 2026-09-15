@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed":"#ffe088","surface-tint":"#e9c349","inverse-on-surface":"#292f48","on-surface-variant":"#d0c5af","error-container":"#93000a","error":"#ffb4ab","secondary-fixed-dim":"#b5c5fd","secondary-fixed":"#dbe1ff","surface-container-high":"#222941","on-error":"#690005","on-primary-container":"#554300","on-secondary-fixed":"#051847","primary":"#f2ca50","surface-bright":"#323851","on-secondary":"#1e2e5d","inverse-primary":"#735c00","surface-variant":"#2d344c","surface-container-highest":"#2d344c","secondary-container":"#384777","inverse-surface":"#dce1ff","on-surface":"#dce1ff","background":"#0b1229","on-secondary-container":"#a7b6ee","on-primary-fixed-variant":"#574500","on-tertiary-fixed-variant":"#005236","on-primary":"#3c2f00","tertiary-fixed":"#6ffbbe","surface-container-lowest":"#060d24","on-tertiary":"#003824","primary-fixed-dim":"#e9c349","tertiary-fixed-dim":"#4edea3","on-tertiary-container":"#005035","on-background":"#dce1ff","on-secondary-fixed-variant":"#354575","outline":"#99907c","primary-container":"#d4af37","on-tertiary-fixed":"#002113","tertiary-container":"#33ca90","surface-dim":"#0b1229","surface":"#0b1229","on-primary-fixed":"#241a00","tertiary":"#58e7aa","on-error-container":"#ffdad6","outline-variant":"#4d4635","surface-container":"#181e36","secondary":"#b5c5fd","surface-container-low":"#141a32"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-sm":"0.5rem","margin-desktop":"2rem",gutter:"1.25rem","gutter-desktop":"1.5rem","space-lg":"1.5rem","space-md":"1rem",margin:"1rem","space-xl":"2.5rem","space-xs":"0.25rem"},fontFamily:{"body-md":["Hanken Grotesk"],"title-md":["Hanken Grotesk"],"headline-lg-mobile":["Hanken Grotesk"],"headline-sm":["Hanken Grotesk"],"headline-md":["Hanken Grotesk"],"label-sm":["Hanken Grotesk"],"body-sm":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"headline-lg":["Hanken Grotesk"],display:["Hanken Grotesk"],"data-tabular":["Hanken Grotesk"],"label-md":["Hanken Grotesk"]},fontSize:{"body-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0",fontWeight:"400"}],"title-md":["1rem",{lineHeight:"1.5rem",letterSpacing:"0",fontWeight:"500"}],"headline-lg-mobile":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-sm":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.015em",fontWeight:"600"}],"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.06em",fontWeight:"500"}],"body-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.01em",fontWeight:"400"}],"body-lg":["1rem",{lineHeight:"1.5rem",letterSpacing:"0",fontWeight:"400"}],"headline-lg":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.02em",fontWeight:"600"}],display:["3rem",{lineHeight:"3.5rem",letterSpacing:"-0.025em",fontWeight:"600"}],"data-tabular":["0.8125rem",{lineHeight:"1.125rem",letterSpacing:"0.01em",fontWeight:"500"}],"label-md":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.05em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface-container-low/95 backdrop-blur-xl border-b border-primary/20 shadow-[0_4px_24px_rgba(0,0,0,0.45)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="A prestigious luxury royal crown logo emblem for Chain PMS hotel software, rendered in elegant metallic gold with sharp geometric facets and five peaks topped with subtle diamond jewels, vector luxury branding, dark royal navy contrasting background.. Brand logo. - Primary color: #d4af37
+- Font: hankenGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8AzqK1WanRKfcGTql5wJMnaa_JN9abEKLiTDJFs024ViSokA4ZkD3CS6cArdvOOQpDoSOZ0Hc9OtLQEARttTGUEsNF4NoYF4JaWGXPfj52ad1ETNh9KpBsaRAdXeuILCEnXxrYbB9qHoN4F_ltOf4Zlo9BheRQWhnkWj44yaxWzEZXtHm7NrvvIU6EDpLaEeM-zKNIOb2o0mQAEKSFDbAT9-1HR_igT1C2JMExhZq4HIQB0vCPH8PgDU"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-title-md tracking-wider text-primary font-bold uppercase">Chain PMS</span><span class="px-1.5 py-0.5 rounded text-[10px] font-label-sm bg-primary/10 text-primary uppercase tracking-widest border border-primary/30">Luxe</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Enterprise Hospitality</span></div><div class="h-8 w-px bg-outline-variant/40 mx-space-xs hidden lg:block"></div><div class="relative hidden lg:flex items-center"><span class="material-symbols-outlined absolute left-2.5 text-primary text-[18px] pointer-events-none">domain</span><select class="bg-surface-container text-on-surface text-body-sm font-body-sm pl-8 pr-7 py-1.5 rounded-lg border border-primary/20 focus:border-primary focus:outline-none appearance-none cursor-pointer hover:bg-surface-container-high transition-colors"><option selected="" value="amon">Amon Luxury Palace &amp; Spa</option><option value="palm">Palm Royal Resort &amp; Villas</option><option value="siwa">Siwa Oasis Haven Retreat</option></select><span class="material-symbols-outlined absolute right-2 text-on-surface-variant text-[16px] pointer-events-none">arrow_drop_down</span></div></div><div class="flex-1 max-w-md mx-space-sm hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container text-on-surface placeholder:text-outline font-body-sm text-body-sm pl-9 pr-14 py-1.5 rounded-lg border border-outline-variant/50 focus:border-primary focus:ring-1 focus:ring-primary/40 focus:outline-none transition-all" placeholder="Global Reservation Search (Guest, Folio, Room, PNR)..." type="text"/><div class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container-highest border border-outline-variant text-[10px] font-data-tabular text-on-surface-variant">Ctrl+K</div></div></div><div class="flex items-center gap-space-sm shrink-0"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-lowest/80 rounded-lg border border-outline-variant/40 text-on-surface-variant font-data-tabular text-data-tabular"><div class="flex items-center gap-1"><span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span><span class="text-on-surface font-semibold">Node #SA-01</span></div><span class="text-outline-variant">|</span><span class="text-secondary">Shift #04 Tariq M.</span><span class="text-outline-variant">|</span><div class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">nightlight_round</span><span class="font-label-sm text-label-sm uppercase">Audit: Operational</span></div></div><div class="hidden sm:flex items-center gap-space-xs"><button class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-gradient-to-br from-primary-container to-surface-tint text-background font-label-md text-label-md font-bold shadow-md hover:brightness-110 active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-[16px]">add</span><span>Reservation</span></button><button class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-surface-container-high text-on-surface border border-primary/30 font-label-md text-label-md hover:bg-surface-bright hover:border-primary transition-all" type="button"><span class="material-symbols-outlined text-primary text-[16px]">person_add</span><span class="hidden md:inline">Guest</span></button><button class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-surface-container-high text-on-surface border border-outline-variant font-label-md text-label-md hover:bg-surface-bright hover:border-primary transition-all" type="button"><span class="material-symbols-outlined text-tertiary text-[16px]">key</span><span class="hidden md:inline">Quick Check-in</span></button></div><div class="h-6 w-px bg-outline-variant/40 mx-space-xs"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 bg-surface-container-lowest/95 backdrop-blur-xl border-r border-primary/15 z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-sm flex flex-col gap-space-sm"><div class="px-space-xs py-1 flex items-center justify-between"><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-bold">Operations Core</span><span class="material-symbols-outlined text-[16px] text-primary/70">tune</span></div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary text-background font-bold shadow-[0_0_12px_rgba(242,202,80,0.35)]"><a class="flex items-center gap- space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reservations-and-bookings" href="#"><span class="material-symbols-outlined text-[18px]">calendar_month</span><span class="font-title-md text-body-md">Reservations &amp; Bookings</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-rack" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span class="font-title-md text-body-md">Room Rack Tape Chart</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="in-house-guests" href="#"><span class="material-symbols-outlined text-[18px]">hotel</span><span class="font-title-md text-body-md">In-House Guests</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="arrivals-and-departures" href="#"><span class="material-symbols-outlined text-[18px]">sync_alt</span><span class="font-title-md text-body-md">Arrivals &amp; Departures</span></a></nav><div class="h-px bg-outline-variant/30 my-1"></div><div class="px-space-xs py-1"><span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase font-bold">Rooms &amp; Inventory</span></div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary text-background font-bold shadow-[0_0_12px_rgba(242,202,80,0.35)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-map" href="#"><span class="material-symbols-outlined text-[18px]">map</span><span class="font-title-md text-body-md">Room Map &amp; Estates</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="amenities-and-attributes" href="#"><span class="material-symbols-outlined text-[18px]">spa</span><span class="font-title-md text-body-md">Amenities &amp; Attributes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="rates-and-yield" href="#"><span class="material-symbols-outlined text-[18px]">trending_up</span><span class="font-title-md text-body-md">Rates &amp; Yield Strategy</span></a></nav><div class="h-px bg-outline-variant/30 my-1"></div><div class="px-space-xs py-1"><span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase font-bold">Commercial &amp; Ledger</span></div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary text-background font-bold shadow-[0_0_12px_rgba(242,202,80,0.35)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="outlets-and-pos" href="#"><span class="material-symbols-outlined text-[18px]">point_of_sale</span><span class="font-title-md text-body-md">Outlets &amp; POS Terminals</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cashier-and-folio-billing" href="#"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span class="font-title-md text-body-md">Cashier &amp; Folio Billing</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="management-and-system-administration" href="#"><span class="material-symbols-outlined text-[18px]">admin_panel_settings</span><span class="font-title-md text-body-md">System Administration</span></a></nav></div><div class="p-space-sm bg-surface-container-low/60 border-t border-outline-variant/30 flex flex-col gap-space-xs"><div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant"><span>OCCUPANCY RATE</span><span class="text-primary font-bold font-data-tabular">88.4%</span></div><div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden"><div class="bg-primary h-full rounded-full" style="width: 88.4%"></div></div><div class="flex items-center justify-between pt-1 font-label-sm text-label-sm text-outline"><span class="flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>214 Clean</span><span class="flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-error"></span>24 Maint</span></div></div></aside><div class="pl-64"><main class="relative w-full pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Top Operational Control Ribbon -->
+<div class="p-gutter-desktop pb-0 flex flex-col gap-space-md">
+<!-- Breadcrumb & System State -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm text-label-sm font-label-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant tracking-widest uppercase">
+<span class="text-primary font-bold">SOVEREIGN CORE</span>
+<span class="text-outline-variant">/</span>
+<span>HOUSEKEEPING &amp; WORKFORCE</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary-fixed-dim">TASK ASSIGNMENT &amp; ROSTER</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-lg bg-surface-container-high text-on-surface text-label-sm font-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-bold text-tertiary">24 Companion Handhelds Linked</span>
+<span class="text-outline-variant">|</span>
+<span class="text-on-surface-variant font-data-tabular">Sync Latency: 18ms</span>
+</div>
+<div class="text-on-surface-variant text-label-sm font-label-sm">
+          Node: <span class="text-on-surface font-semibold">SA-WING-HOTEL-01</span>
+</div>
+</div>
+</div>
+<!-- Title & Executive Action Bar -->
+<div class="flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-md pt-space-xs pb-space-sm">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">
+            Housekeeping Task Assignment &amp; Workforce Roster Engine
+          </h1>
+<span class="px-2 py-0.5 text-label-sm font-label-sm uppercase tracking-wider rounded bg-primary-container/20 text-primary font-bold">
+            Algorithmic V4.2
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-4xl">
+          Algorithmic room credits distribution, shift workload balancing, specialized deep-clean scheduling, and real-time mobile sync across luxury estates.
+        </p>
+</div>
+<!-- Action Group -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="group relative flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-bright transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">auto_awesome</span>
+<span>Auto-Balance Credits</span>
+<kbd class="ml-1 px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant font-data-tabular text-[10px]">F4</kbd>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-bright transition-all shadow-sm" id="open-task-drawer" type="button">
+<span class="material-symbols-outlined text-tertiary text-[18px]">add_task</span>
+<span>Assign Custom Task</span>
+<kbd class="ml-1 px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant font-data-tabular text-[10px]">F3</kbd>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-bright transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-secondary text-[18px]">picture_as_pdf</span>
+<span class="hidden sm:inline">Export Briefing</span>
+<kbd class="ml-1 px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant font-data-tabular text-[10px]">F8</kbd>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-gradient-to-r from-primary-container to-surface-tint text-on-primary font-label-md text-label-md font-bold hover:brightness-110 active:scale-95 transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sync to Handhelds</span>
+</button>
+</div>
+</div>
+<!-- Summary Metrics Ribbon -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Scheduled Shifts</span>
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface font-data-tabular">28</span>
+<span class="text-body-sm font-body-sm text-tertiary font-semibold">Active Staff</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-space-xs mt-space-xs">
+<span>Morning: 18</span>
+<span>Turndown: 7</span>
+<span>Night: 3</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Credit Workload Total</span>
+<span class="material-symbols-outlined text-primary text-[20px]">equalizer</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-primary font-data-tabular">312.0</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Allocated Credits</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant pt-space-xs mt-space-xs flex items-center justify-between">
+<span>Std: 1.0</span>
+<span>Suite: 1.5</span>
+<span>Villa: 3.0</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Average Load Per Attendant</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">health_and_safety</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface font-data-tabular">13.0</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">/ 14.0 Cap</span>
+</div>
+<div class="flex items-center gap-1.5 text-body-sm font-body-sm text-tertiary pt-space-xs mt-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Optimal Ergonomic Balance (92.8%)</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Pending Staging</span>
+<span class="material-symbols-outlined text-error text-[20px]">notification_important</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-error font-data-tabular">4 Keys</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Unassigned</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-error pt-space-xs mt-space-xs">
+<span>2 VIP Rush Clearance Required</span>
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Two-Panel Workspace Grid -->
+<div class="p-gutter-desktop grid grid-cols-1 xl:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT PANEL: Workforce Roster (Col 1-5 = ~38%) -->
+<section class="xl:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-md">
+<!-- Panel Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">groups</span>
+<h2 class="font-headline-sm text-title-md font-semibold text-on-surface">
+              Active Attendants Roster
+            </h2>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-data-tabular">
+            18 On Duty / 28 Total
+          </span>
+</div>
+<!-- Shift Switcher Pills -->
+<div class="grid grid-cols-3 gap-1 p-1 rounded-lg bg-surface-container-highest text-center font-label-md text-label-md">
+<button class="py-1.5 rounded-lg bg-primary text-background font-bold shadow-sm transition-all" type="button">
+            Morning (18)
+          </button>
+<button class="py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" type="button">
+            Turndown (7)
+          </button>
+<button class="py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" type="button">
+            Night (3)
+          </button>
+</div>
+<!-- Search & Skill Filter -->
+<div class="flex gap-space-xs">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-outline font-body-sm text-body-sm pl-9 pr-3 py-1.5 rounded-lg focus:outline-none transition-all" placeholder="Filter by attendant name, zone, skills..." type="text"/>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-surface-bright text-on-surface-variant hover:text-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+</div>
+<!-- Attendant List Stack -->
+<div class="flex flex-col gap-space-sm max-h-[820px] overflow-y-auto pr-1">
+<!-- Attendant Card 1: Fatima Zahra -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high shadow-sm transition-all cursor-pointer flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover shadow-md" data-alt="Close up professional portrait of a senior luxury hotel housekeeper woman named Fatima Zahra, wearing an elegant navy bespoke uniform with gold embroidery insignia, warm ambient lighting, highly polished hotel suite background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKNMhj5K4UJ_YxZ71YJQKg6MSnwaXeRi-oxKtmQSnJ5ugetJrtXbdugXfak6vblz-cm1GGQ5qEBJcyr_wQUX8TLHUJ7yEDdH22WLcMMTUNmNvJtF_TKpaiRBdE8ipo13iTDec-q7VDiMpihsB28s9N8AOeg7vYTgwNGe4MAowyaLIMRog2863HJM7fqqBa7y1L30ZKbS6nJ8dMG6SXbHZEt_IdbXOChFO0vajO-eptoWT4wrT0wELa"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-tertiary ring-2 ring-surface-container"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Fatima Zahra</span>
+<span class="material-symbols-outlined text-primary text-[16px]" title="Senior Butler Certified">stars</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Senior Butler &amp; Head Housekeeper</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 text-primary text-label-md font-label-md font-bold">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span>4.98</span>
+</div>
+<span class="text-label-sm font-label-sm text-tertiary font-data-tabular">Handheld 92%</span>
+</div>
+</div>
+<!-- Skills & Section -->
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary text-label-sm font-label-sm">Pharaoh Wing &amp; Villas</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm">Butler Certified</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm">AR / EN / FR</span>
+</div>
+<!-- Workload Progress -->
+<div class="mt-space-xs pt-space-xs flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Current Load: <strong class="text-on-surface font-data-tabular">13.5</strong> / 14.0 Credits</span>
+<span class="font-data-tabular text-tertiary font-semibold">3 of 4 Completed</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 75%"></div>
+</div>
+</div>
+<!-- Assigned Keys Chips -->
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-data-tabular bg-surface-container-lowest text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> V-104 (Done)
+              </span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-data-tabular bg-surface-container-lowest text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Suite 302 (Done)
+              </span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-data-tabular bg-surface-container-lowest text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Suite 305 (Done)
+              </span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-data-tabular bg-primary-container/20 text-primary font-bold flex items-center gap-1 animate-pulse">
+<span class="material-symbols-outlined text-[12px]">hourglass_top</span> Suite 308 (In Progress)
+              </span>
+</div>
+</div>
+<!-- Attendant Card 2: Youssef El-Sayed -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high shadow-sm transition-all cursor-pointer flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover shadow-md" data-alt="Middle-aged Egyptian luxury hotel attendant male named Youssef El-Sayed, focused professional expression, wearing a tailored navy tunic with gold collar pins, luxury hotel corridor background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnGoqvdy46Fb1TP9vhj5HSOkN01LDeVe7wz0sRrOUi2dnCmIvKRuRQn2NWkwLeIic9c3tZeK28D1LZ6dMEAZZm5LHb6ZWj7yl5fhtHt-7wjfj4SSE7QwzkM9FUukr80KXGl6uPjBjY0JVmw5RftvpYmtEQwka8whphup4e86sv1wa2GMIupK9MukXXuXvOwMgkTuM64Jjl91ARsKvj1qPplSIUvh4li7CNFIsy5CJmndiFcF8Yv2w5"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-tertiary ring-2 ring-surface-container"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Youssef El-Sayed</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Senior Floor Attendant</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 text-primary text-label-md font-label-md font-bold">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span>4.85</span>
+</div>
+<span class="text-label-sm font-label-sm text-tertiary font-data-tabular">Handheld 78%</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary text-label-sm font-label-sm">East Wing (Floor 1)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm">Marble Polishing Specialist</span>
+</div>
+<div class="mt-space-xs pt-space-xs flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Current Load: <strong class="text-on-surface font-data-tabular">13.0</strong> / 14.0 Credits</span>
+<span class="font-data-tabular text-primary font-semibold">7 of 13 Completed</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 53.8%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant pt-1">
+<span>13 Deluxe Rooms Assigned</span>
+<span class="text-secondary hover:underline">+ Quick Append Room</span>
+</div>
+</div>
+<!-- Attendant Card 3: Amina Nour -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high shadow-sm transition-all cursor-pointer flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover shadow-md" data-alt="Portrait of an elegant North African female hotel executive attendant named Amina Nour, wearing sleek tailored navy hospitality attire, welcoming smile, crisp clean high-end hotel room interior background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdRontTHRQphsFMRjN1aTCTQMY8puaUJ5g91_v5qh5Bf0pgwTABy-J0QuOvlemP_l6yB_3IhkOkASy5SHrUosTrR0OKQFnILuneECIdCdjPWlp7Xdkn9wlcI_H0d4UwqHrQGEjopA51gc4M4gXnUpKwQK5ZbOJgzVSwMGF1CqkErYzeg-V9vP0ITkrEL_LomOjxxTv8MGMpGLPfVMVFUSIDsWkhlV7R5eQSFHuRpmNPosIYcRudgsX"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-tertiary ring-2 ring-surface-container"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Amina Nour</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Executive Attendant</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 text-primary text-label-md font-label-md font-bold">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span>4.92</span>
+</div>
+<span class="text-label-sm font-label-sm text-tertiary font-data-tabular">Handheld 88%</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary text-label-sm font-label-sm">West Wing (Floor 2)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm">Allergy-Free Specialist</span>
+</div>
+<div class="mt-space-xs pt-space-xs flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Current Load: <strong class="text-on-surface font-data-tabular">12.0</strong> / 14.0 Credits</span>
+<span class="font-data-tabular text-primary font-semibold">5 of 8 Completed</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 62.5%"></div>
+</div>
+</div>
+</div>
+<!-- Attendant Card 4: Kareem Taha -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high shadow-sm transition-all cursor-pointer flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-bright flex items-center justify-center font-title-md text-primary font-bold shadow-md">
+                  KT
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Kareem Taha</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Suite Deep-Clean Specialist</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 text-primary text-label-md font-label-md font-bold">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span>4.78</span>
+</div>
+<span class="text-label-sm font-label-sm text-tertiary font-data-tabular">Handheld 65%</span>
+</div>
+</div>
+<div class="mt-space-xs pt-space-xs flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Load Capacity: <strong class="text-primary font-data-tabular">14.0</strong> / 14.0 Credits (Full)</span>
+<span class="font-data-tabular text-tertiary font-semibold">6 of 9 Completed</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 100%"></div>
+</div>
+</div>
+</div>
+<!-- Attendant Card 5: Layla Mansour (Standby) -->
+<div class="p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container shadow-sm transition-all flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container-highest flex items-center justify-center font-title-md text-on-surface-variant font-bold">
+                  LM
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Layla Mansour</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">VIP Turndown Specialist</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-bright text-on-surface-variant">
+                Starts 15:00
+              </span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant pt-1">
+              Status: <span class="text-secondary font-semibold">On Standby / Pre-Shift Prep</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RIGHT PANEL: Unassigned Staging + Zones Task Engineering Matrix (Col 6-12 = ~62%) -->
+<section class="xl:col-span-7 flex flex-col gap-space-md">
+<!-- STAGING BUCKET: Unassigned Tasks (4 Keys Pending) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[22px]">pending_actions</span>
+<h2 class="font-headline-sm text-title-md font-semibold text-on-surface">
+              Unassigned Staging Bucket
+            </h2>
+<span class="px-2 py-0.5 rounded-full bg-error-container/30 text-error text-label-sm font-label-sm font-bold">
+              4 Keys Awaiting Allocation
+            </span>
+</div>
+<button class="text-label-sm font-label-sm text-primary hover:underline flex items-center gap-1 font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Batch Auto-Dispatch</span>
+</button>
+</div>
+<!-- 4 Unassigned Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<!-- Staged 1: Villa V-102 -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all shadow-sm flex flex-col justify-between gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-title-md font-bold text-primary font-data-tabular">Villa V-102</span>
+<span class="px-1.5 py-0.2 rounded text-[10px] font-label-sm bg-error/20 text-error font-bold uppercase">VIP Arrival 15:30</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Royal Lagoon Villa (Private Pool)</span>
+</div>
+<span class="px-2 py-0.5 rounded font-data-tabular text-label-sm font-label-sm bg-surface-bright text-on-surface font-bold">
+                3.0 Credits
+              </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Req: Senior Attendant Clearance</span>
+<button class="px-space-sm py-1 rounded bg-primary text-background font-label-sm text-label-sm font-bold hover:brightness-110 active:scale-95 transition-all" type="button">
+                Assign Now
+              </button>
+</div>
+</div>
+<!-- Staged 2: Room 218 -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all shadow-sm flex flex-col justify-between gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-title-md font-bold text-on-surface font-data-tabular">Room 218</span>
+<span class="px-1.5 py-0.2 rounded text-[10px] font-label-sm bg-surface-bright text-secondary uppercase font-bold">Check-Out Clean</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Deluxe Sea Garden King</span>
+</div>
+<span class="px-2 py-0.5 rounded font-data-tabular text-label-sm font-label-sm bg-surface-bright text-on-surface font-bold">
+                1.0 Credit
+              </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Linen Refresh &amp; Mini-bar restock</span>
+<button class="px-space-sm py-1 rounded bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-sm text-label-sm font-semibold transition-all" type="button">
+                Assign
+              </button>
+</div>
+</div>
+<!-- Staged 3: Suite 401 -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all shadow-sm flex flex-col justify-between gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-title-md font-bold text-primary font-data-tabular">Suite 401</span>
+<span class="px-1.5 py-0.2 rounded text-[10px] font-label-sm bg-surface-tint/20 text-primary-fixed uppercase font-bold">Deep Clean Ozone</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Presidential Sovereign Suite</span>
+</div>
+<span class="px-2 py-0.5 rounded font-data-tabular text-label-sm font-label-sm bg-surface-bright text-on-surface font-bold">
+                2.5 Credits
+              </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Carpet Deep Clean &amp; Scenting</span>
+<button class="px-space-sm py-1 rounded bg-primary text-background font-label-sm text-label-sm font-bold hover:brightness-110 active:scale-95 transition-all" type="button">
+                Assign Now
+              </button>
+</div>
+</div>
+<!-- Staged 4: Room 115 -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all shadow-sm flex flex-col justify-between gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-title-md font-bold text-on-surface font-data-tabular">Room 115</span>
+<span class="px-1.5 py-0.2 rounded text-[10px] font-label-sm bg-tertiary/20 text-tertiary uppercase font-bold">Touch-up</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Executive King Pool View</span>
+</div>
+<span class="px-2 py-0.5 rounded font-data-tabular text-label-sm font-label-sm bg-surface-bright text-on-surface font-bold">
+                1.0 Credit
+              </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Ready for early check-in at 14:00</span>
+<button class="px-space-sm py-1 rounded bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-sm text-label-sm font-semibold transition-all" type="button">
+                Assign
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- ACTIVE TASK ASSIGNMENTS: Section 1 (Pharaoh Suites & Villas) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-xs pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">villa</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-title-md font-semibold text-on-surface">
+                  Section 1: Pharaoh Suites &amp; Royal Villas
+                </h3>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-label-sm font-label-sm font-bold">
+                  Zone Lead: Mona Adel
+                </span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant">7 Units Assigned | Total Credits: 19.5</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-label-sm font-label-sm">
+<span class="text-on-surface-variant font-data-tabular">Progress: 85% Completed</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+</div>
+</div>
+<!-- Task Assignment Data Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm text-on-surface">
+<thead class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider bg-surface-container-lowest/70">
+<tr>
+<th class="p-space-sm">Unit #</th>
+<th class="p-space-sm">Category</th>
+<th class="p-space-sm">Guest Status</th>
+<th class="p-space-sm">Service Task</th>
+<th class="p-space-sm">Assigned To</th>
+<th class="p-space-sm text-right">Credits</th>
+<th class="p-space-sm text-center">Status</th>
+<th class="p-space-sm text-center">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="p-space-sm font-bold text-primary font-data-tabular">V-104</td>
+<td class="p-space-sm text-on-surface">Royal Villa</td>
+<td class="p-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-error/15 text-error text-label-sm font-label-sm font-semibold">
+                    Departed (VIP)
+                  </span>
+</td>
+<td class="p-space-sm text-on-surface">Full Departure Clean &amp; Sanitize</td>
+<td class="p-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-background font-bold text-label-sm flex items-center justify-center">FZ</span>
+<span>Fatima Zahra</span>
+</div>
+</td>
+<td class="p-space-sm font-data-tabular text-right font-bold text-on-surface">3.0</td>
+<td class="p-space-sm text-center">
+<span class="px-2 py-0.5 rounded bg-tertiary/15 text-tertiary text-label-sm font-label-sm font-semibold">
+                    Clean &amp; Inspected
+                  </span>
+</td>
+<td class="p-space-sm text-center">
+<button class="p-1 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="p-space-sm font-bold text-primary font-data-tabular">Suite 302</td>
+<td class="p-space-sm text-on-surface">Grand Nile Suite</td>
+<td class="p-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-surface-bright text-on-surface-variant text-label-sm font-label-sm">
+                    In-House (Guest Out)
+                  </span>
+</td>
+<td class="p-space-sm text-on-surface">Daily Refresh &amp; Towel Replenish</td>
+<td class="p-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-background font-bold text-label-sm flex items-center justify-center">FZ</span>
+<span>Fatima Zahra</span>
+</div>
+</td>
+<td class="p-space-sm font-data-tabular text-right font-bold text-on-surface">1.5</td>
+<td class="p-space-sm text-center">
+<span class="px-2 py-0.5 rounded bg-tertiary/15 text-tertiary text-label-sm font-label-sm font-semibold">
+                    Completed
+                  </span>
+</td>
+<td class="p-space-sm text-center">
+<button class="p-1 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="p-space-sm font-bold text-primary font-data-tabular">Suite 308</td>
+<td class="p-space-sm text-on-surface">Imperial Suite</td>
+<td class="p-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary text-label-sm font-label-sm font-semibold">
+                    Arrival 16:00 (VIP)
+                  </span>
+</td>
+<td class="p-space-sm text-on-surface">Turnaround + Damask Rose Scenting</td>
+<td class="p-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-background font-bold text-label-sm flex items-center justify-center">FZ</span>
+<span>Fatima Zahra</span>
+</div>
+</td>
+<td class="p-space-sm font-data-tabular text-right font-bold text-on-surface">2.0</td>
+<td class="p-space-sm text-center">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary text-label-sm font-label-sm font-bold animate-pulse">
+                    Cleaning Active
+                  </span>
+</td>
+<td class="p-space-sm text-center">
+<button class="p-1 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="p-space-sm font-bold text-primary font-data-tabular">V-106</td>
+<td class="p-space-sm text-on-surface">Royal Villa</td>
+<td class="p-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-secondary text-label-sm font-label-sm">
+                    In-House (DND)
+                  </span>
+</td>
+<td class="p-space-sm text-on-surface">Late Service Request (17:30)</td>
+<td class="p-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-bright text-on-surface font-bold text-label-sm flex items-center justify-center">LM</span>
+<span>Layla Mansour</span>
+</div>
+</td>
+<td class="p-space-sm font-data-tabular text-right font-bold text-on-surface">3.0</td>
+<td class="p-space-sm text-center">
+<span class="px-2 py-0.5 rounded bg-surface-bright text-on-surface-variant text-label-sm font-label-sm">
+                    Scheduled
+                  </span>
+</td>
+<td class="p-space-sm text-center">
+<button class="p-1 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- ACTIVE TASK ASSIGNMENTS: Section 2 (East Wing - Floors 1 & 2) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-xs pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">apartment</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-title-md font-semibold text-on-surface">
+                  Section 2: East Wing - Floors 1 &amp; 2
+                </h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary text-label-sm font-label-sm font-bold">
+                  Zone Lead: Tarek Mostafa
+                </span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant">24 Standard &amp; Deluxe Rooms | Total Credits: 26.0</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-label-sm font-label-sm">
+<span class="text-on-surface-variant font-data-tabular">Progress: 58% Completed</span>
+<span class="w-16 bg-surface-container h-1.5 rounded-full overflow-hidden inline-block">
+<span class="bg-secondary h-full block" style="width: 58%"></span>
+</span>
+</div>
+</div>
+<!-- Compact Task Grid View -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-xs">
+<!-- Mini Task Card 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-data-tabular font-bold text-on-surface text-title-md">Room 101</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-label-sm bg-tertiary/20 text-tertiary">Clean</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Youssef El-Sayed (1.0 Cr)</span>
+</div>
+<!-- Mini Task Card 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-data-tabular font-bold text-on-surface text-title-md">Room 102</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-label-sm bg-primary/20 text-primary">In Service</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Youssef El-Sayed (1.0 Cr)</span>
+</div>
+<!-- Mini Task Card 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-data-tabular font-bold text-on-surface text-title-md">Room 103</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-label-sm bg-surface-bright text-on-surface-variant">Queued</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Youssef El-Sayed (1.0 Cr)</span>
+</div>
+</div>
+</div>
+<!-- ACTIVE TASK ASSIGNMENTS: Section 3 (Public Areas & Wellness Outlets) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[22px]">spa</span>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-title-md font-semibold text-on-surface">
+                Section 3: Royal Wellness Spa, Lounge &amp; Pool Cabanas
+              </h3>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Specialized Sanitation &amp; Linen Rotation</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary/15 text-tertiary font-label-sm text-label-sm font-bold">
+            All 6 Venues Active
+          </span>
+</div>
+</div>
+</section>
+</div>
+<!-- FLOATING INSPECTOR / TASK CREATION DRAWER (Interactive Overlay) -->
+<aside class="fixed inset-y-0 right-0 w-full max-w-lg bg-surface-container-low/95 backdrop-blur-2xl shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between" id="task-drawer">
+<!-- Drawer Header -->
+<div class="p-space-lg flex items-center justify-between bg-surface-container-high/60">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">assignment_add</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-title-md font-bold text-on-surface">
+            Assign Special Request Task
+          </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+            On-Demand VIP Guest Hospitality Customization
+          </span>
+</div>
+</div>
+<button class="p-1 rounded-lg hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors" id="close-task-drawer" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- Drawer Body Form -->
+<div class="p-space-lg flex-1 overflow-y-auto flex flex-col gap-space-md">
+<!-- Target Room Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">
+          Target Estate Unit / Room #
+        </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-primary text-[18px]">hotel</span>
+<select class="w-full bg-surface-container text-on-surface font-body-md text-body-md pl-10 pr-8 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer">
+<option selected="" value="V-102">Villa V-102 (Royal Lagoon Villa - VIP)</option>
+<option value="Suite-401">Suite 401 (Presidential Suite)</option>
+<option value="Suite-308">Suite 308 (Imperial Suite)</option>
+<option value="Room-218">Room 218 (Deluxe Sea Garden)</option>
+<option value="SPA-01">Cleopatra Spa Suite #1</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[18px] pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+<!-- Service Type Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">
+          Specialized Service Task
+        </label>
+<div class="flex flex-col gap-2">
+<label class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-between cursor-pointer transition-colors">
+<div class="flex items-center gap-space-xs">
+<input checked="" class="accent-primary" name="service_type" type="radio"/>
+<span class="font-body-sm text-body-sm text-on-surface">Aromatherapy Scenting (Oud &amp; Damask Rose)</span>
+</div>
+<span class="font-data-tabular text-label-sm font-label-sm text-primary">+0.5 Cr</span>
+</label>
+<label class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-between cursor-pointer transition-colors">
+<div class="flex items-center gap-space-xs">
+<input class="accent-primary" name="service_type" type="radio"/>
+<span class="font-body-sm text-body-sm text-on-surface">Hypoallergenic Deep Cleanse &amp; Feather-Free Setup</span>
+</div>
+<span class="font-data-tabular text-label-sm font-label-sm text-primary">+1.5 Cr</span>
+</label>
+<label class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-between cursor-pointer transition-colors">
+<div class="flex items-center gap-space-xs">
+<input class="accent-primary" name="service_type" type="radio"/>
+<span class="font-body-sm text-body-sm text-on-surface">Champagne Chiller &amp; Fresh Fig Platter Setup</span>
+</div>
+<span class="font-data-tabular text-label-sm font-label-sm text-primary">+0.5 Cr</span>
+</label>
+<label class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-between cursor-pointer transition-colors">
+<div class="flex items-center gap-space-xs">
+<input class="accent-primary" name="service_type" type="radio"/>
+<span class="font-body-sm text-body-sm text-on-surface">Baby Crib &amp; Child Safety Guard Installation</span>
+</div>
+<span class="font-data-tabular text-label-sm font-label-sm text-primary">+1.0 Cr</span>
+</label>
+</div>
+</div>
+<!-- Priority Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">
+          Execution Priority Level
+        </label>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-2 rounded-lg bg-surface-container hover:bg-surface-bright text-on-surface text-label-md font-label-md transition-all" type="button">
+            Normal
+          </button>
+<button class="py-2 rounded-lg bg-surface-container hover:bg-surface-bright text-primary text-label-md font-label-md font-semibold transition-all" type="button">
+            High Attention
+          </button>
+<button class="py-2 rounded-lg bg-error-container text-on-error-container text-label-md font-label-md font-bold shadow-md" type="button">
+            VIP Emergency
+          </button>
+</div>
+</div>
+<!-- Assignee Selection -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">
+          Assignee &amp; Ergonomic Impact
+        </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-primary text-[18px]">person</span>
+<select class="w-full bg-surface-container text-on-surface font-body-md text-body-md pl-10 pr-8 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer">
+<option value="fatima">Fatima Zahra (13.5 Cr → 14.0 Cr | At Capacity)</option>
+<option value="amina">Amina Nour (12.0 Cr → 12.5 Cr | Safe)</option>
+<option value="youssef">Youssef El-Sayed (13.0 Cr → 13.5 Cr | Safe)</option>
+<option value="layla">Layla Mansour (Turndown Shift | Starts 15:00)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[18px] pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+<!-- Notes -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">
+          Concierge Handover Instructions
+        </label>
+<textarea class="w-full bg-surface-container text-on-surface placeholder:text-outline font-body-sm text-body-sm p-3 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Provide discreet instructions for attendant companion app..." rows="3"></textarea>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="p-space-md bg-surface-container-high/90 flex items-center justify-between gap-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-all" id="cancel-task-drawer" type="button">
+        Cancel
+      </button>
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2 px-space-md rounded-lg bg-primary text-background font-label-md text-label-md font-bold hover:brightness-110 active:scale-95 transition-all shadow-md" id="dispatch-task-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Dispatch to Mobile Companion</span>
+</button>
+</div>
+</aside>
+<!-- Bottom Command Bar / Keyboard Shortcuts Deck -->
+<footer class="sticky bottom-0 left-0 right-0 bg-surface-container-lowest/95 backdrop-blur-xl px-gutter-desktop py-space-xs z-30 shadow-[0_-4px_20px_rgba(0,0,0,0.5)]">
+<div class="flex flex-wrap items-center justify-between gap-space-sm font-data-tabular text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5 text-on-surface">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-bold text-[11px]">F2</kbd>
+<span class="text-body-sm font-body-sm">Matrix / Gantt View</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-bold text-[11px]">F3</kbd>
+<span class="text-body-sm font-body-sm">New Task</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-bold text-[11px]">F4</kbd>
+<span class="text-body-sm font-body-sm">Auto-Balance Workload</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-bold text-[11px]">F8</kbd>
+<span class="text-body-sm font-body-sm">Shift Briefing Sheet</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-bold text-[11px]">Ctrl+S</kbd>
+<span class="text-body-sm font-body-sm">Publish to Handhelds</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-outline">Engine: Sovereign Roster v4.2</span>
+<span class="text-tertiary flex items-center gap-1 font-semibold text-label-sm font-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+          Mesh Roster Online
+        </span>
+</div>
+</div>
+</footer>
+</div>
+<script>
+  (function() {
+    const openBtn = document.getElementById('open-task-drawer');
+    const closeBtn = document.getElementById('close-task-drawer');
+    const cancelBtn = document.getElementById('cancel-task-drawer');
+    const dispatchBtn = document.getElementById('dispatch-task-btn');
+    const drawer = document.getElementById('task-drawer');
+
+    function openDrawer() {
+      if (drawer) {
+        drawer.classList.remove('translate-x-full');
+      }
+    }
+
+    function closeDrawer() {
+      if (drawer) {
+        drawer.classList.add('translate-x-full');
+      }
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openDrawer);
+    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+    if (cancelBtn) cancelBtn.addEventListener('click', closeDrawer);
+
+    if (dispatchBtn) {
+      dispatchBtn.addEventListener('click', function() {
+        const originalText = dispatchBtn.innerHTML;
+        dispatchBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Transmitting to Roster...</span>';
+        setTimeout(function() {
+          dispatchBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Dispatched!</span>';
+          setTimeout(function() {
+            closeDrawer();
+            dispatchBtn.innerHTML = originalText;
+          }, 800);
+        }, 1000);
+      });
+    }
+
+    // Keyboard Shortcuts Listeners
+    window.addEventListener('keydown', function(e) {
+      if (e.key === 'F3') {
+        e.preventDefault();
+        openDrawer();
+      } else if (e.key === 'Escape') {
+        closeDrawer();
+      }
+    });
+  })();
+</script></main></div></body></html>

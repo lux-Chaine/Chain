@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface":"#0b1229","on-surface":"#dce1ff","tertiary-fixed":"#6ffbbe","tertiary-fixed-dim":"#4edea3","surface-container-lowest":"#060d24","on-background":"#dce1ff","background":"#0b1229","on-tertiary-container":"#005035","tertiary":"#58e7aa","on-primary":"#3c2f00","outline":"#99907c","on-primary-fixed":"#241a00","secondary-fixed":"#dbe1ff","surface-container-high":"#222941","on-primary-fixed-variant":"#574500","on-tertiary-fixed-variant":"#005236","tertiary-container":"#33ca90","surface-dim":"#0b1229","secondary-container":"#384777","error":"#ffb4ab","surface-bright":"#323851","surface-variant":"#2d344c","on-secondary-fixed-variant":"#354575","on-secondary":"#1e2e5d","secondary-fixed-dim":"#b5c5fd","primary-fixed-dim":"#e9c349","primary-container":"#d4af37","on-secondary-container":"#a7b6ee","on-tertiary":"#003824","error-container":"#93000a","on-error":"#690005","surface-container":"#181e36","primary-fixed":"#ffe088","outline-variant":"#4d4635","on-primary-container":"#554300","surface-tint":"#e9c349","secondary":"#b5c5fd","on-surface-variant":"#d0c5af","surface-container-low":"#141a32","on-tertiary-fixed":"#002113","inverse-on-surface":"#292f48","primary":"#f2ca50","inverse-surface":"#dce1ff","on-error-container":"#ffdad6","on-secondary-fixed":"#051847","surface-container-highest":"#2d344c","inverse-primary":"#735c00"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xl":"2.5rem","gutter":"1.25rem","margin-desktop":"2rem","gutter-desktop":"1.5rem","margin":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem"},fontFamily:{"headline-md":["Hanken Grotesk"],"display":["Hanken Grotesk"],"body-md":["Hanken Grotesk"],"body-sm":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"headline-lg-mobile":["Hanken Grotesk"],"headline-lg":["Hanken Grotesk"],"label-sm":["Hanken Grotesk"],"title-md":["Hanken Grotesk"],"headline-sm":["Hanken Grotesk"],"data-tabular":["Hanken Grotesk"],"label-md":["Hanken Grotesk"]},fontSize:{"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"display":["3rem",{"lineHeight":"3.5rem","letterSpacing":"-0.025em","fontWeight":"600"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.06em","fontWeight":"500"}],"title-md":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"500"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"data-tabular":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.01em","fontWeight":"500"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.05em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 shadow-[0_1px_12px_rgba(0,0,0,0.45)]"><div class="h-16 w-full px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-3 shrink-0"><div class="flex items-center gap-2 pr-3"><button aria-label="Minimize" class="w-3 h-3 rounded-full bg-surface-variant hover:bg-outline flex items-center justify-center transition-colors" type="button"></button><button aria-label="Maximize" class="w-3 h-3 rounded-full bg-surface-variant hover:bg-outline flex items-center justify-center transition-colors" type="button"></button><button aria-label="Close" class="w-3 h-3 rounded-full bg-error-container hover:bg-error flex items-center justify-center transition-colors" type="button"></button></div><img alt="A prestigious luxury royal crown logo emblem for Chain PMS hotel software, rendered in elegant metallic gold with sharp geometric facets and five peaks topped with subtle diamond jewels, vector luxury branding, dark royal navy contrasting background.. Brand logo. - Primary color: #d4af37
+- Font: hankenGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W45z9CM3c1M8W6RqZjKHT8-ZdRlADABeWaWeGYtJAYyfdhpcYvcMPETbVnLnwKaVdguYNf5wc0OU8lQYwlCuhk6aFOMmo4poKyvJPxe1NHxLANi1SzcW-lSsvqrVmKBZwtUvhNVNd2zkNwextuNN6C9wq4OXWRlIWEnx97zCRW0bWfhFTlv9Um6mCTFli4tmdIiuoinOmSO63RC81dDDt2_Lk7MUupC5iJTisfkQbRrvZjA8TBgyp1zIg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Chain PMS</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Enterprise Luxe</span></div><div class="h-7 w-[1px] bg-surface-container-high mx-1"></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low"><span class="material-symbols-outlined text-[16px] text-primary">domain</span><select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer pr-1"><option class="bg-surface-container text-on-surface" value="amon">Amon Luxury Palace &amp; Spa</option><option class="bg-surface-container text-on-surface" value="palm">Palm Royal Resort &amp; Villas</option><option class="bg-surface-container text-on-surface" value="siwa">Siwa Oasis Haven Retreat</option></select></div></div><div class="hidden xl:flex items-center gap-2 flex-1 max-w-xl mx-2"><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span><input class="w-full bg-surface-container-low pl-9 pr-14 py-1.5 rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search guests, folios, room numbers..." type="text"/><span class="absolute right-2.5 top-1/2 -translate-y-1/2 font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Ctrl K</span></div><div class="flex items-center gap-1.5 shrink-0"><button class="px-2.5 py-1.5 rounded bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-[0_0_12px_rgba(212,175,55,0.25)]" type="button"><span class="material-symbols-outlined text-[16px]">add</span><span>Reservation</span></button><button class="px-2.5 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-primary">person_add</span><span>Profile</span></button><button class="px-2.5 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary">how_to_reg</span><span>Check-in</span></button></div></div><div class="flex items-center gap-3 shrink-0"><div class="hidden lg:flex flex-col items-end px-2.5 py-1 rounded bg-surface-container-low"><div class="flex items-center gap-1.5 font-data-tabular text-data-tabular text-on-surface"><span class="material-symbols-outlined text-[14px] text-primary">calendar_today</span><span>14 May 2025</span><span class="text-on-surface-variant font-body-sm text-body-sm">|</span><span class="material-symbols-outlined text-[14px] text-tertiary">bedtime</span><span>Night Audit 03:30 AM</span></div><div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1 text-tertiary"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>Sync 8ms</span><span>•</span><span>Shift #04 Tariq Mansouri</span></div></div><div class="flex items-center gap-2 pl-1"><button aria-label="System Notifications" class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors relative" type="button"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer shadow-[0_0_10px_rgba(212,175,55,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-7 w-64 bg-surface-container-lowest z-40 flex flex-col overflow-y-auto"><div class="px-3 py-3"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Operations</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-rack-and-grid" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">grid_view</span>Room Rack &amp; Grid</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reservations-and-bookings" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">book_online</span>Reservations &amp; Bookings</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="in-house-guests" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">hotel</span>In-House Guests</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="arrivals-and-departures" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">sync_alt</span>Arrivals &amp; Departures</a></nav></div><div class="px-3 py-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Profiles &amp; CRM</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a aria-current="page" class="flex items-center px-3 py-2 transition-all bg-primary-container text-on-primary font-title-md rounded" data-path="guest-profiles" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">badge</span>Guest Profiles</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="corporate-and-travel-agents" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">corporate_fare</span>Corporate &amp; Travel Agents</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="vip-and-elite-management" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">diamond</span>VIP &amp; Elite Management</a></nav></div><div class="px-3 py-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Cashier &amp; Billing</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="billing-windows-folios" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">receipt_long</span>Billing Windows (Folios)</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cashier-shift-and-safe" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">point_of_sale</span>Cashier Shift &amp; Safe</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ar-and-city-ledger" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">account_balance</span>AR &amp; City Ledger</a></nav></div><div class="px-3 py-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Outlets &amp; POS</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="restaurants-and-lounges" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">restaurant</span>Restaurants &amp; Lounges</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="spa-and-wellness" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">spa</span>Spa &amp; Wellness</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-service-pos" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">room_service</span>Room Service POS</a></nav></div><div class="px-3 py-2 pb-6"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Management &amp; System</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="rates-and-yield-management" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">trending_up</span>Rates &amp; Yield</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="night-audit-engine" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">shield_moon</span>Night Audit Engine</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="multi-tenant-hotel-setup" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">hub</span>Multi-Tenant Setup</a><a class="flex items-center px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audit-logs-and-security" href="#"><span class="material-symbols-outlined mr-2.5 text-[18px]">security</span>Audit Logs &amp; Security</a></nav></div></aside><div class="pl-64"><main class="pt-16 pb-7 w-full px-6 min-h-screen bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- ================= SUB-HEADER & QUICK COMMAND BAR ================= -->
+<div class="w-full flex flex-col xl:flex-row xl:items-center justify-between gap-4 pb-6 pt-1">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary px-2 py-0.5 rounded bg-surface-container-high">Sovereign HR Suite</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Multi-Property Personnel Matrix</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight flex items-center gap-2.5">
+<span>Human Resources &amp; Operational Workforce Master</span>
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping" title="Realtime Biometrics Connected"></span>
+</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+        Multi-Hotel Staff Directory • Shifts &amp; Rosters • Performance Index • ZATCA-Compliant Payroll Ledger
+      </p>
+</div>
+<!-- Right Global Actions & Property Filter -->
+<div class="flex flex-wrap items-center gap-2.5 shrink-0">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-low">
+<span class="material-symbols-outlined text-[17px] text-primary">domain</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Portfolio:</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+<option class="bg-surface-container text-on-surface" value="amon">Amon Luxury Palace &amp; Spa (Primary)</option>
+<option class="bg-surface-container text-on-surface" value="palm">Palm Royal Resort &amp; Villas</option>
+<option class="bg-surface-container text-on-surface" value="siwa">Siwa Sanctuary Haven</option>
+<option class="bg-surface-container text-on-surface" value="all">All Chain Properties (3 Nodes)</option>
+</select>
+</div>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_month</span>
+<span>Rostering Matrix</span>
+</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">fingerprint</span>
+<span>Quick Clock</span>
+</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">file_download</span>
+<span>Export CSV</span>
+</button>
+<button class="px-3.5 py-1.5 rounded bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-[0_0_16px_rgba(212,175,55,0.3)] hover:bg-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Register New Employee</span>
+</button>
+</div>
+</div>
+<!-- ================= TOP 4 KPI CARDS (BENTO STYLE) ================= -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 pb-6">
+<!-- KPI 1: Active Staff -->
+<div class="relative overflow-hidden p-4 rounded bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-primary/5 pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Active Workforce</span>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">100% Verified</span>
+</div>
+<div class="flex items-baseline gap-2 mt-3">
+<span class="font-headline-lg text-headline-lg font-data-tabular text-on-surface">142</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Personnel Registered</span>
+</div>
+<div class="mt-3 flex items-center justify-between text-body-sm">
+<span class="font-data-tabular text-tertiary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 68 On-Duty Now
+        </span>
+<span class="font-data-tabular text-on-surface-variant">74 Off / Rostered</span>
+</div>
+</div>
+<!-- KPI 2: On-Duty Breakdown -->
+<div class="relative overflow-hidden p-4 rounded bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Floor Presence</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-[14px]">sensors</span> Realtime
+        </span>
+</div>
+<div class="flex items-baseline gap-2 mt-3">
+<span class="font-headline-lg text-headline-lg font-data-tabular text-on-surface">48</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Front-of-House / Ops</span>
+</div>
+<div class="mt-3 flex items-center gap-2 text-label-sm">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface">FD: 12</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface">HK: 22</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface">F&amp;B: 14</span>
+</div>
+</div>
+<!-- KPI 3: Shift Fulfillment & Punctuality -->
+<div class="relative overflow-hidden p-4 rounded bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Punctuality Score</span>
+<span class="text-tertiary font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +1.2% MoM
+        </span>
+</div>
+<div class="flex items-baseline gap-2 mt-3">
+<span class="font-headline-lg text-headline-lg font-data-tabular text-primary">98.4%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fulfillment Rate</span>
+</div>
+<div class="mt-3 flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-data-tabular">2 Delayed Check-ins</span>
+<span class="text-tertiary font-data-tabular">0 Unexcused</span>
+</div>
+</div>
+<!-- KPI 4: Pending Inquiries -->
+<div class="relative overflow-hidden p-4 rounded bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pending Requests</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-secondary font-label-sm text-label-sm">Action Required</span>
+</div>
+<div class="flex items-baseline gap-2 mt-3">
+<span class="font-headline-lg text-headline-lg font-data-tabular text-secondary">07</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Leave Inquiries</span>
+</div>
+<div class="mt-3 flex items-center gap-2 text-label-sm">
+<span class="text-on-surface-variant font-data-tabular">Annual (4)</span>
+<span class="text-outline">•</span>
+<span class="text-on-surface-variant font-data-tabular">Sick (2)</span>
+<span class="text-outline">•</span>
+<span class="text-error font-data-tabular">Urgent (1)</span>
+</div>
+</div>
+</div>
+<!-- ================= MAIN WORKFORCE SPLIT COCKPIT ================= -->
+<div class="grid grid-cols-1 2xl:grid-cols-12 gap-5 pb-8">
+<!-- ================= LEFT PANEL (8 COLS): STAFF DIRECTORY ================= -->
+<div class="2xl:col-span-8 flex flex-col gap-4 min-w-0">
+<!-- Department Filter Pills & Global Search -->
+<div class="p-4 rounded bg-surface-container-low shadow-sm flex flex-col gap-3">
+<!-- Department Tabs -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-label-md">
+<button class="px-3 py-1.5 rounded bg-primary-container text-on-primary font-medium shrink-0 flex items-center gap-1.5 shadow-[0_0_12px_rgba(212,175,55,0.2)]" type="button">
+<span>All Departments</span>
+<span class="px-1.5 py-0.2 rounded bg-on-primary/20 text-label-sm">142</span>
+</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors shrink-0 flex items-center gap-1.5" type="button">
+<span>Front Desk &amp; Night Audit</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-variant text-label-sm">28</span>
+</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors shrink-0 flex items-center gap-1.5" type="button">
+<span>Housekeeping &amp; Facilities</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-variant text-label-sm">45</span>
+</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors shrink-0 flex items-center gap-1.5" type="button">
+<span>F&amp;B &amp; Outlets</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-variant text-label-sm">38</span>
+</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors shrink-0 flex items-center gap-1.5" type="button">
+<span>Butler &amp; VIP Service</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-variant text-label-sm">15</span>
+</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors shrink-0 flex items-center gap-1.5" type="button">
+<span>Finance &amp; Admin</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-variant text-label-sm">16</span>
+</button>
+</div>
+<!-- Filter Sub-bar: Search, Duty Filter, Status Filter -->
+<div class="flex flex-col md:flex-row items-center gap-2.5 pt-1">
+<div class="relative flex-1 w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span>
+<input class="w-full bg-surface-container-high pl-9 pr-3 py-1.5 rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container" placeholder="Filter by employee name, ID (e.g. EMP-0104), role, or badge..." type="text"/>
+</div>
+<div class="flex items-center gap-2 w-full md:w-auto">
+<select class="bg-surface-container-high px-2.5 py-1.5 rounded font-body-sm text-body-sm text-on-surface focus:outline-none cursor-pointer flex-1 md:flex-initial">
+<option value="all">Duty: All Shifts</option>
+<option value="s1">Shift #01 (Morning 07:00-15:30)</option>
+<option value="s2">Shift #02 (Mid-Day 14:00-22:00)</option>
+<option value="s3">Shift #03 (Evening 16:00-00:00)</option>
+<option value="s4">Shift #04 (Night Audit 23:00-07:00)</option>
+<option value="oncall">Standby &amp; On-Call</option>
+</select>
+<select class="bg-surface-container-high px-2.5 py-1.5 rounded font-body-sm text-body-sm text-on-surface focus:outline-none cursor-pointer flex-1 md:flex-initial">
+<option value="all">Status: All Active</option>
+<option value="onduty">Active On-Duty</option>
+<option value="off">Off Duty</option>
+<option value="leave">On Leave</option>
+</select>
+</div>
+</div>
+</div>
+<!-- High-Density Staff Directory Table -->
+<div class="rounded bg-surface-container-low shadow-sm overflow-hidden">
+<!-- Table Header Info Bar -->
+<div class="px-4 py-2.5 bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Staff Registry</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">(Showing 6 of 142)</span>
+</div>
+<div class="flex items-center gap-3 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Clocked In</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary"></span> Standby</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-outline"></span> Completed</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<th class="py-2.5 px-4 font-semibold">Employee / Identity</th>
+<th class="py-2.5 px-3 font-semibold">Department &amp; Title</th>
+<th class="py-2.5 px-3 font-semibold">Property</th>
+<th class="py-2.5 px-3 font-semibold">Shift Schedule</th>
+<th class="py-2.5 px-3 font-semibold">Live Duty Status</th>
+<th class="py-2.5 px-3 font-semibold text-right">Attendance</th>
+<th class="py-2.5 px-4 font-semibold text-center">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40 font-body-sm text-body-sm">
+<!-- ROW 1: Tariq Mansouri (Active Selected) -->
+<tr class="bg-primary/5 hover:bg-surface-container transition-colors cursor-pointer" onclick="selectEmployee('EMP-0104')">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-primary/20 flex items-center justify-center font-title-md text-primary font-bold shadow-[0_0_8px_rgba(212,175,55,0.2)]">
+                      TM
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-primary font-semibold flex items-center gap-1.5">
+                        Tariq Mansouri
+                        <span class="material-symbols-outlined text-[15px] text-primary" title="Night Audit Clearance Authorized">verified</span>
+</span>
+<span class="font-data-tabular text-label-sm text-on-surface-variant">EMP-0104 • Grade IV</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Front Desk &amp; Night Audit</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Supervisor (ZCAS Certified)</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Amon Palace</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col font-data-tabular">
+<span class="text-on-surface font-medium">Shift #04 (Night Audit)</span>
+<span class="text-label-sm text-on-surface-variant">23:00 – 07:00 AST</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-md text-label-md text-tertiary">Active (Clocked 22:45)</span>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="flex flex-col items-end">
+<span class="font-data-tabular font-semibold text-tertiary">99.2%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Streak 22d</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container-high text-primary transition-colors" title="View Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Shift Override" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_calendar</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2: Fahad Al-Otaibi -->
+<tr class="hover:bg-surface-container transition-colors cursor-pointer" onclick="selectEmployee('EMP-0082')">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-secondary-container flex items-center justify-center font-title-md text-secondary font-bold">
+                      FO
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-1">
+                        Fahad Al-Otaibi
+                        <span class="material-symbols-outlined text-[15px] text-secondary" title="VIP Royal Concierge Guild">workspace_premium</span>
+</span>
+<span class="font-data-tabular text-label-sm text-on-surface-variant">EMP-0082 • Grade V</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Concierge &amp; Butler Guild</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Head Butler (VIP Royal Wing)</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Amon Palace</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col font-data-tabular">
+<span class="text-on-surface font-medium">Shift #02 (Mid-Day)</span>
+<span class="text-label-sm text-on-surface-variant">14:00 – 22:00 AST</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-tertiary">Active (Clocked 13:50)</span>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="flex flex-col items-end">
+<span class="font-data-tabular font-semibold text-tertiary">100.0%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Streak 44d</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="View Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Shift Override" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_calendar</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3: Amina Al-Harbi -->
+<tr class="hover:bg-surface-container transition-colors cursor-pointer" onclick="selectEmployee('EMP-0129')">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center font-title-md text-on-surface-variant font-bold">
+                      AH
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Amina Al-Harbi</span>
+<span class="font-data-tabular text-label-sm text-on-surface-variant">EMP-0129 • Grade IV</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Housekeeping Operations</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Executive Supervisor (Floors 3-8)</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Amon Palace</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col font-data-tabular">
+<span class="text-on-surface font-medium">Shift #01 (Morning)</span>
+<span class="text-label-sm text-on-surface-variant">07:00 – 15:30 AST</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-label-md text-label-md text-on-surface-variant">Clocked Out (15:35)</span>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="flex flex-col items-end">
+<span class="font-data-tabular font-semibold text-tertiary">98.5%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Streak 19d</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="View Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Shift Override" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_calendar</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 4: Chef Karim Bennani -->
+<tr class="hover:bg-surface-container transition-colors cursor-pointer" onclick="selectEmployee('EMP-0091')">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-secondary-container flex items-center justify-center font-title-md text-secondary font-bold">
+                      KB
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-1">
+                        Chef Karim Bennani
+                        <span class="material-symbols-outlined text-[15px] text-primary" title="Michelin-Trained Master Chef">restaurant</span>
+</span>
+<span class="font-data-tabular text-label-sm text-on-surface-variant">EMP-0091 • Grade V</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Food &amp; Beverage Outlets</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Master Executive Chef</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Amon Palace</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col font-data-tabular">
+<span class="text-on-surface font-medium">Shift #03 (Evening Gala)</span>
+<span class="text-label-sm text-on-surface-variant">16:00 – 00:00 AST</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-tertiary">Active (Clocked 15:52)</span>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="flex flex-col items-end">
+<span class="font-data-tabular font-semibold text-tertiary">97.8%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Streak 12d</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="View Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Shift Override" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_calendar</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 5: Sarah Al-Ghamdi -->
+<tr class="hover:bg-surface-container transition-colors cursor-pointer" onclick="selectEmployee('EMP-0155')">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center font-title-md text-primary font-bold">
+                      SG
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Sarah Al-Ghamdi</span>
+<span class="font-data-tabular text-label-sm text-on-surface-variant">EMP-0155 • Grade II</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Front Desk &amp; Guest Relations</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Front Office Receptionist</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Amon Palace</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col font-data-tabular">
+<span class="text-on-surface font-medium">Shift #02 (Mid-Day)</span>
+<span class="text-label-sm text-on-surface-variant">14:00 – 22:00 AST</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-tertiary">Active (Clocked 13:58)</span>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="flex flex-col items-end">
+<span class="font-data-tabular font-semibold text-tertiary">99.0%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Streak 31d</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="View Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Shift Override" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_calendar</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 6: Ibrahim Azmi -->
+<tr class="hover:bg-surface-container transition-colors cursor-pointer" onclick="selectEmployee('EMP-0210')">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center font-title-md text-secondary font-bold">
+                      IA
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Ibrahim Azmi</span>
+<span class="font-data-tabular text-label-sm text-label-sm text-on-surface-variant">EMP-0210 • Grade III</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Engineering &amp; MEP Facilities</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chief Maintenance Lead</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Amon Palace</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col font-data-tabular">
+<span class="text-primary font-medium">On-Call Standby (P1 Alert)</span>
+<span class="text-label-sm text-on-surface-variant">BMS Active Channel 4</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-primary">Standby Radio Ready</span>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="flex flex-col items-end">
+<span class="font-data-tabular font-semibold text-tertiary">96.4%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Streak 08d</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="View Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Shift Override" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_calendar</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Bulk Summary Footer -->
+<div class="px-4 py-2 bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-2 text-label-sm">
+<span class="font-data-tabular text-on-surface-variant">Displaying 1 – 6 of 142 Active Staff Members (Multi-Property Node SYNC-OK)</span>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-high text-outline cursor-not-allowed" type="button">Previous</button>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-semibold" type="button">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface hover:bg-surface-bright" type="button">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface hover:bg-surface-bright" type="button">3</button>
+<span class="px-1 text-on-surface-variant">•••</span>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface hover:bg-surface-bright" type="button">24</button>
+<button class="px-2 py-1 rounded bg-surface-container-high text-on-surface hover:bg-surface-bright" type="button">Next</button>
+</div>
+</div>
+</div>
+<!-- Quick Roster Overview Strip for Today's Night Audit Shift Handover -->
+<div class="p-4 rounded bg-surface-container-low shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">shield_moon</span>
+<span class="font-title-md text-title-md text-on-surface">Upcoming Shift #04 (Night Audit 23:00 - 07:00) Handover Verification</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-data-tabular">Handover Ready (3 of 3 Staff Present)</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-sm">TM</div>
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface">Tariq Mansouri</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lead Audit Supervisor</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-tertiary-container/30 text-tertiary">Clocked In</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-surface-variant text-on-surface flex items-center justify-center font-bold text-label-sm">MK</div>
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface">Mona Kamel</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Night Cashier &amp; Z-Report</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-tertiary-container/30 text-tertiary">Clocked In</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-surface-variant text-on-surface flex items-center justify-center font-bold text-label-sm">ZS</div>
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm text-on-surface">Ziyad Salem</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Night Butler &amp; Security</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-tertiary-container/30 text-tertiary">Clocked In</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= RIGHT PANEL (4 COLS): EMPLOYEE COCKPIT ================= -->
+<div class="2xl:col-span-4 flex flex-col gap-4">
+<!-- Selected Profile Master Card -->
+<div class="p-5 rounded bg-surface-container-low shadow-sm flex flex-col gap-4 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full pointer-events-none blur-2xl"></div>
+<!-- Header Card Ribbon -->
+<div class="flex items-center justify-between pb-3 bg-surface-container/40 -mx-5 -mt-5 px-5 pt-4">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">badge</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Active Employee Dossier</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-data-tabular text-label-sm font-semibold">Level 4 Clearance</span>
+</div>
+<!-- Avatar, Main Role & Badges -->
+<div class="flex items-start gap-4 pt-1">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded object-cover shadow-md" data-alt="Distinguished professional portrait of luxury hotel night audit supervisor Tariq Mansouri wearing an impeccably tailored navy bespoke tuxedo suit with subtle champagne gold lapel pin, confident hospitality executive posture, soft ambient royal navy backdrop with cinematic rim lighting, 8k hyper-detailed." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPymgH53PWSKTfwC2IPbdQ40IBhsq4oAdEb51N6HU8Im5VKp9GvGdGY5agIa-KwtZrVNwsTmvERqcdvTj57vZV9E_5L5COFgSGVIITEgijWBowqExmuzjudEEwRSgTNl7CVNARxhXfYAXE0WHEqmhD1kNJRvPnpm9hN1_OzpKxBI31UlOp-SU82fbjyYB9h6BJBkg1xM9ln0fBARTxrRU2_4iKOGyu-NT2uICU9meJ5c7WSRWbEPEz"/>
+<div class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-tertiary flex items-center justify-center" title="Currently Clocked In">
+<span class="material-symbols-outlined text-surface text-[10px] font-bold">check</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Tariq Mansouri</h2>
+<p class="font-body-sm text-body-sm text-primary truncate font-medium">Front Desk &amp; Night Audit Supervisor</p>
+<div class="flex flex-wrap gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Amon + Palm Nodes</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm">Active Full-Time</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm">ZATCA Clearance</span>
+</div>
+</div>
+</div>
+<!-- Personal & Contractual Metadata Grid -->
+<div class="grid grid-cols-2 gap-2.5 pt-2">
+<div class="p-2.5 rounded bg-surface-container flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Internal Email</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate font-data-tabular">tariq.mansouri@chainpms.internal</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Secure Handset</span>
+<span class="font-body-sm text-body-sm text-on-surface font-data-tabular">+20 102 994 8812</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Date Hired</span>
+<span class="font-body-sm text-body-sm text-on-surface font-data-tabular">12 Jan 2021 (4.3 yrs)</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Direct Reports</span>
+<span class="font-body-sm text-body-sm text-primary font-data-tabular font-medium">8 Front Desk Attendants</span>
+</div>
+</div>
+<!-- Shift & Monthly Attendance Gauge -->
+<div class="p-3 rounded bg-surface-container flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">May 2025 Attendance Track</span>
+<span class="font-data-tabular font-semibold text-tertiary text-label-md">99.2% Punctual</span>
+</div>
+<!-- Attendance Metric Highlights -->
+<div class="grid grid-cols-4 gap-1 text-center py-1">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-data-tabular text-on-surface">22</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Worked</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-data-tabular text-tertiary">0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Absence</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-data-tabular text-primary">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Delayed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-data-tabular text-secondary">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Leave</span>
+</div>
+</div>
+<!-- Visual Heat Bar (24 days visual tracker) -->
+<div class="flex items-center gap-1 w-full pt-1">
+<div class="h-2 flex-1 rounded-sm bg-tertiary" title="May 01 - On Time"></div>
+<div class="h-2 flex-1 rounded-sm bg-tertiary" title="May 02 - On Time"></div>
+<div class="h-2 flex-1 rounded-sm bg-tertiary" title="May 03 - On Time"></div>
+<div class="h-2 flex-1 rounded-sm bg-tertiary" title="May 04 - On Time"></div>
+<div class="h-2 flex-1 rounded-sm bg-tertiary" title="May 05 - On Time"></div>
+<div class="h-2 flex-1 rounded-sm bg-tertiary" title="May 06 - On Time"></div>
+<div class="h-2 flex-1 rounded-sm bg-tertiary" title="May 07 - On Time"></div>
+<div class="h-2 flex-1 rounded-sm bg-primary" title="May 08 - Delayed 12m"></div>
+<div class="h-2 flex-1 rounded-sm bg-tertiary" title="May 09 - On Time"></div>
+<div class="h-2 flex-1 rounded-sm bg-tertiary" title="May 10 - On Time"></div>
+<div class="h-2 flex-1 rounded-sm bg-surface-container-highest" title="May 11 - Rostered Off"></div>
+<div class="h-2 flex-1 rounded-sm bg-surface-container-highest" title="May 12 - Rostered Off"></div>
+<div class="h-2 flex-1 rounded-sm bg-tertiary" title="May 13 - On Time"></div>
+<div class="h-2 flex-1 rounded-sm bg-tertiary animate-pulse" title="May 14 - Active Shift"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-right">Last Biometric Log: Today 22:45 AST (Door #02 Audit Safe)</span>
+</div>
+<!-- Leave Balance Module -->
+<div class="p-3 rounded bg-surface-container flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Annual Leave Balance</span>
+<span class="font-data-tabular text-body-sm text-secondary font-medium">14 Days Remaining</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 70%;"></div>
+</div>
+<div class="flex items-center justify-between pt-1 text-label-sm">
+<span class="text-on-surface-variant">Sick Leave: <strong class="text-on-surface font-data-tabular">8 Days</strong></span>
+<div class="flex items-center gap-1.5">
+<button class="px-2 py-0.5 rounded bg-surface-container-high hover:bg-surface-bright text-primary font-label-sm transition-colors" type="button">
+                + Grant Leave
+              </button>
+<button class="px-2 py-0.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-sm transition-colors" type="button">
+                Swap Shift
+              </button>
+</div>
+</div>
+</div>
+<!-- Performance & Quality Rating Radar (Visual Ring + Accents) -->
+<div class="p-3 rounded bg-surface-container flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Executive Appraisal Score</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="font-data-tabular font-bold text-headline-sm">4.9</span>
+<span class="text-on-surface-variant font-body-sm">/ 5.0</span>
+</div>
+</div>
+<div class="space-y-1.5 pt-1 text-body-sm">
+<div>
+<div class="flex justify-between text-label-sm pb-0.5">
+<span class="text-on-surface">Punctuality &amp; Shift Compliance</span>
+<span class="font-data-tabular text-tertiary">5.0 / 5.0</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-label-sm pb-0.5">
+<span class="text-on-surface">Night Audit Balancing &amp; Z-Tally</span>
+<span class="font-data-tabular text-primary">5.0 / 5.0</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-label-sm pb-0.5">
+<span class="text-on-surface">VIP Guest Satisfaction Index</span>
+<span class="font-data-tabular text-secondary">4.8 / 5.0</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 96%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Cockpit Command Actions -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="px-3 py-2 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">edit_note</span>
+<span>Edit Record</span>
+</button>
+<button class="px-3 py-2 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">badge</span>
+<span>Print ID / Badge</span>
+</button>
+<button class="px-3 py-2 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">swap_horiz</span>
+<span>Assign Shift Override</span>
+</button>
+<button class="px-3 py-2 rounded bg-error-container hover:bg-error text-on-error font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">lock_reset</span>
+<span>Revoke POS Key</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function selectEmployee(empId) {
+    console.log("Selected employee record:", empId);
+  }
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-7 bg-surface-container-lowest z-50 shadow-[0_-1px_6px_rgba(0,0,0,0.4)] flex items-center justify-between px-3"><div class="flex items-center gap-3 font-data-tabular text-label-sm text-on-surface-variant"><span class="flex items-center gap-1.5 text-primary font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-primary"></span>Chain PMS v4.8.2-PROD</span><span>|</span><span>Local DB Synchronized (SQLite/Tauri Engine)</span><span>|</span><span>Multi-Tenant Node #SA-01</span></div><div class="hidden md:flex items-center gap-3 font-data-tabular text-label-sm text-on-surface-variant"><span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">F2</kbd> New Res</span><span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">F3</kbd> Room Rack</span><span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">F4</kbd> Billing</span><span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">F10</kbd> Search</span></div></footer></body></html>

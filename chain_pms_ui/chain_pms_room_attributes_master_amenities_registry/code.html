@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface":"#0b1229","on-surface":"#dce1ff","tertiary-fixed":"#6ffbbe","tertiary-fixed-dim":"#4edea3","surface-container-lowest":"#060d24","on-background":"#dce1ff","background":"#0b1229","on-tertiary-container":"#005035","tertiary":"#58e7aa","on-primary":"#3c2f00","outline":"#99907c","on-primary-fixed":"#241a00","secondary-fixed":"#dbe1ff","surface-container-high":"#222941","on-primary-fixed-variant":"#574500","on-tertiary-fixed-variant":"#005236","tertiary-container":"#33ca90","surface-dim":"#0b1229","secondary-container":"#384777","error":"#ffb4ab","surface-bright":"#323851","surface-variant":"#2d344c","on-secondary-fixed-variant":"#354575","on-secondary":"#1e2e5d","secondary-fixed-dim":"#b5c5fd","primary-fixed-dim":"#e9c349","primary-container":"#d4af37","on-secondary-container":"#a7b6ee","on-tertiary":"#003824","error-container":"#93000a","on-error":"#690005","surface-container":"#181e36","primary-fixed":"#ffe088","outline-variant":"#4d4635","on-primary-container":"#554300","surface-tint":"#e9c349","secondary":"#b5c5fd","on-surface-variant":"#d0c5af","surface-container-low":"#141a32","on-tertiary-fixed":"#002113","inverse-on-surface":"#292f48","primary":"#f2ca50","inverse-surface":"#dce1ff","on-error-container":"#ffdad6","on-secondary-fixed":"#051847","surface-container-highest":"#2d344c","inverse-primary":"#735c00"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xl":"2.5rem","gutter":"1.25rem","margin-desktop":"2rem","gutter-desktop":"1.5rem","margin":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem"},fontFamily:{"headline-md":["Hanken Grotesk"],"display":["Hanken Grotesk"],"body-md":["Hanken Grotesk"],"body-sm":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"headline-lg-mobile":["Hanken Grotesk"],"headline-lg":["Hanken Grotesk"],"label-sm":["Hanken Grotesk"],"title-md":["Hanken Grotesk"],"headline-sm":["Hanken Grotesk"],"data-tabular":["Hanken Grotesk"],"label-md":["Hanken Grotesk"]},fontSize:{"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"display":["3rem",{"lineHeight":"3.5rem","letterSpacing":"-0.025em","fontWeight":"600"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.06em","fontWeight":"500"}],"title-md":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"500"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"data-tabular":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.01em","fontWeight":"500"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.05em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 shadow-[0_1px_12px_rgba(0,0,0,0.45)]"><div class="h-16 w-full px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-3 shrink-0"><div class="flex items-center gap-2 pr-2"><button aria-label="Minimize" class="w-3 h-3 rounded-full bg-surface-variant hover:bg-outline flex items-center justify-center transition-colors" type="button"></button><button aria-label="Maximize" class="w-3 h-3 rounded-full bg-surface-variant hover:bg-outline flex items-center justify-center transition-colors" type="button"></button><button aria-label="Close" class="w-3 h-3 rounded-full bg-error-container hover:bg-error flex items-center justify-center transition-colors" type="button"></button></div><img alt="Chain PMS Luxury Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W45z9CM3c1M8W6RqZjKHT8-ZdRlADABeWaWeGYtJAYyfdhpcYvcMPETbVnLnwKaVdguYNf5wc0OU8lQYwlCuhk6aFOMmo4poKyvJPxe1NHxLANi1SzcW-lSsvqrVmKBZwtUvhNVNd2zkNwextuNN6C9wq4OXWRlIWEnx97zCRW0bWfhFTlv9Um6mCTFli4tmdIiuoinOmSO63RC81dDDt2_Lk7MUupC5iJTisfkQbRrvZjA8TBgyp1zIg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Chain PMS</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Enterprise Luxe</span></div><div class="h-7 w-[1px] bg-surface-container-high mx-1"></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low"><span class="material-symbols-outlined text-[16px] text-primary">domain</span><select aria-label="Select Hotel Property" class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer pr-1"><option class="bg-surface-container text-on-surface" selected="" value="amon">Amon Luxury Palace &amp; Spa</option><option class="bg-surface-container text-on-surface" value="palm">Palm Royal Resort &amp; Villas</option><option class="bg-surface-container text-on-surface" value="siwa">Siwa Oasis Haven Retreat</option></select></div></div><div class="hidden xl:flex items-center gap-2 flex-1 max-w-xl mx-2"><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span><input class="w-full bg-surface-container-low pl-9 pr-14 py-1.5 rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search guests, folios, room numbers..." type="text"/><span class="absolute right-2.5 top-1/2 -translate-y-1/2 font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Ctrl K</span></div><div class="flex items-center gap-1.5 shrink-0"><button class="px-2.5 py-1.5 rounded bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-[0_0_12px_rgba(212,175,55,0.25)]" type="button"><span class="material-symbols-outlined text-[16px]">add</span><span>Reservation</span></button><button class="px-2.5 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-primary">person_add</span><span>Profile</span></button><button class="px-2.5 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary">how_to_reg</span><span>Check-in</span></button></div></div><div class="flex items-center gap-3 shrink-0"><div class="hidden lg:flex flex-col items-end px-2.5 py-1 rounded bg-surface-container-low"><div class="flex items-center gap-1.5 font-data-tabular text-data-tabular text-on-surface"><span class="material-symbols-outlined text-[14px] text-primary">calendar_today</span><span>14 May 2025</span><span class="text-on-surface-variant font-body-sm text-body-sm">|</span><span class="material-symbols-outlined text-[14px] text-tertiary">shield_moon</span><span class="text-tertiary font-label-md text-label-md">Night Audit: Operational</span></div><div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1 text-tertiary"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>Auto-Close 03:30 AM</span><span>•</span><span>Shift #04 Tariq Mansouri</span></div></div><div class="flex items-center gap-2 pl-1"><button aria-label="System Notifications" class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors relative" type="button"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary"></span></button><div class="flex items-center gap-2 px-2 py-1 rounded bg-surface-container-low hover:bg-surface-container-high cursor-pointer transition-colors"><div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center shadow-[0_0_10px_rgba(212,175,55,0.3)]"><span class="material-symbols-outlined text-on-primary text-[16px]">person</span></div><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">T. Mansouri</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Duty Manager</span></div></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-7 w-64 bg-surface-container-lowest z-40 flex flex-col overflow-y-auto"><div class="px-3 py-3"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Front Office &amp; Operations</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reservations-and-bookings" href="#">Reservations &amp; Bookings</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-rack-and-grid" href="#">Room Rack &amp; Grid</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="in-house-guests" href="#">In-House Guests</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="arrivals-and-departures" href="#">Arrivals &amp; Departures</a></nav></div><div class="px-3 py-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Rooms &amp; Inventory</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-attributes-and-amenities" href="#">Room Attributes &amp; Amenities</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="rates-and-yield" href="#">Rates &amp; Yield</a></nav></div><div class="px-3 py-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Distribution &amp; Partners</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="travel-agents-and-commissions" href="#">Travel Agents &amp; Commissions</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="corporate-and-travel-agents" href="#">Corporate Accounts</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="guest-profiles" href="#">Guest Profiles</a></nav></div><div class="px-3 py-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">Cashier &amp; Billing</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="billing-windows-folios" href="#">Billing Windows (Folios)</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cashier-shift-and-safe" href="#">Cashier Shift &amp; Safe</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ar-and-city-ledger" href="#">AR &amp; City Ledger</a></nav></div><div class="px-3 py-2 pb-6"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary px-2">System &amp; Security</span><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-primary-container text-on-primary font-title-md rounded"><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="night-audit-engine" href="#">Night Audit Engine</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="security-and-access-control" href="#">Security &amp; Access Control</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="multi-tenant-hotel-setup" href="#">Multi-Tenant Hotel Setup</a></nav></div></aside><div class="pl-64"><main class="pt-16 pb-7 w-full px-6 min-h-screen bg-surface"><div class="flex flex-col w-full text-on-surface select-none pb-12">
+<!-- Top Breadcrumb & Metadata Strip -->
+<div class="flex flex-wrap items-center justify-between gap-4 py-3 border-b-0">
+<div class="flex items-center gap-2 font-data-tabular text-body-sm text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Rooms Management</span>
+<span class="text-outline">/</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Architectural Inventory</span>
+<span class="text-outline">/</span>
+<span class="text-primary font-label-md">Attributes &amp; Amenities Registry</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2 px-3 py-1 rounded bg-surface-container-low text-on-surface-variant font-data-tabular text-body-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Schema v4.8 • Sync Mode: Active Multi-Property Replication</span>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">history</span>
+<span>Audit Trail</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1 rounded bg-primary-container text-on-primary font-label-md text-label-md shadow-md hover:brightness-110 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>New Custom Attribute</span>
+</button>
+</div>
+</div>
+<!-- Page Title Banner -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pt-4 pb-6">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[28px] text-primary">view_quilt</span>
+<h1 class="font-headline-lg text-headline-lg tracking-tight text-on-surface">Room Attributes &amp; Master Amenities Registry</h1>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Centralized catalog of architectural perspectives, bespoke room specifications, luxury IoT controls, and yield-bearing upsell amenities across all sovereign properties.
+      </p>
+</div>
+<div class="flex items-center gap-2 self-start md:self-auto">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-secondary font-data-tabular text-label-md">
+        DB: Rooms • RoomAttributeLinks • SuiteRoomLinks
+      </span>
+</div>
+</div>
+<!-- Executive Metric Bento Highlights -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
+<!-- Stat 1 -->
+<div class="p-4 rounded bg-surface-container-low shadow-md relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-primary/5 blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Configured Attributes</span>
+<span class="material-symbols-outlined text-primary text-[20px]">category</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display text-display text-primary leading-none">48</span>
+<span class="font-label-md text-label-md text-on-surface-variant">across 6 categories</span>
+</div>
+<div class="mt-3 flex items-center justify-between font-data-tabular text-body-sm text-on-surface-variant">
+<span>Active Catalog</span>
+<span class="text-tertiary">100% Operational</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded mt-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded" style="width: 88%"></div>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="p-4 rounded bg-surface-container-low shadow-md relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-secondary/5 blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Premium View Portfolios</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">panorama</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display text-display text-on-surface leading-none">54</span>
+<span class="font-label-md text-label-md text-secondary">Keys Assigned</span>
+</div>
+<div class="mt-3 flex items-center justify-between font-data-tabular text-body-sm text-on-surface-variant">
+<span>Nile, Garden &amp; Oasis Courtyard</span>
+<span class="text-primary font-label-md">+42% Demand</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded mt-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded" style="width: 76%"></div>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="p-4 rounded bg-surface-container-low shadow-md relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-tertiary/5 blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Signature Luxury Amenities</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">bathtub</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display text-display text-tertiary leading-none">36</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Active Features</span>
+</div>
+<div class="mt-3 flex items-center justify-between font-data-tabular text-body-sm text-on-surface-variant">
+<span>Plunge Pools • Butler Suites • B&amp;O</span>
+<span class="text-on-surface">3 Pending Maint.</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded mt-1.5 overflow-hidden">
+<div class="bg-tertiary h-full rounded" style="width: 92%"></div>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="p-4 rounded bg-surface-container-low shadow-md relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-primary/10 blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Yield Premium Lift</span>
+<span class="material-symbols-outlined text-primary text-[20px]">trending_up</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display text-display text-primary leading-none">+28.4%</span>
+<span class="font-label-md text-label-md text-tertiary font-medium">ADR Lift</span>
+</div>
+<div class="mt-3 flex items-center justify-between font-data-tabular text-body-sm text-on-surface-variant">
+<span>Upsell Mean Value</span>
+<span class="text-primary font-headline-sm text-headline-sm leading-none">+$185/nt</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded mt-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded" style="width: 84%"></div>
+</div>
+</div>
+</div>
+<!-- Primary 3-Column Luxury Desktop Workbench -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+<!-- LEFT COLUMN: Categories & Navigation Filters (Col-span 3) -->
+<div class="lg:col-span-3 flex flex-col gap-4">
+<div class="p-4 rounded bg-surface-container-low shadow-md flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Catalog Taxonomy</span>
+<span class="font-data-tabular text-body-sm text-on-surface-variant">6 Types</span>
+</div>
+<!-- Attribute Search Input -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container pl-9 pr-3 py-2 rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-colors shadow-inner" id="filterInput" placeholder="Filter code, name, key..." type="text"/>
+</div>
+<!-- Category Filter Pills / List -->
+<div class="flex flex-col gap-1 pt-1">
+<button class="flex items-center justify-between px-3 py-2 rounded bg-primary-container text-on-primary font-title-md text-title-md transition-all shadow-sm" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px]">panorama</span>
+<span>Architectural Views</span>
+</div>
+<span class="font-data-tabular text-label-md px-1.5 py-0.5 rounded bg-on-primary-container/20 text-on-primary">12</span>
+</button>
+<button class="flex items-center justify-between px-3 py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-title-md transition-colors" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">king_bed</span>
+<span>Bed Configuration</span>
+</div>
+<span class="font-data-tabular text-label-md px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">8</span>
+</button>
+<button class="flex items-center justify-between px-3 py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-title-md transition-colors" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary">hot_tub</span>
+<span>Wellness &amp; Spa Fixtures</span>
+</div>
+<span class="font-data-tabular text-label-md px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">9</span>
+</button>
+<button class="flex items-center justify-between px-3 py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-title-md transition-colors" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">home_iot_device</span>
+<span>High-Tech Automation</span>
+</div>
+<span class="font-data-tabular text-label-md px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">7</span>
+</button>
+<button class="flex items-center justify-between px-3 py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-title-md transition-colors" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">room_service</span>
+<span>Exclusive Services</span>
+</div>
+<span class="font-data-tabular text-label-md px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">6</span>
+</button>
+<button class="flex items-center justify-between px-3 py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-title-md transition-colors" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">accessible_forward</span>
+<span>Accessibility &amp; Connectivity</span>
+</div>
+<span class="font-data-tabular text-label-md px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">6</span>
+</button>
+</div>
+<!-- Property Filter Selector -->
+<div class="pt-2 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Filter By Property Scope</span>
+<div class="flex flex-col gap-1.5">
+<label class="flex items-center justify-between p-2 rounded bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-2">
+<input checked="" class="accent-primary w-4 h-4 rounded cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Amon Luxury Palace &amp; Spa</span>
+</div>
+<span class="font-data-tabular text-label-sm text-primary">38 Attr</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-2">
+<input checked="" class="accent-primary w-4 h-4 rounded cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Palm Royal Resort &amp; Villas</span>
+</div>
+<span class="font-data-tabular text-label-sm text-secondary">29 Attr</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-2">
+<input checked="" class="accent-primary w-4 h-4 rounded cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Siwa Oasis Haven Retreat</span>
+</div>
+<span class="font-data-tabular text-label-sm text-tertiary">22 Attr</span>
+</label>
+</div>
+</div>
+<!-- Mini Visual Yield Distribution Chart -->
+<div class="mt-2 p-3 rounded bg-surface-container flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">ADR Contribution Split</span>
+<span class="font-data-tabular text-body-sm text-primary">Total: +$42,800/mo</span>
+</div>
+<!-- Compact SVG Donut Representation -->
+<div class="flex items-center gap-3">
+<svg class="w-14 h-14 shrink-0 -rotate-90" viewbox="0 0 36 36">
+<circle class="text-surface-container-highest" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-width="3"></circle>
+<!-- Views Segment 55% -->
+<circle class="text-primary" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-dasharray="88 100" stroke-dashoffset="0" stroke-width="3.5"></circle>
+<!-- Wellness 25% -->
+<circle class="text-tertiary" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-dasharray="22 100" stroke-dashoffset="-48" stroke-width="3.5"></circle>
+<!-- Tech / Butler 20% -->
+<circle class="text-secondary" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-dasharray="18 100" stroke-dashoffset="-70" stroke-width="3.5"></circle>
+</svg>
+<div class="flex flex-col gap-1 font-data-tabular text-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-on-surface-variant">Views: 55%</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-on-surface-variant">Wellness: 25%</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant">Services/Tech: 20%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Tips Card -->
+<div class="p-3.5 rounded bg-surface-container-low flex items-start gap-3 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">lightbulb</span>
+<div class="flex flex-col gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-label-md text-label-md text-on-surface">Yield Tip: Nile View Inelasticity</span>
+<span>West Bank sunset facing inventory shows 98.4% upsell conversion during Q2-Q3 sunset windows. Keep surcharge automated.</span>
+</div>
+</div>
+</div>
+<!-- CENTER COLUMN: Master Attributes Table & Gallery (Col-span 5) -->
+<div class="lg:col-span-5 flex flex-col gap-4">
+<!-- Toolbar & Multi-Select Operations -->
+<div class="flex flex-wrap items-center justify-between gap-2 p-3 rounded bg-surface-container-low shadow-md">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Registered Attributes</span>
+<span class="font-data-tabular text-body-sm px-2 py-0.5 rounded bg-surface-container text-primary">Showing 6 of 48</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+            Bulk Assign
+          </button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">file_download</span>
+<span>Spec Sheet</span>
+</button>
+</div>
+</div>
+<!-- Interactive Registry Cards / Table List -->
+<div class="flex flex-col gap-2.5 overflow-y-auto max-h-[850px] pr-1">
+<!-- Attribute Row 1: Direct Nile View (Active Selection) -->
+<div class="p-3.5 rounded bg-surface-container-high shadow-lg transition-all cursor-pointer flex flex-col gap-2 relative">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[22px]">waves</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-tabular text-label-md text-primary font-semibold">ATTR-VIEW-NILE</span>
+<span class="px-2 py-0.2 rounded-full font-label-sm text-label-sm bg-tertiary/15 text-tertiary">Active</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface leading-snug">Direct West Bank Panoramic Nile View</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-arabic" dir="rtl">إطلالة بانورامية مباشرة على ضفاف النيل الغربية</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-primary leading-tight font-data-tabular">+$140.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily Surcharge</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 mt-1 border-t-0 bg-surface-container-low/60 p-2 rounded">
+<div class="flex items-center gap-3 font-data-tabular text-body-sm">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-secondary">hotel</span>
+<span>20 Keys Linked</span>
+</span>
+<span class="text-outline">•</span>
+<span class="text-on-surface-variant">Amon Palace &amp; Siwa</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span>Inspecting</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- Attribute Row 2: Heated Plunge Pool -->
+<div class="p-3.5 rounded bg-surface-container-low hover:bg-surface-container shadow-md transition-all cursor-pointer flex flex-col gap-2">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded bg-tertiary/10 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-tertiary text-[22px]">pool</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-tabular text-label-md text-tertiary font-semibold">ATTR-PLUNGE-POOL</span>
+<span class="px-2 py-0.2 rounded-full font-label-sm text-label-sm bg-tertiary/15 text-tertiary">Active</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface leading-snug">Private Temperature-Controlled Plunge Pool</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-arabic" dir="rtl">مسبح خاص بنظام تحكم حراري</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-tertiary leading-tight font-data-tabular">+$220.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily Surcharge</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 mt-1 bg-surface-container-low p-2 rounded">
+<div class="flex items-center gap-3 font-data-tabular text-body-sm">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-secondary">hotel</span>
+<span>8 Royal Villas</span>
+</span>
+<span class="text-outline">•</span>
+<span class="text-on-surface-variant">Palm Royal &amp; Amon</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary flex items-center gap-0.5">
+<span>View Specs</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- Attribute Row 3: Dedicated Butler Station -->
+<div class="p-3.5 rounded bg-surface-container-low hover:bg-surface-container shadow-md transition-all cursor-pointer flex flex-col gap-2">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded bg-secondary/10 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[22px]">room_service</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-tabular text-label-md text-secondary font-semibold">ATTR-BUTLER-PANTRY</span>
+<span class="px-2 py-0.2 rounded-full font-label-sm text-label-sm bg-tertiary/15 text-tertiary">Active</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface leading-snug">Dedicated 24/7 Butler Service &amp; Private Pantry</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-arabic" dir="rtl">خدمة النادل الخاص ومطبخ تحضيري على مدار الساعة</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-primary leading-tight font-data-tabular">+$310.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily Surcharge</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 mt-1 bg-surface-container-low p-2 rounded">
+<div class="flex items-center gap-3 font-data-tabular text-body-sm">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-secondary">hotel</span>
+<span>12 Sovereign Suites</span>
+</span>
+<span class="text-outline">•</span>
+<span class="text-on-surface-variant">Amon Palace Only</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary flex items-center gap-0.5">
+<span>View Specs</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- Attribute Row 4: Emperor King Four-Poster Bed -->
+<div class="p-3.5 rounded bg-surface-container-low hover:bg-surface-container shadow-md transition-all cursor-pointer flex flex-col gap-2">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[22px]">king_bed</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-tabular text-label-md text-primary font-semibold">ATTR-BED-CANOPY</span>
+<span class="px-2 py-0.2 rounded-full font-label-sm text-label-sm bg-tertiary/15 text-tertiary">Active</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface leading-snug">Emperor King Four-Poster Canopy (220x220)</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-arabic" dir="rtl">سرير إمبراطوري ذو أربعة أعمدة ومظلة حريرية</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight font-data-tabular">Included</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Suite Base Amenity</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 mt-1 bg-surface-container-low p-2 rounded">
+<div class="flex items-center gap-3 font-data-tabular text-body-sm">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-secondary">hotel</span>
+<span>24 Keys</span>
+</span>
+<span class="text-outline">•</span>
+<span class="text-on-surface-variant">All 3 Properties</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary flex items-center gap-0.5">
+<span>View Specs</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- Attribute Row 5: Lutron Palladiom & Smart Glass -->
+<div class="p-3.5 rounded bg-surface-container-low hover:bg-surface-container shadow-md transition-all cursor-pointer flex flex-col gap-2">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded bg-secondary/10 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[22px]">auto_awesome</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-tabular text-label-md text-secondary font-semibold">ATTR-IOT-LUTRON</span>
+<span class="px-2 py-0.2 rounded-full font-label-sm text-label-sm bg-tertiary/15 text-tertiary">Active</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface leading-snug">Lutron Palladiom Automation &amp; Smart Glass</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-arabic" dir="rtl">نظام لوترون بالاديوم الذكي وزجاج الخصوصية الكهرومغناطيسي</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-secondary leading-tight font-data-tabular">+$65.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yield Surcharge</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 mt-1 bg-surface-container-low p-2 rounded">
+<div class="flex items-center gap-3 font-data-tabular text-body-sm">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-secondary">hotel</span>
+<span>32 Suites</span>
+</span>
+<span class="text-outline">•</span>
+<span class="text-on-surface-variant">Online IoT Synced</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary flex items-center gap-0.5">
+<span>View Specs</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</span>
+</div>
+</div>
+<!-- Attribute Row 6: Pyramids Horizon View -->
+<div class="p-3.5 rounded bg-surface-container-low hover:bg-surface-container shadow-md transition-all cursor-pointer flex flex-col gap-2">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[22px]">filter_hdr</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-data-tabular text-label-md text-primary font-semibold">ATTR-VIEW-PYRAMID</span>
+<span class="px-2 py-0.2 rounded-full font-label-sm text-label-sm bg-primary-container/20 text-primary">Seasonal High</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface leading-snug">Giza Pyramids Sunset Horizon Alignment</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-arabic" dir="rtl">أفق إطلالة أهرامات الجيزة عند الغروب</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-primary leading-tight font-data-tabular">+$195.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily Surcharge</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 mt-1 bg-surface-container-low p-2 rounded">
+<div class="flex items-center gap-3 font-data-tabular text-body-sm">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-secondary">hotel</span>
+<span>16 Keys</span>
+</span>
+<span class="text-outline">•</span>
+<span class="text-on-surface-variant">Palm Royal Estate</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary flex items-center gap-0.5">
+<span>View Specs</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Pagination / Registry Counter -->
+<div class="flex items-center justify-between p-3 rounded bg-surface-container-low font-data-tabular text-body-sm text-on-surface-variant">
+<span>Displaying attributes 1 – 6 of 48 records</span>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 rounded bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="w-7 h-7 rounded bg-primary-container text-on-primary flex items-center justify-center font-label-md" type="button">1</button>
+<button class="w-7 h-7 rounded bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface" type="button">2</button>
+<button class="w-7 h-7 rounded bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface" type="button">3</button>
+<button class="w-7 h-7 rounded bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Dedicated Attribute Inspector & Room Linker Drawer (Col-span 4) -->
+<div class="lg:col-span-4 flex flex-col gap-4">
+<div class="p-4 rounded bg-surface-container-low shadow-xl flex flex-col gap-4 relative">
+<!-- Header & Action Header -->
+<div class="flex items-center justify-between pb-3 border-b-0">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Focused Inspection</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="p-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="View Change Logs" type="button">
+<span class="material-symbols-outlined text-[16px]">manage_history</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container hover:bg-error-container text-on-surface-variant hover:text-on-error transition-colors" title="Archive / Deactivate" type="button">
+<span class="material-symbols-outlined text-[16px]">archive</span>
+</button>
+</div>
+</div>
+<!-- High-Res Visual Badge & Spec Preview -->
+<div class="relative w-full h-44 rounded overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Panoramic unobstructed sunset view over the tranquil Nile river seen from an opulent high-end Egyptian luxury suite balcony with marble railings, plush seating, warm golden twilight reflections, navy shadows, and authentic architectural craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS4bYqWtftCArWdzNupzdFe-q-7gWd-AOJusWmYEiYberBU4ZE46mgivh8OwSTmAsGQzQmdfppsQf84XYXwiZXQxYFo1QvoNYuGqE719_hOVXMn_K86dp_ouVm27DZOc5ilN6xpxO5QYWt4og-sKi2lK11osyHfcptfuWtgZhFX2uply4NtdEkCMMxTPk6yTuqRN9RkEEAqiS_WiHgkCjnkGyUNUYAixVywIuYAE3nXg8cOFf0gFoY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-data-tabular text-label-sm text-primary uppercase tracking-widest font-semibold">Code: ATTR-VIEW-NILE</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">180° West Bank Sunset Nile View</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur font-data-tabular text-label-sm text-tertiary">
+              Optical Grade A+
+            </span>
+</div>
+</div>
+<!-- Yield Surcharge & Channel Upsell Matrix -->
+<div class="p-3 rounded bg-surface-container flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Dynamic Yield Upsell Rule</span>
+<div class="flex items-center gap-1">
+<input checked="" class="accent-primary w-4 h-4 rounded cursor-pointer" id="yieldRuleToggle" type="checkbox"/>
+<label class="font-label-sm text-label-sm text-primary cursor-pointer" for="yieldRuleToggle">Live Rule Active</label>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="p-2 rounded bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Default Upgrade Surcharge</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-data-tabular text-title-md text-primary font-semibold">$140.00</span>
+<span class="font-data-tabular text-body-sm text-on-surface-variant">/night</span>
+</div>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Online Engine Premium</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-data-tabular text-title-md text-tertiary font-semibold">Fixed Rate</span>
+<span class="font-data-tabular text-body-sm text-on-surface-variant">GDS Synced</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Linked Room Categories Association -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Linked Room Categories</span>
+<span class="font-data-tabular text-body-sm text-primary">3 Categories (20 Keys)</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Nile Royal Waterfront Villa</span>
+<span class="font-data-tabular text-body-sm text-on-surface-variant">Key Range: V101 – V104</span>
+</div>
+<span class="font-data-tabular text-label-md px-2 py-0.5 rounded bg-surface-container-highest text-primary font-semibold">All 4 Keys</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Executive Nile Suites</span>
+<span class="font-data-tabular text-body-sm text-on-surface-variant">Floor 2 &amp; Floor 3 (West Wing)</span>
+</div>
+<span class="font-data-tabular text-label-md px-2 py-0.5 rounded bg-surface-container-highest text-primary font-semibold">14 of 16 Keys</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Sovereign Penthouse</span>
+<span class="font-data-tabular text-body-sm text-on-surface-variant">Top Deck Panoramic Roof</span>
+</div>
+<span class="font-data-tabular text-label-md px-2 py-0.5 rounded bg-surface-container-highest text-primary font-semibold">All 2 Keys</span>
+</div>
+</div>
+</div>
+<!-- Hardware & IoT Peripherals Integration -->
+<div class="p-3 rounded bg-surface-container flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Associated IoT Peripherals</span>
+<div class="grid grid-cols-2 gap-2 text-body-sm">
+<div class="flex items-center gap-2 p-1.5 rounded bg-surface-container-low">
+<span class="material-symbols-outlined text-[18px] text-tertiary">curtains</span>
+<div class="flex flex-col">
+<span class="text-on-surface font-medium leading-none">Somfy Curtains</span>
+<span class="text-on-surface-variant text-label-sm">Sunset Auto-Open</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-1.5 rounded bg-surface-container-low">
+<span class="material-symbols-outlined text-[18px] text-primary">shield_moon</span>
+<div class="flex flex-col">
+<span class="text-on-surface font-medium leading-none">Smart Glass</span>
+<span class="text-on-surface-variant text-label-sm">Tint Level 4 / Sun</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Quick Linker: Batch Room Key Assignment -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Individual Room Key Assignment</span>
+<span class="font-data-tabular text-label-sm text-on-surface-variant">Floor 1 &amp; 2 Sample</span>
+</div>
+<!-- Quick Room Grid Selection -->
+<div class="grid grid-cols-5 gap-1.5 p-2 rounded bg-surface-container">
+<!-- Room Item 101 -->
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container-high cursor-pointer hover:bg-primary/20 transition-all">
+<input checked="" class="accent-primary w-3.5 h-3.5 mb-1 cursor-pointer" type="checkbox"/>
+<span class="font-data-tabular text-label-md text-on-surface font-bold">101</span>
+<span class="font-label-sm text-label-sm text-tertiary">Villa</span>
+</label>
+<!-- Room Item 102 -->
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container-high cursor-pointer hover:bg-primary/20 transition-all">
+<input checked="" class="accent-primary w-3.5 h-3.5 mb-1 cursor-pointer" type="checkbox"/>
+<span class="font-data-tabular text-label-md text-on-surface font-bold">102</span>
+<span class="font-label-sm text-label-sm text-tertiary">Villa</span>
+</label>
+<!-- Room Item 103 -->
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container-low opacity-60 cursor-pointer hover:opacity-100 transition-all">
+<input class="accent-primary w-3.5 h-3.5 mb-1 cursor-pointer" type="checkbox"/>
+<span class="font-data-tabular text-label-md text-on-surface">103</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Garden</span>
+</label>
+<!-- Room Item 104 -->
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container-high cursor-pointer hover:bg-primary/20 transition-all">
+<input checked="" class="accent-primary w-3.5 h-3.5 mb-1 cursor-pointer" type="checkbox"/>
+<span class="font-data-tabular text-label-md text-on-surface font-bold">104</span>
+<span class="font-label-sm text-label-sm text-tertiary">Villa</span>
+</label>
+<!-- Room Item 201 -->
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container-high cursor-pointer hover:bg-primary/20 transition-all">
+<input checked="" class="accent-primary w-3.5 h-3.5 mb-1 cursor-pointer" type="checkbox"/>
+<span class="font-data-tabular text-label-md text-on-surface font-bold">201</span>
+<span class="font-label-sm text-label-sm text-primary">Suite</span>
+</label>
+<!-- Room Item 202 -->
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container-high cursor-pointer hover:bg-primary/20 transition-all">
+<input checked="" class="accent-primary w-3.5 h-3.5 mb-1 cursor-pointer" type="checkbox"/>
+<span class="font-data-tabular text-label-md text-on-surface font-bold">202</span>
+<span class="font-label-sm text-label-sm text-primary">Suite</span>
+</label>
+<!-- Room Item 203 -->
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container-low opacity-60 cursor-pointer hover:opacity-100 transition-all">
+<input class="accent-primary w-3.5 h-3.5 mb-1 cursor-pointer" type="checkbox"/>
+<span class="font-data-tabular text-label-md text-on-surface">203</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">East</span>
+</label>
+<!-- Room Item 204 -->
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container-high cursor-pointer hover:bg-primary/20 transition-all">
+<input checked="" class="accent-primary w-3.5 h-3.5 mb-1 cursor-pointer" type="checkbox"/>
+<span class="font-data-tabular text-label-md text-on-surface font-bold">204</span>
+<span class="font-label-sm text-label-sm text-primary">Suite</span>
+</label>
+<!-- Room Item 205 -->
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container-high cursor-pointer hover:bg-primary/20 transition-all">
+<input checked="" class="accent-primary w-3.5 h-3.5 mb-1 cursor-pointer" type="checkbox"/>
+<span class="font-data-tabular text-label-md text-on-surface font-bold">205</span>
+<span class="font-label-sm text-label-sm text-primary">Suite</span>
+</label>
+<!-- Room Item 301 -->
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container-high cursor-pointer hover:bg-primary/20 transition-all">
+<input checked="" class="accent-primary w-3.5 h-3.5 mb-1 cursor-pointer" type="checkbox"/>
+<span class="font-data-tabular text-label-md text-on-surface font-bold">301</span>
+<span class="font-label-sm text-label-sm text-secondary">Pent</span>
+</label>
+</div>
+</div>
+<!-- Master Action Controls -->
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full py-2.5 px-4 rounded bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-lg hover:brightness-110 active:scale-[0.99] transition-all" id="saveAttributeBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Save Attribute Linkages</span>
+</button>
+<div class="flex items-center justify-between gap-2">
+<button class="flex-1 py-2 px-3 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors text-center" type="button">
+              Revert Changes
+            </button>
+<button class="flex-1 py-2 px-3 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors text-center flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">tune</span>
+<span>Yield Rules</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction: Save Attribute Feedback
+  document.getElementById('saveAttributeBtn')?.addEventListener('click', function() {
+    const btn = this;
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">sync</span><span>Syncing with SQLite Engine...</span>`;
+    btn.classList.add('opacity-90');
+    
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Linkages Synchronized</span>`;
+      btn.classList.remove('opacity-90');
+      btn.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+      
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.classList.remove('bg-tertiary-container', 'text-on-tertiary-container');
+      }, 2500);
+    }, 700);
+  });
+
+  // Client-side quick filter logic for demo interactivity
+  document.getElementById('filterInput')?.addEventListener('input', function(e) {
+    const query = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('.lg\\:col-span-5 .flex-col > .p-3\\.5');
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      if (text.includes(query)) {
+        row.style.display = 'flex';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  });
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-7 bg-surface-container-lowest z-50 shadow-[0_-1px_6px_rgba(0,0,0,0.4)] flex items-center justify-between px-3"><div class="flex items-center gap-3 font-data-tabular text-label-sm text-on-surface-variant"><span class="flex items-center gap-1.5 text-primary font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-primary"></span>Chain PMS v4.8.2-PROD</span><span>|</span><span>Local DB Synchronized (SQLite/Tauri Engine)</span><span>|</span><span>Node #SA-01 • Amon Palace</span></div><div class="hidden md:flex items-center gap-3 font-data-tabular text-label-sm text-on-surface-variant"><span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">F2</kbd> New Res</span><span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">F3</kbd> Room Rack</span><span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">F4</kbd> Billing</span><span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">F10</kbd> Search</span></div></footer></body></html>

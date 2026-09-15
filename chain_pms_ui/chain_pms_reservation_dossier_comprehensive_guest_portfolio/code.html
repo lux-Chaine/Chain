@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed":"#ffe088","surface-tint":"#e9c349","inverse-on-surface":"#292f48","on-surface-variant":"#d0c5af","error-container":"#93000a","error":"#ffb4ab","secondary-fixed-dim":"#b5c5fd","secondary-fixed":"#dbe1ff","surface-container-high":"#222941","on-error":"#690005","on-primary-container":"#554300","on-secondary-fixed":"#051847","primary":"#f2ca50","surface-bright":"#323851","on-secondary":"#1e2e5d","inverse-primary":"#735c00","surface-variant":"#2d344c","surface-container-highest":"#2d344c","secondary-container":"#384777","inverse-surface":"#dce1ff","on-surface":"#dce1ff","background":"#0b1229","on-secondary-container":"#a7b6ee","on-primary-fixed-variant":"#574500","on-tertiary-fixed-variant":"#005236","on-primary":"#3c2f00","tertiary-fixed":"#6ffbbe","surface-container-lowest":"#060d24","on-tertiary":"#003824","primary-fixed-dim":"#e9c349","tertiary-fixed-dim":"#4edea3","on-tertiary-container":"#005035","on-background":"#dce1ff","on-secondary-fixed-variant":"#354575","outline":"#99907c","primary-container":"#d4af37","on-tertiary-fixed":"#002113","tertiary-container":"#33ca90","surface-dim":"#0b1229","surface":"#0b1229","on-primary-fixed":"#241a00","tertiary":"#58e7aa","on-error-container":"#ffdad6","outline-variant":"#4d4635","surface-container":"#181e36","secondary":"#b5c5fd","surface-container-low":"#141a32"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-sm":"0.5rem","margin-desktop":"2rem",gutter:"1.25rem","gutter-desktop":"1.5rem","space-lg":"1.5rem","space-md":"1rem",margin:"1rem","space-xl":"2.5rem","space-xs":"0.25rem"},fontFamily:{"body-md":["Hanken Grotesk"],"title-md":["Hanken Grotesk"],"headline-lg-mobile":["Hanken Grotesk"],"headline-sm":["Hanken Grotesk"],"headline-md":["Hanken Grotesk"],"label-sm":["Hanken Grotesk"],"body-sm":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"headline-lg":["Hanken Grotesk"],display:["Hanken Grotesk"],"data-tabular":["Hanken Grotesk"],"label-md":["Hanken Grotesk"]},fontSize:{"body-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0",fontWeight:"400"}],"title-md":["1rem",{lineHeight:"1.5rem",letterSpacing:"0",fontWeight:"500"}],"headline-lg-mobile":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-sm":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.015em",fontWeight:"600"}],"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.06em",fontWeight:"500"}],"body-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.01em",fontWeight:"400"}],"body-lg":["1rem",{lineHeight:"1.5rem",letterSpacing:"0",fontWeight:"400"}],"headline-lg":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.02em",fontWeight:"600"}],display:["3rem",{lineHeight:"3.5rem",letterSpacing:"-0.025em",fontWeight:"600"}],"data-tabular":["0.8125rem",{lineHeight:"1.125rem",letterSpacing:"0.01em",fontWeight:"500"}],"label-md":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.05em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface-container-low/95 backdrop-blur-xl border-b border-primary/20 shadow-[0_4px_24px_rgba(0,0,0,0.45)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="A prestigious luxury royal crown logo emblem for Chain PMS hotel software, rendered in elegant metallic gold with sharp geometric facets and five peaks topped with subtle diamond jewels, vector luxury branding, dark royal navy contrasting background.. Brand logo. - Primary color: #d4af37
+- Font: hankenGrotesk
+- Mode: dark
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8AzqK1WanRKfcGTql5wJMnaa_JN9abEKLiTDJFs024ViSokA4ZkD3CS6cArdvOOQpDoSOZ0Hc9OtLQEARttTGUEsNF4NoYF4JaWGXPfj52ad1ETNh9KpBsaRAdXeuILCEnXxrYbB9qHoN4F_ltOf4Zlo9BheRQWhnkWj44yaxWzEZXtHm7NrvvIU6EDpLaEeM-zKNIOb2o0mQAEKSFDbAT9-1HR_igT1C2JMExhZq4HIQB0vCPH8PgDU"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-title-md tracking-wider text-primary font-bold uppercase">Chain PMS</span><span class="px-1.5 py-0.5 rounded text-[10px] font-label-sm bg-primary/10 text-primary uppercase tracking-widest border border-primary/30">Luxe</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Enterprise Hospitality</span></div><div class="h-8 w-px bg-outline-variant/40 mx-space-xs hidden lg:block"></div><div class="relative hidden lg:flex items-center"><span class="material-symbols-outlined absolute left-2.5 text-primary text-[18px] pointer-events-none">domain</span><select class="bg-surface-container text-on-surface text-body-sm font-body-sm pl-8 pr-7 py-1.5 rounded-lg border border-primary/20 focus:border-primary focus:outline-none appearance-none cursor-pointer hover:bg-surface-container-high transition-colors"><option selected="" value="amon">Amon Luxury Palace &amp; Spa</option><option value="palm">Palm Royal Resort &amp; Villas</option><option value="siwa">Siwa Oasis Haven Retreat</option></select><span class="material-symbols-outlined absolute right-2 text-on-surface-variant text-[16px] pointer-events-none">arrow_drop_down</span></div></div><div class="flex-1 max-w-md mx-space-sm hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container text-on-surface placeholder:text-outline font-body-sm text-body-sm pl-9 pr-14 py-1.5 rounded-lg border border-outline-variant/50 focus:border-primary focus:ring-1 focus:ring-primary/40 focus:outline-none transition-all" placeholder="Global Reservation Search (Guest, Folio, Room, PNR)..." type="text"/><div class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container-highest border border-outline-variant text-[10px] font-data-tabular text-on-surface-variant">Ctrl+K</div></div></div><div class="flex items-center gap-space-sm shrink-0"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-lowest/80 rounded-lg border border-outline-variant/40 text-on-surface-variant font-data-tabular text-data-tabular"><div class="flex items-center gap-1"><span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span><span class="text-on-surface font-semibold">Node #SA-01</span></div><span class="text-outline-variant">|</span><span class="text-secondary">Shift #04 Tariq M.</span><span class="text-outline-variant">|</span><div class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">nightlight_round</span><span class="font-label-sm text-label-sm uppercase">Audit: Operational</span></div></div><div class="hidden sm:flex items-center gap-space-xs"><button class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-gradient-to-br from-primary-container to-surface-tint text-background font-label-md text-label-md font-bold shadow-md hover:brightness-110 active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-[16px]">add</span><span>Reservation</span></button><button class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-surface-container-high text-on-surface border border-primary/30 font-label-md text-label-md hover:bg-surface-bright hover:border-primary transition-all" type="button"><span class="material-symbols-outlined text-primary text-[16px]">person_add</span><span class="hidden md:inline">Guest</span></button><button class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-surface-container-high text-on-surface border border-outline-variant font-label-md text-label-md hover:bg-surface-bright hover:border-primary transition-all" type="button"><span class="material-symbols-outlined text-tertiary text-[16px]">key</span><span class="hidden md:inline">Quick Check-in</span></button></div><div class="h-6 w-px bg-outline-variant/40 mx-space-xs"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 bg-surface-container-lowest/95 backdrop-blur-xl border-r border-primary/15 z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-sm flex flex-col gap-space-sm"><div class="px-space-xs py-1 flex items-center justify-between"><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-bold">Operations Core</span><span class="material-symbols-outlined text-[16px] text-primary/70">tune</span></div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary text-background font-bold shadow-[0_0_12px_rgba(242,202,80,0.35)]"><a class="flex items-center gap- space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reservations-and-bookings" href="#"><span class="material-symbols-outlined text-[18px]">calendar_month</span><span class="font-title-md text-body-md">Reservations &amp; Bookings</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-rack" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span class="font-title-md text-body-md">Room Rack Tape Chart</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="in-house-guests" href="#"><span class="material-symbols-outlined text-[18px]">hotel</span><span class="font-title-md text-body-md">In-House Guests</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="arrivals-and-departures" href="#"><span class="material-symbols-outlined text-[18px]">sync_alt</span><span class="font-title-md text-body-md">Arrivals &amp; Departures</span></a></nav><div class="h-px bg-outline-variant/30 my-1"></div><div class="px-space-xs py-1"><span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase font-bold">Rooms &amp; Inventory</span></div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary text-background font-bold shadow-[0_0_12px_rgba(242,202,80,0.35)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-map" href="#"><span class="material-symbols-outlined text-[18px]">map</span><span class="font-title-md text-body-md">Room Map &amp; Estates</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="amenities-and-attributes" href="#"><span class="material-symbols-outlined text-[18px]">spa</span><span class="font-title-md text-body-md">Amenities &amp; Attributes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="rates-and-yield" href="#"><span class="material-symbols-outlined text-[18px]">trending_up</span><span class="font-title-md text-body-md">Rates &amp; Yield Strategy</span></a></nav><div class="h-px bg-outline-variant/30 my-1"></div><div class="px-space-xs py-1"><span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase font-bold">Commercial &amp; Ledger</span></div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary text-background font-bold shadow-[0_0_12px_rgba(242,202,80,0.35)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="outlets-and-pos" href="#"><span class="material-symbols-outlined text-[18px]">point_of_sale</span><span class="font-title-md text-body-md">Outlets &amp; POS Terminals</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cashier-and-folio-billing" href="#"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span class="font-title-md text-body-md">Cashier &amp; Folio Billing</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="management-and-system-administration" href="#"><span class="material-symbols-outlined text-[18px]">admin_panel_settings</span><span class="font-title-md text-body-md">System Administration</span></a></nav></div><div class="p-space-sm bg-surface-container-low/60 border-t border-outline-variant/30 flex flex-col gap-space-xs"><div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant"><span>OCCUPANCY RATE</span><span class="text-primary font-bold font-data-tabular">88.4%</span></div><div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden"><div class="bg-primary h-full rounded-full" style="width: 88.4%"></div></div><div class="flex items-center justify-between pt-1 font-label-sm text-label-sm text-outline"><span class="flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>214 Clean</span><span class="flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-error"></span>24 Maint</span></div></div></aside><div class="pl-64"><main class="relative w-full pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Top Command & Dossier Header Bar -->
+<header class="w-full bg-surface-container-lowest px-gutter-desktop py-space-md shadow-md">
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md">
+<!-- Breadcrumb & Core Dossier Identity -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm tracking-wider uppercase">
+<a class="hover:text-primary transition-colors" href="#">Front Desk Operations</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Booking Dossiers</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-bold">Dossier #RES-2026-88412</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[28px]">folder_shared</span>
+<h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">
+              Dossier #RES-2026-88412
+            </h1>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm uppercase tracking-widest font-semibold flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+            Confirmed &amp; Guaranteed (CC Hold)
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm tracking-wider uppercase font-semibold">
+            Corporate VIP Direct
+          </span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[16px]">calendar_today</span>
+<span class="font-semibold text-primary">18 Oct 2026</span>
+<span class="text-outline">→</span>
+<span class="font-semibold text-primary">24 Oct 2026</span>
+<span class="text-on-surface-variant font-data-tabular text-data-tabular font-medium">(6 Nights)</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">group</span>
+<span>2 Adults, 1 Child (Age 7)</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[16px]">verified_user</span>
+<span>Identity Verified (Passport Biometric #KWT-88219)</span>
+</div>
+</div>
+</div>
+<!-- Tactical Function Keys Bar -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">edit</span>
+<span>Edit [F2]</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold hover:brightness-110 shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>Check-In Desk [F3]</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">receipt_long</span>
+<span>Split Folio [F9]</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Print [F8]</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-error-container/30 hover:bg-error-container/60 text-error font-label-md text-label-md transition-all shadow-sm" onclick="document.getElementById('cancel-modal').classList.toggle('hidden')" type="button">
+<span class="material-symbols-outlined text-[16px]">block</span>
+<span>Cancel / No-Show</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Viewport Workspace Container -->
+<div class="w-full px-gutter-desktop py-space-lg flex flex-col gap-space-lg">
+<!-- Section 1: Summary Metric Tiles (Executive 4-Grid) -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Room & Category -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-md overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-medium">Assigned Suite &amp; Estate</span>
+<div class="text-headline-sm font-headline-sm text-primary font-semibold mt-0.5">Villa #V-104</div>
+</div>
+<div class="w-9 h-9 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">villa</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex flex-col gap-1 bg-surface-container-lowest/60 p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Class:</span>
+<span class="text-on-surface font-medium">Nile Royal Waterfront Villa</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Floor / View:</span>
+<span class="text-secondary font-medium">Upper Terrace • Sunset Nile View</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Service:</span>
+<span class="text-tertiary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">room_service</span>
+              Dedicated Royal Butler (Youssef H.)
+            </span>
+</div>
+</div>
+</div>
+<!-- Card 2: Financial Balance & Rate -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-md overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-medium">Ledger Balance &amp; Rate</span>
+<div class="text-headline-sm font-headline-sm text-on-surface font-semibold mt-0.5 font-data-tabular">
+              $9,250.00 <span class="text-error font-body-sm text-body-sm">Pending</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex flex-col gap-1 bg-surface-container-lowest/60 p-space-sm rounded-lg font-data-tabular text-data-tabular">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant font-body-sm">Total Gross Stay:</span>
+<span class="text-on-surface font-semibold">$14,250.00 USD</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant font-body-sm">Auth / Deposit Paid:</span>
+<span class="text-tertiary font-semibold">-$5,000.00 (Amex *4482)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant font-body-sm">Active Rate Plan:</span>
+<span class="text-primary font-medium">CORP-LUXE-VIP ($2,100/nt)</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Guest Profile & VIP Tier -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-md overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-medium">Guest Identity &amp; Ranking</span>
+<div class="text-title-md font-title-md text-primary font-semibold mt-0.5 truncate max-w-[200px]">
+              H.E. Sheikh Mansour Al-Sabah
+            </div>
+</div>
+<div class="w-9 h-9 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">military_tech</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex flex-col gap-1 bg-surface-container-lowest/60 p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Membership:</span>
+<span class="text-primary font-bold tracking-wider">SOVEREIGN BLACK #VIP-9941</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Stay History:</span>
+<span class="text-on-surface font-medium">18 Completed Stays (Chainwide)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Folio Rating:</span>
+<span class="text-tertiary font-medium">Zero Past Incidents • 5.0 Rating</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Channel & Origin -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-md overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-medium">Channel &amp; Commission</span>
+<div class="text-title-md font-title-md text-secondary font-semibold mt-0.5 truncate max-w-[210px]">
+              Virtuoso Travel Consortium
+            </div>
+</div>
+<div class="w-9 h-9 rounded-lg bg-secondary-container/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">flight_takeoff</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex flex-col gap-1 bg-surface-container-lowest/60 p-space-sm rounded-lg font-data-tabular text-data-tabular">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant font-body-sm">GDS Booking Ref:</span>
+<span class="text-on-surface font-semibold">#VIRT-NY-90210-XB</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant font-body-sm">Agent Desk:</span>
+<span class="text-on-surface font-medium">Sarah Jenkins (NYC Desk)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant font-body-sm">Net Commission:</span>
+<span class="text-primary font-semibold">10% Room Rev ($1,425.00)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Detailed 2-Column Split Body -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN (65% width / 8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg min-w-0">
+<!-- 2.A: Primary Guest & Stay Parameters -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">badge</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Guest Verification &amp; Stay Parameters
+              </h2>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+              Master Guest Record #G-30819
+            </span>
+</div>
+<!-- Guest Passport, Contact & Payment Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md bg-surface-container-lowest p-space-md rounded-lg">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Passport / ID Document</span>
+<div class="flex items-center gap-1.5 text-on-surface font-medium font-body-md text-body-md">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span>P-KWT-4491028 (State of Kuwait)</span>
+</div>
+<span class="text-body-sm font-body-sm text-outline">Expires 12 May 2031 • Biometrics Cleared</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Communications &amp; Concierge</span>
+<div class="text-on-surface font-medium font-body-md text-body-md truncate">
+                +965 9988 2311 (Private Mobile)
+              </div>
+<span class="text-body-sm font-body-sm text-outline truncate">mansour.alsabah@diplomatic.gov.kw</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Guaranteed Settlement Vault</span>
+<div class="flex items-center gap-1.5 text-primary font-medium font-body-md text-body-md">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+<span>Amex Centurion •••• 4482</span>
+</div>
+<span class="text-body-sm font-body-sm text-outline">Exp: 09/28 • Cybersource Token Valid</span>
+</div>
+</div>
+<!-- Schedule & Board Configuration -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Check-in Protocol</span>
+<div class="text-on-surface font-semibold font-body-md text-body-md flex items-center justify-between">
+<span>18 Oct 2026</span>
+<span class="text-primary font-data-tabular">14:00 PM ETA</span>
+</div>
+<span class="text-body-sm font-body-sm text-tertiary font-medium">Guaranteed Early Check-in Approved</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Check-out Protocol</span>
+<div class="text-on-surface font-semibold font-body-md text-body-md flex items-center justify-between">
+<span>24 Oct 2026</span>
+<span class="text-secondary font-data-tabular">16:00 PM Late</span>
+</div>
+<span class="text-body-sm font-body-sm text-secondary font-medium">Late Departure Confirmed (FOC GM Approval)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Board &amp; Meal Structure</span>
+<div class="text-primary font-semibold font-body-md text-body-md truncate">
+                Full Board Ultra Luxe
+              </div>
+<span class="text-body-sm font-body-sm text-on-surface-variant font-data-tabular">Code: FB-SOV (All Venues + In-Villa Caviar)</span>
+</div>
+</div>
+</div>
+<!-- 2.B: Room Breakdown & Rate Grid Table -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">table_chart</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Daily Nightly Rate Breakdown &amp; Taxation
+              </h2>
+</div>
+<span class="font-data-tabular text-body-sm font-body-sm text-on-surface-variant">
+              Currency: USD ($)
+            </span>
+</div>
+<div class="overflow-x-auto w-full rounded-lg bg-surface-container-lowest">
+<table class="w-full text-left font-data-tabular text-data-tabular border-collapse">
+<thead>
+<tr class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Night</th>
+<th class="py-space-sm px-space-md">Date</th>
+<th class="py-space-sm px-space-md text-right">Base Villa Rate</th>
+<th class="py-space-sm px-space-md text-right">Mun. Tax (12%)</th>
+<th class="py-space-sm px-space-md text-right">Service (9%)</th>
+<th class="py-space-sm px-space-md text-right">Sunset Premium</th>
+<th class="py-space-sm px-space-md text-right text-primary">Daily Total</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-sm px-space-md font-semibold text-secondary">Night 1</td>
+<td class="py-space-sm px-space-md font-medium">18 Oct 2026 (Sun)</td>
+<td class="py-space-sm px-space-md text-right">$2,100.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface-variant">$252.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface-variant">$189.00</td>
+<td class="py-space-sm px-space-md text-right text-tertiary">+$140.00</td>
+<td class="py-space-sm px-space-md text-right font-bold text-primary">$2,681.00</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container/20">
+<td class="py-space-sm px-space-md font-semibold text-secondary">Night 2</td>
+<td class="py-space-sm px-space-md font-medium">19 Oct 2026 (Mon)</td>
+<td class="py-space-sm px-space-md text-right">$2,100.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface-variant">$252.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface-variant">$189.00</td>
+<td class="py-space-sm px-space-md text-right text-tertiary">+$140.00</td>
+<td class="py-space-sm px-space-md text-right font-bold text-primary">$2,681.00</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-sm px-space-md font-semibold text-secondary">Night 3</td>
+<td class="py-space-sm px-space-md font-medium">20 Oct 2026 (Tue)</td>
+<td class="py-space-sm px-space-md text-right">$2,100.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface-variant">$252.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface-variant">$189.00</td>
+<td class="py-space-sm px-space-md text-right text-tertiary">+$140.00</td>
+<td class="py-space-sm px-space-md text-right font-bold text-primary">$2,681.00</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container/20">
+<td class="py-space-sm px-space-md font-semibold text-secondary">Night 4</td>
+<td class="py-space-sm px-space-md font-medium">21 Oct 2026 (Wed)</td>
+<td class="py-space-sm px-space-md text-right">$2,100.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface-variant">$252.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface-variant">$189.00</td>
+<td class="py-space-sm px-space-md text-right text-tertiary">+$140.00</td>
+<td class="py-space-sm px-space-md text-right font-bold text-primary">$2,681.00</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-sm px-space-md font-semibold text-secondary">Night 5</td>
+<td class="py-space-sm px-space-md font-medium">22 Oct 2026 (Thu)</td>
+<td class="py-space-sm px-space-md text-right">$2,100.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface-variant">$252.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface-variant">$189.00</td>
+<td class="py-space-sm px-space-md text-right text-tertiary">+$140.00</td>
+<td class="py-space-sm px-space-md text-right font-bold text-primary">$2,681.00</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container/20">
+<td class="py-space-sm px-space-md font-semibold text-secondary">Night 6</td>
+<td class="py-space-sm px-space-md font-medium">23 Oct 2026 (Fri)</td>
+<td class="py-space-sm px-space-md text-right">$2,100.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface-variant">$252.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface-variant">$189.00</td>
+<td class="py-space-sm px-space-md text-right text-tertiary">+$140.00</td>
+<td class="py-space-sm px-space-md text-right font-bold text-primary">$2,681.00</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="bg-surface-container-high font-bold">
+<td class="py-space-sm px-space-md text-on-surface" colspan="2">Subtotal Room Ledger:</td>
+<td class="py-space-sm px-space-md text-right text-on-surface">$12,600.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface">$1,512.00</td>
+<td class="py-space-sm px-space-md text-right text-on-surface">$1,134.00</td>
+<td class="py-space-sm px-space-md text-right text-tertiary">+$840.00</td>
+<td class="py-space-sm px-space-md text-right text-primary text-title-md">$16,086.00</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<!-- 2.C: Add-on Services & Experiential Packages -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">auto_awesome</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Bespoke Add-Ons &amp; Curated Amenities
+              </h2>
+</div>
+<button class="flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-bright text-primary font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[14px]">add</span>
+<span>Attach Amenity</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col justify-between gap-space-sm shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-body-lg text-on-surface font-semibold">Private Yacht Transfer</span>
+<span class="text-body-sm font-body-sm text-outline">Airport Marina Pier → Resort Dock</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary/20 text-tertiary font-label-sm text-label-sm font-semibold">Confirmed</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-data-tabular">
+<span class="text-on-surface-variant font-body-sm">Cost:</span>
+<span class="font-bold text-primary">$350.00 USD</span>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col justify-between gap-space-sm shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-body-lg text-on-surface font-semibold">Couple Hammam Ritual</span>
+<span class="text-body-sm font-body-sm text-outline">Daily 10:00 AM • Cleopatra Spa Sanctuary</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary/20 text-tertiary font-label-sm text-label-sm font-semibold">Active Daily</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-data-tabular">
+<span class="text-on-surface-variant font-body-sm">Cost:</span>
+<span class="font-bold text-primary">$240.00 / day ($1,440.00)</span>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col justify-between gap-space-sm shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-body-lg text-on-surface font-semibold">Sommelier Private Cellar</span>
+<span class="text-body-sm font-body-sm text-outline">Date: 20 Oct • 5-Course Pairing</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm font-semibold">Reserved</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-data-tabular">
+<span class="text-on-surface-variant font-body-sm">Cost:</span>
+<span class="font-bold text-primary">$600.00 USD</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 2.D: Special Directives & Dietary Alerts -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">notification_important</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Concierge Directives &amp; Royal Protocol
+            </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5 text-primary font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">bed</span>
+<span>Housekeeping &amp; Interior Staging</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                • 100% feather-free hypoallergenic Hungarian goose alternative pillows throughout master suite.<br/>
+                • West bank sunset alignment required. Turn-down fragrance: Neroli &amp; Frankincense.<br/>
+                • Chilled vintage non-alcoholic royal sparkling grape &amp; Moët Dom Pérignon on ice prior to 14:00 PM.
+              </p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5 text-error font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+<span>Food &amp; Beverage / Medical Alerts</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                • <strong class="text-error">SEVERE ALLERGY:</strong> Pine nuts and hazelnuts. Kitchen alert #AL-88 posted.<br/>
+                • Strict Halal certified butchery for all in-villa dining orders.<br/>
+                • Daily morning fresh Egyptian pomegranate nectar and dates presented at 07:30 AM.
+              </p>
+</div>
+</div>
+</div>
+<!-- 2.E: Comprehensive Audit Trail & Change Timeline -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">history_toggle_off</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Audit Trail &amp; Transaction Log
+              </h2>
+</div>
+<span class="font-data-tabular text-body-sm font-body-sm text-outline">Immutable Audit Hash: 0x9f88a...e7</span>
+</div>
+<div class="relative pl-6 flex flex-col gap-space-md">
+<!-- Timeline Line -->
+<div class="absolute left-2 top-2 bottom-2 w-0.5 bg-surface-container-highest"></div>
+<!-- Item 1 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-primary flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-background"></div>
+</div>
+<div class="flex flex-col gap-0.5 w-full bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="flex items-center justify-between font-data-tabular text-data-tabular">
+<span class="font-bold text-primary">Added Private Chauffeur Yacht Transfer</span>
+<span class="text-outline">05 Oct 2026, 11:24:02 UTC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Added itinerary service at $350.00. Guest assistant approved via telephone confirmation. Staff: Concierge Lead (Amira S.).
+                </p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-secondary flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-background"></div>
+</div>
+<div class="flex flex-col gap-0.5 w-full bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="flex items-center justify-between font-data-tabular text-data-tabular">
+<span class="font-bold text-secondary">Complimentary Tier Upgrade Applied</span>
+<span class="text-outline">28 Sep 2026, 16:40:15 UTC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Room changed from Executive Royal Suite (#408) to Nile Royal Waterfront Villa (#V-104) under Sovereign Black loyalty policy. Staff: Tariq Mansouri (Duty Manager).
+                </p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-tertiary flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-background"></div>
+</div>
+<div class="flex flex-col gap-0.5 w-full bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="flex items-center justify-between font-data-tabular text-data-tabular">
+<span class="font-bold text-tertiary">Pre-Authorization Deposit Processed: $5,000.00</span>
+<span class="text-outline">18 Sep 2026, 09:12:44 UTC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Cybersource Gateway auth code #98124 via Amex •••• 4482. Ledger matched to Folio Window 1.
+                </p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-outline flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-background"></div>
+</div>
+<div class="flex flex-col gap-0.5 w-full bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="flex items-center justify-between font-data-tabular text-data-tabular">
+<span class="font-bold text-on-surface">Reservation Created via Virtuoso GDS Integration</span>
+<span class="text-outline">15 Sep 2026, 14:02:11 UTC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Direct API ingest from Sabre/Virtuoso network. Agent: Sarah Jenkins (Ref #VIRT-NY-9021).
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Folio Windows, Keycard RFID, Flight, & Quick Notes (35% width / 4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg min-w-0">
+<!-- 3.A: Multi-Folio Split Windows Overview -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">account_tree</span>
+<h3 class="font-headline-sm text-title-md text-on-surface font-semibold">Folio Routing Architecture</h3>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-data-tabular text-data-tabular font-bold">2 Windows</span>
+</div>
+<!-- Window 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-title-md text-body-md text-on-surface font-semibold">Folio 1: Room &amp; Fixed Taxes</span>
+</div>
+<span class="font-data-tabular text-body-sm text-primary font-bold">$16,086.00</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">
+              Billed to: <strong class="text-secondary">Corporate City Ledger #CL-9021 (Kuwait Sovereign Desk)</strong>
+</div>
+<div class="text-body-sm font-body-sm text-outline">
+              Net 30 Invoicing with direct corporate voucher verification.
+            </div>
+</div>
+<!-- Window 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-title-md text-body-md text-on-surface font-semibold">Folio 2: Incidentals &amp; Spa POS</span>
+</div>
+<span class="font-data-tabular text-body-sm text-secondary font-bold">$2,390.00</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">
+              Billed to: <strong class="text-on-surface">Personal Card Amex *4482</strong>
+</div>
+<div class="text-body-sm font-body-sm text-outline">
+              Automatic room charge routing from Cleopatra Spa &amp; Waterfront Lounge.
+            </div>
+</div>
+<!-- Folio Actions -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<button class="px-space-sm py-2 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">add_card</span>
+<span>Post Charge</span>
+</button>
+<button class="px-space-sm py-2 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">request_quote</span>
+<span>Pro-Forma</span>
+</button>
+</div>
+</div>
+<!-- 3.B: Electronic Keycard & Digital Credentials -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">nfc</span>
+<h3 class="font-headline-sm text-title-md text-on-surface font-semibold">Keycards &amp; Mobile Keys</h3>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">RFID ASSA ABLOY</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Physical RFID Keys:</span>
+<span class="text-primary font-semibold font-body-sm text-body-sm">2 Cards Pre-Programmed</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Status:</span>
+<span class="text-outline">Held at Concierge Key Safe #14</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Mobile Key Pass:</span>
+<span class="text-tertiary flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">smartphone</span>
+                Active (Invited to Apple Wallet)
+              </span>
+</div>
+</div>
+<button class="w-full py-2 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">add_to_home_screen</span>
+<span>Issue / Re-Encode Physical RFID [F5]</span>
+</button>
+</div>
+<!-- 3.C: Flight & Arrival Chauffeur Manifest -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">directions_car</span>
+<h3 class="font-headline-sm text-title-md text-on-surface font-semibold">VIP Airport Chauffeur</h3>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm font-bold">DISPATCHED</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Inbound Flight:</span>
+<span class="text-on-surface font-bold font-data-tabular">Emirates EK-925 (Private Terminal Sphinx)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Scheduled Landing:</span>
+<span class="text-primary font-semibold font-data-tabular">18 Oct • 12:45 PM</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Assigned Chauffeur:</span>
+<span class="text-on-surface font-medium">Karim Nabil (VIP Fleet Lead)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Limousine Model:</span>
+<span class="text-secondary font-medium">Mercedes-Maybach S680 (#DXB-771)</span>
+</div>
+</div>
+</div>
+<!-- 3.D: Quick Staff Operational Note Entry -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">sticky_note_2</span>
+<h3 class="font-headline-sm text-title-md text-on-surface font-semibold">Internal Operations Log</h3>
+</div>
+<span class="text-body-sm font-body-sm text-outline font-data-tabular">Auto-logs ID</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<textarea class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm p-space-sm rounded-lg border-0 focus:outline-none focus:ring-1 focus:ring-primary" id="quick-note-input" placeholder="Append confidential operational note to dossier..." rows="3"></textarea>
+<div class="flex items-center justify-between">
+<span class="text-body-sm font-body-sm text-on-surface-variant font-data-tabular">Author: Tariq M. [Shift #04]</span>
+<button class="px-space-sm py-1.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold hover:brightness-110 transition-all" onclick="appendQuickNote()" type="button">
+                Append Note
+              </button>
+</div>
+</div>
+<!-- Existing Notes Stack -->
+<div class="flex flex-col gap-space-xs mt-space-xs max-h-48 overflow-y-auto" id="notes-container">
+<div class="p-space-xs bg-surface-container-lowest rounded text-body-sm font-body-sm flex flex-col gap-0.5">
+<div class="flex items-center justify-between font-data-tabular text-outline text-[11px]">
+<span>Tariq Mansouri (Duty Mgr)</span>
+<span>05 Oct, 16:30</span>
+</div>
+<p class="text-on-surface-variant">Confirmed with protocol officer that guest luggage will arrive in separate security van. Provide 2 dedicated porters at river jetty.</p>
+</div>
+<div class="p-space-xs bg-surface-container-lowest rounded text-body-sm font-body-sm flex flex-col gap-0.5">
+<div class="flex items-center justify-between font-data-tabular text-outline text-[11px]">
+<span>Sarah Jenkins (Virtuoso Agent)</span>
+<span>28 Sep, 11:15</span>
+</div>
+<p class="text-on-surface-variant">Sheikh Mansour requested quietest zone of the property. Upper floor Villa V-104 is perfect.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Cancellation Confirmation Dialog (Hidden by Default) -->
+<div class="hidden fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center p-space-md" id="cancel-modal">
+<div class="bg-surface-container-high rounded-xl p-space-lg max-w-lg w-full flex flex-col gap-space-md shadow-2xl">
+<div class="flex items-center gap-space-sm text-error">
+<span class="material-symbols-outlined text-[32px]">warning</span>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Initiate Cancellation or No-Show?</h3>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Reservation #RES-2026-88412</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          This booking is guaranteed with an active deposit of <strong class="text-primary">$5,000.00 USD</strong>. Cancelling within the 72-hour window triggers standard luxury villa cancellation penalties under policy <strong class="text-on-surface">LUXE-PEN-72H</strong> unless waived by the General Manager.
+        </p>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant">Cancellation Reason</label>
+<select class="w-full bg-surface-container text-on-surface p-space-sm rounded-lg font-body-sm text-body-sm">
+<option>Guest Voluntary Request (Direct Notification)</option>
+<option>Consortium / Travel Agency Alteration</option>
+<option>Diplomatic Schedule Emergency (Waive Penalty)</option>
+<option>No-Show at Property by Midnight</option>
+</select>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md" onclick="document.getElementById('cancel-modal').classList.add('hidden')" type="button">
+            Dismiss &amp; Retain Booking
+          </button>
+<button class="px-space-md py-2 rounded-lg bg-error text-on-error font-label-md text-label-md font-bold" onclick="alert('Dossier marked for GM cancellation review.'); document.getElementById('cancel-modal').classList.add('hidden');" type="button">
+            Confirm Cancellation
+          </button>
+</div>
+</div>
+</div>
+<!-- Pinned Desktop Quick-Key Status Footer Strip -->
+<footer class="w-full bg-surface-container-low rounded-xl px-space-md py-space-sm flex flex-wrap items-center justify-between gap-space-sm shadow-md mt-space-md">
+<div class="flex flex-wrap items-center gap-space-md text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-data-tabular text-data-tabular font-bold">F2</span>
+<span>Edit Profile</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-data-tabular text-data-tabular font-bold">F3</span>
+<span>Quick Check-In</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-data-tabular text-data-tabular font-bold">F4</span>
+<span>Folio Ledger</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-data-tabular text-data-tabular font-bold">F5</span>
+<span>Keycard Encoder</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-data-tabular text-data-tabular font-bold">F8</span>
+<span>Print Dossier</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-data-tabular text-data-tabular font-bold">F10</span>
+<span>Global Search</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md font-data-tabular text-data-tabular text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-on-surface">SQLite Cluster Node #SA-01 Synchronized</span>
+</div>
+<span class="text-outline-variant">•</span>
+<span>Latency: 14ms</span>
+</div>
+</footer>
+</div>
+<!-- Inline Micro-Interactions Script -->
+<script>
+    function appendQuickNote() {
+      const input = document.getElementById('quick-note-input');
+      const text = input.value.trim();
+      if (!text) return;
+
+      const container = document.getElementById('notes-container');
+      const noteEl = document.createElement('div');
+      noteEl.className = 'p-space-xs bg-surface-container-lowest rounded text-body-sm font-body-sm flex flex-col gap-0.5 animate-fadeIn';
+      
+      const now = new Date();
+      const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      
+      noteEl.innerHTML = `
+        <div class="flex items-center justify-between font-data-tabular text-outline text-[11px]">
+          <span class="text-primary font-semibold">Tariq M. (Front Desk)</span>
+          <span>Today, ${timeStr}</span>
+        </div>
+        <p class="text-on-surface">${text.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</p>
+      `;
+
+      container.insertBefore(noteEl, container.firstChild);
+      input.value = '';
+    }
+
+    // Keyboard Shortcuts listener for hospitality desks
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const modal = document.getElementById('cancel-modal');
+        if (modal && !modal.classList.contains('hidden')) {
+          modal.classList.add('hidden');
+        }
+      }
+    });
+  </script>
+</div></main></div></body></html>

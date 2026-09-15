@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#323851","on-secondary-container":"#a7b6ee","primary-container":"#d4af37","inverse-primary":"#735c00","inverse-on-surface":"#292f48","secondary-fixed-dim":"#b5c5fd","surface-dim":"#0b1229","outline":"#99907c","on-tertiary-fixed":"#002113","surface":"#0b1229","error-container":"#93000a","on-secondary":"#1e2e5d","surface-container-highest":"#2d344c","on-primary-fixed":"#241a00","on-background":"#dce1ff","error":"#ffb4ab","primary":"#f2ca50","on-tertiary-fixed-variant":"#005236","on-surface-variant":"#d0c5af","primary-fixed-dim":"#e9c349","secondary":"#b5c5fd","surface-container-lowest":"#060d24","surface-container-low":"#141a32","primary-fixed":"#ffe088","surface-variant":"#2d344c","background":"#0b1229","on-primary":"#3c2f00","on-tertiary":"#003824","tertiary":"#58e7aa","on-error":"#690005","on-error-container":"#ffdad6","on-primary-fixed-variant":"#574500","surface-container":"#181e36","on-secondary-fixed-variant":"#354575","inverse-surface":"#dce1ff","tertiary-fixed-dim":"#4edea3","surface-container-high":"#222941","on-surface":"#dce1ff","on-primary-container":"#554300","tertiary-container":"#33ca90","outline-variant":"#4d4635","on-tertiary-container":"#005035","secondary-fixed":"#dbe1ff","surface-tint":"#e9c349","tertiary-fixed":"#6ffbbe","on-secondary-fixed":"#051847","secondary-container":"#384777"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-desktop":"2rem","space-md":"1rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","margin":"1rem","gutter":"1.25rem","space-xs":"0.25rem","space-xl":"2.5rem","space-sm":"0.5rem"},fontFamily:{"body-md":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"label-sm":["Hanken Grotesk"],"display":["Hanken Grotesk"],"headline-lg":["Hanken Grotesk"],"headline-sm":["Hanken Grotesk"],"headline-md":["Hanken Grotesk"],"headline-lg-mobile":["Hanken Grotesk"],"body-sm":["Hanken Grotesk"],"data-tabular":["Hanken Grotesk"],"title-md":["Hanken Grotesk"]},fontSize:{"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.05em","fontWeight":"600"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.06em","fontWeight":"500"}],"display":["3rem",{"lineHeight":"3.5rem","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"data-tabular":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.01em","fontWeight":"500"}],"title-md":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"500"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[0_4px_24px_rgba(0,0,0,0.4)] overflow-y-auto"><div class="h-16 px-space-lg flex items-center justify-between bg-surface-container-lowest/90"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">hotel_class</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary uppercase tracking-wider">Sovereign</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Chain PMS v4.2</span></div></div><span class="material-symbols-outlined text-outline hover:text-on-surface cursor-pointer text-[18px]">unfold_more</span></div><div class="px-space-md py-space-sm"><div class="bg-surface-container-low p-space-sm rounded flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="font-label-sm text-label-sm text-on-surface uppercase">Hotel Node Active</span></div><span class="font-data-tabular text-data-tabular text-secondary">EST-01</span></div></div><nav class="flex-1 px-space-md py-space-xs space-y-space-md" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded shadow-sm"><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Front Office</div><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="reservations-tape-chart" href="#"><span class="material-symbols-outlined text-[18px]">calendar_month</span><span>Tape Chart &amp; Matrix</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="arrivals-and-departures" href="#"><span class="material-symbols-outlined text-[18px]">luggage</span><span>Arrivals &amp; Departures</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="guest-profiles-and-crm" href="#"><span class="material-symbols-outlined text-[18px]">badge</span><span>Guest Profiles &amp; VIP</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="housekeeping-and-room-status" href="#"><span class="material-symbols-outlined text-[18px]">cleaning_services</span><span>Housekeeping Status</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Cashier &amp; Billing</div><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="front-desk-cashier" href="#"><span class="material-symbols-outlined text-[18px]">point_of_sale</span><span>Desk Cashier &amp; Drawer</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="guest-folios-and-billing" href="#"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span>Split Folios &amp; Invoices</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="city-ledger-accounts" href="#"><span class="material-symbols-outlined text-[18px]">account_balance</span><span>City Ledger Accounts</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Outlets &amp; POS Terminals</div><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs transition-all bg-primary-container text-on-primary-container font-bold rounded shadow-sm" data-path="restaurant-pos-outlet" href="#"><span class="material-symbols-outlined text-[18px]">restaurant</span><span>Le Gabriel Gourmet</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="lounge-pos-outlet" href="#"><span class="material-symbols-outlined text-[18px]">local_bar</span><span>Royal Crest Lounge</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="in-room-dining-pos" href="#"><span class="material-symbols-outlined text-[18px]">room_service</span><span>In-Room Dining POS</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="beach-bar-pos" href="#"><span class="material-symbols-outlined text-[18px]">beach_access</span><span>Azure Beach Pavilion</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider">Management &amp; System</div><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="night-audit-console" href="#"><span class="material-symbols-outlined text-[18px]">bedtime</span><span>Night Audit Control</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="revenue-and-rate-manager" href="#"><span class="material-symbols-outlined text-[18px]">monitoring</span><span>Yield &amp; Rate Strategy</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all rounded font-body-md text-body-md" data-path="system-configuration" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span>Chain Config &amp; Roles</span></a></div></nav><div class="p-space-md bg-surface-container-low/60 flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-primary"></div><span class="font-label-sm text-label-sm text-on-surface-variant">OperaSync Gateway</span></div><span class="font-data-tabular text-data-tabular text-tertiary">99.98%</span></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded shadow-inner"><span class="material-symbols-outlined text-primary text-[20px]">apartment</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Property Node</span><span class="font-title-md text-title-md text-on-surface font-semibold">Amon Luxury Palace &amp; Spa</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px] ml-space-xs cursor-pointer">arrow_drop_down</span></div><div class="h-6 w-px bg-surface-container-highest hidden md:block"></div><div class="hidden lg:flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">schedule</span><span class="font-label-sm text-label-sm text-on-surface-variant">Shift #04:</span><span class="font-data-tabular text-data-tabular text-on-surface font-semibold">Tariq Mansouri</span></div><div class="flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-surface-container-high"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-tertiary">Audit: Closed (03:00)</span></div></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="flex items-center gap-space-xs bg-primary text-on-primary px-space-md py-space-xs rounded font-label-md text-label-md transition-all shadow-[0_0_12px_rgba(212,175,55,0.25)] hover:shadow-[0_0_16px_rgba(212,175,55,0.35)]"><span class="material-symbols-outlined text-[16px]">add</span><span>New Booking</span></button><button class="flex items-center gap-space-xs bg-surface-container-high text-on-surface hover:bg-surface-container-highest hover:text-on-surface px-space-md py-space-xs rounded font-label-md text-label-md transition-all"><span class="material-symbols-outlined text-[16px]">sensor_door</span><span>Fast Check-In</span></button><button class="flex items-center gap-space-xs bg-surface-container-high text-on-surface hover:bg-surface-container-highest hover:text-on-surface px-space-md py-space-xs rounded font-label-md text-label-md transition-all"><span class="material-symbols-outlined text-[16px]">search</span><span>Find Folio</span></button></div><div class="h-6 w-px bg-surface-container-highest hidden sm:block"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface cursor-pointer"><span class="material-symbols-outlined text-[18px]">notifications</span></div><div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface cursor-pointer"><span class="material-symbols-outlined text-[18px]">help_outline</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface px-space-lg"><div class="flex flex-col w-full pb-12">
+<!-- Top Ambient Glow Decorator -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-24 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-12 left-1/3 w-64 h-64 bg-secondary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+</div>
+<!-- Breadcrumb & Node Telemetry -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-md pb-space-sm">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline tracking-wider uppercase">
+<span class="hover:text-primary transition-colors cursor-pointer">Sovereign Core</span>
+<span class="text-surface-container-highest">/</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Revenue Centers Governance</span>
+<span class="text-surface-container-highest">/</span>
+<span class="text-primary font-semibold">Master Outlets Matrix</span>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-sm py-1 rounded shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-data-tabular text-data-tabular text-tertiary font-semibold">OPERA-SYNC BRIDGE: SYNCHRONIZED (0.3ms)</span>
+<span class="text-outline text-xs">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">EGP / USD AUTO-PARITY ACTIVE</span>
+</div>
+</div>
+<!-- Header Section with Luxury Architectural Stance -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md py-space-sm border-b-0 mb-space-md">
+<div class="flex flex-col max-w-3xl">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-semibold">Multi-Tenant F&amp;B &amp; Lifestyle Hub</span>
+<span class="px-1.5 py-0.5 rounded bg-primary/10 text-primary font-data-tabular text-data-tabular">v4.2 PRO</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-semibold">
+        Outlets Master Directory &amp; Revenue Centers
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+        Multi-tenant F&amp;B, Spa &amp; Lifestyle outlets governance across <span class="text-on-surface font-medium">Amon Palace</span>, <span class="text-on-surface font-medium">Palm Oasis</span>, and <span class="text-on-surface font-medium">Siwa Haven</span>. Real-time POS routing, fiscal compliance &amp; folio cross-charge rules.
+      </p>
+</div>
+<!-- Action Buttons with Ambient Gold Glow -->
+<div class="flex flex-wrap items-center gap-space-xs shrink-0">
+<button class="flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-space-md py-space-xs rounded font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">file_download</span>
+<span>Export Outlet Dossier</span>
+</button>
+<button class="flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-space-md py-space-xs rounded font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">policy</span>
+<span>Global Tax &amp; Gratuity Rules</span>
+</button>
+<button class="flex items-center gap-space-xs bg-gradient-to-r from-primary-container to-primary text-on-primary-container font-bold px-space-md py-space-xs rounded font-label-md text-label-md transition-all shadow-[0_0_18px_rgba(212,175,55,0.3)] hover:shadow-[0_0_24px_rgba(212,175,55,0.45)]">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+<span>+ Register New Outlet</span>
+</button>
+</div>
+</div>
+<!-- Filter Ribbon -->
+<div class="flex flex-wrap items-center gap-space-xs pb-space-md">
+<button class="px-space-md py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold shadow-sm transition-all flex items-center gap-1.5">
+<span>All Outlets</span>
+<span class="px-1.5 py-0.2 bg-on-primary-container/20 rounded-full text-xs">12</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5">
+<span>Fine Dining</span>
+<span class="px-1.5 py-0.2 bg-surface-container-high rounded-full text-xs text-outline">4</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5">
+<span>Bars &amp; Lounges</span>
+<span class="px-1.5 py-0.2 bg-surface-container-high rounded-full text-xs text-outline">3</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5">
+<span>Beach &amp; Pool</span>
+<span class="px-1.5 py-0.2 bg-surface-container-high rounded-full text-xs text-outline">2</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5">
+<span>Wellness &amp; Spa</span>
+<span class="px-1.5 py-0.2 bg-surface-container-high rounded-full text-xs text-outline">3</span>
+</button>
+<div class="ml-auto flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<span class="material-symbols-outlined text-outline text-[16px]">search</span>
+<input class="bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline w-44" placeholder="Search outlet name, code, GL..." type="text"/>
+</div>
+</div>
+<!-- HUD Telemetry Metrics (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Active Outlets -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden group hover:shadow-xl transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Active Outlets</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">12 <span class="text-headline-sm text-outline font-normal">/ 14</span></span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">100% Operational In-Window</span>
+</div>
+</div>
+<!-- Micro Sparkline SVG -->
+<div class="absolute -right-2 -bottom-2 opacity-20 group-hover:opacity-30 transition-opacity">
+<svg class="text-tertiary" fill="none" height="48" viewbox="0 0 110 48" width="110">
+<path d="M0 38 L20 28 L40 32 L60 16 L80 20 L100 6 L110 12" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Card 2: F&B Daily Revenue -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden group hover:shadow-xl transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">F&amp;B Daily Revenue</span>
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-primary font-data-tabular tracking-tight">$68,450.00</span>
+<span class="font-label-sm text-label-sm text-outline">USD</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-tertiary text-[14px]">trending_up</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">+14.2% vs Budget Target</span>
+</div>
+</div>
+<div class="absolute -right-2 -bottom-2 opacity-20 group-hover:opacity-30 transition-opacity">
+<svg class="text-primary" fill="none" height="48" viewbox="0 0 110 48" width="110">
+<path d="M0 40 L25 35 L45 28 L70 20 L90 14 L110 4" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Card 3: Active Covers & Guests -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden group hover:shadow-xl transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Covers &amp; Dining Guests</span>
+<div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">table_bar</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface font-data-tabular">342</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">In-Service Covers</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">68 Occupied Tables (81.4% Capacity)</span>
+</div>
+</div>
+<div class="absolute -right-2 -bottom-2 opacity-20 group-hover:opacity-30 transition-opacity">
+<svg class="text-secondary" fill="none" height="48" viewbox="0 0 110 48" width="110">
+<path d="M0 32 L30 25 L60 30 L85 15 L110 18" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Card 4: Active Cashier Stations -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden group hover:shadow-xl transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Cashier Stations &amp; KDS</span>
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">devices</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface font-data-tabular">18</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Terminals Synced</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1 text-tertiary">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span class="font-label-sm text-label-sm font-semibold">Tauri Native Engine (0.3ms latency)</span>
+</div>
+</div>
+<div class="absolute -right-2 -bottom-2 opacity-20 group-hover:opacity-30 transition-opacity">
+<svg class="text-primary-fixed" fill="none" height="48" viewbox="0 0 110 48" width="110">
+<circle cx="85" cy="24" r="18" stroke="currentColor" stroke-dasharray="4 2" stroke-width="2"></circle>
+</svg>
+</div>
+</div>
+</div>
+<!-- Main Grid Layout (8 Columns Outlets Matrix + 4 Columns Fiscal Inspector) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT 8 COLUMNS: Outlets Master Directory Cards -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">room_service</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface">Configured Revenue Outlets</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-outline">EST-01 ACTIVE NODE</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Click any outlet to inspect fiscal mapping</span>
+</div>
+<!-- OUTLET CARD 1: Le Royal Lounge (Selected State) -->
+<div class="bg-surface-container-high p-space-lg rounded-xl shadow-lg relative transition-all duration-200">
+<!-- Selected Indicator Aura -->
+<div class="absolute -left-1 top-6 bottom-6 w-2 bg-primary rounded-r"></div>
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<!-- Outlet Avatar / Image Placeholder -->
+<div class="w-16 h-16 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Opulent Parisian styled luxury restaurant interior with gold moldings, dark navy velvet seating, glowing crystal chandeliers, crystal wine glasses on pristine linen tables, Amon Palace luxury resort." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ_2FGhHffrKPom2UnXse4FkRhWr3UOuoIcs6iwL0TxupTmyxDM2KgQ9YNuaTiNeGJAfQHUDtT_v9ijnzon98WCNI6lo-qeJaQqipYufJZgruPar1nZpzHkomsWjDWgZif610nxK9o-YzAlHqDGe10YDXLAUWAqlJTEu617bFL63XLRPqTDdFceFp17WA-eiDh00WqAzcELlBspAaOK90ecWtwQGkdMpT4vcLM9wd-6bkC_5qf3gDn"/>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Le Royal Lounge &amp; Fine Dining</span>
+<span class="font-data-tabular text-data-tabular px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-bold">#OUT-01</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> ACTIVE / IN-SERVICE
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Location: <span class="text-on-surface font-medium">Palace Wing Floor 1 (Salon Imperial)</span> | Centers: <span class="text-secondary font-medium">Dinner, Afternoon High Tea</span>
+</p>
+</div>
+</div>
+<!-- Revenue Telemetry Micro Pill -->
+<div class="flex flex-col items-end shrink-0 bg-surface-container-low px-space-md py-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Today's Sales</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary font-data-tabular">$24,800.00</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">108 Covers Closed</span>
+</div>
+</div>
+<!-- Metrics Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm my-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Active Waiters</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">8 Assigned Staff</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Table Status</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">18 / 24 Occupied (75%)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Settlement Currency</span>
+<span class="font-data-tabular text-data-tabular font-bold text-secondary">EGP Primary / USD Parity</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Avg Ticket Size</span>
+<span class="font-data-tabular text-data-tabular font-bold text-tertiary">$229.62 USD</span>
+</div>
+</div>
+<!-- Compliance & Routing Badges -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">print</span> Kitchen KDS 1 • Bar KDS 2
+          </span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">percent</span> Service Charge: 12.0%
+          </span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[14px]">verified</span> VAT: 14% (ETA Egypt E-Invoice)
+          </span>
+<span class="px-2.5 py-1 rounded bg-primary/10 text-primary font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">key</span> Room Folio Direct-Charge OK
+          </span>
+<!-- Fast Action Buttons -->
+<div class="ml-auto flex items-center gap-space-xs mt-2 sm:mt-0">
+<button class="bg-surface-container hover:bg-surface-bright text-on-surface px-space-sm py-1 rounded font-label-sm text-label-sm transition-colors">
+              Audit Log
+            </button>
+<button class="bg-surface-container hover:bg-surface-bright text-on-surface px-space-sm py-1 rounded font-label-sm text-label-sm transition-colors">
+              Configure Menu
+            </button>
+<button class="bg-primary hover:bg-primary-fixed text-on-primary font-bold px-space-md py-1 rounded font-label-sm text-label-sm transition-all shadow-[0_0_12px_rgba(212,175,55,0.25)] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">point_of_sale</span>
+              Open Terminal
+            </button>
+</div>
+</div>
+</div>
+<!-- OUTLET CARD 2: Sovereign Sunset Beach Bar -->
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md hover:shadow-xl transition-all duration-200">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-16 h-16 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Ultra luxury beachside cabana bar at golden hour sunset with teak wood deck, illuminated mixology spirits bar, comfortable navy cushions, ambient fairy lights beside turquoise sea." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuWR-eDLZE8Dp32Du6QrCpasCB4TT0x0VoOklvnGnZM2ujmbtf_Y8qxnMa3ViHm07BO5W3Nx4ec0bFZsDzdcWy4IS_WD9IpgeOhuAX_-VAY3cuF6gG2Wri_Q-Td-N7GG7IBAmhPfko6P-kqp1lHN_MnWFo65xINLySTRl0dXi1SAJ6HIws_T1AuOIn0Giqkg2jJqGd8Dx-T12k11IEn_sCQNu6LgaNXWKY7eKZk6iLxYS2JC8BH80C"/>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Sovereign Sunset Beach Bar</span>
+<span class="font-data-tabular text-data-tabular px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-bold">#OUT-02</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> ACTIVE
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Location: <span class="text-on-surface font-medium">Private Shore Pier (Bungalow 01-16)</span> | Focus: <span class="text-secondary font-medium">Mixology &amp; Mediterranean Seafood Tapas</span>
+</p>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 bg-surface-container-low px-space-md py-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Today's Sales</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary font-data-tabular">$16,420.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">74 Covers Closed</span>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm my-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Active Bartenders</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">5 Mixologists</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Tables &amp; Loungers</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">12 / 16 In Use (75%)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Settlement Currency</span>
+<span class="font-data-tabular text-data-tabular font-bold text-secondary">EGP / USD Multi</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Avg Ticket Size</span>
+<span class="font-data-tabular text-data-tabular font-bold text-tertiary">$174.50 USD</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">print</span> Beach Bar KDS 1 • Seafood Grill KDS
+          </span>
+<span class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">percent</span> Gratuity: 12.0%
+          </span>
+<span class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[14px]">verified</span> 14% VAT ETA Registered
+          </span>
+<div class="ml-auto flex items-center gap-space-xs mt-2 sm:mt-0">
+<button class="bg-surface-container-low hover:bg-surface-bright text-on-surface px-space-sm py-1 rounded font-label-sm text-label-sm transition-colors">
+              Inspect Rules
+            </button>
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-primary font-semibold px-space-md py-1 rounded font-label-sm text-label-sm transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">point_of_sale</span>
+              Launch POS
+            </button>
+</div>
+</div>
+</div>
+<!-- OUTLET CARD 3: Cleopatra Thalasso & Spa Wellness Bar -->
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md hover:shadow-xl transition-all duration-200">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-16 h-16 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Serene luxury thermal hydrotherapy spa lounge with steaming natural stone pools, polished marble counters, fresh herbal infusions in glass carafes, soft warm golden amber architectural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3VL6RRXnJS0QLARF_NxOEk1rLtkRGdpiXkgCmV606c6jjjtMYGJlfUXXfvXPwsNQU7PJnNVGO6tg4zO3keIGo5vi3fYeykEsXthr4enkzjm6jSYstzTGPOFkiz9g0Ttf7nrhk2bjmYA-cGIrp9bG-p1Vw9Vqcx8t7NUu1gsIV9IgiAxJ4Vo8FFf0P1euZ6k5VXPeFmMPGIPBbRY4AoT0BEa0JgtrQ40jLvnW286BIpY_iaU4G0HPa"/>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Cleopatra Thalasso &amp; Spa Wellness Bar</span>
+<span class="font-data-tabular text-data-tabular px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-bold">#OUT-03</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> ACTIVE
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Location: <span class="text-on-surface font-medium">Wellness Sanctuary &amp; Heated Colonnade</span> | Focus: <span class="text-secondary font-medium">Organic Elixirs, Cold-Press &amp; High Nutrition</span>
+</p>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 bg-surface-container-low px-space-md py-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Today's Sales</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary font-data-tabular">$8,900.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">52 Wellness Bundles</span>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm my-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Wellness Attendants</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">4 Therapists Synced</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Spa Folio Cross-Post</span>
+<span class="font-data-tabular text-data-tabular font-bold text-tertiary">Direct to Guest Room</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Revenue Category</span>
+<span class="font-data-tabular text-data-tabular font-bold text-secondary">Lifestyle • GL-5200</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Avg Ticket Size</span>
+<span class="font-data-tabular text-data-tabular font-bold text-tertiary">$171.15 USD</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">spa</span> Spa Treatment Slip Terminal
+          </span>
+<span class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">card_membership</span> Membership Credits Accepted
+          </span>
+<div class="ml-auto flex items-center gap-space-xs mt-2 sm:mt-0">
+<button class="bg-surface-container-low hover:bg-surface-bright text-on-surface px-space-sm py-1 rounded font-label-sm text-label-sm transition-colors">
+              Session Bookings
+            </button>
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-primary font-semibold px-space-md py-1 rounded font-label-sm text-label-sm transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">point_of_sale</span>
+              Launch POS
+            </button>
+</div>
+</div>
+</div>
+<!-- OUTLET CARD 4: In-Room Royal Gastronomy -->
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md hover:shadow-xl transition-all duration-200">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-16 h-16 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Luxurious 24-hour in-room dining silver tray with bell cloche cover, fresh berries, delicate pastries, and a warm espresso cup placed on a royal suite balcony overlooking night gardens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAeiy9BDeOi1pumY78ch4optrJbMYGbkSz8PcnqGTvr6adkrp7H8uFWbuEubRprPWbVDa4p2jqPdPbm30SiwwUVkhIWJZTFkoPSmaIdaLHcRKzcs7K8NM_z4MwJFXGjBMDmvmKJC-j6tdDw9QrLhGGoreFaFe4r2O85tdYnm_2ZDJPy8Lc5_h5mJ7dy3cULnAwMOi32iuVwdrkMXubvkofJ5D2LmVMNwkuAt0EAbAkNuII09TwXOs1"/>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">In-Room Royal Gastronomy</span>
+<span class="font-data-tabular text-data-tabular px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-bold">#OUT-04</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> ACTIVE 24/7
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Location: <span class="text-on-surface font-medium">Main Dispatch Kitchen #01</span> | Focus: <span class="text-secondary font-medium">24-hr Butler In-Suite Service &amp; Champagne Cart</span>
+</p>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 bg-surface-container-low px-space-md py-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Today's Sales</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary font-data-tabular">$18,330.00</span>
+<span class="font-label-sm text-label-sm text-tertiary">14 Live Active Orders</span>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm my-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Active Delivery Staff</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">6 Dedicated Butlers</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Avg Dispatch Speed</span>
+<span class="font-data-tabular text-data-tabular font-bold text-tertiary">22 Minutes SLA</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Auto Tray Charge</span>
+<span class="font-data-tabular text-data-tabular font-bold text-secondary">$15.00 Delivery Fee</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Suite Priority Order</span>
+<span class="font-data-tabular text-data-tabular font-bold text-primary">Royal Suites (VIP 1)</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">dinner_dining</span> Main Kitchen KDS Line 1 • Pastry KDS
+          </span>
+<span class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span> Auto-Post to Room Folio
+          </span>
+<div class="ml-auto flex items-center gap-space-xs mt-2 sm:mt-0">
+<button class="bg-surface-container-low hover:bg-surface-bright text-on-surface px-space-sm py-1 rounded font-label-sm text-label-sm transition-colors">
+              Dispatch Queue
+            </button>
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-primary font-semibold px-space-md py-1 rounded font-label-sm text-label-sm transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">point_of_sale</span>
+              Launch POS
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT 4 COLUMNS: Fiscal Assignment & Configuration Inspector Panel -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container p-space-lg rounded-xl shadow-xl border-t-2 border-primary/40 relative">
+<!-- Header Ribbon -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">tune</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Outlet Fiscal Inspector</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-bold">
+            EDITING #OUT-01
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-outline pb-space-md border-b-0">
+          Selected Target: <span class="text-on-surface font-semibold">Le Royal Lounge &amp; Fine Dining</span>
+</p>
+<!-- Configuration Form Fields -->
+<div class="flex flex-col gap-space-md">
+<!-- Property Assignment -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Assigned Property Node</label>
+<div class="flex items-center justify-between bg-surface-container-low px-space-md py-2 rounded">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">domain</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Amon Luxury Palace &amp; Spa</span>
+</div>
+<span class="font-data-tabular text-data-tabular text-secondary font-mono text-xs">CH-AMON-01</span>
+</div>
+</div>
+<!-- Operating Shifts -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Configured Service Shifts</label>
+<button class="font-label-sm text-label-sm text-primary hover:underline">+ Add Shift</button>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1.5 rounded">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Morning Breakfast</span>
+</div>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant">06:00 – 11:00</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1.5 rounded">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-on-surface">High Tea &amp; Caviar</span>
+</div>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant">15:00 – 18:00</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1.5 rounded bg-primary/5">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-body-sm text-body-sm text-primary font-semibold">Grand Imperial Dinner (Active)</span>
+</div>
+<span class="font-data-tabular text-data-tabular text-primary font-semibold">19:00 – 01:00</span>
+</div>
+</div>
+</div>
+<!-- Allowed Payment Routing -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Allowed Settlement Folios</label>
+<div class="grid grid-cols-2 gap-1.5">
+<div class="flex items-center gap-2 bg-surface-container-low p-2 rounded">
+<input checked="" class="w-4 h-4 accent-primary rounded bg-surface-container-highest cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Room Folio Charge</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low p-2 rounded">
+<input checked="" class="w-4 h-4 accent-primary rounded bg-surface-container-highest cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">City Ledger (Corp)</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low p-2 rounded">
+<input checked="" class="w-4 h-4 accent-primary rounded bg-surface-container-highest cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Amex Centurion</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low p-2 rounded">
+<input checked="" class="w-4 h-4 accent-primary rounded bg-surface-container-highest cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Cash Safe Drawer</span>
+</div>
+</div>
+</div>
+<!-- Hardware & Peripheral Binding -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Bound POS &amp; Peripherals</label>
+<div class="space-y-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface bg-surface-container-low px-space-sm py-1.5 rounded">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-[16px]">desktop_windows</span> POS Terminal Station
+                </span>
+<span class="font-data-tabular text-data-tabular text-tertiary">WS-02 (Palace-Desk)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface bg-surface-container-low px-space-sm py-1.5 rounded">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-[16px]">soup_kitchen</span> Kitchen Display System
+                </span>
+<span class="font-data-tabular text-data-tabular text-secondary">KDS-01 (Hot Line)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface bg-surface-container-low px-space-sm py-1.5 rounded">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-[16px]">print</span> Kitchen Slip Printer
+                </span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant">Epson TM-T88VI (#PRN-4)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface bg-surface-container-low px-space-sm py-1.5 rounded">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-[16px]">contactless</span> RFID Guest Keycard
+                </span>
+<span class="font-data-tabular text-data-tabular text-tertiary">Mifare DESFire EV3</span>
+</div>
+</div>
+</div>
+<!-- General Ledger Account Code -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Default Revenue GL Account</label>
+<div class="flex items-center justify-between bg-surface-container-low px-space-md py-2 rounded">
+<span class="font-data-tabular text-data-tabular text-primary font-bold font-mono">4100-FB-DINING-REST</span>
+<button class="font-label-sm text-label-sm text-outline hover:text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">edit</span> Change GL
+              </button>
+</div>
+</div>
+<!-- High-Security Operational Toggles -->
+<div class="flex flex-col gap-2 pt-2 border-t-0">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Guest Room Cross-Posting</span>
+<span class="font-label-sm text-label-sm text-outline">Direct sync to Opera/PMS room folio</span>
+</div>
+<!-- Luxury Styled Toggle Switch -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Require Supervisor PIN for Voids &gt;$50</span>
+<span class="font-label-sm text-label-sm text-outline">Enforce strict cashier accountability</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Multi-Party Split Bill Enabled</span>
+<span class="font-label-sm text-label-sm text-outline">Allow simultaneous cover separation</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary-container after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- Bottom Action Buttons -->
+<div class="flex flex-col gap-2 pt-space-sm">
+<button class="w-full bg-gradient-to-r from-primary-container to-primary text-on-primary-container font-bold py-2.5 rounded font-label-md text-label-md transition-all shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_26px_rgba(212,175,55,0.45)] flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">save</span>
+              Save Outlet Configuration
+            </button>
+<button class="w-full bg-surface-container-high hover:bg-surface-bright text-on-surface py-2 rounded font-label-md text-label-md transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">terminal</span>
+              Launch Outlet POS Terminal (#OUT-01)
+            </button>
+</div>
+</div>
+</div>
+<!-- Quick Operational Alerts Box -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[24px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Tax Compliant Fiscal Storage</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            All F&amp;B receipts generated by configured outlets are digitally signed with Egyptian Tax Authority (ETA) e-invoice QR stamps before billing closure.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Keyboard Shortcuts & Audit Status Bottom Fixed Banner -->
+<div class="mt-space-xl bg-surface-container-low/90 backdrop-blur-md px-space-lg py-space-sm rounded-xl shadow-lg flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-lg font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<kbd class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-mono font-bold shadow-inner">F2</kbd>
+<span>New Outlet Register</span>
+</div>
+<div class="flex items-center gap-2">
+<kbd class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-mono font-bold shadow-inner">F4</kbd>
+<span>Shift Settlement</span>
+</div>
+<div class="flex items-center gap-2">
+<kbd class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-mono font-bold shadow-inner">F6</kbd>
+<span>Revenue Analytics</span>
+</div>
+<div class="flex items-center gap-2">
+<kbd class="px-2 py-0.5 rounded bg-surface-container-high text-outline font-mono font-bold shadow-inner">Esc</kbd>
+<span>Close Panel</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm font-data-tabular text-data-tabular">
+<span class="text-outline">FISCAL YEAR: 2025-Q2</span>
+<span class="text-surface-container-highest">|</span>
+<span class="text-primary font-medium">CENTRAL REVENUE AGGREGATOR RUNNING</span>
+</div>
+</div>
+</div></main></div></body></html>
